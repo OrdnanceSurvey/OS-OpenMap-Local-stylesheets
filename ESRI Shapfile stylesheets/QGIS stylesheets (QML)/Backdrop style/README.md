@@ -1,6 +1,6 @@
 # OS OpenMap - Local Backdrop style
 
-These are QML files for OS OpenMap - Local in ESRI Shapefile format for use in ESRI QGIS.
+These are QML files for OS OpenMap - Local in ESRI Shapefile format for use in QGIS.
 
 *They have been designed to work with the data as it is supplied.*
 
