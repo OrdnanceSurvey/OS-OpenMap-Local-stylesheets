@@ -4,6 +4,8 @@ These are QML files for OS OpenMap - Local in ESRI Shapefile format for use in Q
 
 *They have been designed to work with the data as it is supplied.*
 
+**NOTE** that the labelling won't work in QGIS versions from 2.12 as the label engine was upgraded.
+
 ## Quick start guide
 
 **1.**  Fork or [download](https://github.com/OrdnanceSurvey/OS-OpenMap-Local-stylesheets/archive/master.zip) the contents of this repository
