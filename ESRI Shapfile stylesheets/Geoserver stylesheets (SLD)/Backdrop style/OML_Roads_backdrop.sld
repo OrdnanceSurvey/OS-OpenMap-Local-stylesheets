@@ -14,10 +14,56 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
       <Rule>
           <Name>Road Case</Name>
           <ogc:Filter>
+            <ogc:Or>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>FEATCODE</ogc:PropertyName>
               <ogc:Literal>15760</ogc:Literal>
             </ogc:PropertyIsEqualTo>
+             <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
+              <ogc:Literal>15780</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
+              <ogc:Literal>15750</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
+              <ogc:Literal>15759</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
+              <ogc:Literal>15743</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
+              <ogc:Literal>15749</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
+              <ogc:Literal>15792</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
+              <ogc:Literal>15739</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
+              <ogc:Literal>15723</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
+              <ogc:Literal>15735</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
+              <ogc:Literal>15710</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
+              <ogc:Literal>15719</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+  </ogc:Or>
           </ogc:Filter>
           <MinScaleDenominator>1000</MinScaleDenominator>
           <MaxScaleDenominator>15000</MaxScaleDenominator>
@@ -25,16 +71,20 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <Stroke>
               <CssParameter name="stroke">#969696</CssParameter>
               <CssParameter name="stroke-width">17</CssParameter>
+              <CssParameter name="stroke-linecap">butt</CssParameter>
+              <CssParameter name="stroke-linejoin">round</CssParameter>
             </Stroke>
           </LineSymbolizer>
         </Rule>
+          </FeatureTypeStyle>
       
- <!-- Local Street/Private Road Publicly Accessible -->
+ <!-- Local Street/Private Road Publicly Accessible (SLIP T)-->
       
-        <Rule>
-          <Name>Local Street/Private Road Publicly Accessible</Name>
+      <FeatureTypeStyle>  
+      <Rule>
+          <Name>Local Street/Private Road Publicly Accessible fill</Name>
           <ogc:Filter>
-  <ogc:Or>
+            <ogc:Or>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>FEATCODE</ogc:PropertyName>
               <ogc:Literal>15760</ogc:Literal>
@@ -51,14 +101,287 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <Stroke>
               <CssParameter name="stroke">#FFFFFF</CssParameter>
               <CssParameter name="stroke-width">12</CssParameter>
-              <CssParameter name="stroke-linecap">"sround"</CssParameter>
+              <CssParameter name="stroke-linecap">round</CssParameter>
+              <CssParameter name="stroke-linejoin">round</CssParameter>
             </Stroke>
           </LineSymbolizer>
-        </Rule>      
+        </Rule>
+        </FeatureTypeStyle>
+          
+           <!-- Minor Road -->
+      
+      <FeatureTypeStyle>  
+      <Rule>
+          <Name>Minor Road fill</Name>
+          <ogc:Filter>
+            <ogc:Or>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
+              <ogc:Literal>15750</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
+              <ogc:Literal>15759</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+  </ogc:Or>
+</ogc:Filter>
+          <MinScaleDenominator>1000</MinScaleDenominator>
+          <MaxScaleDenominator>15000</MaxScaleDenominator>
+          <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <Stroke>
+              <CssParameter name="stroke">#FFF4E1</CssParameter>
+              <CssParameter name="stroke-width">12</CssParameter>
+               <CssParameter name="stroke-linecap">round</CssParameter>
+              <CssParameter name="stroke-linejoin">round</CssParameter>
+            </Stroke>
+          </LineSymbolizer>
+        </Rule>
+        </FeatureTypeStyle>
 
+          <!-- B Roads -->
+      
+      <FeatureTypeStyle>  
+      <Rule>
+          <Name>B Road fill</Name>
+          <ogc:Filter>
+            <ogc:Or>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
+              <ogc:Literal>15743</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
+              <ogc:Literal>15749</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+  </ogc:Or>
+       </ogc:Filter>
+          <MinScaleDenominator>1000</MinScaleDenominator>
+          <MaxScaleDenominator>15000</MaxScaleDenominator>
+          <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <Stroke>
+              <CssParameter name="stroke">#FDD3B1</CssParameter>
+              <CssParameter name="stroke-width">12</CssParameter>
+              <CssParameter name="stroke-linecap">round</CssParameter>
+              <CssParameter name="stroke-linejoin">round</CssParameter>
+            </Stroke>
+          </LineSymbolizer>
+        </Rule>
+        </FeatureTypeStyle>
+          
+           <!-- A Road -->
+      
+      <FeatureTypeStyle>  
+      <Rule>
+          <Name>A Road fill</Name>
+          <ogc:Filter>
+            <ogc:Or>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
+              <ogc:Literal>15792</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
+              <ogc:Literal>15739</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+  </ogc:Or>
+</ogc:Filter>
+          <MinScaleDenominator>1000</MinScaleDenominator>
+          <MaxScaleDenominator>15000</MaxScaleDenominator>
+          <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <Stroke>
+              <CssParameter name="stroke">#FFBBD2</CssParameter>
+              <CssParameter name="stroke-width">12</CssParameter>
+               <CssParameter name="stroke-linecap">round</CssParameter>
+              <CssParameter name="stroke-linejoin">round</CssParameter>
+            </Stroke>
+          </LineSymbolizer>
+        </Rule>
+        </FeatureTypeStyle>
+
+          <!-- Primary Road -->
+      
+      <FeatureTypeStyle>  
+      <Rule>
+          <Name>Primary Road fill</Name>
+          <ogc:Filter>
+            <ogc:Or>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
+              <ogc:Literal>15723</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
+              <ogc:Literal>15735</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+  </ogc:Or>
+   </ogc:Filter>
+          <MinScaleDenominator>1000</MinScaleDenominator>
+          <MaxScaleDenominator>15000</MaxScaleDenominator>
+          <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <Stroke>
+              <CssParameter name="stroke">#A3D2A9</CssParameter>
+              <CssParameter name="stroke-width">12</CssParameter>
+               <CssParameter name="stroke-linecap">round</CssParameter>
+              <CssParameter name="stroke-linejoin">round</CssParameter>
+            </Stroke>
+          </LineSymbolizer>
+        </Rule>
+        </FeatureTypeStyle>
+          
+          <!-- Motorways -->
+     
+        <FeatureTypeStyle>
+          <Rule>
+          <Name>Motorway fill</Name>
+          <ogc:Filter>
+            <ogc:Or>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
+              <ogc:Literal>15710</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
+              <ogc:Literal>15719</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+  </ogc:Or>
+          </ogc:Filter>
+          <MinScaleDenominator>1000</MinScaleDenominator>
+          <MaxScaleDenominator>15000</MaxScaleDenominator>
+          <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <Stroke>
+              <CssParameter name="stroke">#63C8DD</CssParameter>
+              <CssParameter name="stroke-width">12</CssParameter>
+             <CssParameter name="stroke-linecap">round</CssParameter>
+              <CssParameter name="stroke-linejoin">round</CssParameter>
+            </Stroke>
+          </LineSymbolizer>
+        </Rule>
+          </FeatureTypeStyle>
+          
+          <!-- Minor Road Centre Line-->
+      
+      <FeatureTypeStyle>  
+      <Rule>
+          <Name>Minor Road Centre Line</Name>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
+              <ogc:Literal>15759</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <MinScaleDenominator>1000</MinScaleDenominator>
+          <MaxScaleDenominator>15000</MaxScaleDenominator>
+          <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <Stroke>
+              <CssParameter name="stroke">#969696</CssParameter>
+              <CssParameter name="stroke-width">1</CssParameter>
+               <CssParameter name="stroke-linecap">round</CssParameter>
+              <CssParameter name="stroke-linejoin">round</CssParameter>
+            </Stroke>
+          </LineSymbolizer>
+        </Rule>
+        </FeatureTypeStyle>
+          
+          <!-- B Road Centre Line-->
+      
+        <FeatureTypeStyle>
+          <Rule>
+          <Name>B Road Centre Line</Name>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
+              <ogc:Literal>15749</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+       </ogc:Filter>
+          <MinScaleDenominator>1000</MinScaleDenominator>
+          <MaxScaleDenominator>15000</MaxScaleDenominator>
+          <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <Stroke>
+              <CssParameter name="stroke">#969696</CssParameter>
+              <CssParameter name="stroke-width">1</CssParameter>
+              <CssParameter name="stroke-linecap">round</CssParameter>
+              <CssParameter name="stroke-linejoin">round</CssParameter>
+            </Stroke>
+          </LineSymbolizer>
+        </Rule>
+          </FeatureTypeStyle>
+          
+          <!-- A Road Centre Line-->
+      
+        <FeatureTypeStyle>
+          <Rule>
+          <Name>A Road Centre Line</Name>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
+              <ogc:Literal>15739</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+</ogc:Filter>
+          <MinScaleDenominator>1000</MinScaleDenominator>
+          <MaxScaleDenominator>15000</MaxScaleDenominator>
+          <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <Stroke>
+              <CssParameter name="stroke">#969696</CssParameter>
+              <CssParameter name="stroke-width">1</CssParameter>
+               <CssParameter name="stroke-linecap">round</CssParameter>
+              <CssParameter name="stroke-linejoin">round</CssParameter>
+            </Stroke>
+          </LineSymbolizer>
+        </Rule>
+          </FeatureTypeStyle>
+          
+          <!-- Primary Road Centre Line-->
+      
+        <FeatureTypeStyle>
+          <Rule>
+          <Name>Primary Road Centre Line</Name>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
+              <ogc:Literal>15735</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+   </ogc:Filter>
+          <MinScaleDenominator>1000</MinScaleDenominator>
+          <MaxScaleDenominator>15000</MaxScaleDenominator>
+          <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <Stroke>
+              <CssParameter name="stroke">#FFFFFF</CssParameter>
+              <CssParameter name="stroke-width">1</CssParameter>
+              <CssParameter name="stroke-linecap">round</CssParameter>
+              <CssParameter name="stroke-linejoin">round</CssParameter>
+            </Stroke>
+          </LineSymbolizer>
+        </Rule>
+          </FeatureTypeStyle>
+          
+          <!-- Motorway Road Centre Line-->
+      
+        <FeatureTypeStyle>
+          <Rule>
+          <Name>Motorway Road Centre Line</Name>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
+              <ogc:Literal>15719</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+   </ogc:Filter>
+          <MinScaleDenominator>1000</MinScaleDenominator>
+          <MaxScaleDenominator>15000</MaxScaleDenominator>
+          <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <Stroke>
+              <CssParameter name="stroke">#FFFFFF</CssParameter>
+              <CssParameter name="stroke-width">1</CssParameter>
+              <CssParameter name="stroke-linecap">round</CssParameter>
+              <CssParameter name="stroke-linejoin">round</CssParameter>
+            </Stroke>
+          </LineSymbolizer>
+        </Rule>
+          </FeatureTypeStyle>
+        
 <!-- Local Street/Private Road Publicly Accessible Labels -->   
               
-        <Rule>
+        <FeatureTypeStyle>
+          <Rule>
           <Name>Local Street/Private Road Publicly Accessible</Name>
           <ogc:Filter>
             <ogc:Or>
@@ -87,9 +410,9 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
               <LinePlacement>
                 <PerpendicularOffset>0</PerpendicularOffset>
               </LinePlacement>
-            </LabelPlacement>]
+            </LabelPlacement>
   <Halo>
-              <Radius>0.0</Radius>
+              <Radius>1.2</Radius>
               <Fill><CssParameter name="fill">#FFFFFF</CssParameter></Fill>
             </Halo>
             <Fill>
@@ -102,59 +425,13 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="repeat">1000</VendorOption>
             <VendorOption name="conflictResolution">true</VendorOption>
           </TextSymbolizer>
-        </Rule>      
-      
-      <!-- Minor Road -->
-      
-        <Rule>
-          <Name>Minor Road</Name>
-          <ogc:Filter>
-  <ogc:Or>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
-              <ogc:Literal>15750</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
-              <ogc:Literal>15759</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-  </ogc:Or>
-</ogc:Filter>
-          <MinScaleDenominator>1000</MinScaleDenominator>
-          <MaxScaleDenominator>15000</MaxScaleDenominator>
-          <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <Stroke>
-              <CssParameter name="stroke">#FFF4E1</CssParameter>
-              <CssParameter name="stroke-width">12</CssParameter>
-              <CssParameter name="stroke-linecap">"round"</CssParameter>
-            </Stroke>
-          </LineSymbolizer>
-        </Rule>
-
- <!-- Minor Road Centre Line-->
-      
-        <Rule>
-          <Name>Minor Road Centre Line</Name>
-          <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
-              <ogc:Literal>15759</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <MinScaleDenominator>1000</MinScaleDenominator>
-          <MaxScaleDenominator>15000</MaxScaleDenominator>
-          <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <Stroke>
-              <CssParameter name="stroke">#969696</CssParameter>
-              <CssParameter name="stroke-width">1</CssParameter>
-              <CssParameter name="stroke-linecap">"round"</CssParameter>
-            </Stroke>
-          </LineSymbolizer>
-        </Rule>
+        </Rule> 
+          </FeatureTypeStyle>
         
         <!-- Minor Roads Labels -->        
         
-        <Rule>
+        <FeatureTypeStyle>
+          <Rule>
           <Name>Minor Road Labels</Name>
           <ogc:Filter>
            <ogc:Or>
@@ -185,7 +462,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
               </LinePlacement>
             </LabelPlacement>
             <Halo>
-              <Radius>0.0</Radius>
+              <Radius>1.2</Radius>
               <Fill><CssParameter name="fill">#FFFFFF</CssParameter></Fill>
             </Halo>
             <Fill>
@@ -198,58 +475,12 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="repeat">1000</VendorOption>      
           </TextSymbolizer>
         </Rule>
+          </FeatureTypeStyle>
       
- <!-- B Roads -->
-      
-        <Rule>
-          <Name>B Roads</Name>
-          <ogc:Filter>
-  <ogc:Or>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
-              <ogc:Literal>15743</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
-              <ogc:Literal>15749</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-  </ogc:Or>
-       </ogc:Filter>
-          <MinScaleDenominator>1000</MinScaleDenominator>
-          <MaxScaleDenominator>15000</MaxScaleDenominator>
-          <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <Stroke>
-              <CssParameter name="stroke">#FDD3B1</CssParameter>
-              <CssParameter name="stroke-width">12</CssParameter>
-              <CssParameter name="stroke-linecap">"round"</CssParameter>
-            </Stroke>
-          </LineSymbolizer>
-        </Rule>
-
- <!-- B Road Centre Line-->
-      
-        <Rule>
-          <Name>B Road Centre Line</Name>
-          <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
-              <ogc:Literal>15749</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-       </ogc:Filter>
-          <MinScaleDenominator>1000</MinScaleDenominator>
-          <MaxScaleDenominator>15000</MaxScaleDenominator>
-          <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <Stroke>
-              <CssParameter name="stroke">#969696</CssParameter>
-              <CssParameter name="stroke-width">1</CssParameter>
-              <CssParameter name="stroke-linecap">"round"</CssParameter>
-            </Stroke>
-          </LineSymbolizer>
-        </Rule>
+  <!-- B Road Labels -->        
         
-        <!-- B Road Labels -->        
-        
-        <Rule>
+        <FeatureTypeStyle>
+          <Rule>
           <Name>B Road Labels</Name>
           <ogc:Filter>
            <ogc:Or>
@@ -280,7 +511,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
               </LinePlacement>
             </LabelPlacement>
             <Halo>
-              <Radius>0.0</Radius>
+              <Radius>1.2</Radius>
               <Fill><CssParameter name="fill">#FFFFFF</CssParameter></Fill>
             </Halo>
             <Fill>
@@ -294,10 +525,12 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="repeat">1000</VendorOption>      
           </TextSymbolizer>
         </Rule>
+          </FeatureTypeStyle>
 
  <!-- B Road Numbers -->
 
-    <Rule>
+    <FeatureTypeStyle>
+      <Rule>
           <Name>B Road Numbers</Name>
           <ogc:Filter>
             <ogc:Or>
@@ -306,7 +539,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
                 <ogc:Literal>15743</ogc:Literal>
               </ogc:PropertyIsEqualTo>
               <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>featureCod</ogc:PropertyName>
+                <ogc:PropertyName>FEATCODE</ogc:PropertyName>
                 <ogc:Literal>15749</ogc:Literal>
               </ogc:PropertyIsEqualTo>
             </ogc:Or>
@@ -343,58 +576,12 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="forceLeftToRight">true</VendorOption>
           </TextSymbolizer>
         </Rule>
-    
- <!-- A Road -->
-      
-        <Rule>
-          <Name>A Road</Name>
-          <ogc:Filter>
-  <ogc:Or>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
-              <ogc:Literal>15792</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
-              <ogc:Literal>15739</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-  </ogc:Or>
-</ogc:Filter>
-          <MinScaleDenominator>1000</MinScaleDenominator>
-          <MaxScaleDenominator>15000</MaxScaleDenominator>
-          <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <Stroke>
-              <CssParameter name="stroke">#FFBBD2</CssParameter>
-              <CssParameter name="stroke-width">12</CssParameter>
-              <CssParameter name="stroke-linecap">"round"</CssParameter>
-            </Stroke>
-          </LineSymbolizer>
-        </Rule>
-
- <!-- A Road Centre Line-->
-      
-        <Rule>
-          <Name>A Road Centre Line</Name>
-          <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
-              <ogc:Literal>15739</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-</ogc:Filter>
-          <MinScaleDenominator>1000</MinScaleDenominator>
-          <MaxScaleDenominator>15000</MaxScaleDenominator>
-          <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <Stroke>
-              <CssParameter name="stroke">#969696</CssParameter>
-              <CssParameter name="stroke-width">1</CssParameter>
-              <CssParameter name="stroke-linecap">"round"</CssParameter>
-            </Stroke>
-          </LineSymbolizer>
-        </Rule>
-        
+      </FeatureTypeStyle>
+ 
         <!-- A Roads Labels -->        
         
-        <Rule>
+        <FeatureTypeStyle>
+          <Rule>
           <Name>A Road Labels</Name>
           <ogc:Filter>
            <ogc:Or>
@@ -425,7 +612,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
               </LinePlacement>
             </LabelPlacement>
             <Halo>
-              <Radius>0.0</Radius>
+              <Radius>1.2</Radius>
               <Fill><CssParameter name="fill">#FFFFFF</CssParameter></Fill>
             </Halo>
             <Fill>
@@ -439,10 +626,12 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="repeat">1000</VendorOption>      
           </TextSymbolizer>
         </Rule>
+          </FeatureTypeStyle>
 
    <!-- A Road Numbers -->
 
-    <Rule>
+    <FeatureTypeStyle>
+      <Rule>
           <Name>A Road Numbers</Name>
           <ogc:Filter>
             <ogc:Or>
@@ -451,7 +640,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
                 <ogc:Literal>15792</ogc:Literal>
               </ogc:PropertyIsEqualTo>
               <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>featureCod</ogc:PropertyName>
+                <ogc:PropertyName>FEATCODE</ogc:PropertyName>
                 <ogc:Literal>15739</ogc:Literal>
               </ogc:PropertyIsEqualTo>
             </ogc:Or>
@@ -487,59 +676,13 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="repeat">700</VendorOption>
             <VendorOption name="forceLeftToRight">true</VendorOption>
           </TextSymbolizer>
-        </Rule>
-
- <!-- Primary Road -->
-      
-        <Rule>
-          <Name>Primary Road</Name>
-          <ogc:Filter>
-  <ogc:Or>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
-              <ogc:Literal>15723</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
-              <ogc:Literal>15735</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-  </ogc:Or>
-   </ogc:Filter>
-          <MinScaleDenominator>1000</MinScaleDenominator>
-          <MaxScaleDenominator>15000</MaxScaleDenominator>
-          <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <Stroke>
-              <CssParameter name="stroke">#A3D2A9</CssParameter>
-              <CssParameter name="stroke-width">12</CssParameter>
-              <CssParameter name="stroke-linecap">"round"</CssParameter>
-            </Stroke>
-          </LineSymbolizer>
-        </Rule>
-
- <!-- Primary Road Centre Line-->
-      
-        <Rule>
-          <Name>Primary Road Centre Line</Name>
-          <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
-              <ogc:Literal>15735</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-   </ogc:Filter>
-          <MinScaleDenominator>1000</MinScaleDenominator>
-          <MaxScaleDenominator>15000</MaxScaleDenominator>
-          <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <Stroke>
-              <CssParameter name="stroke">#FFFFFF</CssParameter>
-              <CssParameter name="stroke-width">1</CssParameter>
-              <CssParameter name="stroke-linecap">"round"</CssParameter>
-            </Stroke>
-          </LineSymbolizer>
-        </Rule>
-        
+        </Rule> 
+      </FeatureTypeStyle>
+       
         <!-- Primary Road Labels -->        
         
-        <Rule>
+        <FeatureTypeStyle>
+          <Rule>
           <Name>Primary Road Labels</Name>
           <ogc:Filter>
            <ogc:Or>
@@ -570,7 +713,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
               </LinePlacement>
             </LabelPlacement>
             <Halo>
-              <Radius>0.0</Radius>
+              <Radius>1.2</Radius>
               <Fill><CssParameter name="fill">#FFFFFF</CssParameter></Fill>
             </Halo>
             <Fill>
@@ -585,10 +728,12 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="repeat">1000</VendorOption>      
           </TextSymbolizer>
         </Rule>
+          </FeatureTypeStyle>
 
        <!-- Primary Road Numbers -->
         
-        <Rule>
+        <FeatureTypeStyle>
+          <Rule>
           <Name>Primary Road Numbers</Name>
           <ogc:Filter>
             <ogc:Or>
@@ -634,58 +779,12 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="forceLeftToRight">true</VendorOption>
           </TextSymbolizer>
         </Rule>
+          </FeatureTypeStyle>
       
-      <!-- Motorways -->
-     
-        <Rule>
-          <Name>Motorway</Name>
-          <ogc:Filter>
-            <ogc:Or>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
-              <ogc:Literal>15710</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
-              <ogc:Literal>15719</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-  </ogc:Or>
-          </ogc:Filter>
-          <MinScaleDenominator>1000</MinScaleDenominator>
-          <MaxScaleDenominator>15000</MaxScaleDenominator>
-          <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <Stroke>
-              <CssParameter name="stroke">#63C8DD</CssParameter>
-              <CssParameter name="stroke-width">12</CssParameter>
-              <CssParameter name="stroke-linecap">"round"</CssParameter>
-            </Stroke>
-          </LineSymbolizer>
-        </Rule>
-
- <!-- Motorway Road Centre Line-->
-      
-        <Rule>
-          <Name>Motorway Road Centre Line</Name>
-          <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
-              <ogc:Literal>15719</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-   </ogc:Filter>
-          <MinScaleDenominator>1000</MinScaleDenominator>
-          <MaxScaleDenominator>15000</MaxScaleDenominator>
-          <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <Stroke>
-              <CssParameter name="stroke">#FFFFFF</CssParameter>
-              <CssParameter name="stroke-width">1</CssParameter>
-              <CssParameter name="stroke-linecap">"round"</CssParameter>
-            </Stroke>
-          </LineSymbolizer>
-        </Rule>
-        
         <!-- Motorway Numbers -->
 
-    <Rule>
+    <FeatureTypeStyle>
+      <Rule>
           <Name>Motorway Numbers</Name>
           <ogc:Filter>
             <ogc:Or>
@@ -694,7 +793,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
                 <ogc:Literal>15710</ogc:Literal>
               </ogc:PropertyIsEqualTo>
               <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>featureCod</ogc:PropertyName>
+                <ogc:PropertyName>FEATCODE</ogc:PropertyName>
                 <ogc:Literal>15719</ogc:Literal>
               </ogc:PropertyIsEqualTo>
             </ogc:Or>
