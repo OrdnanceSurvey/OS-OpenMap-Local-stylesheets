@@ -41,7 +41,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </ogc:PropertyIsEqualTo>
               <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>FEATCODE</ogc:PropertyName>
-              <ogc:Literal>15792</ogc:Literal>
+              <ogc:Literal>15729</ogc:Literal>
             </ogc:PropertyIsEqualTo>
               <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>FEATCODE</ogc:PropertyName>
@@ -177,7 +177,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <ogc:Or>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>FEATCODE</ogc:PropertyName>
-              <ogc:Literal>15792</ogc:Literal>
+              <ogc:Literal>15729</ogc:Literal>
             </ogc:PropertyIsEqualTo>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>FEATCODE</ogc:PropertyName>
