@@ -18,15 +18,15 @@ These are LYR files for OS OpenMap - Local in ESRI Shapefile format for use in E
 
 **5.**  Click on the Labelling drop down and select Abbreviation Dictionaries. Click on Options and choose Open From File... Naviagte to where the OpenMap_Abbreviations.dic is found and select
 
-**6.**  Click on the ‘Add Data’ button and navigate to the stylesheets folder and the directory that matches your data format, stylesheet format and style preference
+**6.**  Click on the â€˜Add Dataâ€™ button and navigate to the stylesheets folder and the directory that matches your data format, stylesheet format and style preference
 
-**7.**  Select the layer file and click ‘Add’
+**7.**  Select the layer file and click â€˜Addâ€™
 
 **8.**  Your Table of Contents should now look like this. This is the recommended layer order: 
 
-  ![Screenshot](https://github.com/OrdnanceSurvey/OS-OpenMap-Local-stylesheets/raw/master/ESRI%20Shapefile%20stylesheets/ESRI%20stylesheets%20(LYR)/Backdrop%20style/images/OML_layer_order.png "Recommended layer order for OS Open Map Local")
+  ![Screenshot](https://github.com/OrdnanceSurvey/OS-OpenMap-Local-stylesheets/blob/master/ESRI%20Shapfile%20stylesheets/ESRI%20stylesheets%20(LYR)/Backdrop%20style/images/OML_layer_order.png "Recommended layer order for OS Open Map Local")
 
-**9.**  Double-click on a layer to access the ‘Layer Properties’ window > select the ‘Source tab’ > click on ‘Set Data Source…’ > navigate to your OS Open Map Local data > select the data that matches the layer for example, Text = Building.shp > select ‘Add’
+**9.**  Double-click on a layer to access the â€˜Layer Propertiesâ€™ window > select the â€˜Source tabâ€™ > click on â€˜Set Data Sourceâ€¦â€™ > navigate to your OS Open Map Local data > select the data that matches the layer for example, Text = Building.shp > select â€˜Addâ€™
 
 Repeat step 7 for all layers.
 
@@ -34,7 +34,7 @@ We recommend viewing the map between **1:2,500** and **1:10,000** for maximum le
 
 Your map should now look similar to this: 
 
-  ![Screenshot](https://github.com/OrdnanceSurvey/OS-OpenMap-Local-stylesheets/raw/master/ESRI%20Shapefile%20stylesheets/ESRI%20stylesheets%20(LYR)/Backdrop%20style/images/OML_BD_screenshot.png "Screenshot of OS OpenMap - Local")
+  ![Screenshot](https://github.com/OrdnanceSurvey/OS-OpenMap-Local-stylesheets/blob/master/ESRI%20Shapfile%20stylesheets/ESRI%20stylesheets%20(LYR)/Backdrop%20style/images/OML_BD_screenshot.png "Screenshot of OS OpenMap - Local")
 
 ## Additional information
 

@@ -4,6 +4,8 @@ These are QML files for OS OpenMap - Local in ESRI Shapefile format for use in Q
 
 *They have been designed to work with the data as it is supplied.*
 
+**NOTE** that the labelling won't work in QGIS versions from 2.12 as the label engine was upgraded.
+
 ## Quick start guide
 
 **1.**  Fork or [download](https://github.com/OrdnanceSurvey/OS-OpenMap-Local-stylesheets/archive/master.zip) the contents of this repository
@@ -24,13 +26,13 @@ Rename the original Roundabout layer and new layer to RoundaboutCase and Roundab
 
 **6.**  Although every feature is styled, for use as a contextual map we recommend the following layer order and visibility:
 
-  ![Screenshot](https://github.com/OrdnanceSurvey/OS-OpenMap-Local-stylesheets/raw/master/ESRI%20Shapefile%20stylesheets/QGIS%20stylesheets%20(QML)/Full%20colour%20style/images/OML_layer_order.png "Recommended layer order for OS Open Map Local")
+  ![Screenshot](https://raw.githubusercontent.com/OrdnanceSurvey/OS-OpenMap-Local-stylesheets/master/ESRI%20Shapefile%20stylesheets/QGIS%20stylesheets%20%28QML%29/Full%20colour%20style/images/OML_layer_order.png "Recommended layer order for OS Open Map Local")
 
 We recommend viewing the map between **1:2,500** and **1:10,000** for maximum legibility
 
 Your map should now look similar to this: 
 
-  ![Screenshot](https://github.com/OrdnanceSurvey/OS-OpenMap-Local-stylesheets/raw/master/ESRI%20Shapefile%20stylesheets/QGIS%20stylesheets%20(QML)/Full%20colour%20style/images/OML_FC_screenshot.png "Screenshot of OS OpenMap - Local")
+  ![Screenshot](https://raw.githubusercontent.com/OrdnanceSurvey/OS-OpenMap-Local-stylesheets/master/ESRI%20Shapefile%20stylesheets/QGIS%20stylesheets%20%28QML%29/Full%20colour%20style/images/OML_FC_screenshot.png "Screenshot of OS OpenMap - Local")
 
 ## Additional information
 
