@@ -39,8 +39,8 @@
     <sizescale scalemethod="diameter"/>
   </renderer-v2>
   <labeling type="rule-based">
-    <rules key="{3b73aa78-7c7b-4981-aeb8-6fd89cb139a1}">
-      <rule description="Air Transport" filter="&quot;BUILDGTHEM&quot;  = 'Air Transport'" active="0" key="{55a2e595-f523-4deb-9919-7e171299259b}">
+    <rules key="{f78e529f-7a8c-465d-98a1-4534001e428b}">
+      <rule description="Air Transport" filter="&quot;BUILDGTHEM&quot;  = 'Air Transport'" active="0" key="{77ae9407-2ca8-4253-bc9e-8132409ea4a5}">
         <settings>
           <text-style fontItalic="0" fontFamily="Arial" fontLetterSpacing="0" fontUnderline="0" fontWeight="75" fontStrikeout="0" textTransp="0" previewBkgrdColor="#ffffff" fontCapitals="0" textColor="150,150,150,255" fontSizeInMapUnits="0" isExpression="0" blendMode="0" fontSizeMapUnitScale="0,0,0,0,0,0" fontSize="8" fieldName="DISTNAME" namedStyle="Bold" fontWordSpacing="0"/>
           <text-format placeDirectionSymbol="0" multilineAlign="0" rightDirectionSymbol=">" multilineHeight="1" plussign="0" addDirectionSymbol="0" leftDirectionSymbol="&lt;" formatNumbers="0" decimals="3" wrapChar=" " reverseDirectionSymbol="0"/>
@@ -52,7 +52,7 @@
           <data-defined/>
         </settings>
       </rule>
-      <rule description="Services" filter="&quot;BUILDGTHEM&quot; = 'Road Transport'" key="{51184a49-aed1-4026-97ae-3148552261c2}">
+      <rule description="Services" filter="&quot;CLASSIFICA&quot; = 'Road User Services'" key="{e09d48e1-79ea-47d7-9001-75ec63ccdbf0}">
         <settings>
           <text-style fontItalic="0" fontFamily="Arial" fontLetterSpacing="0" fontUnderline="0" fontWeight="75" fontStrikeout="0" textTransp="0" previewBkgrdColor="#ffffff" fontCapitals="0" textColor="150,150,150,255" fontSizeInMapUnits="0" isExpression="1" blendMode="0" fontSizeMapUnitScale="0,0,0,0,0,0" fontSize="8" fieldName="'Services'" namedStyle="Bold" fontWordSpacing="0"/>
           <text-format placeDirectionSymbol="0" multilineAlign="0" rightDirectionSymbol=">" multilineHeight="1" plussign="0" addDirectionSymbol="0" leftDirectionSymbol="&lt;" formatNumbers="0" decimals="3" wrapChar=" " reverseDirectionSymbol="0"/>
@@ -64,7 +64,7 @@
           <data-defined/>
         </settings>
       </rule>
-      <rule description="Medical Care Accomodation" filter="&quot;CLASSIFICA&quot; = 'Medical Care Accomodation'" key="{3d882388-8a40-4e8b-8758-a033af3997f5}">
+      <rule description="Medical Care Accomodation" filter="&quot;CLASSIFICA&quot; = 'Medical Care Accomodation'" key="{d9ed326b-a3d7-437c-99cc-a65019d8640c}">
         <settings>
           <text-style fontItalic="0" fontFamily="Arial" fontLetterSpacing="0" fontUnderline="0" fontWeight="75" fontStrikeout="0" textTransp="0" previewBkgrdColor="#ffffff" fontCapitals="0" textColor="150,150,150,255" fontSizeInMapUnits="0" isExpression="0" blendMode="0" fontSizeMapUnitScale="0,0,0,0,0,0" fontSize="8" fieldName="BUILDGTHEM" namedStyle="Bold" fontWordSpacing="0"/>
           <text-format placeDirectionSymbol="0" multilineAlign="0" rightDirectionSymbol=">" multilineHeight="1" plussign="0" addDirectionSymbol="0" leftDirectionSymbol="&lt;" formatNumbers="0" decimals="3" wrapChar=" " reverseDirectionSymbol="0"/>
@@ -76,7 +76,7 @@
           <data-defined/>
         </settings>
       </rule>
-      <rule description="Port" filter="&quot;CLASSIFICA&quot; = 'Port Consisting of Docks and Nautical Berthing'" active="0" key="{5286fd1e-cc87-42d7-976b-3003fe35faf1}">
+      <rule description="Port" filter="&quot;CLASSIFICA&quot; = 'Port Consisting of Docks and Nautical Berthing'" active="0" key="{a893c347-70e7-4d95-9930-bbe09503f917}">
         <settings>
           <text-style fontItalic="0" fontFamily="Arial" fontLetterSpacing="0" fontUnderline="0" fontWeight="75" fontStrikeout="0" textTransp="0" previewBkgrdColor="#ffffff" fontCapitals="0" textColor="150,150,150,255" fontSizeInMapUnits="0" isExpression="1" blendMode="0" fontSizeMapUnitScale="0,0,0,0,0,0" fontSize="8" fieldName="'Port'" namedStyle="Bold" fontWordSpacing="0"/>
           <text-format placeDirectionSymbol="0" multilineAlign="0" rightDirectionSymbol=">" multilineHeight="1" plussign="0" addDirectionSymbol="0" leftDirectionSymbol="&lt;" formatNumbers="0" decimals="3" wrapChar=" " reverseDirectionSymbol="0"/>
@@ -88,7 +88,7 @@
           <data-defined/>
         </settings>
       </rule>
-      <rule description="Bus Station" filter="&quot;CLASSIFICA&quot; = 'Bus Station'" key="{357dfd05-c9f1-48d4-9f78-e529b73b0c28}">
+      <rule description="Bus Station" filter="&quot;CLASSIFICA&quot; = 'Bus Station'" key="{61589aa4-c9c7-4a37-ab93-bb74ff706904}">
         <settings>
           <text-style fontItalic="0" fontFamily="Arial" fontLetterSpacing="0" fontUnderline="0" fontWeight="75" fontStrikeout="0" textTransp="0" previewBkgrdColor="#ffffff" fontCapitals="0" textColor="150,150,150,255" fontSizeInMapUnits="0" isExpression="0" blendMode="0" fontSizeMapUnitScale="0,0,0,0,0,0" fontSize="8" fieldName="CLASSIFICA" namedStyle="Bold" fontWordSpacing="0"/>
           <text-format placeDirectionSymbol="0" multilineAlign="0" rightDirectionSymbol=">" multilineHeight="1" plussign="0" addDirectionSymbol="0" leftDirectionSymbol="&lt;" formatNumbers="0" decimals="3" wrapChar=" " reverseDirectionSymbol="0"/>
@@ -100,7 +100,7 @@
           <data-defined/>
         </settings>
       </rule>
-      <rule description="Hospital" filter="&quot;CLASSIFICA&quot; = 'Hospital' OR &quot;CLASSIFICA&quot; = 'Hospital,Medical Care Accommodation'" active="0" key="{25033027-83fe-40d4-9ff6-895e89626ca9}">
+      <rule description="Hospital" filter="&quot;CLASSIFICA&quot; = 'Hospital' OR &quot;CLASSIFICA&quot; = 'Hospital,Medical Care Accommodation'" active="0" key="{993fdaeb-9b2b-4fa6-9360-0776f2bf322c}">
         <settings>
           <text-style fontItalic="0" fontFamily="Arial" fontLetterSpacing="0" fontUnderline="0" fontWeight="75" fontStrikeout="0" textTransp="0" previewBkgrdColor="#ffffff" fontCapitals="0" textColor="150,150,150,255" fontSizeInMapUnits="0" isExpression="1" blendMode="0" fontSizeMapUnitScale="0,0,0,0,0,0" fontSize="8" fieldName="'Hospital'" namedStyle="Bold" fontWordSpacing="0"/>
           <text-format placeDirectionSymbol="0" multilineAlign="0" rightDirectionSymbol=">" multilineHeight="1" plussign="0" addDirectionSymbol="0" leftDirectionSymbol="&lt;" formatNumbers="0" decimals="3" wrapChar=" " reverseDirectionSymbol="0"/>
@@ -112,7 +112,7 @@
           <data-defined/>
         </settings>
       </rule>
-      <rule description="Ferry Terminal (V)" filter="&quot;CLASSIFICA&quot; = 'Vehicular Ferry Terminal'" key="{6189f625-4bf2-40d4-823d-7a8bb874faf9}">
+      <rule description="Ferry Terminal (V)" filter="&quot;CLASSIFICA&quot; = 'Vehicular Ferry Terminal'" key="{a26dbbaa-d0b1-4c25-a5fe-502e99e5ee4a}">
         <settings>
           <text-style fontItalic="0" fontFamily="Arial" fontLetterSpacing="0" fontUnderline="0" fontWeight="75" fontStrikeout="0" textTransp="0" previewBkgrdColor="#ffffff" fontCapitals="0" textColor="150,150,150,255" fontSizeInMapUnits="0" isExpression="1" blendMode="0" fontSizeMapUnitScale="0,0,0,0,0,0" fontSize="8" fieldName="'Ferry Terminal (V)'" namedStyle="Bold" fontWordSpacing="0"/>
           <text-format placeDirectionSymbol="0" multilineAlign="0" rightDirectionSymbol=">" multilineHeight="1" plussign="0" addDirectionSymbol="0" leftDirectionSymbol="&lt;" formatNumbers="0" decimals="3" wrapChar=" " reverseDirectionSymbol="0"/>
@@ -124,7 +124,7 @@
           <data-defined/>
         </settings>
       </rule>
-      <rule description="Ferry Terminal (P)" filter="&quot;CLASSIFICA&quot; = 'Passenger Ferry Terminal'" key="{831de53d-5129-432c-b87b-c4fabc3b6cec}">
+      <rule description="Ferry Terminal (P)" filter="&quot;CLASSIFICA&quot; = 'Passenger Ferry Terminal'" key="{ef083f23-3441-4f44-9b08-2450a8f84235}">
         <settings>
           <text-style fontItalic="0" fontFamily="Arial" fontLetterSpacing="0" fontUnderline="0" fontWeight="75" fontStrikeout="0" textTransp="0" previewBkgrdColor="#ffffff" fontCapitals="0" textColor="150,150,150,255" fontSizeInMapUnits="0" isExpression="1" blendMode="0" fontSizeMapUnitScale="0,0,0,0,0,0" fontSize="8" fieldName="'Ferry Terminal (P)'" namedStyle="Bold" fontWordSpacing="0"/>
           <text-format placeDirectionSymbol="0" multilineAlign="0" rightDirectionSymbol=">" multilineHeight="1" plussign="0" addDirectionSymbol="0" leftDirectionSymbol="&lt;" formatNumbers="0" decimals="3" wrapChar=" " reverseDirectionSymbol="0"/>
@@ -136,7 +136,7 @@
           <data-defined/>
         </settings>
       </rule>
-      <rule description="Coach Station" filter="&quot;CLASSIFICA&quot; = 'Coach Station'" key="{20eb8100-5399-4650-8a90-17425c7565da}">
+      <rule description="Coach Station" filter="&quot;CLASSIFICA&quot; = 'Coach Station'" key="{4b36f484-c310-4d4f-99f1-482eb6b9523b}">
         <settings>
           <text-style fontItalic="0" fontFamily="Arial" fontLetterSpacing="0" fontUnderline="0" fontWeight="75" fontStrikeout="0" textTransp="0" previewBkgrdColor="#ffffff" fontCapitals="0" textColor="150,150,150,255" fontSizeInMapUnits="0" isExpression="0" blendMode="0" fontSizeMapUnitScale="0,0,0,0,0,0" fontSize="8" fieldName="CLASSIFICA" namedStyle="Bold" fontWordSpacing="0"/>
           <text-format placeDirectionSymbol="0" multilineAlign="0" rightDirectionSymbol=">" multilineHeight="1" plussign="0" addDirectionSymbol="0" leftDirectionSymbol="&lt;" formatNumbers="0" decimals="3" wrapChar=" " reverseDirectionSymbol="0"/>
@@ -148,7 +148,7 @@
           <data-defined/>
         </settings>
       </rule>
-      <rule description="Bus/Coach Station" filter="&quot;CLASSIFICA&quot; = 'Bus Station,Coach Station'" key="{efc1813c-38da-45aa-812a-8472242cf786}">
+      <rule description="Bus/Coach Station" filter="&quot;CLASSIFICA&quot; = 'Bus Station,Coach Station'" key="{f385f665-68f1-4e90-82ec-54ee62b342f4}">
         <settings>
           <text-style fontItalic="0" fontFamily="Arial" fontLetterSpacing="0" fontUnderline="0" fontWeight="75" fontStrikeout="0" textTransp="0" previewBkgrdColor="#ffffff" fontCapitals="0" textColor="150,150,150,255" fontSizeInMapUnits="0" isExpression="1" blendMode="0" fontSizeMapUnitScale="0,0,0,0,0,0" fontSize="8" fieldName="'Bus/Coach Station'" namedStyle="Bold" fontWordSpacing="0"/>
           <text-format placeDirectionSymbol="0" multilineAlign="0" rightDirectionSymbol=">" multilineHeight="1" plussign="0" addDirectionSymbol="0" leftDirectionSymbol="&lt;" formatNumbers="0" decimals="3" wrapChar=" " reverseDirectionSymbol="0"/>
@@ -160,7 +160,7 @@
           <data-defined/>
         </settings>
       </rule>
-      <rule description="Ferry Terminal (V&amp;P)" filter="&quot;CLASSIFICA&quot; = 'Passenger Ferry Terminal,Vehicular Ferry Terminal'" key="{d2421b06-0e1c-4d8d-9bc4-09202b5ba6bb}">
+      <rule description="Ferry Terminal (V&amp;P)" filter="&quot;CLASSIFICA&quot; = 'Passenger Ferry Terminal,Vehicular Ferry Terminal'" key="{7ef8ac42-ac54-4f29-9972-2f85be7f2b5f}">
         <settings>
           <text-style fontItalic="0" fontFamily="Arial" fontLetterSpacing="0" fontUnderline="0" fontWeight="75" fontStrikeout="0" textTransp="0" previewBkgrdColor="#ffffff" fontCapitals="0" textColor="150,150,150,255" fontSizeInMapUnits="0" isExpression="1" blendMode="0" fontSizeMapUnitScale="0,0,0,0,0,0" fontSize="8" fieldName="'Ferry Terminal (V&amp;P)'" namedStyle="Bold" fontWordSpacing="0"/>
           <text-format placeDirectionSymbol="0" multilineAlign="0" rightDirectionSymbol=">" multilineHeight="1" plussign="0" addDirectionSymbol="0" leftDirectionSymbol="&lt;" formatNumbers="0" decimals="3" wrapChar=" " reverseDirectionSymbol="0"/>
@@ -172,7 +172,7 @@
           <data-defined/>
         </settings>
       </rule>
-      <rule description="Police Station" filter="&quot;CLASSIFICA&quot; = 'Police Station'" key="{48a8d5f6-3ff3-45f4-a16f-ba86e92cccf3}">
+      <rule description="Police Station" filter="&quot;CLASSIFICA&quot; = 'Police Station'" key="{fd233022-0398-4378-9eea-c8e6eb4c55be}">
         <settings>
           <text-style fontItalic="0" fontFamily="Arial" fontLetterSpacing="0" fontUnderline="0" fontWeight="75" fontStrikeout="0" textTransp="0" previewBkgrdColor="#ffffff" fontCapitals="0" textColor="150,150,150,255" fontSizeInMapUnits="0" isExpression="0" blendMode="0" fontSizeMapUnitScale="0,0,0,0,0,0" fontSize="8" fieldName="CLASSIFICA" namedStyle="Bold" fontWordSpacing="0"/>
           <text-format placeDirectionSymbol="0" multilineAlign="0" rightDirectionSymbol=">" multilineHeight="1" plussign="0" addDirectionSymbol="0" leftDirectionSymbol="&lt;" formatNumbers="0" decimals="3" wrapChar=" " reverseDirectionSymbol="0"/>
@@ -184,7 +184,7 @@
           <data-defined/>
         </settings>
       </rule>
-      <rule description="Fire Station" filter="&quot;CLASSIFICA&quot; = 'Fire Station'" key="{07ed7b52-f3d0-4976-b5bf-ebcab39b56eb}">
+      <rule description="Fire Station" filter="&quot;CLASSIFICA&quot; = 'Fire Station'" key="{ba8ee306-8f69-44d5-97ef-d37355c20375}">
         <settings>
           <text-style fontItalic="0" fontFamily="Arial" fontLetterSpacing="0" fontUnderline="0" fontWeight="75" fontStrikeout="0" textTransp="0" previewBkgrdColor="#ffffff" fontCapitals="0" textColor="150,150,150,255" fontSizeInMapUnits="0" isExpression="0" blendMode="0" fontSizeMapUnitScale="0,0,0,0,0,0" fontSize="8" fieldName="CLASSIFICA" namedStyle="Bold" fontWordSpacing="0"/>
           <text-format placeDirectionSymbol="0" multilineAlign="0" rightDirectionSymbol=">" multilineHeight="1" plussign="0" addDirectionSymbol="0" leftDirectionSymbol="&lt;" formatNumbers="0" decimals="3" wrapChar=" " reverseDirectionSymbol="0"/>
@@ -196,7 +196,7 @@
           <data-defined/>
         </settings>
       </rule>
-      <rule description="Museum" filter="&quot;CLASSIFICA&quot; = 'Museum'" key="{493e636d-9848-49ae-bd23-5a8b115d440f}">
+      <rule description="Museum" filter="&quot;CLASSIFICA&quot; = 'Museum'" key="{78a88813-283a-4a4e-9f95-58223328ae30}">
         <settings>
           <text-style fontItalic="0" fontFamily="Arial" fontLetterSpacing="0" fontUnderline="0" fontWeight="75" fontStrikeout="0" textTransp="0" previewBkgrdColor="#ffffff" fontCapitals="0" textColor="150,150,150,255" fontSizeInMapUnits="0" isExpression="0" blendMode="0" fontSizeMapUnitScale="0,0,0,0,0,0" fontSize="8" fieldName="CLASSIFICA" namedStyle="Bold" fontWordSpacing="0"/>
           <text-format placeDirectionSymbol="0" multilineAlign="0" rightDirectionSymbol=">" multilineHeight="1" plussign="0" addDirectionSymbol="0" leftDirectionSymbol="&lt;" formatNumbers="0" decimals="3" wrapChar=" " reverseDirectionSymbol="0"/>
@@ -208,7 +208,7 @@
           <data-defined/>
         </settings>
       </rule>
-      <rule description="Art Gallery" filter="&quot;CLASSIFICA&quot; = 'Art Gallery'" key="{39df320a-6ff5-4c4a-8ed9-59e9297ec3c7}">
+      <rule description="Art Gallery" filter="&quot;CLASSIFICA&quot; = 'Art Gallery'" key="{618ffddf-7d27-4038-994d-9f8a6b329bb9}">
         <settings>
           <text-style fontItalic="0" fontFamily="Arial" fontLetterSpacing="0" fontUnderline="0" fontWeight="75" fontStrikeout="0" textTransp="0" previewBkgrdColor="#ffffff" fontCapitals="0" textColor="150,150,150,255" fontSizeInMapUnits="0" isExpression="0" blendMode="0" fontSizeMapUnitScale="0,0,0,0,0,0" fontSize="8" fieldName="CLASSIFICA" namedStyle="Bold" fontWordSpacing="0"/>
           <text-format placeDirectionSymbol="0" multilineAlign="0" rightDirectionSymbol=">" multilineHeight="1" plussign="0" addDirectionSymbol="0" leftDirectionSymbol="&lt;" formatNumbers="0" decimals="3" wrapChar=" " reverseDirectionSymbol="0"/>
@@ -220,7 +220,7 @@
           <data-defined/>
         </settings>
       </rule>
-      <rule description="Library" filter="&quot;CLASSIFICA&quot; = 'Library'" key="{f7d2bd73-a5a9-4728-8437-4ee984dc344d}">
+      <rule description="Library" filter="&quot;CLASSIFICA&quot; = 'Library'" key="{3f8d7cb0-1012-4c59-b8eb-7bc27983242d}">
         <settings>
           <text-style fontItalic="0" fontFamily="Arial" fontLetterSpacing="0" fontUnderline="0" fontWeight="75" fontStrikeout="0" textTransp="0" previewBkgrdColor="#ffffff" fontCapitals="0" textColor="150,150,150,255" fontSizeInMapUnits="0" isExpression="0" blendMode="0" fontSizeMapUnitScale="0,0,0,0,0,0" fontSize="8" fieldName="CLASSIFICA" namedStyle="Bold" fontWordSpacing="0"/>
           <text-format placeDirectionSymbol="0" multilineAlign="0" rightDirectionSymbol=">" multilineHeight="1" plussign="0" addDirectionSymbol="0" leftDirectionSymbol="&lt;" formatNumbers="0" decimals="3" wrapChar=" " reverseDirectionSymbol="0"/>
@@ -232,7 +232,7 @@
           <data-defined/>
         </settings>
       </rule>
-      <rule description="Place of Worship" filter="&quot;CLASSIFICA&quot; = 'Place of Worship'" key="{5384ceed-9f5c-43b8-bc34-586db69a09c7}">
+      <rule description="Place of Worship" filter="&quot;CLASSIFICA&quot; = 'Place of Worship'" key="{8a495f9c-9e0f-4f19-b7e3-41bfeacd5231}">
         <settings>
           <text-style fontItalic="0" fontFamily="Arial" fontLetterSpacing="0" fontUnderline="0" fontWeight="75" fontStrikeout="0" textTransp="0" previewBkgrdColor="#ffffff" fontCapitals="0" textColor="150,150,150,255" fontSizeInMapUnits="0" isExpression="1" blendMode="0" fontSizeMapUnitScale="0,0,0,0,0,0" fontSize="8" fieldName="'PW'" namedStyle="Bold" fontWordSpacing="0"/>
           <text-format placeDirectionSymbol="0" multilineAlign="0" rightDirectionSymbol=">" multilineHeight="1" plussign="0" addDirectionSymbol="0" leftDirectionSymbol="&lt;" formatNumbers="0" decimals="3" wrapChar=" " reverseDirectionSymbol="0"/>
@@ -244,7 +244,7 @@
           <data-defined/>
         </settings>
       </rule>
-      <rule description="Post Office" filter="&quot;CLASSIFICA&quot; = 'Post Office'" key="{ba2b4c5c-d3e4-47d2-b85d-ffd90f87a198}">
+      <rule description="Post Office" filter="&quot;CLASSIFICA&quot; = 'Post Office'" key="{8eee78de-4dfa-4a46-b189-b33ef8048434}">
         <settings>
           <text-style fontItalic="0" fontFamily="Arial" fontLetterSpacing="0" fontUnderline="0" fontWeight="75" fontStrikeout="0" textTransp="0" previewBkgrdColor="#ffffff" fontCapitals="0" textColor="150,150,150,255" fontSizeInMapUnits="0" isExpression="1" blendMode="0" fontSizeMapUnitScale="0,0,0,0,0,0" fontSize="8" fieldName="'PO'" namedStyle="Bold" fontWordSpacing="0"/>
           <text-format placeDirectionSymbol="0" multilineAlign="0" rightDirectionSymbol=">" multilineHeight="1" plussign="0" addDirectionSymbol="0" leftDirectionSymbol="&lt;" formatNumbers="0" decimals="3" wrapChar=" " reverseDirectionSymbol="0"/>
@@ -256,7 +256,7 @@
           <data-defined/>
         </settings>
       </rule>
-      <rule description="Sports and Leisure Centre" filter="&quot;CLASSIFICA&quot; = 'Sports And Leisure Centre'" key="{0d157f54-6838-4cc4-aa37-6f4b8df4bcc4}">
+      <rule description="Sports and Leisure Centre" filter="&quot;CLASSIFICA&quot; = 'Sports And Leisure Centre'" key="{387f1a70-c6bf-4c46-9c96-fbb4a06a492e}">
         <settings>
           <text-style fontItalic="0" fontFamily="Arial" fontLetterSpacing="0" fontUnderline="0" fontWeight="75" fontStrikeout="0" textTransp="0" previewBkgrdColor="#ffffff" fontCapitals="0" textColor="150,150,150,255" fontSizeInMapUnits="0" isExpression="1" blendMode="0" fontSizeMapUnitScale="0,0,0,0,0,0" fontSize="8" fieldName="'Sports/Leisure Centre'" namedStyle="Bold" fontWordSpacing="0"/>
           <text-format placeDirectionSymbol="0" multilineAlign="0" rightDirectionSymbol=">" multilineHeight="1" plussign="0" addDirectionSymbol="0" leftDirectionSymbol="&lt;" formatNumbers="0" decimals="3" wrapChar=" " reverseDirectionSymbol="0"/>
@@ -268,7 +268,7 @@
           <data-defined/>
         </settings>
       </rule>
-      <rule description="Tourist Information" filter="&quot;CLASSIFICA&quot; = 'Tourist Information'" key="{09161584-c7bd-450e-a26a-728d949efd6a}">
+      <rule description="Tourist Information" filter="&quot;CLASSIFICA&quot; = 'Tourist Information'" key="{3a813ff4-7bb9-4c67-8aca-6676e54fff5b}">
         <settings>
           <text-style fontItalic="0" fontFamily="Arial" fontLetterSpacing="0" fontUnderline="0" fontWeight="75" fontStrikeout="0" textTransp="0" previewBkgrdColor="#ffffff" fontCapitals="0" textColor="150,150,150,255" fontSizeInMapUnits="0" isExpression="1" blendMode="0" fontSizeMapUnitScale="0,0,0,0,0,0" fontSize="8" fieldName="'Tourist Info'" namedStyle="Bold" fontWordSpacing="0"/>
           <text-format placeDirectionSymbol="0" multilineAlign="0" rightDirectionSymbol=">" multilineHeight="1" plussign="0" addDirectionSymbol="0" leftDirectionSymbol="&lt;" formatNumbers="0" decimals="3" wrapChar=" " reverseDirectionSymbol="0"/>
@@ -280,7 +280,7 @@
           <data-defined/>
         </settings>
       </rule>
-      <rule description="Education Facility" filter="&quot;BUILDGTHEM&quot; = 'Education'" active="0" key="{c99a4f2a-4df4-41a0-9595-f72bf629335f}">
+      <rule description="Education Facility" filter="&quot;BUILDGTHEM&quot; = 'Education'" active="0" key="{40fcc300-c17b-405a-8b72-e0ae6fc0e26b}">
         <settings>
           <text-style fontItalic="0" fontFamily="Arial" fontLetterSpacing="0" fontUnderline="0" fontWeight="75" fontStrikeout="0" textTransp="0" previewBkgrdColor="#ffffff" fontCapitals="0" textColor="150,150,150,255" fontSizeInMapUnits="0" isExpression="1" blendMode="0" fontSizeMapUnitScale="0,0,0,0,0,0" fontSize="8" fieldName="'Education Facility'" namedStyle="Bold" fontWordSpacing="0"/>
           <text-format placeDirectionSymbol="0" multilineAlign="0" rightDirectionSymbol=">" multilineHeight="1" plussign="0" addDirectionSymbol="0" leftDirectionSymbol="&lt;" formatNumbers="0" decimals="3" wrapChar=" " reverseDirectionSymbol="0"/>
@@ -292,7 +292,7 @@
           <data-defined/>
         </settings>
       </rule>
-      <rule description="Hospice" filter="&quot;CLASSIFICA&quot; = 'Hospice'" key="{7b43c443-5c08-4b3c-9bdc-227e38d70cc6}">
+      <rule description="Hospice" filter="&quot;CLASSIFICA&quot; = 'Hospice'" key="{2a6b4b1d-30be-4fa2-bdd6-035761cfb31c}">
         <settings>
           <text-style fontItalic="0" fontFamily="Arial" fontLetterSpacing="0" fontUnderline="0" fontWeight="75" fontStrikeout="0" textTransp="0" previewBkgrdColor="#ffffff" fontCapitals="0" textColor="150,150,150,255" fontSizeInMapUnits="0" isExpression="0" blendMode="0" fontSizeMapUnitScale="0,0,0,0,0,0" fontSize="8" fieldName="CLASSIFICA" namedStyle="Bold" fontWordSpacing="0"/>
           <text-format placeDirectionSymbol="0" multilineAlign="0" rightDirectionSymbol=">" multilineHeight="1" plussign="0" addDirectionSymbol="0" leftDirectionSymbol="&lt;" formatNumbers="0" decimals="3" wrapChar=" " reverseDirectionSymbol="0"/>
@@ -498,6 +498,7 @@
   <SingleCategoryDiagramRenderer diagramType="Histogram" sizeLegend="0" attributeLegend="1">
     <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" sizeScale="0,0,0,0,0,0" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" lineSizeScale="0,0,0,0,0,0" sizeType="MM" lineSizeType="MM" minScaleDenominator="100000">
       <fontProperties description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" style=""/>
+      <attribute field="" color="#000000" label=""/>
     </DiagramCategory>
     <symbol alpha="1" clip_to_extent="1" type="marker" name="sizeSymbol">
       <layer pass="0" class="SimpleMarker" locked="0">
@@ -540,7 +541,7 @@
   <editform>.</editform>
   <editforminit/>
   <editforminitcodesource>0</editforminitcodesource>
-  <editforminitfilepath></editforminitfilepath>
+  <editforminitfilepath>.</editforminitfilepath>
   <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
 """
 QGIS forms can have a Python function that is called when the form is
