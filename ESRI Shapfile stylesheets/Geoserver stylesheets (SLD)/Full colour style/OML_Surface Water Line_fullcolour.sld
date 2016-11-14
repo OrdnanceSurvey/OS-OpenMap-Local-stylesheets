@@ -3,41 +3,31 @@
 xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.0.0/StyledLayerDescriptor.xsd">
   <NamedLayer>
-    <Name>OS Open Map - Local&#174; Glasshouse (Backdrop style)</Name>
+    <Name>OS Open Map - Local&#174; Surface Water Line (Full colour style)</Name>
     <UserStyle>
-      <Title>Product SLD - October 2015</Title>
+      <Title>Product SLD - November 2016</Title>
       <Abstract>OS Open Map - Local&#174; Local. Ordnance Survey. &#169; Crown copyright and database rights 2016.</Abstract>
-           
-        <!--  Glasshouse  -->
+
+  <!-- Surface Water Line -->
         
         <FeatureTypeStyle>
           <Rule>
-          <Name>Glasshouse</Name>
+          <Name>Surface Water Line</Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>FEATCODE</ogc:PropertyName>
-              <ogc:Literal>15016</ogc:Literal>
+              <ogc:Literal>15600</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <MinScaleDenominator>1000</MinScaleDenominator>
           <MaxScaleDenominator>15000</MaxScaleDenominator>
-          <PolygonSymbolizer>
-            <Fill>
-              <GraphicFill>
-                <Graphic>
-                  <Mark>
-                    <WellKnownName>shape://times</WellKnownName>
-                    <Stroke>
-                      <CssParameter name="stroke">#96AB96</CssParameter>
-                      <CssParameter name="stroke-width">0.5</CssParameter>
-                    </Stroke>
-                  </Mark>
-                  <Size>10</Size>
-                </Graphic>
-              </GraphicFill>
-            </Fill>
-          </PolygonSymbolizer>      
-        </Rule> 
+          <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <Stroke>
+              <CssParameter name="stroke">#00A9CA</CssParameter>
+              <CssParameter name="stroke-width">0.75</CssParameter>
+            </Stroke>
+          </LineSymbolizer>
+        </Rule>
       </FeatureTypeStyle>
     </UserStyle>
   </NamedLayer>

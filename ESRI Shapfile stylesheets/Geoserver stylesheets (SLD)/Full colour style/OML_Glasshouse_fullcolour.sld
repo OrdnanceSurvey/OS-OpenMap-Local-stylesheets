@@ -3,9 +3,9 @@
 xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.0.0/StyledLayerDescriptor.xsd">
   <NamedLayer>
-    <Name>OS Open Map - Local&#174; Glasshouse (Backdrop style)</Name>
+    <Name>OS Open Map - Local&#174; Glasshouse (Full colour style)</Name>
     <UserStyle>
-      <Title>Product SLD - October 2015</Title>
+      <Title>Product SLD - November 2016</Title>
       <Abstract>OS Open Map - Local&#174; Local. Ordnance Survey. &#169; Crown copyright and database rights 2016.</Abstract>
            
         <!--  Glasshouse  -->
@@ -28,7 +28,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
                   <Mark>
                     <WellKnownName>shape://times</WellKnownName>
                     <Stroke>
-                      <CssParameter name="stroke">#96AB96</CssParameter>
+                      <CssParameter name="stroke">#799F79</CssParameter>
                       <CssParameter name="stroke-width">0.5</CssParameter>
                     </Stroke>
                   </Mark>
