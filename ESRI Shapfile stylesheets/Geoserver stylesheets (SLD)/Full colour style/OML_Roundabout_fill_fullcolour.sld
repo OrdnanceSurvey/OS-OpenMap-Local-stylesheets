@@ -34,9 +34,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </PointSymbolizer>
         </Rule>
       </FeatureTypeStyle>           
-    </UserStyle>
-  </NamedLayer>
-</StyledLayerDescriptor>
+
 
 
  <!-- Minor Roundabout -->

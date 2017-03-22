@@ -16,11 +16,15 @@ These are SLD files for OS Open Map-Local in SHP format for use in GeoServer.
 
 **6.**  To create OS Open Map-Local in GeoServer you will need to create a Layer Group. If using the GUI then navigate to Layer Groups > Add new layer group > Add Layer and choose each layer in turn to create the following layer order:
 
-  ![Screenshot](https://raw.githubusercontent.com/OrdnanceSurvey/OS-OpenMap-Local-stylesheets/master/ESRI%20Shapfile%20stylesheets/Geoserver%20stylesheets%20%28SLD%29/Backdrop%20style/images/OML_layer_order.png "Recommended layer order for OS Open Map-Local")
+  ![Screenshot](https://raw.githubusercontent.com/OrdnanceSurvey/OS-OpenMap-Local-stylesheets/master/ESRI%20Shapfile%20stylesheets/GeoServer%20stylesheets%20%28SLD%29/Backdrop%20style/images/OML_layer_order.png "Recommended layer order for OS Open Map-Local")
 
 The name of this Layer Group is the ‘layer’ your web map service (WMS) will need to call.
 Although every feature is styled, for use as a general contextual map we have commented some of them out by default.
 The scale denominators have been set to allow viewing between **1:1,000** and **1:15,000**, although this will vary slightly by resolution.
+
+Your map should now look similar to this: 
+
+  ![Screenshot](https://github.com/OrdnanceSurvey/OS-OpenMap-Local-stylesheets/blob/master/ESRI%20Shapfile%20stylesheets/GeoServer%20stylesheets%20(QML)/Full%20colour%20style/images/OML_FC_screenshot.png "Screenshot of OS OpenMap - Local")
 
 ##Compatibility notes
 

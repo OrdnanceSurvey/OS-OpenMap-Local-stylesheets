@@ -3,9 +3,9 @@
 xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.0.0/StyledLayerDescriptor.xsd">
   <NamedLayer>
-    <Name>OS Open Map - Local&#174; Important Building (Backdrop style)</Name>
+    <Name>OS Open Map - Local&#174; Important Buildings (Full colour style)</Name>
     <UserStyle>
-      <Title>Product SLD - October 2015</Title>
+      <Title>Product SLD - November 2016</Title>
       <Abstract>OS Open Map - Local&#174; Local. Ordnance Survey. &#169; Crown copyright and database rights 2016.</Abstract>
       
         <!--  Important Building  -->
@@ -35,27 +35,27 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
               <ogc:PropertyName>FEATCODE</ogc:PropertyName>
               <ogc:Literal>15022</ogc:Literal>
             </ogc:PropertyIsEqualTo>
-   <ogc:PropertyIsEqualTo>
+            <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>FEATCODE</ogc:PropertyName>
               <ogc:Literal>15023</ogc:Literal>
             </ogc:PropertyIsEqualTo>
-   <ogc:PropertyIsEqualTo>
+            <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>FEATCODE</ogc:PropertyName>
               <ogc:Literal>15024</ogc:Literal>
             </ogc:PropertyIsEqualTo>
-   <ogc:PropertyIsEqualTo>
+            <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>FEATCODE</ogc:PropertyName>
               <ogc:Literal>15025</ogc:Literal>
             </ogc:PropertyIsEqualTo>
-   <ogc:PropertyIsEqualTo>
+            <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>FEATCODE</ogc:PropertyName>
               <ogc:Literal>15026</ogc:Literal>
             </ogc:PropertyIsEqualTo>
-   <ogc:PropertyIsEqualTo>
+            <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>FEATCODE</ogc:PropertyName>
               <ogc:Literal>15027</ogc:Literal>
             </ogc:PropertyIsEqualTo>
-   <ogc:PropertyIsEqualTo>
+            <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>FEATCODE</ogc:PropertyName>
               <ogc:Literal>15028</ogc:Literal>
             </ogc:PropertyIsEqualTo>
@@ -67,637 +67,20 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <Fill>
               <CssParameter name="fill">#F2E6D4</CssParameter>
             </Fill>
-  	<Stroke>
-           <CssParameter name="stroke">#8F887F</CssParameter>
-           <CssParameter name="stroke-width">1</CssParameter>
-         </Stroke>
+  	        <Stroke>
+              <CssParameter name="stroke">#8F887F</CssParameter>
+              <CssParameter name="stroke-width">1</CssParameter>
+            </Stroke>
           </PolygonSymbolizer>             
-      </Rule>
-
-<!-- Air Transport Label -->
-      
-      <FeatureTypeStyle>
-           <Rule>
-          <Name>Air Transport</Name>
-          <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>BUILDGTHEM</ogc:PropertyName>
-              <ogc:Literal>Air Transport</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <MinScaleDenominator>0</MinScaleDenominator>
-          <MaxScaleDenominator>15000</MaxScaleDenominator>
-          <TextSymbolizer>
-            <Label>
-<ogc:PropertyName>DISTNAME</ogc:PropertyName>
-              <ogc:Literal></ogc:Literal>
-            </Label>
-            <Font>
-              <CssParameter name="font-family">Arial</CssParameter>
-              <CssParameter name="font-size">35</CssParameter>
-              <CssParameter name="font-weight">bold</CssParameter>
-            </Font>
-            <LabelPlacement>
-              <PointPlacement>
-                <AnchorPoint>
-                  <AnchorPointX>0</AnchorPointX>
-                  <AnchorPointY>0.5</AnchorPointY>
-                </AnchorPoint>
-                <Displacement>
-                  <DisplacementX>9</DisplacementX>
-                  <DisplacementY>0</DisplacementY>
-                </Displacement>
-              </PointPlacement>
-            </LabelPlacement>
-            <Halo>
-              <Radius>2.5</Radius>
-              <Fill>
-                <CssParameter name="fill">#FFFFFF</CssParameter>
-                <CssParameter name="opacity">0.75</CssParameter>
-              </Fill>
-            </Halo>
-            <Fill>
-              <CssParameter name="fill">#737373</CssParameter>
-            </Fill>
-            <Priority>1000</Priority>
-            <VendorOption name="spaceAround">2</VendorOption>
-            <VendorOption name="autoWrap">24</VendorOption>
-          </TextSymbolizer>
         </Rule>
+      </FeatureTypeStyle>
 
-<!-- Medical Care Label -->
-      
-      <FeatureTypeStyle>
-           <Rule>
-          <Name>Medical Care</Name>
-          <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>CLASSIFICA</ogc:PropertyName>
-              <ogc:Literal>Medical Care Accommodation</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <MinScaleDenominator>0</MinScaleDenominator>
-          <MaxScaleDenominator>15000</MaxScaleDenominator>
-          <TextSymbolizer>
-            <Label>
-<ogc:PropertyName>BUILDGTHEM</ogc:PropertyName>
-              <ogc:Literal></ogc:Literal>
-            </Label>
-            <Font>
-              <CssParameter name="font-family">Arial</CssParameter>
-              <CssParameter name="font-size">35</CssParameter>
-              <CssParameter name="font-weight">bold</CssParameter>
-            </Font>
-            <LabelPlacement>
-              <PointPlacement>
-                <AnchorPoint>
-                  <AnchorPointX>0</AnchorPointX>
-                  <AnchorPointY>0.5</AnchorPointY>
-                </AnchorPoint>
-                <Displacement>
-                  <DisplacementX>9</DisplacementX>
-                  <DisplacementY>0</DisplacementY>
-                </Displacement>
-              </PointPlacement>
-            </LabelPlacement>
-            <Halo>
-              <Radius>2.5</Radius>
-              <Fill>
-                <CssParameter name="fill">#FFFFFF</CssParameter>
-                <CssParameter name="opacity">0.75</CssParameter>
-              </Fill>
-            </Halo>
-            <Fill>
-              <CssParameter name="fill">#737373</CssParameter>
-            </Fill>
-            <Priority>1000</Priority>
-            <VendorOption name="spaceAround">2</VendorOption>
-            <VendorOption name="autoWrap">24</VendorOption>
-          </TextSymbolizer>
-        </Rule>
-
-<!-- Hospice Label -->
-      
-      <FeatureTypeStyle>
-           <Rule>
-          <Name>Hospice</Name>
-          <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>CLASSIFICA</ogc:PropertyName>
-              <ogc:Literal>Hospice</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <MinScaleDenominator>0</MinScaleDenominator>
-          <MaxScaleDenominator>15000</MaxScaleDenominator>
-          <TextSymbolizer>
-            <Label>
-<ogc:PropertyName>CLASSIFICA</ogc:PropertyName>
-              <ogc:Literal></ogc:Literal>
-            </Label>
-            <Font>
-              <CssParameter name="font-family">Arial</CssParameter>
-              <CssParameter name="font-size">35</CssParameter>
-              <CssParameter name="font-weight">bold</CssParameter>
-            </Font>
-            <LabelPlacement>
-              <PointPlacement>
-                <AnchorPoint>
-                  <AnchorPointX>0</AnchorPointX>
-                  <AnchorPointY>0.5</AnchorPointY>
-                </AnchorPoint>
-                <Displacement>
-                  <DisplacementX>9</DisplacementX>
-                  <DisplacementY>0</DisplacementY>
-                </Displacement>
-              </PointPlacement>
-            </LabelPlacement>
-            <Halo>
-              <Radius>2.5</Radius>
-              <Fill>
-                <CssParameter name="fill">#FFFFFF</CssParameter>
-                <CssParameter name="opacity">0.75</CssParameter>
-              </Fill>
-            </Halo>
-            <Fill>
-              <CssParameter name="fill">#737373</CssParameter>
-            </Fill>
-            <Priority>1000</Priority>
-            <VendorOption name="spaceAround">2</VendorOption>
-            <VendorOption name="autoWrap">24</VendorOption>
-          </TextSymbolizer>
-        </Rule>
-
-<!-- Services Label -->
-      
-      <FeatureTypeStyle>
-           <Rule>
-          <Name>Services</Name>
-          <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>BUILDTHEMG</ogc:PropertyName>
-              <ogc:Literal>Road Transport</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <MinScaleDenominator>0</MinScaleDenominator>
-          <MaxScaleDenominator>15000</MaxScaleDenominator>
-          <TextSymbolizer>
-            <Label>
-<ogc:PropertyName></ogc:PropertyName>
-              <ogc:Literal>Services</ogc:Literal>
-            </Label>
-            <Font>
-              <CssParameter name="font-family">Arial</CssParameter>
-              <CssParameter name="font-size">35</CssParameter>
-              <CssParameter name="font-weight">bold</CssParameter>
-            </Font>
-            <LabelPlacement>
-              <PointPlacement>
-                <AnchorPoint>
-                  <AnchorPointX>0</AnchorPointX>
-                  <AnchorPointY>0.5</AnchorPointY>
-                </AnchorPoint>
-                <Displacement>
-                  <DisplacementX>9</DisplacementX>
-                  <DisplacementY>0</DisplacementY>
-                </Displacement>
-              </PointPlacement>
-            </LabelPlacement>
-            <Halo>
-              <Radius>2.5</Radius>
-              <Fill>
-                <CssParameter name="fill">#FFFFFF</CssParameter>
-                <CssParameter name="opacity">0.75</CssParameter>
-              </Fill>
-            </Halo>
-            <Fill>
-              <CssParameter name="fill">#737373</CssParameter>
-            </Fill>
-            <Priority>1000</Priority>
-            <VendorOption name="spaceAround">2</VendorOption>
-            <VendorOption name="autoWrap">24</VendorOption>
-          </TextSymbolizer>
-        </Rule>
-
-<!-- Port Label -->
-      
-      <FeatureTypeStyle>
-           <Rule>
-          <Name>Port</Name>
-          <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>CLASSIFICA</ogc:PropertyName>
-              <ogc:Literal>Port Consisting of Docks and Nautical Berthing</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <MinScaleDenominator>0</MinScaleDenominator>
-          <MaxScaleDenominator>15000</MaxScaleDenominator>
-          <TextSymbolizer>
-            <Label>
-<ogc:PropertyName></ogc:PropertyName>
-              <ogc:Literal>Port</ogc:Literal>
-            </Label>
-            <Font>
-              <CssParameter name="font-family">Arial</CssParameter>
-              <CssParameter name="font-size">35</CssParameter>
-              <CssParameter name="font-weight">bold</CssParameter>
-            </Font>
-            <LabelPlacement>
-              <PointPlacement>
-                <AnchorPoint>
-                  <AnchorPointX>0</AnchorPointX>
-                  <AnchorPointY>0.5</AnchorPointY>
-                </AnchorPoint>
-                <Displacement>
-                  <DisplacementX>9</DisplacementX>
-                  <DisplacementY>0</DisplacementY>
-                </Displacement>
-              </PointPlacement>
-            </LabelPlacement>
-            <Halo>
-              <Radius>2.5</Radius>
-              <Fill>
-                <CssParameter name="fill">#FFFFFF</CssParameter>
-                <CssParameter name="opacity">0.75</CssParameter>
-              </Fill>
-            </Halo>
-            <Fill>
-              <CssParameter name="fill">#737373</CssParameter>
-            </Fill>
-            <Priority>1000</Priority>
-            <VendorOption name="spaceAround">2</VendorOption>
-            <VendorOption name="autoWrap">24</VendorOption>
-          </TextSymbolizer>
-        </Rule>
-
-
-<!-- Bus Station Label -->
-      
-      <FeatureTypeStyle>
-           <Rule>
-          <Name>Bus Station</Name>
-          <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>CLASSIFICA</ogc:PropertyName>
-              <ogc:Literal>Bus Station</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <MinScaleDenominator>0</MinScaleDenominator>
-          <MaxScaleDenominator>15000</MaxScaleDenominator>
-          <TextSymbolizer>
-            <Label>
-<ogc:PropertyName>CLASSIFICA</ogc:PropertyName>
-              <ogc:Literal></ogc:Literal>
-            </Label>
-            <Font>
-              <CssParameter name="font-family">Arial</CssParameter>
-              <CssParameter name="font-size">35</CssParameter>
-              <CssParameter name="font-weight">bold</CssParameter>
-            </Font>
-            <LabelPlacement>
-              <PointPlacement>
-                <AnchorPoint>
-                  <AnchorPointX>0</AnchorPointX>
-                  <AnchorPointY>0.5</AnchorPointY>
-                </AnchorPoint>
-                <Displacement>
-                  <DisplacementX>9</DisplacementX>
-                  <DisplacementY>0</DisplacementY>
-                </Displacement>
-              </PointPlacement>
-            </LabelPlacement>
-            <Halo>
-              <Radius>2.5</Radius>
-              <Fill>
-                <CssParameter name="fill">#FFFFFF</CssParameter>
-                <CssParameter name="opacity">0.75</CssParameter>
-              </Fill>
-            </Halo>
-            <Fill>
-              <CssParameter name="fill">#737373</CssParameter>
-            </Fill>
-            <Priority>1000</Priority>
-            <VendorOption name="spaceAround">2</VendorOption>
-            <VendorOption name="autoWrap">24</VendorOption>
-          </TextSymbolizer>
-        </Rule>
-
-
-<!-- Hospital Label -->
-      
-      <FeatureTypeStyle>
-           <Rule>
-          <Name>Hospital</Name>
-          <ogc:Filter>
-<ogc:Or>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>CLASSIFICA</ogc:PropertyName>
-              <ogc:Literal>Hospital,Medical Care Accommodation</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>CLASSIFICA</ogc:PropertyName>
-              <ogc:Literal>Hospital</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-</ogc:Or>
-          </ogc:Filter>
-          <MinScaleDenominator>0</MinScaleDenominator>
-          <MaxScaleDenominator>15000</MaxScaleDenominator>
-          <TextSymbolizer>
-            <Label>
-<ogc:PropertyName></ogc:PropertyName>
-              <ogc:Literal>Hospital</ogc:Literal>
-            </Label>
-            <Font>
-              <CssParameter name="font-family">Arial</CssParameter>
-              <CssParameter name="font-size">35</CssParameter>
-              <CssParameter name="font-weight">bold</CssParameter>
-            </Font>
-            <LabelPlacement>
-              <PointPlacement>
-                <AnchorPoint>
-                  <AnchorPointX>0</AnchorPointX>
-                  <AnchorPointY>0.5</AnchorPointY>
-                </AnchorPoint>
-                <Displacement>
-                  <DisplacementX>9</DisplacementX>
-                  <DisplacementY>0</DisplacementY>
-                </Displacement>
-              </PointPlacement>
-            </LabelPlacement>
-            <Halo>
-              <Radius>2.5</Radius>
-              <Fill>
-                <CssParameter name="fill">#FFFFFF</CssParameter>
-                <CssParameter name="opacity">0.75</CssParameter>
-              </Fill>
-            </Halo>
-            <Fill>
-              <CssParameter name="fill">#737373</CssParameter>
-            </Fill>
-            <Priority>1000</Priority>
-            <VendorOption name="spaceAround">2</VendorOption>
-            <VendorOption name="autoWrap">24</VendorOption>
-          </TextSymbolizer>
-        </Rule>
-
-<!-- Ferry Terminal (V) Label -->
-      
-      <FeatureTypeStyle>
-           <Rule>
-          <Name>Ferry terminal (V)</Name>
-          <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>CLASSIFICA</ogc:PropertyName>
-              <ogc:Literal>Vehicular Ferry Terminal</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <MinScaleDenominator>0</MinScaleDenominator>
-          <MaxScaleDenominator>15000</MaxScaleDenominator>
-          <TextSymbolizer>
-            <Label>
-<ogc:PropertyName></ogc:PropertyName>
-              <ogc:Literal>Ferry Terminal (V)</ogc:Literal>
-            </Label>
-            <Font>
-              <CssParameter name="font-family">Arial</CssParameter>
-              <CssParameter name="font-size">35</CssParameter>
-              <CssParameter name="font-weight">bold</CssParameter>
-            </Font>
-            <LabelPlacement>
-              <PointPlacement>
-                <AnchorPoint>
-                  <AnchorPointX>0</AnchorPointX>
-                  <AnchorPointY>0.5</AnchorPointY>
-                </AnchorPoint>
-                <Displacement>
-                  <DisplacementX>9</DisplacementX>
-                  <DisplacementY>0</DisplacementY>
-                </Displacement>
-              </PointPlacement>
-            </LabelPlacement>
-            <Halo>
-              <Radius>2.5</Radius>
-              <Fill>
-                <CssParameter name="fill">#FFFFFF</CssParameter>
-                <CssParameter name="opacity">0.75</CssParameter>
-              </Fill>
-            </Halo>
-            <Fill>
-              <CssParameter name="fill">#737373</CssParameter>
-            </Fill>
-            <Priority>1000</Priority>
-            <VendorOption name="spaceAround">2</VendorOption>
-            <VendorOption name="autoWrap">24</VendorOption>
-          </TextSymbolizer>
-        </Rule>
-
-<!-- Ferry Terminal (P) Label -->
-      
-      <FeatureTypeStyle>
-           <Rule>
-          <Name>Ferry terminal (P)</Name>
-          <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>CLASSIFICA</ogc:PropertyName>
-              <ogc:Literal>Passenger Ferry Terminal</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <MinScaleDenominator>0</MinScaleDenominator>
-          <MaxScaleDenominator>15000</MaxScaleDenominator>
-          <TextSymbolizer>
-            <Label>
-<ogc:PropertyName></ogc:PropertyName>
-              <ogc:Literal>Ferry Terminal (P)</ogc:Literal>
-            </Label>
-            <Font>
-              <CssParameter name="font-family">Arial</CssParameter>
-              <CssParameter name="font-size">35</CssParameter>
-              <CssParameter name="font-weight">bold</CssParameter>
-            </Font>
-            <LabelPlacement>
-              <PointPlacement>
-                <AnchorPoint>
-                  <AnchorPointX>0</AnchorPointX>
-                  <AnchorPointY>0.5</AnchorPointY>
-                </AnchorPoint>
-                <Displacement>
-                  <DisplacementX>9</DisplacementX>
-                  <DisplacementY>0</DisplacementY>
-                </Displacement>
-              </PointPlacement>
-            </LabelPlacement>
-            <Halo>
-              <Radius>2.5</Radius>
-              <Fill>
-                <CssParameter name="fill">#FFFFFF</CssParameter>
-                <CssParameter name="opacity">0.75</CssParameter>
-              </Fill>
-            </Halo>
-            <Fill>
-              <CssParameter name="fill">#737373</CssParameter>
-            </Fill>
-            <Priority>1000</Priority>
-            <VendorOption name="spaceAround">2</VendorOption>
-            <VendorOption name="autoWrap">24</VendorOption>
-          </TextSymbolizer>
-        </Rule>
-
-<!-- Coach Station Label -->
-      
-      <FeatureTypeStyle>
-           <Rule>
-          <Name>Coach Station</Name>
-          <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>CLASSIFICA</ogc:PropertyName>
-              <ogc:Literal>Coach Station</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <MinScaleDenominator>0</MinScaleDenominator>
-          <MaxScaleDenominator>15000</MaxScaleDenominator>
-          <TextSymbolizer>
-            <Label>
-<ogc:PropertyName>CLASSIFICA</ogc:PropertyName>
-              <ogc:Literal></ogc:Literal>
-            </Label>
-            <Font>
-              <CssParameter name="font-family">Arial</CssParameter>
-              <CssParameter name="font-size">35</CssParameter>
-              <CssParameter name="font-weight">bold</CssParameter>
-            </Font>
-            <LabelPlacement>
-              <PointPlacement>
-                <AnchorPoint>
-                  <AnchorPointX>0</AnchorPointX>
-                  <AnchorPointY>0.5</AnchorPointY>
-                </AnchorPoint>
-                <Displacement>
-                  <DisplacementX>9</DisplacementX>
-                  <DisplacementY>0</DisplacementY>
-                </Displacement>
-              </PointPlacement>
-            </LabelPlacement>
-            <Halo>
-              <Radius>2.5</Radius>
-              <Fill>
-                <CssParameter name="fill">#FFFFFF</CssParameter>
-                <CssParameter name="opacity">0.75</CssParameter>
-              </Fill>
-            </Halo>
-            <Fill>
-              <CssParameter name="fill">#737373</CssParameter>
-            </Fill>
-            <Priority>1000</Priority>
-            <VendorOption name="spaceAround">2</VendorOption>
-            <VendorOption name="autoWrap">24</VendorOption>
-          </TextSymbolizer>
-        </Rule>
-
-<!-- Bus/Coach Station Label -->
-      
-      <FeatureTypeStyle>
-           <Rule>
-          <Name>Bus/Coach Station</Name>
-          <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>CLASSIFICA</ogc:PropertyName>
-              <ogc:Literal>Bus Station,Coach Station</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <MinScaleDenominator>0</MinScaleDenominator>
-          <MaxScaleDenominator>15000</MaxScaleDenominator>
-          <TextSymbolizer>
-            <Label>
-<ogc:PropertyName></ogc:PropertyName>
-              <ogc:Literal>Bus/Coach Station</ogc:Literal>
-            </Label>
-            <Font>
-              <CssParameter name="font-family">Arial</CssParameter>
-              <CssParameter name="font-size">35</CssParameter>
-              <CssParameter name="font-weight">bold</CssParameter>
-            </Font>
-            <LabelPlacement>
-              <PointPlacement>
-                <AnchorPoint>
-                  <AnchorPointX>0</AnchorPointX>
-                  <AnchorPointY>0.5</AnchorPointY>
-                </AnchorPoint>
-                <Displacement>
-                  <DisplacementX>9</DisplacementX>
-                  <DisplacementY>0</DisplacementY>
-                </Displacement>
-              </PointPlacement>
-            </LabelPlacement>
-            <Halo>
-              <Radius>2.5</Radius>
-              <Fill>
-                <CssParameter name="fill">#FFFFFF</CssParameter>
-                <CssParameter name="opacity">0.75</CssParameter>
-              </Fill>
-            </Halo>
-            <Fill>
-              <CssParameter name="fill">#737373</CssParameter>
-            </Fill>
-            <Priority>1000</Priority>
-            <VendorOption name="spaceAround">2</VendorOption>
-            <VendorOption name="autoWrap">24</VendorOption>
-          </TextSymbolizer>
-        </Rule>
-
-<!-- Ferry Terminal (V&P) Label -->
-      
-      <FeatureTypeStyle>
-           <Rule>
-          <Name>Ferry terminal (V&P)</Name>
-          <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>CLASSIFICA</ogc:PropertyName>
-              <ogc:Literal>Passenger Ferry Terminal,Vehicular Ferry Terminal</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <MinScaleDenominator>0</MinScaleDenominator>
-          <MaxScaleDenominator>15000</MaxScaleDenominator>
-          <TextSymbolizer>
-            <Label>
-<ogc:PropertyName></ogc:PropertyName>
-              <ogc:Literal>Ferry Terminal (V&P)</ogc:Literal>
-            </Label>
-            <Font>
-              <CssParameter name="font-family">Arial</CssParameter>
-              <CssParameter name="font-size">35</CssParameter>
-              <CssParameter name="font-weight">bold</CssParameter>
-            </Font>
-            <LabelPlacement>
-              <PointPlacement>
-                <AnchorPoint>
-                  <AnchorPointX>0</AnchorPointX>
-                  <AnchorPointY>0.5</AnchorPointY>
-                </AnchorPoint>
-                <Displacement>
-                  <DisplacementX>9</DisplacementX>
-                  <DisplacementY>0</DisplacementY>
-                </Displacement>
-              </PointPlacement>
-            </LabelPlacement>
-            <Halo>
-              <Radius>2.5</Radius>
-              <Fill>
-                <CssParameter name="fill">#FFFFFF</CssParameter>
-                <CssParameter name="opacity">0.75</CssParameter>
-              </Fill>
-            </Halo>
-            <Fill>
-              <CssParameter name="fill">#737373</CssParameter>
-            </Fill>
-            <Priority>1000</Priority>
-            <VendorOption name="spaceAround">2</VendorOption>
-            <VendorOption name="autoWrap">24</VendorOption>
-          </TextSymbolizer>
-        </Rule>
+<!-- Labels not covered by Functional Sites, we prefer sites to avoid repetition -->
 
 <!-- Police Station Label -->
       
       <FeatureTypeStyle>
-           <Rule>
+        <Rule>
           <Name>Police Station</Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -705,16 +88,22 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
               <ogc:Literal>Police Station</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <MinScaleDenominator>0</MinScaleDenominator>
+          <MinScaleDenominator>1000</MinScaleDenominator>
           <MaxScaleDenominator>15000</MaxScaleDenominator>
-          <TextSymbolizer>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <Geometry>
+              <ogc:Function name="buffer">
+                <ogc:PropertyName>the_geom</ogc:PropertyName>
+                <ogc:Literal>100</ogc:Literal>
+              </ogc:Function>
+            </Geometry>
             <Label>
-<ogc:PropertyName>CLASSIFICA</ogc:PropertyName>
+              <ogc:PropertyName>CLASSIFICA</ogc:PropertyName>
               <ogc:Literal></ogc:Literal>
             </Label>
             <Font>
               <CssParameter name="font-family">Arial</CssParameter>
-              <CssParameter name="font-size">35</CssParameter>
+              <CssParameter name="font-size">24</CssParameter>
               <CssParameter name="font-weight">bold</CssParameter>
             </Font>
             <LabelPlacement>
@@ -724,8 +113,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
                   <AnchorPointY>0.5</AnchorPointY>
                 </AnchorPoint>
                 <Displacement>
-                  <DisplacementX>9</DisplacementX>
-                  <DisplacementY>0</DisplacementY>
+                  <DisplacementX>13</DisplacementX>
+                  <DisplacementY>4</DisplacementY>
                 </Displacement>
               </PointPlacement>
             </LabelPlacement>
@@ -737,19 +126,19 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
               </Fill>
             </Halo>
             <Fill>
-              <CssParameter name="fill">#737373</CssParameter>
+              <CssParameter name="fill">#8F887F</CssParameter>
             </Fill>
-            <Priority>1000</Priority>
-            <VendorOption name="spaceAround">2</VendorOption>
-            <VendorOption name="autoWrap">24</VendorOption>
+            <!-- <Priority>1000</Priority> -->
+            <VendorOption name="spaceAround">5</VendorOption>
+            <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
-
+      </FeatureTypeStyle>
 
 <!-- Fire Station Label -->
       
       <FeatureTypeStyle>
-           <Rule>
+        <Rule>
           <Name>Fire Station</Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -757,16 +146,22 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
               <ogc:Literal>Fire Station</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <MinScaleDenominator>0</MinScaleDenominator>
+          <MinScaleDenominator>1000</MinScaleDenominator>
           <MaxScaleDenominator>15000</MaxScaleDenominator>
-          <TextSymbolizer>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <Geometry>
+              <ogc:Function name="buffer">
+                <ogc:PropertyName>the_geom</ogc:PropertyName>
+                <ogc:Literal>100</ogc:Literal>
+              </ogc:Function>
+            </Geometry>
             <Label>
-<ogc:PropertyName>CLASSIFICA</ogc:PropertyName>
+              <ogc:PropertyName>CLASSIFICA</ogc:PropertyName>
               <ogc:Literal></ogc:Literal>
             </Label>
             <Font>
               <CssParameter name="font-family">Arial</CssParameter>
-              <CssParameter name="font-size">35</CssParameter>
+              <CssParameter name="font-size">24</CssParameter>
               <CssParameter name="font-weight">bold</CssParameter>
             </Font>
             <LabelPlacement>
@@ -776,8 +171,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
                   <AnchorPointY>0.5</AnchorPointY>
                 </AnchorPoint>
                 <Displacement>
-                  <DisplacementX>9</DisplacementX>
-                  <DisplacementY>0</DisplacementY>
+                  <DisplacementX>13</DisplacementX>
+                  <DisplacementY>4</DisplacementY>
                 </Displacement>
               </PointPlacement>
             </LabelPlacement>
@@ -789,19 +184,19 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
               </Fill>
             </Halo>
             <Fill>
-              <CssParameter name="fill">#737373</CssParameter>
+              <CssParameter name="fill">#8F887F</CssParameter>
             </Fill>
-            <Priority>1000</Priority>
-            <VendorOption name="spaceAround">2</VendorOption>
-            <VendorOption name="autoWrap">24</VendorOption>
+            <!-- <Priority>1000</Priority> -->
+            <VendorOption name="spaceAround">5</VendorOption>
+            <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
-
+      </FeatureTypeStyle> 
 
 <!-- Museum Label -->
       
       <FeatureTypeStyle>
-           <Rule>
+        <Rule>
           <Name>Museum</Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -809,16 +204,22 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
               <ogc:Literal>Museum</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <MinScaleDenominator>0</MinScaleDenominator>
+          <MinScaleDenominator>1000</MinScaleDenominator>
           <MaxScaleDenominator>15000</MaxScaleDenominator>
-          <TextSymbolizer>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <Geometry>
+              <ogc:Function name="buffer">
+                <ogc:PropertyName>the_geom</ogc:PropertyName>
+                <ogc:Literal>100</ogc:Literal>
+              </ogc:Function>
+            </Geometry>
             <Label>
-<ogc:PropertyName>CLASSIFICA</ogc:PropertyName>
+              <ogc:PropertyName>CLASSIFICA</ogc:PropertyName>
               <ogc:Literal></ogc:Literal>
             </Label>
             <Font>
               <CssParameter name="font-family">Arial</CssParameter>
-              <CssParameter name="font-size">35</CssParameter>
+              <CssParameter name="font-size">24</CssParameter>
               <CssParameter name="font-weight">bold</CssParameter>
             </Font>
             <LabelPlacement>
@@ -828,8 +229,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
                   <AnchorPointY>0.5</AnchorPointY>
                 </AnchorPoint>
                 <Displacement>
-                  <DisplacementX>9</DisplacementX>
-                  <DisplacementY>0</DisplacementY>
+                  <DisplacementX>13</DisplacementX>
+                  <DisplacementY>4</DisplacementY>
                 </Displacement>
               </PointPlacement>
             </LabelPlacement>
@@ -841,14 +242,14 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
               </Fill>
             </Halo>
             <Fill>
-              <CssParameter name="fill">#737373</CssParameter>
+              <CssParameter name="fill">#8F887F</CssParameter>
             </Fill>
-            <Priority>1000</Priority>
-            <VendorOption name="spaceAround">2</VendorOption>
-            <VendorOption name="autoWrap">24</VendorOption>
+            <!-- <Priority>1000</Priority> -->
+            <VendorOption name="spaceAround">5</VendorOption>
+            <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
-
+      </FeatureTypeStyle> 
 
 <!-- Art Gallery Label -->
       
@@ -861,16 +262,22 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
               <ogc:Literal>Art Gallery</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <MinScaleDenominator>0</MinScaleDenominator>
+          <MinScaleDenominator>1000</MinScaleDenominator>
           <MaxScaleDenominator>15000</MaxScaleDenominator>
-          <TextSymbolizer>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <Geometry>
+              <ogc:Function name="buffer">
+                <ogc:PropertyName>the_geom</ogc:PropertyName>
+                <ogc:Literal>100</ogc:Literal>
+              </ogc:Function>
+            </Geometry>
             <Label>
-<ogc:PropertyName>CLASSIFICA</ogc:PropertyName>
+              <ogc:PropertyName>CLASSIFICA</ogc:PropertyName>
               <ogc:Literal></ogc:Literal>
             </Label>
             <Font>
               <CssParameter name="font-family">Arial</CssParameter>
-              <CssParameter name="font-size">35</CssParameter>
+              <CssParameter name="font-size">24</CssParameter>
               <CssParameter name="font-weight">bold</CssParameter>
             </Font>
             <LabelPlacement>
@@ -880,8 +287,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
                   <AnchorPointY>0.5</AnchorPointY>
                 </AnchorPoint>
                 <Displacement>
-                  <DisplacementX>9</DisplacementX>
-                  <DisplacementY>0</DisplacementY>
+                  <DisplacementX>13</DisplacementX>
+                  <DisplacementY>4</DisplacementY>
                 </Displacement>
               </PointPlacement>
             </LabelPlacement>
@@ -893,19 +300,19 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
               </Fill>
             </Halo>
             <Fill>
-              <CssParameter name="fill">#737373</CssParameter>
+              <CssParameter name="fill">#8F887F</CssParameter>
             </Fill>
-            <Priority>1000</Priority>
-            <VendorOption name="spaceAround">2</VendorOption>
-            <VendorOption name="autoWrap">24</VendorOption>
+            <!-- <Priority>1000</Priority> -->
+            <VendorOption name="spaceAround">5</VendorOption>
+            <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
-
+      </FeatureTypeStyle>
 
 <!-- Library Label -->
       
       <FeatureTypeStyle>
-           <Rule>
+        <Rule>
           <Name>Library</Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -913,16 +320,22 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
               <ogc:Literal>Library</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <MinScaleDenominator>0</MinScaleDenominator>
+          <MinScaleDenominator>1000</MinScaleDenominator>
           <MaxScaleDenominator>15000</MaxScaleDenominator>
-          <TextSymbolizer>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <Geometry>
+              <ogc:Function name="buffer">
+                <ogc:PropertyName>the_geom</ogc:PropertyName>
+                <ogc:Literal>100</ogc:Literal>
+              </ogc:Function>
+            </Geometry>
             <Label>
-<ogc:PropertyName>CLASSIFICA</ogc:PropertyName>
+              <ogc:PropertyName>CLASSIFICA</ogc:PropertyName>
               <ogc:Literal></ogc:Literal>
             </Label>
             <Font>
               <CssParameter name="font-family">Arial</CssParameter>
-              <CssParameter name="font-size">35</CssParameter>
+              <CssParameter name="font-size">24</CssParameter>
               <CssParameter name="font-weight">bold</CssParameter>
             </Font>
             <LabelPlacement>
@@ -932,8 +345,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
                   <AnchorPointY>0.5</AnchorPointY>
                 </AnchorPoint>
                 <Displacement>
-                  <DisplacementX>9</DisplacementX>
-                  <DisplacementY>0</DisplacementY>
+                  <DisplacementX>13</DisplacementX>
+                  <DisplacementY>4</DisplacementY>
                 </Displacement>
               </PointPlacement>
             </LabelPlacement>
@@ -945,19 +358,19 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
               </Fill>
             </Halo>
             <Fill>
-              <CssParameter name="fill">#737373</CssParameter>
+              <CssParameter name="fill">#8F887F</CssParameter>
             </Fill>
-            <Priority>1000</Priority>
-            <VendorOption name="spaceAround">2</VendorOption>
-            <VendorOption name="autoWrap">24</VendorOption>
+            <!-- <Priority>1000</Priority> -->
+            <VendorOption name="spaceAround">5</VendorOption>
+            <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
-
+      </FeatureTypeStyle>
 
 <!-- Place of Worship Label -->
       
       <FeatureTypeStyle>
-           <Rule>
+        <Rule>
           <Name>Place of Worship</Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -965,16 +378,21 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
               <ogc:Literal>Place Of Worship</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <MinScaleDenominator>0</MinScaleDenominator>
+          <MinScaleDenominator>1000</MinScaleDenominator>
           <MaxScaleDenominator>15000</MaxScaleDenominator>
-          <TextSymbolizer>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <Geometry>
+              <ogc:Function name="buffer">
+                <ogc:PropertyName>the_geom</ogc:PropertyName>
+                <ogc:Literal>100</ogc:Literal>
+              </ogc:Function>
+            </Geometry>
             <Label>
-<ogc:PropertyName></ogc:PropertyName>
               <ogc:Literal>PW</ogc:Literal>
             </Label>
             <Font>
               <CssParameter name="font-family">Arial</CssParameter>
-              <CssParameter name="font-size">35</CssParameter>
+              <CssParameter name="font-size">24</CssParameter>
               <CssParameter name="font-weight">bold</CssParameter>
             </Font>
             <LabelPlacement>
@@ -984,8 +402,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
                   <AnchorPointY>0.5</AnchorPointY>
                 </AnchorPoint>
                 <Displacement>
-                  <DisplacementX>9</DisplacementX>
-                  <DisplacementY>0</DisplacementY>
+                  <DisplacementX>13</DisplacementX>
+                  <DisplacementY>4</DisplacementY>
                 </Displacement>
               </PointPlacement>
             </LabelPlacement>
@@ -997,19 +415,19 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
               </Fill>
             </Halo>
             <Fill>
-              <CssParameter name="fill">#737373</CssParameter>
+              <CssParameter name="fill">#8F887F</CssParameter>
             </Fill>
-            <Priority>1000</Priority>
-            <VendorOption name="spaceAround">2</VendorOption>
-            <VendorOption name="autoWrap">24</VendorOption>
+            <!-- <Priority>1000</Priority> -->
+            <VendorOption name="spaceAround">5</VendorOption>
+            <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
-
+      </FeatureTypeStyle>
 
 <!-- Post Office Label -->
       
       <FeatureTypeStyle>
-           <Rule>
+        <Rule>
           <Name>Police Station</Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -1017,16 +435,21 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
               <ogc:Literal>Post Office</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <MinScaleDenominator>0</MinScaleDenominator>
+          <MinScaleDenominator>1000</MinScaleDenominator>
           <MaxScaleDenominator>15000</MaxScaleDenominator>
-          <TextSymbolizer>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <Geometry>
+              <ogc:Function name="buffer">
+                <ogc:PropertyName>the_geom</ogc:PropertyName>
+                <ogc:Literal>100</ogc:Literal>
+              </ogc:Function>
+            </Geometry>
             <Label>
-<ogc:PropertyName></ogc:PropertyName>
               <ogc:Literal>PO</ogc:Literal>
             </Label>
             <Font>
               <CssParameter name="font-family">Arial</CssParameter>
-              <CssParameter name="font-size">35</CssParameter>
+              <CssParameter name="font-size">24</CssParameter>
               <CssParameter name="font-weight">bold</CssParameter>
             </Font>
             <LabelPlacement>
@@ -1036,8 +459,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
                   <AnchorPointY>0.5</AnchorPointY>
                 </AnchorPoint>
                 <Displacement>
-                  <DisplacementX>9</DisplacementX>
-                  <DisplacementY>0</DisplacementY>
+                  <DisplacementX>13</DisplacementX>
+                  <DisplacementY>4</DisplacementY>
                 </Displacement>
               </PointPlacement>
             </LabelPlacement>
@@ -1049,36 +472,41 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
               </Fill>
             </Halo>
             <Fill>
-              <CssParameter name="fill">#737373</CssParameter>
+              <CssParameter name="fill">#8F887F</CssParameter>
             </Fill>
-            <Priority>1000</Priority>
-            <VendorOption name="spaceAround">2</VendorOption>
-            <VendorOption name="autoWrap">24</VendorOption>
+            <!-- <Priority>1000</Priority> -->
+            <VendorOption name="spaceAround">5</VendorOption>
+            <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
+      </FeatureTypeStyle>
 
-
-<!-- Sports & Leisure Centre Label -->
+<!-- Sports and Leisure Centre Label -->
       
       <FeatureTypeStyle>
-           <Rule>
-          <Name>Sports & Leisure Centre</Name>
+        <Rule>
+          <Name>Sports and Leisure Centre</Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>CLASSIFICA</ogc:PropertyName>
-              <ogc:Literal>Sports And Leisure Centre</ogc:Literal>
+              <ogc:Literal>Sports + Leisure Centre</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <MinScaleDenominator>0</MinScaleDenominator>
+          <MinScaleDenominator>1000</MinScaleDenominator>
           <MaxScaleDenominator>15000</MaxScaleDenominator>
-          <TextSymbolizer>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <Geometry>
+              <ogc:Function name="buffer">
+                <ogc:PropertyName>the_geom</ogc:PropertyName>
+                <ogc:Literal>50</ogc:Literal>
+              </ogc:Function>
+            </Geometry>
             <Label>
-<ogc:PropertyName></ogc:PropertyName>
-              <ogc:Literal>Sports/Leisure Centre</ogc:Literal>
+              <ogc:Literal>Sports or Leisure Centre</ogc:Literal>
             </Label>
             <Font>
               <CssParameter name="font-family">Arial</CssParameter>
-              <CssParameter name="font-size">35</CssParameter>
+              <CssParameter name="font-size">24</CssParameter>
               <CssParameter name="font-weight">bold</CssParameter>
             </Font>
             <LabelPlacement>
@@ -1088,8 +516,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
                   <AnchorPointY>0.5</AnchorPointY>
                 </AnchorPoint>
                 <Displacement>
-                  <DisplacementX>9</DisplacementX>
-                  <DisplacementY>0</DisplacementY>
+                  <DisplacementX>13</DisplacementX>
+                  <DisplacementY>4</DisplacementY>
                 </Displacement>
               </PointPlacement>
             </LabelPlacement>
@@ -1101,19 +529,19 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
               </Fill>
             </Halo>
             <Fill>
-              <CssParameter name="fill">#737373</CssParameter>
+              <CssParameter name="fill">#8F887F</CssParameter>
             </Fill>
-            <Priority>1000</Priority>
-            <VendorOption name="spaceAround">2</VendorOption>
-            <VendorOption name="autoWrap">24</VendorOption>
+            <!-- <Priority>1000</Priority> -->
+            <VendorOption name="spaceAround">5</VendorOption>
+            <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
-
+      </FeatureTypeStyle>
 
 <!-- Tourist Information Label -->
       
       <FeatureTypeStyle>
-           <Rule>
+        <Rule>
           <Name>Tourist Information</Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -1121,16 +549,21 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
               <ogc:Literal>Tourist Information</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <MinScaleDenominator>0</MinScaleDenominator>
+          <MinScaleDenominator>1000</MinScaleDenominator>
           <MaxScaleDenominator>15000</MaxScaleDenominator>
-          <TextSymbolizer>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <Geometry>
+              <ogc:Function name="buffer">
+                <ogc:PropertyName>the_geom</ogc:PropertyName>
+                <ogc:Literal>100</ogc:Literal>
+              </ogc:Function>
+            </Geometry>
             <Label>
-<ogc:PropertyName></ogc:PropertyName>
               <ogc:Literal>Tourist Info</ogc:Literal>
             </Label>
             <Font>
               <CssParameter name="font-family">Arial</CssParameter>
-              <CssParameter name="font-size">35</CssParameter>
+              <CssParameter name="font-size">24</CssParameter>
               <CssParameter name="font-weight">bold</CssParameter>
             </Font>
             <LabelPlacement>
@@ -1140,8 +573,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
                   <AnchorPointY>0.5</AnchorPointY>
                 </AnchorPoint>
                 <Displacement>
-                  <DisplacementX>9</DisplacementX>
-                  <DisplacementY>0</DisplacementY>
+                  <DisplacementX>13</DisplacementX>
+                  <DisplacementY>4</DisplacementY>
                 </Displacement>
               </PointPlacement>
             </LabelPlacement>
@@ -1153,67 +586,14 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
               </Fill>
             </Halo>
             <Fill>
-              <CssParameter name="fill">#737373</CssParameter>
+              <CssParameter name="fill">#8F887F</CssParameter>
             </Fill>
-            <Priority>1000</Priority>
-            <VendorOption name="spaceAround">2</VendorOption>
-            <VendorOption name="autoWrap">24</VendorOption>
+            <!-- <Priority>1000</Priority> -->
+            <VendorOption name="spaceAround">5</VendorOption>
+            <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
-
-
-<!-- Education Facility Label -->
-      
-      <FeatureTypeStyle>
-           <Rule>
-          <Name>Police Station</Name>
-          <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>BUILDGTHEM</ogc:PropertyName>
-              <ogc:Literal>Education</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <MinScaleDenominator>0</MinScaleDenominator>
-          <MaxScaleDenominator>15000</MaxScaleDenominator>
-          <TextSymbolizer>
-            <Label>
-<ogc:PropertyName></ogc:PropertyName>
-              <ogc:Literal>Education Facility</ogc:Literal>
-            </Label>
-            <Font>
-              <CssParameter name="font-family">Arial</CssParameter>
-              <CssParameter name="font-size">35</CssParameter>
-              <CssParameter name="font-weight">bold</CssParameter>
-            </Font>
-            <LabelPlacement>
-              <PointPlacement>
-                <AnchorPoint>
-                  <AnchorPointX>0</AnchorPointX>
-                  <AnchorPointY>0.5</AnchorPointY>
-                </AnchorPoint>
-                <Displacement>
-                  <DisplacementX>9</DisplacementX>
-                  <DisplacementY>0</DisplacementY>
-                </Displacement>
-              </PointPlacement>
-            </LabelPlacement>
-            <Halo>
-              <Radius>2.5</Radius>
-              <Fill>
-                <CssParameter name="fill">#FFFFFF</CssParameter>
-                <CssParameter name="opacity">0.75</CssParameter>
-              </Fill>
-            </Halo>
-            <Fill>
-              <CssParameter name="fill">#737373</CssParameter>
-            </Fill>
-            <Priority>1000</Priority>
-            <VendorOption name="spaceAround">2</VendorOption>
-            <VendorOption name="autoWrap">24</VendorOption>
-          </TextSymbolizer>
-        </Rule>
-       
-      </FeatureTypeStyle>           
+      </FeatureTypeStyle>
     </UserStyle>
   </NamedLayer>
 </StyledLayerDescriptor>

@@ -32,7 +32,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           <Name>Narrow gauge railway (bars)</Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>featureCod</ogc:PropertyName>
+              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
               <ogc:Literal>15302</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>

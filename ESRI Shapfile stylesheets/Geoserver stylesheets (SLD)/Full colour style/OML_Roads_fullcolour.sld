@@ -583,33 +583,35 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
               <ogc:PropertyName>FEATCODE</ogc:PropertyName>
               <ogc:Literal>15790</ogc:Literal>
             </ogc:PropertyIsEqualTo>
-  <ogc:PropertyIsEqualTo>
+            <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>FEATCODE</ogc:PropertyName>
               <ogc:Literal>15797</ogc:Literal>
             </ogc:PropertyIsEqualTo>
-<ogc:PropertyIsEqualTo>
+            <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>FEATCODE</ogc:PropertyName>
               <ogc:Literal>15762</ogc:Literal>
             </ogc:PropertyIsEqualTo>
-  </ogc:Or>
+            </ogc:Or>
           </ogc:Filter>
           <MinScaleDenominator>1000</MinScaleDenominator>
           <MaxScaleDenominator>15000</MaxScaleDenominator>
-          <TextSymbolizer>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
+              <ogc:Function name="strToUpperCase">
               <ogc:PropertyName>DISTNAME</ogc:PropertyName>
+              </ogc:Function>
             </Label>
             <Font>
               <CssParameter name="font-family">Arial</CssParameter>
-              <CssParameter name="font-size">15</CssParameter>
- <CssParameter name="font-weight">bold</CssParameter>
+              <CssParameter name="font-size">18</CssParameter>
+              <CssParameter name="font-weight">bold</CssParameter>
             </Font>
             <LabelPlacement>
               <LinePlacement>
                 <PerpendicularOffset>0</PerpendicularOffset>
               </LinePlacement>
             </LabelPlacement>
-  <Halo>
+            <Halo>
               <Radius>1.2</Radius>
               <Fill><CssParameter name="fill">#FFFFFF</CssParameter></Fill>
             </Halo>
@@ -624,7 +626,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="conflictResolution">true</VendorOption>
           </TextSymbolizer>
         </Rule> 
-          </FeatureTypeStyle>
+      </FeatureTypeStyle>
 
 <!-- Local Road/Local Access Road Labels -->   
               
@@ -637,29 +639,31 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
               <ogc:PropertyName>FEATCODE</ogc:PropertyName>
               <ogc:Literal>15760</ogc:Literal>
             </ogc:PropertyIsEqualTo>
-  <ogc:PropertyIsEqualTo>
+            <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>FEATCODE</ogc:PropertyName>
               <ogc:Literal>15761</ogc:Literal>
             </ogc:PropertyIsEqualTo>
-  </ogc:Or>
+            </ogc:Or>
           </ogc:Filter>
           <MinScaleDenominator>1000</MinScaleDenominator>
           <MaxScaleDenominator>15000</MaxScaleDenominator>
-          <TextSymbolizer>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
+              <ogc:Function name="strToUpperCase">
               <ogc:PropertyName>DISTNAME</ogc:PropertyName>
+              </ogc:Function>
             </Label>
             <Font>
               <CssParameter name="font-family">Arial</CssParameter>
-              <CssParameter name="font-size">15</CssParameter>
- <CssParameter name="font-weight">bold</CssParameter>
+              <CssParameter name="font-size">18</CssParameter>
+              <CssParameter name="font-weight">bold</CssParameter>
             </Font>
             <LabelPlacement>
               <LinePlacement>
                 <PerpendicularOffset>0</PerpendicularOffset>
               </LinePlacement>
             </LabelPlacement>
-  <Halo>
+            <Halo>
               <Radius>1.2</Radius>
               <Fill><CssParameter name="fill">#FFFFFF</CssParameter></Fill>
             </Halo>
@@ -674,7 +678,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="conflictResolution">true</VendorOption>
           </TextSymbolizer>
         </Rule> 
-          </FeatureTypeStyle>
+      </FeatureTypeStyle>
         
         <!-- Minor Roads Labels -->        
         
@@ -691,18 +695,20 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
               <ogc:PropertyName>FEATCODE</ogc:PropertyName>
               <ogc:Literal>15759</ogc:Literal>
             </ogc:PropertyIsEqualTo>
-  </ogc:Or>
+          </ogc:Or>
           </ogc:Filter>
           <MinScaleDenominator>1000</MinScaleDenominator>
           <MaxScaleDenominator>15000</MaxScaleDenominator>
-          <TextSymbolizer>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
+              <ogc:Function name="strToUpperCase">
               <ogc:PropertyName>DISTNAME</ogc:PropertyName>
+              </ogc:Function>
             </Label>
             <Font>
               <CssParameter name="font-family">Arial</CssParameter>
-              <CssParameter name="font-size">15</CssParameter>
- <CssParameter name="font-weight">bold</CssParameter>
+              <CssParameter name="font-size">18</CssParameter>
+              <CssParameter name="font-weight">bold</CssParameter>
             </Font>
             <LabelPlacement>
               <LinePlacement>
@@ -723,7 +729,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="repeat">1000</VendorOption>      
           </TextSymbolizer>
         </Rule>
-          </FeatureTypeStyle>
+      </FeatureTypeStyle>
       
   <!-- B Road Labels -->        
         
@@ -740,18 +746,20 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
               <ogc:PropertyName>FEATCODE</ogc:PropertyName>
               <ogc:Literal>15749</ogc:Literal>
             </ogc:PropertyIsEqualTo>
-  </ogc:Or>
+            </ogc:Or>
           </ogc:Filter>
           <MinScaleDenominator>1000</MinScaleDenominator>
           <MaxScaleDenominator>15000</MaxScaleDenominator>
-          <TextSymbolizer>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
+              <ogc:Function name="strToUpperCase">
               <ogc:PropertyName>DISTNAME</ogc:PropertyName>
+              </ogc:Function>
             </Label>
             <Font>
               <CssParameter name="font-family">Arial</CssParameter>
-              <CssParameter name="font-size">15</CssParameter>
- <CssParameter name="font-weight">bold</CssParameter>
+              <CssParameter name="font-size">18</CssParameter>
+              <CssParameter name="font-weight">bold</CssParameter>
             </Font>
             <LabelPlacement>
               <LinePlacement>
@@ -773,7 +781,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="repeat">1000</VendorOption>      
           </TextSymbolizer>
         </Rule>
-          </FeatureTypeStyle>
+      </FeatureTypeStyle>
 
  <!-- B Road Numbers -->
 
@@ -794,7 +802,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </ogc:Filter>
           <MinScaleDenominator>1000</MinScaleDenominator>
           <MaxScaleDenominator>15000</MaxScaleDenominator>
-          <TextSymbolizer>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
               <ogc:PropertyName>ROADNUMBER</ogc:PropertyName>
             </Label>
@@ -809,7 +817,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
               </LinePlacement>
             </LabelPlacement>
             <Halo>
-              <Radius>1.5</Radius>
+              <Radius>2</Radius>
               <Fill><CssParameter name="fill">#FFFFFF</CssParameter></Fill>
             </Halo>
             <Fill>
@@ -841,18 +849,20 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
               <ogc:PropertyName>FEATCODE</ogc:PropertyName>
               <ogc:Literal>15739</ogc:Literal>
             </ogc:PropertyIsEqualTo>
-  </ogc:Or>
+            </ogc:Or>
           </ogc:Filter>
           <MinScaleDenominator>1000</MinScaleDenominator>
           <MaxScaleDenominator>15000</MaxScaleDenominator>
-          <TextSymbolizer>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
+              <ogc:Function name="strToUpperCase">
               <ogc:PropertyName>DISTNAME</ogc:PropertyName>
+              </ogc:Function>
             </Label>
             <Font>
               <CssParameter name="font-family">Arial</CssParameter>
-              <CssParameter name="font-size">15</CssParameter>
- <CssParameter name="font-weight">bold</CssParameter>
+              <CssParameter name="font-size">18</CssParameter>
+              <CssParameter name="font-weight">bold</CssParameter>
             </Font>
             <LabelPlacement>
               <LinePlacement>
@@ -895,7 +905,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </ogc:Filter>
           <MinScaleDenominator>1000</MinScaleDenominator>
           <MaxScaleDenominator>15000</MaxScaleDenominator>
-          <TextSymbolizer>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
               <ogc:PropertyName>ROADNUMBER</ogc:PropertyName>
             </Label>
@@ -910,7 +920,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
               </LinePlacement>
             </LabelPlacement>
             <Halo>
-              <Radius>1.5</Radius>
+              <Radius>2</Radius>
               <Fill><CssParameter name="fill">#FFFFFF</CssParameter></Fill>
             </Halo>
             <Fill>
@@ -942,18 +952,20 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
               <ogc:PropertyName>FEATCODE</ogc:PropertyName>
               <ogc:Literal>15735</ogc:Literal>
             </ogc:PropertyIsEqualTo>
-  </ogc:Or>
+            </ogc:Or>
           </ogc:Filter>
           <MinScaleDenominator>1000</MinScaleDenominator>
           <MaxScaleDenominator>15000</MaxScaleDenominator>
-          <TextSymbolizer>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
+              <ogc:Function name="strToUpperCase">
               <ogc:PropertyName>DISTNAME</ogc:PropertyName>
+              </ogc:Function>
             </Label>
             <Font>
               <CssParameter name="font-family">Arial</CssParameter>
-              <CssParameter name="font-size">15</CssParameter>
- <CssParameter name="font-weight">bold</CssParameter>
+              <CssParameter name="font-size">18</CssParameter>
+              <CssParameter name="font-weight">bold</CssParameter>
             </Font>
             <LabelPlacement>
               <LinePlacement>
@@ -997,13 +1009,13 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </ogc:Filter>
           <MinScaleDenominator>1000</MinScaleDenominator>
           <MaxScaleDenominator>15000</MaxScaleDenominator>
-          <TextSymbolizer>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
               <ogc:PropertyName>ROADNUMBER</ogc:PropertyName>
             </Label>
             <Font>
               <CssParameter name="font-family">Arial</CssParameter>
-              <CssParameter name="font-size">25</CssParameter>
+              <CssParameter name="font-size">28</CssParameter>
               <CssParameter name="font-weight">bold</CssParameter>
             </Font>
             <LabelPlacement>
@@ -1012,7 +1024,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
               </LinePlacement>
             </LabelPlacement>
             <Halo>
-              <Radius>1.5</Radius>
+              <Radius>2</Radius>
               <Fill><CssParameter name="fill">#FFFFFF</CssParameter></Fill>
             </Halo>
             <Fill>
@@ -1027,7 +1039,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="forceLeftToRight">true</VendorOption>
           </TextSymbolizer>
         </Rule>
-          </FeatureTypeStyle>
+      </FeatureTypeStyle>
       
         <!-- Motorway Numbers -->
 
@@ -1048,13 +1060,13 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </ogc:Filter>
           <MinScaleDenominator>1000</MinScaleDenominator>
           <MaxScaleDenominator>15000</MaxScaleDenominator>
-          <TextSymbolizer>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
               <ogc:PropertyName>ROADNUMBER</ogc:PropertyName>
             </Label>
             <Font>
               <CssParameter name="font-family">Arial</CssParameter>
-              <CssParameter name="font-size">25</CssParameter>
+              <CssParameter name="font-size">30</CssParameter>
               <CssParameter name="font-weight">bold</CssParameter>
             </Font>
             <LabelPlacement>
@@ -1063,7 +1075,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
               </LinePlacement>
             </LabelPlacement>
             <Halo>
-              <Radius>1.5</Radius>
+              <Radius>2</Radius>
               <Fill><CssParameter name="fill">#FFFFFF</CssParameter></Fill>
             </Halo>
             <Fill>
@@ -1078,7 +1090,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="forceLeftToRight">true</VendorOption>
           </TextSymbolizer>
         </Rule>
-        </FeatureTypeStyle>
+      </FeatureTypeStyle>
     </UserStyle>
   </NamedLayer>
 </StyledLayerDescriptor>

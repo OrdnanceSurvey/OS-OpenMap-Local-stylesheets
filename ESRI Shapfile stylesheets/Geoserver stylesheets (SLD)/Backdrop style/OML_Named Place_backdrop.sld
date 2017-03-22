@@ -27,7 +27,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </ogc:Filter>
           <MinScaleDenominator>1000</MinScaleDenominator>
           <MaxScaleDenominator>3701</MaxScaleDenominator>
-          <TextSymbolizer>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
               <ogc:PropertyName>DISTNAME</ogc:PropertyName>
             </Label>
@@ -52,8 +52,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </Halo>
             <Fill><CssParameter name="fill">#25ADC9</CssParameter></Fill>
             <Priority>1000</Priority>
-            <VendorOption name="spaceAround">5</VendorOption>
-            <VendorOption name="autoWrap">100</VendorOption>
+            <VendorOption name="spaceAround">20</VendorOption>
+            <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
         
@@ -73,7 +73,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </ogc:Filter>
           <MinScaleDenominator>3701</MinScaleDenominator>
           <MaxScaleDenominator>6001</MaxScaleDenominator>
-          <TextSymbolizer>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
               <ogc:PropertyName>DISTNAME</ogc:PropertyName>
             </Label>
@@ -98,8 +98,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </Halo>
             <Fill><CssParameter name="fill">#25ADC9</CssParameter></Fill>
             <Priority>1000</Priority>
-            <VendorOption name="spaceAround">5</VendorOption>
-            <VendorOption name="autoWrap">100</VendorOption>
+            <VendorOption name="spaceAround">20</VendorOption>
+            <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
         
@@ -119,7 +119,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </ogc:Filter>
           <MinScaleDenominator>6001</MinScaleDenominator>
           <MaxScaleDenominator>10001</MaxScaleDenominator>
-          <TextSymbolizer>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
               <ogc:PropertyName>DISTNAME</ogc:PropertyName>
             </Label>
@@ -144,8 +144,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </Halo>
             <Fill><CssParameter name="fill">#25ADC9</CssParameter></Fill>
             <Priority>1000</Priority>
-            <VendorOption name="spaceAround">5</VendorOption>
-            <VendorOption name="autoWrap">100</VendorOption>
+            <VendorOption name="spaceAround">20</VendorOption>
+            <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
         
@@ -165,7 +165,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </ogc:Filter>
           <MinScaleDenominator>10001</MinScaleDenominator>
           <MaxScaleDenominator>15000</MaxScaleDenominator>
-          <TextSymbolizer>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
               <ogc:PropertyName>DISTNAME</ogc:PropertyName>
             </Label>
@@ -190,8 +190,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </Halo>
             <Fill><CssParameter name="fill">#25ADC9</CssParameter></Fill>
             <Priority>1000</Priority>
-            <VendorOption name="spaceAround">5</VendorOption>
-            <VendorOption name="autoWrap">100</VendorOption>
+            <VendorOption name="spaceAround">20</VendorOption>
+            <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
 
@@ -212,7 +212,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </ogc:Filter>
           <MinScaleDenominator>1000</MinScaleDenominator>
           <MaxScaleDenominator>3701</MaxScaleDenominator>
-          <TextSymbolizer>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
               <ogc:PropertyName>DISTNAME</ogc:PropertyName>
             </Label>
@@ -237,8 +237,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </Halo>
             <Fill><CssParameter name="fill">#25ADC9</CssParameter></Fill>
             <Priority>1000</Priority>
-            <VendorOption name="spaceAround">5</VendorOption>
-            <VendorOption name="autoWrap">100</VendorOption>
+            <VendorOption name="spaceAround">20</VendorOption>
+            <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
         
@@ -258,7 +258,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </ogc:Filter>
           <MinScaleDenominator>3701</MinScaleDenominator>
           <MaxScaleDenominator>6001</MaxScaleDenominator>
-          <TextSymbolizer>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
               <ogc:PropertyName>DISTNAME</ogc:PropertyName>
             </Label>
@@ -283,8 +283,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </Halo>
             <Fill><CssParameter name="fill">#25ADC9</CssParameter></Fill>
             <Priority>1000</Priority>
-            <VendorOption name="spaceAround">5</VendorOption>
-            <VendorOption name="autoWrap">100</VendorOption>
+            <VendorOption name="spaceAround">20</VendorOption>
+            <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
 
@@ -304,7 +304,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </ogc:Filter>
           <MinScaleDenominator>6001</MinScaleDenominator>
           <MaxScaleDenominator>10001</MaxScaleDenominator>
-          <TextSymbolizer>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
               <ogc:PropertyName>DISTNAME</ogc:PropertyName>
             </Label>
@@ -329,8 +329,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </Halo>
             <Fill><CssParameter name="fill">#25ADC9</CssParameter></Fill>
             <Priority>1000</Priority>
-            <VendorOption name="spaceAround">5</VendorOption>
-            <VendorOption name="autoWrap">100</VendorOption>
+            <VendorOption name="spaceAround">20</VendorOption>
+            <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
 
@@ -350,7 +350,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </ogc:Filter>
           <MinScaleDenominator>10001</MinScaleDenominator>
           <MaxScaleDenominator>15000</MaxScaleDenominator>
-          <TextSymbolizer>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
               <ogc:PropertyName>DISTNAME</ogc:PropertyName>
             </Label>
@@ -375,8 +375,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </Halo>
             <Fill><CssParameter name="fill">#25ADC9</CssParameter></Fill>
             <Priority>1000</Priority>
-            <VendorOption name="spaceAround">5</VendorOption>
-            <VendorOption name="autoWrap">100</VendorOption>
+            <VendorOption name="spaceAround">20</VendorOption>
+            <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
 
@@ -396,7 +396,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </ogc:Filter>
           <MinScaleDenominator>3701</MinScaleDenominator>
           <MaxScaleDenominator>6001</MaxScaleDenominator>
-          <TextSymbolizer>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
               <ogc:PropertyName>DISTNAME</ogc:PropertyName>
             </Label>
@@ -421,8 +421,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </Halo>
             <Fill><CssParameter name="fill">#25ADC9</CssParameter></Fill>
             <Priority>1000</Priority>
-            <VendorOption name="spaceAround">5</VendorOption>
-            <VendorOption name="autoWrap">100</VendorOption>
+            <VendorOption name="spaceAround">20</VendorOption>
+            <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
         
@@ -442,7 +442,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </ogc:Filter>
           <MinScaleDenominator>6001</MinScaleDenominator>
           <MaxScaleDenominator>10001</MaxScaleDenominator>
-          <TextSymbolizer>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
               <ogc:PropertyName>DISTNAME</ogc:PropertyName>
             </Label>
@@ -467,8 +467,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </Halo>
             <Fill><CssParameter name="fill">#25ADC9</CssParameter></Fill>
             <Priority>1000</Priority>
-            <VendorOption name="spaceAround">5</VendorOption>
-            <VendorOption name="autoWrap">100</VendorOption>
+            <VendorOption name="spaceAround">20</VendorOption>
+            <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
 
@@ -488,7 +488,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </ogc:Filter>
           <MinScaleDenominator>10001</MinScaleDenominator>
           <MaxScaleDenominator>15000</MaxScaleDenominator>
-          <TextSymbolizer>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
               <ogc:PropertyName>DISTNAME</ogc:PropertyName>
             </Label>
@@ -513,8 +513,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </Halo>
             <Fill><CssParameter name="fill">#25ADC9</CssParameter></Fill>
             <Priority>1000</Priority>
-            <VendorOption name="spaceAround">5</VendorOption>
-            <VendorOption name="autoWrap">100</VendorOption>
+            <VendorOption name="spaceAround">20</VendorOption>
+            <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
 
@@ -537,7 +537,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </ogc:Filter>
           <MinScaleDenominator>1000</MinScaleDenominator>
           <MaxScaleDenominator>3701</MaxScaleDenominator>
-          <TextSymbolizer>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
               <ogc:PropertyName>DISTNAME</ogc:PropertyName>
             </Label>
@@ -559,8 +559,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </Halo>
             <Fill><CssParameter name="fill">#737373</CssParameter></Fill>
             <Priority>1000</Priority>
-            <VendorOption name="spaceAround">5</VendorOption>
-            <VendorOption name="autoWrap">100</VendorOption>
+            <VendorOption name="spaceAround">20</VendorOption>
+            <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
 
@@ -580,7 +580,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </ogc:Filter>
           <MinScaleDenominator>3701</MinScaleDenominator>
           <MaxScaleDenominator>6001</MaxScaleDenominator>
-          <TextSymbolizer>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
               <ogc:PropertyName>DISTNAME</ogc:PropertyName>
             </Label>
@@ -602,8 +602,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </Halo>
             <Fill><CssParameter name="fill">#737373</CssParameter></Fill>
             <Priority>1000</Priority>
-            <VendorOption name="spaceAround">5</VendorOption>
-            <VendorOption name="autoWrap">100</VendorOption>
+            <VendorOption name="spaceAround">20</VendorOption>
+            <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
         
@@ -623,7 +623,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </ogc:Filter>
           <MinScaleDenominator>6001</MinScaleDenominator>
           <MaxScaleDenominator>10001</MaxScaleDenominator>
-          <TextSymbolizer>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
               <ogc:PropertyName>DISTNAME</ogc:PropertyName>
             </Label>
@@ -645,8 +645,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </Halo>
             <Fill><CssParameter name="fill">#737373</CssParameter></Fill>
             <Priority>1000</Priority>
-            <VendorOption name="spaceAround">5</VendorOption>
-            <VendorOption name="autoWrap">100</VendorOption>
+            <VendorOption name="spaceAround">20</VendorOption>
+            <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
         
@@ -666,7 +666,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </ogc:Filter>
           <MinScaleDenominator>10001</MinScaleDenominator>
           <MaxScaleDenominator>15000</MaxScaleDenominator>
-          <TextSymbolizer>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
               <ogc:PropertyName>DISTNAME</ogc:PropertyName>
             </Label>
@@ -688,8 +688,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </Halo>
             <Fill><CssParameter name="fill">#737373</CssParameter></Fill>
             <Priority>1000</Priority>
-            <VendorOption name="spaceAround">5</VendorOption>
-            <VendorOption name="autoWrap">100</VendorOption>
+            <VendorOption name="spaceAround">20</VendorOption>
+            <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
  
@@ -709,7 +709,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </ogc:Filter>
           <MinScaleDenominator>1000</MinScaleDenominator>
           <MaxScaleDenominator>3701</MaxScaleDenominator>
-          <TextSymbolizer>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
               <ogc:PropertyName>DISTNAME</ogc:PropertyName>
             </Label>
@@ -731,8 +731,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </Halo>
             <Fill><CssParameter name="fill">#737373</CssParameter></Fill>
             <Priority>1000</Priority>
-            <VendorOption name="spaceAround">5</VendorOption>
-            <VendorOption name="autoWrap">100</VendorOption>
+            <VendorOption name="spaceAround">20</VendorOption>
+            <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
         
@@ -752,7 +752,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </ogc:Filter>
           <MinScaleDenominator>3701</MinScaleDenominator>
           <MaxScaleDenominator>6001</MaxScaleDenominator>
-          <TextSymbolizer>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
               <ogc:PropertyName>DISTNAME</ogc:PropertyName>
             </Label>
@@ -774,8 +774,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </Halo>
             <Fill><CssParameter name="fill">#737373</CssParameter></Fill>
             <Priority>1000</Priority>
-            <VendorOption name="spaceAround">5</VendorOption>
-            <VendorOption name="autoWrap">100</VendorOption>
+            <VendorOption name="spaceAround">20</VendorOption>
+            <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
 
@@ -795,7 +795,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </ogc:Filter>
           <MinScaleDenominator>6001</MinScaleDenominator>
           <MaxScaleDenominator>10001</MaxScaleDenominator>
-          <TextSymbolizer>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
               <ogc:PropertyName>DISTNAME</ogc:PropertyName>
             </Label>
@@ -817,8 +817,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </Halo>
             <Fill><CssParameter name="fill">#737373</CssParameter></Fill>
             <Priority>1000</Priority>
-            <VendorOption name="spaceAround">5</VendorOption>
-            <VendorOption name="autoWrap">100</VendorOption>
+            <VendorOption name="spaceAround">20</VendorOption>
+            <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
 
@@ -838,7 +838,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </ogc:Filter>
           <MinScaleDenominator>10001</MinScaleDenominator>
           <MaxScaleDenominator>15000</MaxScaleDenominator>
-          <TextSymbolizer>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
               <ogc:PropertyName>DISTNAME</ogc:PropertyName>
             </Label>
@@ -860,8 +860,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </Halo>
             <Fill><CssParameter name="fill">#737373</CssParameter></Fill>
             <Priority>1000</Priority>
-            <VendorOption name="spaceAround">5</VendorOption>
-            <VendorOption name="autoWrap">100</VendorOption>
+            <VendorOption name="spaceAround">20</VendorOption>
+            <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
 
@@ -883,7 +883,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </ogc:Filter>
           <MinScaleDenominator>3701</MinScaleDenominator>
           <MaxScaleDenominator>6001</MaxScaleDenominator>
-          <TextSymbolizer>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
               <ogc:PropertyName>DISTNAME</ogc:PropertyName>
             </Label>
@@ -905,8 +905,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </Halo>
             <Fill><CssParameter name="fill">#737373</CssParameter></Fill>
             <Priority>1000</Priority>
-            <VendorOption name="spaceAround">5</VendorOption>
-            <VendorOption name="autoWrap">100</VendorOption>
+            <VendorOption name="spaceAround">20</VendorOption>
+            <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
         
@@ -926,7 +926,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </ogc:Filter>
           <MinScaleDenominator>6001</MinScaleDenominator>
           <MaxScaleDenominator>10001</MaxScaleDenominator>
-          <TextSymbolizer>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
               <ogc:PropertyName>DISTNAME</ogc:PropertyName>
             </Label>
@@ -948,8 +948,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </Halo>
             <Fill><CssParameter name="fill">#737373</CssParameter></Fill>
             <Priority>1000</Priority>
-            <VendorOption name="spaceAround">5</VendorOption>
-            <VendorOption name="autoWrap">100</VendorOption>
+            <VendorOption name="spaceAround">20</VendorOption>
+            <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
 
@@ -969,7 +969,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </ogc:Filter>
           <MinScaleDenominator>10001</MinScaleDenominator>
           <MaxScaleDenominator>15000</MaxScaleDenominator>
-          <TextSymbolizer>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
               <ogc:PropertyName>DISTNAME</ogc:PropertyName>
             </Label>
@@ -991,8 +991,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </Halo>
             <Fill><CssParameter name="fill">#737373</CssParameter></Fill>
             <Priority>1000</Priority>
-            <VendorOption name="spaceAround">5</VendorOption>
-            <VendorOption name="autoWrap">100</VendorOption>
+            <VendorOption name="spaceAround">20</VendorOption>
+            <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
 
@@ -1015,7 +1015,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </ogc:Filter>
           <MinScaleDenominator>1000</MinScaleDenominator>
           <MaxScaleDenominator>3701</MaxScaleDenominator>
-          <TextSymbolizer>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
               <ogc:PropertyName>DISTNAME</ogc:PropertyName>
             </Label>
@@ -1040,8 +1040,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </Halo>
             <Fill><CssParameter name="fill">#737373</CssParameter></Fill>
             <Priority>1000</Priority>
-            <VendorOption name="spaceAround">5</VendorOption>
-            <VendorOption name="autoWrap">100</VendorOption>
+            <VendorOption name="spaceAround">20</VendorOption>
+            <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
         
@@ -1061,7 +1061,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </ogc:Filter>
           <MinScaleDenominator>3701</MinScaleDenominator>
           <MaxScaleDenominator>6001</MaxScaleDenominator>
-          <TextSymbolizer>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
               <ogc:PropertyName>DISTNAME</ogc:PropertyName>
             </Label>
@@ -1086,8 +1086,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </Halo>
             <Fill><CssParameter name="fill">#737373</CssParameter></Fill>
             <Priority>1000</Priority>
-            <VendorOption name="spaceAround">5</VendorOption>
-            <VendorOption name="autoWrap">100</VendorOption>
+            <VendorOption name="spaceAround">20</VendorOption>
+            <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
         
@@ -1107,7 +1107,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </ogc:Filter>
           <MinScaleDenominator>6001</MinScaleDenominator>
           <MaxScaleDenominator>10001</MaxScaleDenominator>
-          <TextSymbolizer>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
               <ogc:PropertyName>DISTNAME</ogc:PropertyName>
             </Label>
@@ -1132,8 +1132,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </Halo>
             <Fill><CssParameter name="fill">#737373</CssParameter></Fill>
             <Priority>1000</Priority>
-            <VendorOption name="spaceAround">5</VendorOption>
-            <VendorOption name="autoWrap">100</VendorOption>
+            <VendorOption name="spaceAround">20</VendorOption>
+            <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
         
@@ -1153,7 +1153,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </ogc:Filter>
           <MinScaleDenominator>10001</MinScaleDenominator>
           <MaxScaleDenominator>15000</MaxScaleDenominator>
-          <TextSymbolizer>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
               <ogc:PropertyName>DISTNAME</ogc:PropertyName>
             </Label>
@@ -1178,8 +1178,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </Halo>
             <Fill><CssParameter name="fill">#737373</CssParameter></Fill>
             <Priority>1000</Priority>
-            <VendorOption name="spaceAround">5</VendorOption>
-            <VendorOption name="autoWrap">100</VendorOption>
+            <VendorOption name="spaceAround">20</VendorOption>
+            <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
 
@@ -1200,7 +1200,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </ogc:Filter>
           <MinScaleDenominator>1000</MinScaleDenominator>
           <MaxScaleDenominator>3701</MaxScaleDenominator>
-          <TextSymbolizer>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
               <ogc:PropertyName>DISTNAME</ogc:PropertyName>
             </Label>
@@ -1225,8 +1225,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </Halo>
             <Fill><CssParameter name="fill">#737373</CssParameter></Fill>
             <Priority>1000</Priority>
-            <VendorOption name="spaceAround">5</VendorOption>
-            <VendorOption name="autoWrap">100</VendorOption>
+            <VendorOption name="spaceAround">20</VendorOption>
+            <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
         
@@ -1246,7 +1246,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </ogc:Filter>
           <MinScaleDenominator>3701</MinScaleDenominator>
           <MaxScaleDenominator>6001</MaxScaleDenominator>
-          <TextSymbolizer>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
               <ogc:PropertyName>DISTNAME</ogc:PropertyName>
             </Label>
@@ -1271,8 +1271,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </Halo>
             <Fill><CssParameter name="fill">#737373</CssParameter></Fill>
             <Priority>1000</Priority>
-            <VendorOption name="spaceAround">5</VendorOption>
-            <VendorOption name="autoWrap">100</VendorOption>
+            <VendorOption name="spaceAround">20</VendorOption>
+            <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
         
@@ -1292,7 +1292,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </ogc:Filter>
           <MinScaleDenominator>6001</MinScaleDenominator>
           <MaxScaleDenominator>10001</MaxScaleDenominator>
-          <TextSymbolizer>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
               <ogc:PropertyName>DISTNAME</ogc:PropertyName>
             </Label>
@@ -1317,8 +1317,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </Halo>
             <Fill><CssParameter name="fill">#737373</CssParameter></Fill>
             <Priority>1000</Priority>
-            <VendorOption name="spaceAround">5</VendorOption>
-            <VendorOption name="autoWrap">100</VendorOption>
+            <VendorOption name="spaceAround">20</VendorOption>
+            <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
         
@@ -1338,7 +1338,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </ogc:Filter>
           <MinScaleDenominator>10001</MinScaleDenominator>
           <MaxScaleDenominator>15000</MaxScaleDenominator>
-          <TextSymbolizer>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
               <ogc:PropertyName>DISTNAME</ogc:PropertyName>
             </Label>
@@ -1363,8 +1363,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </Halo>
             <Fill><CssParameter name="fill">#737373</CssParameter></Fill>
             <Priority>1000</Priority>
-            <VendorOption name="spaceAround">5</VendorOption>
-            <VendorOption name="autoWrap">100</VendorOption>
+            <VendorOption name="spaceAround">20</VendorOption>
+            <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
 
@@ -1385,7 +1385,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </ogc:Filter>
           <MinScaleDenominator>3701</MinScaleDenominator>
           <MaxScaleDenominator>6001</MaxScaleDenominator>
-          <TextSymbolizer>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
               <ogc:PropertyName>DISTNAME</ogc:PropertyName>
             </Label>
@@ -1410,8 +1410,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </Halo>
             <Fill><CssParameter name="fill">#737373</CssParameter></Fill>
             <Priority>1000</Priority>
-            <VendorOption name="spaceAround">5</VendorOption>
-            <VendorOption name="autoWrap">100</VendorOption>
+            <VendorOption name="spaceAround">20</VendorOption>
+            <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
         
@@ -1431,7 +1431,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </ogc:Filter>
           <MinScaleDenominator>6001</MinScaleDenominator>
           <MaxScaleDenominator>10001</MaxScaleDenominator>
-          <TextSymbolizer>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
               <ogc:PropertyName>DISTNAME</ogc:PropertyName>
             </Label>
@@ -1456,8 +1456,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </Halo>
             <Fill><CssParameter name="fill">#737373</CssParameter></Fill>
             <Priority>1000</Priority>
-            <VendorOption name="spaceAround">5</VendorOption>
-            <VendorOption name="autoWrap">100</VendorOption>
+            <VendorOption name="spaceAround">20</VendorOption>
+            <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
         
@@ -1477,7 +1477,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </ogc:Filter>
           <MinScaleDenominator>10001</MinScaleDenominator>
           <MaxScaleDenominator>15000</MaxScaleDenominator>
-          <TextSymbolizer>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
               <ogc:PropertyName>DISTNAME</ogc:PropertyName>
             </Label>
@@ -1502,8 +1502,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </Halo>
             <Fill><CssParameter name="fill">#737373</CssParameter></Fill>
             <Priority>1000</Priority>
-            <VendorOption name="spaceAround">5</VendorOption>
-            <VendorOption name="autoWrap">100</VendorOption>
+            <VendorOption name="spaceAround">20</VendorOption>
+            <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
 
@@ -1525,7 +1525,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </ogc:Filter>
           <MinScaleDenominator>1000</MinScaleDenominator>
           <MaxScaleDenominator>3701</MaxScaleDenominator>
-          <TextSymbolizer>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
               <ogc:PropertyName>DISTNAME</ogc:PropertyName>
             </Label>
@@ -1548,8 +1548,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </Halo>
             <Fill><CssParameter name="fill">#555555</CssParameter></Fill>
             <Priority>1000</Priority>
-            <VendorOption name="spaceAround">5</VendorOption>
-            <VendorOption name="autoWrap">100</VendorOption>
+            <VendorOption name="spaceAround">20</VendorOption>
+            <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
         
@@ -1569,7 +1569,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </ogc:Filter>
           <MinScaleDenominator>3701</MinScaleDenominator>
           <MaxScaleDenominator>6001</MaxScaleDenominator>
-          <TextSymbolizer>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
               <ogc:PropertyName>DISTNAME</ogc:PropertyName>
             </Label>
@@ -1592,8 +1592,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </Halo>
             <Fill><CssParameter name="fill">#555555</CssParameter></Fill>
             <Priority>1000</Priority>
-            <VendorOption name="spaceAround">5</VendorOption>
-            <VendorOption name="autoWrap">100</VendorOption>
+            <VendorOption name="spaceAround">20</VendorOption>
+            <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
         
@@ -1613,7 +1613,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </ogc:Filter>
           <MinScaleDenominator>6001</MinScaleDenominator>
           <MaxScaleDenominator>10001</MaxScaleDenominator>
-          <TextSymbolizer>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
               <ogc:PropertyName>DISTNAME</ogc:PropertyName>
             </Label>
@@ -1636,8 +1636,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </Halo>
             <Fill><CssParameter name="fill">#555555</CssParameter></Fill>
             <Priority>1000</Priority>
-            <VendorOption name="spaceAround">5</VendorOption>
-            <VendorOption name="autoWrap">100</VendorOption>
+            <VendorOption name="spaceAround">20</VendorOption>
+            <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
         
@@ -1657,7 +1657,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </ogc:Filter>
           <MinScaleDenominator>10001</MinScaleDenominator>
           <MaxScaleDenominator>15000</MaxScaleDenominator>
-          <TextSymbolizer>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
               <ogc:PropertyName>DISTNAME</ogc:PropertyName>
             </Label>
@@ -1680,8 +1680,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </Halo>
             <Fill><CssParameter name="fill">#555555</CssParameter></Fill>
             <Priority>1000</Priority>
-            <VendorOption name="spaceAround">5</VendorOption>
-            <VendorOption name="autoWrap">100</VendorOption>
+            <VendorOption name="spaceAround">20</VendorOption>
+            <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
 
@@ -1702,7 +1702,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </ogc:Filter>
           <MinScaleDenominator>1000</MinScaleDenominator>
           <MaxScaleDenominator>3701</MaxScaleDenominator>
-          <TextSymbolizer>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
               <ogc:PropertyName>DISTNAME</ogc:PropertyName>
             </Label>
@@ -1725,8 +1725,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </Halo>
             <Fill><CssParameter name="fill">#555555</CssParameter></Fill>
             <Priority>1000</Priority>
-            <VendorOption name="spaceAround">5</VendorOption>
-            <VendorOption name="autoWrap">100</VendorOption>
+            <VendorOption name="spaceAround">20</VendorOption>
+            <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
         
@@ -1746,7 +1746,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </ogc:Filter>
           <MinScaleDenominator>3701</MinScaleDenominator>
           <MaxScaleDenominator>6001</MaxScaleDenominator>
-          <TextSymbolizer>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
               <ogc:PropertyName>DISTNAME</ogc:PropertyName>
             </Label>
@@ -1769,8 +1769,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </Halo>
             <Fill><CssParameter name="fill">#555555</CssParameter></Fill>
             <Priority>1000</Priority>
-            <VendorOption name="spaceAround">5</VendorOption>
-            <VendorOption name="autoWrap">100</VendorOption>
+            <VendorOption name="spaceAround">20</VendorOption>
+            <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
         
@@ -1790,7 +1790,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </ogc:Filter>
           <MinScaleDenominator>6001</MinScaleDenominator>
           <MaxScaleDenominator>10001</MaxScaleDenominator>
-          <TextSymbolizer>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
               <ogc:PropertyName>DISTNAME</ogc:PropertyName>
             </Label>
@@ -1813,8 +1813,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </Halo>
             <Fill><CssParameter name="fill">#555555</CssParameter></Fill>
             <Priority>1000</Priority>
-            <VendorOption name="spaceAround">5</VendorOption>
-            <VendorOption name="autoWrap">100</VendorOption>
+            <VendorOption name="spaceAround">20</VendorOption>
+            <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
 
@@ -1834,7 +1834,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </ogc:Filter>
           <MinScaleDenominator>10001</MinScaleDenominator>
           <MaxScaleDenominator>15000</MaxScaleDenominator>
-          <TextSymbolizer>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
               <ogc:PropertyName>DISTNAME</ogc:PropertyName>
             </Label>
@@ -1857,8 +1857,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </Halo>
             <Fill><CssParameter name="fill">#555555</CssParameter></Fill>
             <Priority>1000</Priority>
-            <VendorOption name="spaceAround">5</VendorOption>
-            <VendorOption name="autoWrap">100</VendorOption>
+            <VendorOption name="spaceAround">20</VendorOption>
+            <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
 
@@ -1881,7 +1881,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </ogc:Filter>
           <MinScaleDenominator>3701</MinScaleDenominator>
           <MaxScaleDenominator>6001</MaxScaleDenominator>
-          <TextSymbolizer>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
               <ogc:PropertyName>DISTNAME</ogc:PropertyName>
             </Label>
@@ -1904,8 +1904,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </Halo>
             <Fill><CssParameter name="fill">#555555</CssParameter></Fill>
             <Priority>1000</Priority>
-            <VendorOption name="spaceAround">5</VendorOption>
-            <VendorOption name="autoWrap">100</VendorOption>
+            <VendorOption name="spaceAround">20</VendorOption>
+            <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
         
@@ -1925,7 +1925,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </ogc:Filter>
           <MinScaleDenominator>6001</MinScaleDenominator>
           <MaxScaleDenominator>10001</MaxScaleDenominator>
-          <TextSymbolizer>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
               <ogc:PropertyName>DISTNAME</ogc:PropertyName>
             </Label>
@@ -1948,8 +1948,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </Halo>
             <Fill><CssParameter name="fill">#555555</CssParameter></Fill>
             <Priority>1000</Priority>
-            <VendorOption name="spaceAround">5</VendorOption>
-            <VendorOption name="autoWrap">100</VendorOption>
+            <VendorOption name="spaceAround">20</VendorOption>
+            <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
         
@@ -1969,7 +1969,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </ogc:Filter>
           <MinScaleDenominator>10001</MinScaleDenominator>
           <MaxScaleDenominator>15000</MaxScaleDenominator>
-          <TextSymbolizer>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
               <ogc:PropertyName>DISTNAME</ogc:PropertyName>
             </Label>
@@ -1992,8 +1992,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </Halo>
             <Fill><CssParameter name="fill">#555555</CssParameter></Fill>
             <Priority>1000</Priority>
-            <VendorOption name="spaceAround">5</VendorOption>
-            <VendorOption name="autoWrap">100</VendorOption>
+            <VendorOption name="spaceAround">20</VendorOption>
+            <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
 
@@ -2018,7 +2018,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </ogc:Filter>
           <MinScaleDenominator>1000</MinScaleDenominator>
           <MaxScaleDenominator>3701</MaxScaleDenominator>
-          <TextSymbolizer>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
               <ogc:PropertyName>DISTNAME</ogc:PropertyName>
             </Label>
@@ -2040,8 +2040,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </Halo>
             <Fill><CssParameter name="fill">#79A572</CssParameter></Fill>
             <Priority>1000</Priority>
-            <VendorOption name="spaceAround">5</VendorOption>
-            <VendorOption name="autoWrap">100</VendorOption>
+            <VendorOption name="spaceAround">20</VendorOption>
+            <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
 
@@ -2061,7 +2061,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </ogc:Filter>
           <MinScaleDenominator>3701</MinScaleDenominator>
           <MaxScaleDenominator>6001</MaxScaleDenominator>
-          <TextSymbolizer>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
               <ogc:PropertyName>DISTNAME</ogc:PropertyName>
             </Label>
@@ -2083,8 +2083,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </Halo>
             <Fill><CssParameter name="fill">#79A572</CssParameter></Fill>
             <Priority>1000</Priority>
-            <VendorOption name="spaceAround">5</VendorOption>
-            <VendorOption name="autoWrap">100</VendorOption>
+            <VendorOption name="spaceAround">20</VendorOption>
+            <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
         
@@ -2104,7 +2104,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </ogc:Filter>
           <MinScaleDenominator>6001</MinScaleDenominator>
           <MaxScaleDenominator>10001</MaxScaleDenominator>
-          <TextSymbolizer>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
               <ogc:PropertyName>DISTNAME</ogc:PropertyName>
             </Label>
@@ -2126,8 +2126,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </Halo>
             <Fill><CssParameter name="fill">#79A572</CssParameter></Fill>
             <Priority>1000</Priority>
-            <VendorOption name="spaceAround">5</VendorOption>
-            <VendorOption name="autoWrap">100</VendorOption>
+            <VendorOption name="spaceAround">20</VendorOption>
+            <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
         
@@ -2147,7 +2147,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </ogc:Filter>
           <MinScaleDenominator>10001</MinScaleDenominator>
           <MaxScaleDenominator>15000</MaxScaleDenominator>
-          <TextSymbolizer>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
               <ogc:PropertyName>DISTNAME</ogc:PropertyName>
             </Label>
@@ -2169,8 +2169,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </Halo>
             <Fill><CssParameter name="fill">#79A572</CssParameter></Fill>
             <Priority>1000</Priority>
-            <VendorOption name="spaceAround">5</VendorOption>
-            <VendorOption name="autoWrap">100</VendorOption>
+            <VendorOption name="spaceAround">20</VendorOption>
+            <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
  
@@ -2190,7 +2190,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </ogc:Filter>
           <MinScaleDenominator>1000</MinScaleDenominator>
           <MaxScaleDenominator>3701</MaxScaleDenominator>
-          <TextSymbolizer>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
               <ogc:PropertyName>DISTNAME</ogc:PropertyName>
             </Label>
@@ -2212,8 +2212,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </Halo>
             <Fill><CssParameter name="fill">#79A572</CssParameter></Fill>
             <Priority>1000</Priority>
-            <VendorOption name="spaceAround">5</VendorOption>
-            <VendorOption name="autoWrap">100</VendorOption>
+            <VendorOption name="spaceAround">20</VendorOption>
+            <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
         
@@ -2233,7 +2233,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </ogc:Filter>
           <MinScaleDenominator>3701</MinScaleDenominator>
           <MaxScaleDenominator>6001</MaxScaleDenominator>
-          <TextSymbolizer>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
               <ogc:PropertyName>DISTNAME</ogc:PropertyName>
             </Label>
@@ -2255,8 +2255,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </Halo>
             <Fill><CssParameter name="fill">#79A572</CssParameter></Fill>
             <Priority>1000</Priority>
-            <VendorOption name="spaceAround">5</VendorOption>
-            <VendorOption name="autoWrap">100</VendorOption>
+            <VendorOption name="spaceAround">20</VendorOption>
+            <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
 
@@ -2276,7 +2276,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </ogc:Filter>
           <MinScaleDenominator>6001</MinScaleDenominator>
           <MaxScaleDenominator>10001</MaxScaleDenominator>
-          <TextSymbolizer>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
               <ogc:PropertyName>DISTNAME</ogc:PropertyName>
             </Label>
@@ -2298,8 +2298,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </Halo>
             <Fill><CssParameter name="fill">#79A572</CssParameter></Fill>
             <Priority>1000</Priority>
-            <VendorOption name="spaceAround">5</VendorOption>
-            <VendorOption name="autoWrap">100</VendorOption>
+            <VendorOption name="spaceAround">20</VendorOption>
+            <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
         
@@ -2319,7 +2319,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </ogc:Filter>
           <MinScaleDenominator>10001</MinScaleDenominator>
           <MaxScaleDenominator>15000</MaxScaleDenominator>
-          <TextSymbolizer>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
               <ogc:PropertyName>DISTNAME</ogc:PropertyName>
             </Label>
@@ -2341,8 +2341,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </Halo>
             <Fill><CssParameter name="fill">#79A572</CssParameter></Fill>
             <Priority>1000</Priority>
-            <VendorOption name="spaceAround">5</VendorOption>
-            <VendorOption name="autoWrap">100</VendorOption>
+            <VendorOption name="spaceAround">20</VendorOption>
+            <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
 
@@ -2366,7 +2366,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </ogc:Filter>
           <MinScaleDenominator>3701</MinScaleDenominator>
           <MaxScaleDenominator>6001</MaxScaleDenominator>
-          <TextSymbolizer>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
               <ogc:PropertyName>DISTNAME</ogc:PropertyName>
             </Label>
@@ -2388,8 +2388,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </Halo>
             <Fill><CssParameter name="fill">#79A572</CssParameter></Fill>
             <Priority>1000</Priority>
-            <VendorOption name="spaceAround">5</VendorOption>
-            <VendorOption name="autoWrap">100</VendorOption>
+            <VendorOption name="spaceAround">20</VendorOption>
+            <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
         
@@ -2409,7 +2409,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </ogc:Filter>
           <MinScaleDenominator>6001</MinScaleDenominator>
           <MaxScaleDenominator>10001</MaxScaleDenominator>
-          <TextSymbolizer>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
               <ogc:PropertyName>DISTNAME</ogc:PropertyName>
             </Label>
@@ -2431,8 +2431,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </Halo>
             <Fill><CssParameter name="fill">#79A572</CssParameter></Fill>
             <Priority>1000</Priority>
-            <VendorOption name="spaceAround">5</VendorOption>
-            <VendorOption name="autoWrap">100</VendorOption>
+            <VendorOption name="spaceAround">20</VendorOption>
+            <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
         
@@ -2453,7 +2453,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </ogc:Filter>
           <MinScaleDenominator>10001</MinScaleDenominator>
           <MaxScaleDenominator>15000</MaxScaleDenominator>
-          <TextSymbolizer>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
               <ogc:PropertyName>DISTNAME</ogc:PropertyName>
             </Label>
@@ -2475,8 +2475,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </Halo>
             <Fill><CssParameter name="fill">#79A572</CssParameter></Fill>
             <Priority>1000</Priority>
-            <VendorOption name="spaceAround">5</VendorOption>
-            <VendorOption name="autoWrap">100</VendorOption>
+            <VendorOption name="spaceAround">20</VendorOption>
+            <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
         </FeatureTypeStyle>

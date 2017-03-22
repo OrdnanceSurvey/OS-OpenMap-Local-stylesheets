@@ -30,15 +30,15 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
               <Size>30</Size>
             </Graphic>
           </PointSymbolizer>
-          <TextSymbolizer>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
               <ogc:PropertyName>DISTNAME</ogc:PropertyName>
               <ogc:Literal></ogc:Literal>
             </Label>
             <Font>
               <CssParameter name="font-family">Arial</CssParameter>
-              <CssParameter name="font-size">30</CssParameter>
-              <CssParameter name="font-weight">bold</CssParameter>
+              <CssParameter name="font-size">28</CssParameter>
+              <CssParameter name="font-weight">normal</CssParameter>
             </Font>
             <LabelPlacement>
               <PointPlacement>
@@ -47,7 +47,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
                   <AnchorPointY>0.5</AnchorPointY>
                 </AnchorPoint>
                 <Displacement>
-                  <DisplacementX>9</DisplacementX>
+                  <DisplacementX>20</DisplacementX>
                   <DisplacementY>0</DisplacementY>
                 </Displacement>
               </PointPlacement>
@@ -92,15 +92,15 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
               <Size>30</Size>
             </Graphic>
           </PointSymbolizer>
-          <TextSymbolizer>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
               <ogc:PropertyName>DISTNAME</ogc:PropertyName>
               <ogc:Literal></ogc:Literal>
             </Label>
             <Font>
               <CssParameter name="font-family">Arial</CssParameter>
-              <CssParameter name="font-size">30</CssParameter>
-              <CssParameter name="font-weight">bold</CssParameter>
+              <CssParameter name="font-size">28</CssParameter>
+              <CssParameter name="font-weight">normal</CssParameter>
             </Font>
             <LabelPlacement>
               <PointPlacement>
@@ -109,7 +109,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
                   <AnchorPointY>0.5</AnchorPointY>
                 </AnchorPoint>
                 <Displacement>
-                  <DisplacementX>9</DisplacementX>
+                  <DisplacementX>20</DisplacementX>
                   <DisplacementY>0</DisplacementY>
                 </Displacement>
               </PointPlacement>
@@ -153,15 +153,15 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
               <Size>30</Size>
             </Graphic>
           </PointSymbolizer>
-          <TextSymbolizer>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
               <ogc:PropertyName>DISTNAME</ogc:PropertyName>
               <ogc:Literal></ogc:Literal>
             </Label>
             <Font>
               <CssParameter name="font-family">Arial</CssParameter>
-              <CssParameter name="font-size">30</CssParameter>
-              <CssParameter name="font-weight">bold</CssParameter>
+              <CssParameter name="font-size">28</CssParameter>
+              <CssParameter name="font-weight">normal</CssParameter>
             </Font>
             <LabelPlacement>
               <PointPlacement>
@@ -170,7 +170,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
                   <AnchorPointY>0.5</AnchorPointY>
                 </AnchorPoint>
                 <Displacement>
-                  <DisplacementX>9</DisplacementX>
+                  <DisplacementX>20</DisplacementX>
                   <DisplacementY>0</DisplacementY>
                 </Displacement>
               </PointPlacement>
@@ -214,15 +214,15 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
               <Size>30</Size>
             </Graphic>
           </PointSymbolizer>
-          <TextSymbolizer>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
               <ogc:PropertyName>DISTNAME</ogc:PropertyName>
               <ogc:Literal></ogc:Literal>
             </Label>
             <Font>
               <CssParameter name="font-family">Arial</CssParameter>
-              <CssParameter name="font-size">30</CssParameter>
-              <CssParameter name="font-weight">bold</CssParameter>
+              <CssParameter name="font-size">28</CssParameter>
+              <CssParameter name="font-weight">normal</CssParameter>
             </Font>
             <LabelPlacement>
               <PointPlacement>
@@ -231,7 +231,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
                   <AnchorPointY>0.5</AnchorPointY>
                 </AnchorPoint>
                 <Displacement>
-                  <DisplacementX>9</DisplacementX>
+                  <DisplacementX>20</DisplacementX>
                   <DisplacementY>0</DisplacementY>
                 </Displacement>
               </PointPlacement>
@@ -275,15 +275,15 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
               <Size>30</Size>
             </Graphic>
           </PointSymbolizer>
-          <TextSymbolizer>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
               <ogc:PropertyName>DISTNAME</ogc:PropertyName>
               <ogc:Literal></ogc:Literal>
             </Label>
             <Font>
               <CssParameter name="font-family">Arial</CssParameter>
-              <CssParameter name="font-size">30</CssParameter>
-              <CssParameter name="font-weight">bold</CssParameter>
+              <CssParameter name="font-size">28</CssParameter>
+              <CssParameter name="font-weight">normal</CssParameter>
             </Font>
             <LabelPlacement>
               <PointPlacement>
@@ -292,7 +292,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
                   <AnchorPointY>0.5</AnchorPointY>
                 </AnchorPoint>
                 <Displacement>
-                  <DisplacementX>9</DisplacementX>
+                  <DisplacementX>20</DisplacementX>
                   <DisplacementY>0</DisplacementY>
                 </Displacement>
               </PointPlacement>
@@ -336,15 +336,15 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
               <Size>30</Size>
             </Graphic>
           </PointSymbolizer>
-          <TextSymbolizer>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
               <ogc:PropertyName>DISTNAME</ogc:PropertyName>
               <ogc:Literal></ogc:Literal>
             </Label>
             <Font>
               <CssParameter name="font-family">Arial</CssParameter>
-              <CssParameter name="font-size">30</CssParameter>
-              <CssParameter name="font-weight">bold</CssParameter>
+              <CssParameter name="font-size">28</CssParameter>
+              <CssParameter name="font-weight">normal</CssParameter>
             </Font>
             <LabelPlacement>
               <PointPlacement>
@@ -353,7 +353,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
                   <AnchorPointY>0.5</AnchorPointY>
                 </AnchorPoint>
                 <Displacement>
-                  <DisplacementX>9</DisplacementX>
+                  <DisplacementX>20</DisplacementX>
                   <DisplacementY>0</DisplacementY>
                 </Displacement>
               </PointPlacement>
