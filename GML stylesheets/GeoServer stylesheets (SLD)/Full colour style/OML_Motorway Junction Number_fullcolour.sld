@@ -15,7 +15,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           <Name>Motorway Junction Numbers</Name>
           <ogc:Filter>
               <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>junctionnumber</ogc:PropertyName>
+                <ogc:PropertyName>featurecode</ogc:PropertyName>
                 <ogc:Literal>15796</ogc:Literal>
               </ogc:PropertyIsEqualTo>
           </ogc:Filter>
