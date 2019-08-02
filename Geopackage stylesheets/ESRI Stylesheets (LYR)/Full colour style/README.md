@@ -1,6 +1,6 @@
 # OS OpenMap - Local Full colour style
 
-These are LYR files for OS OpenMap - Local in ESRI Shapefile format for use in ESRI ArcGIS.
+These are LYR files for OS OpenMap - Local in Geopackage format for use in ESRI ArcGIS.
 
 *They have been designed to work with the data as it is supplied.*
 
@@ -14,19 +14,20 @@ These are LYR files for OS OpenMap - Local in ESRI Shapefile format for use in E
 
 **3.**  Open a new blank map in ArcMap
 
-**4.**  Turn on the Maplex labelling engine
+**4.** Right-click on ‘Layers’ at the top of the Table Of Contents, select Properties… > then General > set Reference Scale to 1:10 000
 
-**5.**  Click on the Labelling drop down and select Abbreviation Dictionaries. Click on Options and choose Open From File... Naviagte to where the OpenMap_Abbreviations.dic is found and select
+**5.**  In the labelling toolbar, click on 'Use Maplex Label Engine' to turn on Maplex
 
-**6.**  Click on the ‘Add Data’ button and navigate to the stylesheets folder and the directory that matches your data format, stylesheet format and style preference
+**6.**  Click on the Labelling drop down and select Abbreviation Dictionaries. Click on Options and choose Open From File... Naviagte to where the OpenMap_Abbreviations.dic is found and select
 
-**7.**  Select the layer file and click ‘Add’
+**7.**  Click on the ‘Add Data’ button and navigate to the stylesheets folder and the directory that matches your data format, stylesheet format and style preference
 
-**8.**  Your Table of Contents should now look like this. This is the recommended layer order: 
+**8.**  Select the layer file and click ‘Add’
 
+**9.**  Your Table of Contents should now look like this. This is the recommended layer order: 
   ![Screenshot](https://raw.githubusercontent.com/OrdnanceSurvey/OS-OpenMap-Local-stylesheets/master/ESRI%20Shapefile%20stylesheets/ESRI%20stylesheets%20%28LYR%29/Full%20colour%20style/images/OML_FC_layer_order.png "Recommended layer order for OS Open Map Local")
 
-**9.**  Double-click on a layer to access the ‘Layer Properties’ window > select the ‘Source tab’ > click on ‘Set Data Source…’ > navigate to your OS Open Map Local data > select the data that matches the layer for example, Text = Building.shp > select ‘Add’
+**10.**  Double-click on a layer to access the ‘Layer Properties’ window > select the ‘Source tab’ > click on ‘Set Data Source…’ > navigate to your OS Open Map Local data > select the data that matches the layer for example, Text = Building.shp > select ‘Add’
 
 Repeat step 7 for all layers.
 
