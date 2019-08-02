@@ -1,21 +1,21 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis readOnly="0" simplifyMaxScale="1" simplifyDrawingHints="1" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" minScale="1e+08" simplifyDrawingTol="1" maxScale="0" simplifyAlgorithm="0" version="3.4.1-Madeira" styleCategories="AllStyleCategories" labelsEnabled="1">
+<qgis simplifyDrawingTol="1" labelsEnabled="1" simplifyDrawingHints="1" hasScaleBasedVisibilityFlag="0" minScale="1e+08" simplifyMaxScale="1" styleCategories="AllStyleCategories" simplifyAlgorithm="0" simplifyLocal="1" readOnly="0" version="3.4.1-Madeira" maxScale="0">
   <flags>
     <Identifiable>1</Identifiable>
     <Removable>1</Removable>
     <Searchable>1</Searchable>
   </flags>
-  <renderer-v2 type="categorizedSymbol" forceraster="0" attr="siteTheme" symbollevels="0" enableorderby="0">
+  <renderer-v2 attr="siteTheme" enableorderby="0" symbollevels="0" forceraster="0" type="categorizedSymbol">
     <categories>
-      <category symbol="0" value="Air Transport" label="Air Transport" render="true"/>
-      <category symbol="1" value="Education" label="Education" render="true"/>
-      <category symbol="2" value="Medical Care" label="Medical Care" render="true"/>
-      <category symbol="3" value="Road Transport" label="Road Transport" render="true"/>
-      <category symbol="4" value="Water Transport" label="Water Transport" render="true"/>
+      <category render="true" symbol="0" value="Air Transport" label="Air Transport"/>
+      <category render="true" symbol="1" value="Education" label="Education"/>
+      <category render="true" symbol="2" value="Medical Care" label="Medical Care"/>
+      <category render="true" symbol="3" value="Road Transport" label="Road Transport"/>
+      <category render="true" symbol="4" value="Water Transport" label="Water Transport"/>
     </categories>
     <symbols>
-      <symbol type="fill" alpha="1" name="0" clip_to_extent="1">
-        <layer enabled="1" class="SimpleFill" pass="0" locked="0">
+      <symbol alpha="0.25" type="fill" name="0" clip_to_extent="1">
+        <layer enabled="1" locked="0" pass="0" class="SimpleFill">
           <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
           <prop v="255,255,127,255" k="color"/>
           <prop v="bevel" k="joinstyle"/>
@@ -29,15 +29,15 @@
           <prop v="solid" k="style"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option type="QString" value="" name="name"/>
+              <Option type="QString" name="name" value=""/>
               <Option name="properties"/>
-              <Option type="QString" value="collection" name="type"/>
+              <Option type="QString" name="type" value="collection"/>
             </Option>
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol type="fill" alpha="1" name="1" clip_to_extent="1">
-        <layer enabled="1" class="SimpleFill" pass="0" locked="0">
+      <symbol alpha="0.25" type="fill" name="1" clip_to_extent="1">
+        <layer enabled="1" locked="0" pass="0" class="SimpleFill">
           <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
           <prop v="219,127,255,255" k="color"/>
           <prop v="bevel" k="joinstyle"/>
@@ -51,15 +51,15 @@
           <prop v="solid" k="style"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option type="QString" value="" name="name"/>
+              <Option type="QString" name="name" value=""/>
               <Option name="properties"/>
-              <Option type="QString" value="collection" name="type"/>
+              <Option type="QString" name="type" value="collection"/>
             </Option>
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol type="fill" alpha="1" name="2" clip_to_extent="1">
-        <layer enabled="1" class="SimpleFill" pass="0" locked="0">
+      <symbol alpha="0.25" type="fill" name="2" clip_to_extent="1">
+        <layer enabled="1" locked="0" pass="0" class="SimpleFill">
           <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
           <prop v="127,255,136,255" k="color"/>
           <prop v="bevel" k="joinstyle"/>
@@ -73,15 +73,15 @@
           <prop v="solid" k="style"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option type="QString" value="" name="name"/>
+              <Option type="QString" name="name" value=""/>
               <Option name="properties"/>
-              <Option type="QString" value="collection" name="type"/>
+              <Option type="QString" name="type" value="collection"/>
             </Option>
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol type="fill" alpha="1" name="3" clip_to_extent="1">
-        <layer enabled="1" class="SimpleFill" pass="0" locked="0">
+      <symbol alpha="0.25" type="fill" name="3" clip_to_extent="1">
+        <layer enabled="1" locked="0" pass="0" class="SimpleFill">
           <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
           <prop v="255,138,127,255" k="color"/>
           <prop v="bevel" k="joinstyle"/>
@@ -95,15 +95,15 @@
           <prop v="solid" k="style"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option type="QString" value="" name="name"/>
+              <Option type="QString" name="name" value=""/>
               <Option name="properties"/>
-              <Option type="QString" value="collection" name="type"/>
+              <Option type="QString" name="type" value="collection"/>
             </Option>
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol type="fill" alpha="1" name="4" clip_to_extent="1">
-        <layer enabled="1" class="SimpleFill" pass="0" locked="0">
+      <symbol alpha="0.25" type="fill" name="4" clip_to_extent="1">
+        <layer enabled="1" locked="0" pass="0" class="SimpleFill">
           <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
           <prop v="127,168,255,255" k="color"/>
           <prop v="bevel" k="joinstyle"/>
@@ -117,17 +117,17 @@
           <prop v="solid" k="style"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option type="QString" value="" name="name"/>
+              <Option type="QString" name="name" value=""/>
               <Option name="properties"/>
-              <Option type="QString" value="collection" name="type"/>
+              <Option type="QString" name="type" value="collection"/>
             </Option>
           </data_defined_properties>
         </layer>
       </symbol>
     </symbols>
     <source-symbol>
-      <symbol type="fill" alpha="1" name="0" clip_to_extent="1">
-        <layer enabled="1" class="SimpleFill" pass="0" locked="0">
+      <symbol alpha="1" type="fill" name="0" clip_to_extent="1">
+        <layer enabled="1" locked="0" pass="0" class="SimpleFill">
           <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
           <prop v="214,180,112,255" k="color"/>
           <prop v="bevel" k="joinstyle"/>
@@ -141,9 +141,9 @@
           <prop v="solid" k="style"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option type="QString" value="" name="name"/>
+              <Option type="QString" name="name" value=""/>
               <Option name="properties"/>
-              <Option type="QString" value="collection" name="type"/>
+              <Option type="QString" name="type" value="collection"/>
             </Option>
           </data_defined_properties>
         </layer>
@@ -160,26 +160,26 @@
   </renderer-v2>
   <labeling type="simple">
     <settings>
-      <text-style fontSizeUnit="MapUnit" fontStrikeout="0" fontSizeMapUnitScale="3x:0,0,0,0,0,0" fontUnderline="0" fontItalic="0" fontCapitals="0" blendMode="0" fieldName="CASE WHEN  &quot;distinctiveName&quot;  LIKE '%School%' THEN 'School'&#xd;&#xa;WHEN &quot;distinctiveName&quot; LIKE '%College%' THEN 'College'&#xd;&#xa;WHEN &quot;distinctiveName&quot; LIKE '%University%' THEN 'University'&#xd;&#xa;WHEN &quot;distinctiveName&quot; LIKE '%University Hospital%' THEN 'Hospital'&#xd;&#xa;WHEN &quot;distinctiveName&quot; LIKE '%Hospital%' THEN 'Hospital'&#xd;&#xa;WHEN &quot;classification&quot; = 'Bus Station' THEN 'Bus Station'&#xd;&#xa;WHEN &quot;classification&quot; = 'Coach Station' THEN 'Coach Station'&#xd;&#xa;WHEN &quot;classification&quot; LIKE '%Railway%' THEN ''&#xd;&#xa;ELSE  &quot;distinctiveName&quot; END" fontFamily="Arial" multilineHeight="1" previewBkgrdColor="#ffffff" useSubstitutions="0" fontSize="28" textColor="115,115,115,255" textOpacity="1" fontWeight="75" fontLetterSpacing="0" fontWordSpacing="0" isExpression="1" namedStyle="Bold">
-        <text-buffer bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferSize="5" bufferColor="255,255,255,255" bufferOpacity="1" bufferNoFill="0" bufferSizeUnits="MapUnit" bufferJoinStyle="128" bufferBlendMode="0" bufferDraw="1"/>
-        <background shapeSizeX="0" shapeSVGFile="" shapeOffsetX="0" shapeSizeType="0" shapeRadiiY="0" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeSizeUnit="MM" shapeBlendMode="0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeBorderColor="128,128,128,255" shapeBorderWidth="0" shapeOpacity="1" shapeFillColor="255,255,255,255" shapeOffsetUnit="MM" shapeRadiiUnit="MM" shapeDraw="0" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeJoinStyle="64" shapeBorderWidthUnit="MM" shapeType="0" shapeOffsetY="0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeRotationType="0" shapeSizeY="0" shapeRadiiX="0" shapeRotation="0"/>
-        <shadow shadowScale="100" shadowBlendMode="6" shadowUnder="0" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowRadiusUnit="MM" shadowDraw="0" shadowRadiusAlphaOnly="0" shadowOffsetUnit="MM" shadowRadius="1.5" shadowOffsetAngle="135" shadowOffsetDist="1" shadowOffsetGlobal="1" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowOpacity="0.7" shadowColor="0,0,0,255"/>
+      <text-style fieldName="CASE WHEN  &quot;distinctiveName&quot;  LIKE '%School%' THEN 'School'&#xd;&#xa;WHEN &quot;distinctiveName&quot; LIKE '%College%' THEN 'College'&#xd;&#xa;WHEN &quot;distinctiveName&quot; LIKE '%University%' THEN 'University'&#xd;&#xa;WHEN &quot;distinctiveName&quot; LIKE '%University Hospital%' THEN 'Hospital'&#xd;&#xa;WHEN &quot;distinctiveName&quot; LIKE '%Hospital%' THEN 'Hospital'&#xd;&#xa;WHEN &quot;classification&quot; = 'Bus Station' THEN 'Bus Station'&#xd;&#xa;WHEN &quot;classification&quot; = 'Coach Station' THEN 'Coach Station'&#xd;&#xa;WHEN &quot;classification&quot; LIKE '%Railway%' THEN ''&#xd;&#xa;ELSE  &quot;distinctiveName&quot; END" fontFamily="Arial" fontSizeUnit="MapUnit" isExpression="1" fontCapitals="0" fontItalic="0" fontWeight="75" blendMode="0" textOpacity="1" namedStyle="Bold" fontSizeMapUnitScale="3x:0,0,0,0,0,0" textColor="115,115,115,255" useSubstitutions="0" multilineHeight="1" fontWordSpacing="0" previewBkgrdColor="#ffffff" fontLetterSpacing="0" fontStrikeout="0" fontUnderline="0" fontSize="28">
+        <text-buffer bufferDraw="1" bufferNoFill="0" bufferBlendMode="0" bufferJoinStyle="128" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferColor="255,255,255,255" bufferOpacity="1" bufferSizeUnits="MapUnit" bufferSize="5"/>
+        <background shapeRadiiX="0" shapeFillColor="255,255,255,255" shapeOffsetX="0" shapeRadiiY="0" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeBorderColor="128,128,128,255" shapeRadiiUnit="MM" shapeSizeX="0" shapeRotation="0" shapeSVGFile="" shapeJoinStyle="64" shapeSizeType="0" shapeBorderWidth="0" shapeOffsetY="0" shapeOffsetUnit="MM" shapeType="0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeBorderWidthUnit="MM" shapeDraw="0" shapeOpacity="1" shapeBlendMode="0" shapeSizeY="0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeRotationType="0" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeSizeUnit="MM"/>
+        <shadow shadowOffsetDist="1" shadowBlendMode="6" shadowRadiusUnit="MM" shadowDraw="0" shadowOpacity="0.7" shadowRadius="1.5" shadowColor="0,0,0,255" shadowScale="100" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowUnder="0" shadowOffsetGlobal="1" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowOffsetAngle="135" shadowOffsetUnit="MM" shadowRadiusAlphaOnly="0"/>
         <substitutions/>
       </text-style>
-      <text-format leftDirectionSymbol="&lt;" multilineAlign="1" placeDirectionSymbol="0" rightDirectionSymbol=">" wrapChar=" " reverseDirectionSymbol="0" formatNumbers="0" addDirectionSymbol="0" useMaxLineLengthForAutoWrap="1" decimals="3" plussign="0" autoWrapLength="0"/>
-      <placement centroidInside="1" placement="1" maxCurvedCharAngleOut="-20" repeatDistance="0" centroidWhole="0" xOffset="0" rotationAngle="0" repeatDistanceUnits="MM" distUnits="MM" offsetType="0" priority="7" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" maxCurvedCharAngleIn="20" quadOffset="5" offsetUnits="MapUnit" yOffset="0" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" fitInPolygonOnly="0" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" distMapUnitScale="3x:0,0,0,0,0,0" placementFlags="0" dist="0" preserveRotation="1"/>
-      <rendering scaleMax="10000000" scaleMin="1" drawLabels="1" upsidedownLabels="0" obstacleType="0" scaleVisibility="0" fontLimitPixelSize="0" obstacleFactor="1" mergeLines="0" displayAll="0" labelPerPart="0" zIndex="0" minFeatureSize="0" maxNumLabels="2000" limitNumLabels="0" fontMaxPixelSize="10000" obstacle="1" fontMinPixelSize="3"/>
+      <text-format reverseDirectionSymbol="0" decimals="3" multilineAlign="1" useMaxLineLengthForAutoWrap="1" formatNumbers="0" rightDirectionSymbol=">" leftDirectionSymbol="&lt;" plussign="0" wrapChar=" " autoWrapLength="0" placeDirectionSymbol="0" addDirectionSymbol="0"/>
+      <placement xOffset="0" dist="0" distMapUnitScale="3x:0,0,0,0,0,0" quadOffset="5" maxCurvedCharAngleOut="-20" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" centroidWhole="0" distUnits="MM" placementFlags="0" preserveRotation="1" placement="1" yOffset="0" repeatDistanceUnits="MM" rotationAngle="0" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" priority="7" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" maxCurvedCharAngleIn="20" repeatDistance="0" fitInPolygonOnly="0" offsetType="0" offsetUnits="MapUnit" centroidInside="1"/>
+      <rendering scaleVisibility="0" labelPerPart="0" displayAll="0" limitNumLabels="0" maxNumLabels="2000" zIndex="0" fontMaxPixelSize="10000" fontMinPixelSize="3" scaleMin="1" scaleMax="10000000" fontLimitPixelSize="0" obstacle="1" mergeLines="0" obstacleType="0" minFeatureSize="0" obstacleFactor="1" upsidedownLabels="0" drawLabels="1"/>
       <dd_properties>
         <Option type="Map">
-          <Option type="QString" value="" name="name"/>
+          <Option type="QString" name="name" value=""/>
           <Option name="properties"/>
-          <Option type="QString" value="collection" name="type"/>
+          <Option type="QString" name="type" value="collection"/>
         </Option>
       </dd_properties>
     </settings>
   </labeling>
   <customproperties>
-    <property value="0" key="embeddedWidgets/count"/>
+    <property key="embeddedWidgets/count" value="0"/>
     <property key="variableNames"/>
     <property key="variableValues"/>
   </customproperties>
@@ -187,20 +187,20 @@
   <featureBlendMode>0</featureBlendMode>
   <layerOpacity>0.15</layerOpacity>
   <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
-    <DiagramCategory penAlpha="255" barWidth="5" maxScaleDenominator="1e+08" minimumSize="0" height="15" sizeType="MM" backgroundColor="#ffffff" backgroundAlpha="255" scaleDependency="Area" opacity="1" sizeScale="3x:0,0,0,0,0,0" penWidth="0" rotationOffset="270" penColor="#000000" minScaleDenominator="0" diagramOrientation="Up" width="15" lineSizeScale="3x:0,0,0,0,0,0" labelPlacementMethod="XHeight" scaleBasedVisibility="0" lineSizeType="MM" enabled="0">
-      <fontProperties description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" style=""/>
+    <DiagramCategory lineSizeScale="3x:0,0,0,0,0,0" barWidth="5" diagramOrientation="Up" sizeType="MM" opacity="1" backgroundAlpha="255" penWidth="0" scaleDependency="Area" maxScaleDenominator="1e+08" scaleBasedVisibility="0" penAlpha="255" height="15" labelPlacementMethod="XHeight" sizeScale="3x:0,0,0,0,0,0" lineSizeType="MM" minimumSize="0" rotationOffset="270" backgroundColor="#ffffff" enabled="0" penColor="#000000" width="15" minScaleDenominator="0">
+      <fontProperties style="" description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0"/>
     </DiagramCategory>
   </SingleCategoryDiagramRenderer>
-  <DiagramLayerSettings linePlacementFlags="18" priority="0" zIndex="0" dist="0" showAll="1" placement="1" obstacle="0">
+  <DiagramLayerSettings dist="0" priority="0" zIndex="0" obstacle="0" placement="1" showAll="1" linePlacementFlags="18">
     <properties>
       <Option type="Map">
-        <Option type="QString" value="" name="name"/>
+        <Option type="QString" name="name" value=""/>
         <Option name="properties"/>
-        <Option type="QString" value="collection" name="type"/>
+        <Option type="QString" name="type" value="collection"/>
       </Option>
     </properties>
   </DiagramLayerSettings>
-  <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+  <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
     <activeChecks/>
     <checkConfiguration/>
   </geometryOptions>
@@ -249,52 +249,52 @@
     </field>
   </fieldConfiguration>
   <aliases>
-    <alias field="fid" index="0" name=""/>
-    <alias field="id" index="1" name=""/>
-    <alias field="distinctiveName" index="2" name=""/>
-    <alias field="siteTheme" index="3" name=""/>
-    <alias field="classification" index="4" name=""/>
-    <alias field="featureCode" index="5" name=""/>
+    <alias name="" index="0" field="fid"/>
+    <alias name="" index="1" field="id"/>
+    <alias name="" index="2" field="distinctiveName"/>
+    <alias name="" index="3" field="siteTheme"/>
+    <alias name="" index="4" field="classification"/>
+    <alias name="" index="5" field="featureCode"/>
   </aliases>
   <excludeAttributesWMS/>
   <excludeAttributesWFS/>
   <defaults>
-    <default field="fid" expression="" applyOnUpdate="0"/>
-    <default field="id" expression="" applyOnUpdate="0"/>
-    <default field="distinctiveName" expression="" applyOnUpdate="0"/>
-    <default field="siteTheme" expression="" applyOnUpdate="0"/>
-    <default field="classification" expression="" applyOnUpdate="0"/>
-    <default field="featureCode" expression="" applyOnUpdate="0"/>
+    <default expression="" applyOnUpdate="0" field="fid"/>
+    <default expression="" applyOnUpdate="0" field="id"/>
+    <default expression="" applyOnUpdate="0" field="distinctiveName"/>
+    <default expression="" applyOnUpdate="0" field="siteTheme"/>
+    <default expression="" applyOnUpdate="0" field="classification"/>
+    <default expression="" applyOnUpdate="0" field="featureCode"/>
   </defaults>
   <constraints>
-    <constraint field="fid" constraints="3" notnull_strength="1" exp_strength="0" unique_strength="1"/>
-    <constraint field="id" constraints="1" notnull_strength="1" exp_strength="0" unique_strength="0"/>
-    <constraint field="distinctiveName" constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0"/>
-    <constraint field="siteTheme" constraints="1" notnull_strength="1" exp_strength="0" unique_strength="0"/>
-    <constraint field="classification" constraints="1" notnull_strength="1" exp_strength="0" unique_strength="0"/>
-    <constraint field="featureCode" constraints="1" notnull_strength="1" exp_strength="0" unique_strength="0"/>
+    <constraint unique_strength="1" constraints="3" notnull_strength="1" field="fid" exp_strength="0"/>
+    <constraint unique_strength="0" constraints="1" notnull_strength="1" field="id" exp_strength="0"/>
+    <constraint unique_strength="0" constraints="0" notnull_strength="0" field="distinctiveName" exp_strength="0"/>
+    <constraint unique_strength="0" constraints="1" notnull_strength="1" field="siteTheme" exp_strength="0"/>
+    <constraint unique_strength="0" constraints="1" notnull_strength="1" field="classification" exp_strength="0"/>
+    <constraint unique_strength="0" constraints="1" notnull_strength="1" field="featureCode" exp_strength="0"/>
   </constraints>
   <constraintExpressions>
-    <constraint field="fid" exp="" desc=""/>
-    <constraint field="id" exp="" desc=""/>
-    <constraint field="distinctiveName" exp="" desc=""/>
-    <constraint field="siteTheme" exp="" desc=""/>
-    <constraint field="classification" exp="" desc=""/>
-    <constraint field="featureCode" exp="" desc=""/>
+    <constraint desc="" exp="" field="fid"/>
+    <constraint desc="" exp="" field="id"/>
+    <constraint desc="" exp="" field="distinctiveName"/>
+    <constraint desc="" exp="" field="siteTheme"/>
+    <constraint desc="" exp="" field="classification"/>
+    <constraint desc="" exp="" field="featureCode"/>
   </constraintExpressions>
   <expressionfields/>
   <attributeactions>
-    <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
+    <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
   </attributeactions>
-  <attributetableconfig sortExpression="" actionWidgetStyle="dropDown" sortOrder="0">
+  <attributetableconfig sortOrder="0" actionWidgetStyle="dropDown" sortExpression="">
     <columns>
-      <column hidden="0" type="field" width="-1" name="fid"/>
-      <column hidden="0" type="field" width="-1" name="id"/>
-      <column hidden="0" type="field" width="-1" name="distinctiveName"/>
-      <column hidden="0" type="field" width="-1" name="siteTheme"/>
-      <column hidden="0" type="field" width="-1" name="classification"/>
-      <column hidden="0" type="field" width="-1" name="featureCode"/>
-      <column hidden="1" type="actions" width="-1"/>
+      <column width="-1" hidden="0" type="field" name="fid"/>
+      <column width="-1" hidden="0" type="field" name="id"/>
+      <column width="-1" hidden="0" type="field" name="distinctiveName"/>
+      <column width="-1" hidden="0" type="field" name="siteTheme"/>
+      <column width="-1" hidden="0" type="field" name="classification"/>
+      <column width="-1" hidden="0" type="field" name="featureCode"/>
+      <column width="-1" hidden="1" type="actions"/>
     </columns>
   </attributetableconfig>
   <conditionalstyles>
