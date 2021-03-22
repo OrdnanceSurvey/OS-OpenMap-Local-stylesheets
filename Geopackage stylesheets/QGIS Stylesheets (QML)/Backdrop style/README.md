@@ -14,7 +14,7 @@ These are QML files for OS OpenMap - Local in Geopackage format for use in QGIS.
 
 *Your machine may require a restart for QGIS to recognise this new font*
 
-**3.**  Load your OS Open Map Local GML data into QGIS
+**3.**  Load your OS Open Map Local Geopackage data into QGIS
 
 **4.**  Roundabouts consist of 2 layers. The roundabout casing and roundabout fill. You will need to duplicate your Roundabout layer once. Rename the original Roundabout layer and new layer to RoundaboutCase and RoundaboutFill.
 
