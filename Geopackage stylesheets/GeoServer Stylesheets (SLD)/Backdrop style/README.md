@@ -49,7 +49,7 @@ Your map should now look similar to this:
 
   ![Screenshot](https://raw.githubusercontent.com/OrdnanceSurvey/OS-OpenMap-Local-stylesheets/master/GML%20stylesheets/GeoServer%20stylesheets%20%28SLD%29/Backdrop%20style/images/OML_BD_screenshot.png "Screenshot of OS OpenMap - Local")
 
-##Compatibility notes
+## Compatibility notes
 
 Although SLD is an open OGC standard, these SLDs do contain some extended code used by GeoServer, namely the ‘vendor option’ tags. Also, as aforementioned, the field names referenced in the SLDs are in full and in lowercase.
 
