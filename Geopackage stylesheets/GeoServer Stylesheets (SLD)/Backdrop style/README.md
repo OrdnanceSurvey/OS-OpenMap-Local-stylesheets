@@ -55,11 +55,9 @@ Although SLD is an open OGC standard, these SLDs do contain some extended code u
 
 ## Additional information
 
-[More information about how to download, apply and customise our stylesheets including a Stylesheet User Guide](http://www.ordnancesurvey.co.uk/resources/carto-design/cartographic-stylesheets.html)
+[For more information about data styling and visualisation, take a look at our GeoDataViz toolkit](https://github.com/OrdnanceSurvey/GeoDataViz-Toolkit)
 
 [More information about OS Open Map-Local](https://www.ordnancesurvey.co.uk/business-and-government/products/os-open-map-local.html)
-
-[More information about cartographic design at Ordnance Survey](https://www.ordnancesurvey.co.uk/resources/carto-design/)
 
 ## Licence
 
