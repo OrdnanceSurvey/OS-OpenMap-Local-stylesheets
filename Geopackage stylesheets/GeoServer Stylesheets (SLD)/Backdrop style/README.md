@@ -1,6 +1,6 @@
 ﻿# OS Open Map-Local Backdrop style
 
-These are SLD files for OS VectorMap District in Geopackage format for use in GeoServer.
+These are **SLD** files for OS OpenMap-Local in **Geopackage** format for use in **GeoServer**.
 
 *They have been designed to work with the data loaded into a database, for example PostGIS, with field names in full and in lowercase.*
 
