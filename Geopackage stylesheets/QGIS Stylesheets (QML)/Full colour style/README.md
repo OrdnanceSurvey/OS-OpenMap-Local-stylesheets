@@ -1,6 +1,6 @@
 # OS OpenMap - Full colour style
 
-These are QML files for OS OpenMap - Local in Geopackage format for use in QGIS.
+These are **QML** files for OS OpenMap - Local in **Geopackage** format for use in **QGIS**.
 
 *They have been designed to work with the data as it is supplied.*
 
