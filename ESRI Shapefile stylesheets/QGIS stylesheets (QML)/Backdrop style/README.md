@@ -1,6 +1,6 @@
 # OS OpenMap - Local Backdrop style
 
-These are QML files for OS OpenMap - Local in ESRI Shapefile format for use in QGIS.
+These are **QML** files for OS OpenMap - Local in **ESRI Shapefile** format for use in **QGIS**.
 
 *They have been designed to work with the data as it is supplied.*
 
@@ -36,9 +36,9 @@ Your map should now look similar to this:
 
 ## Additional information
 
-[For more information about data styling and visualisation, take a look at our GeoDataViz toolkit](https://github.com/OrdnanceSurvey/GeoDataViz-Toolkit)
-
 [More information about OS OpenMap - Local](http://www.ordnancesurvey.co.uk/business-and-government/products/os-open-map-local.html)
+
+[For more information about data styling and visualisation, take a look at our GeoDataViz toolkit](https://github.com/OrdnanceSurvey/GeoDataViz-Toolkit)
 
 ## Licence
 
