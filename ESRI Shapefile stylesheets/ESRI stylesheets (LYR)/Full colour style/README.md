@@ -1,6 +1,6 @@
 # OS OpenMap - Local Full colour style
 
-These are LYR files for OS OpenMap - Local in ESRI Shapefile format for use in ESRI ArcGIS.
+These are **LYR** files for OS OpenMap - Local in **ESRI Shapefile** format for use in **ESRI ArcGIS**.
 
 *They have been designed to work with the data as it is supplied.*
 
@@ -38,9 +38,9 @@ Your map should now look similar to this:
 
 ## Additional information
 
-[For more information about data styling and visualisation, take a look at our GeoDataViz toolkit](https://github.com/OrdnanceSurvey/GeoDataViz-Toolkit)
-
 [More information about OS OpenMap - Local](http://www.ordnancesurvey.co.uk/business-and-government/products/os-open-map-local.html)
+
+[For more information about data styling and visualisation, take a look at our GeoDataViz toolkit](https://github.com/OrdnanceSurvey/GeoDataViz-Toolkit)
 
 ## Licence
 
