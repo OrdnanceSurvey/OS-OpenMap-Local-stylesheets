@@ -1,6 +1,6 @@
 ﻿# OS Open Map-Local Full colour style
 
-These are SLD files for OS Open Map-Local in SHP format for use in GeoServer.
+These are **SLD** files for OS Open Map-Local in **SHP** format for use in **GeoServer**.
 
 ## Quick start guide
 
@@ -26,15 +26,15 @@ Your map should now look similar to this:
 
   ![Screenshot](https://raw.githubusercontent.com/OrdnanceSurvey/OS-OpenMap-Local-stylesheets/master/ESRI%20Shapefile%20stylesheets/GeoServer%20stylesheets%20%28SLD%29/Full%20colour%20style/images/OML_FC_screenshot.png "Screenshot of OS OpenMap - Local")
 
-##Compatibility notes
+## Compatibility notes
 
 Although SLD is an open OGC standard, these SLDs do contain some extended code used by GeoServer, namely the ‘vendor option’ tags.
 
 ## Additional information
 
-[For more information about data styling and visualisation, take a look at our GeoDataViz toolkit](https://github.com/OrdnanceSurvey/GeoDataViz-Toolkit)
-
 [More information about OS Open Map-Local](https://www.ordnancesurvey.co.uk/business-and-government/products/os-open-map-local.html)
+
+[For more information about data styling and visualisation, take a look at our GeoDataViz toolkit](https://github.com/OrdnanceSurvey/GeoDataViz-Toolkit)
 
 ## Licence
 
