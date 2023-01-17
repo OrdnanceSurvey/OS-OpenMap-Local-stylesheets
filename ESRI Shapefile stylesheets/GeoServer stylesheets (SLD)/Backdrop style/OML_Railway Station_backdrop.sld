@@ -5,17 +5,17 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
   <NamedLayer>
     <Name>OS Open Map - Local&#174; Railway Station (Backdrop style)</Name>
     <UserStyle>
-      <Title>Product SLD - October 2015</Title>
-      <Abstract>OS Open Map - Local&#174; Local. Ordnance Survey. &#169; Crown copyright and database rights 2016.</Abstract>
-      
+      <Title>Product SLD - October 2022</Title>
+      <Abstract>OS Open Map - Local&#174; Local. Ordnance Survey. &#169; Crown copyright and database rights 2022.</Abstract>
+
  <!-- Light Rapid Transit Station -->
-      
+
       <FeatureTypeStyle>
            <Rule>
           <Name>Light Rapid Transit Station</Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
+              <ogc:PropertyName>featcode</ogc:PropertyName>
               <ogc:Literal>15420</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -32,23 +32,23 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </PointSymbolizer>
           <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
-              <ogc:PropertyName>DISTNAME</ogc:PropertyName>
+              <ogc:PropertyName>distname</ogc:PropertyName>
               <ogc:Literal></ogc:Literal>
             </Label>
             <Font>
               <CssParameter name="font-family">Arial</CssParameter>
               <CssParameter name="font-size">28</CssParameter>
-              <CssParameter name="font-weight">normal</CssParameter>
+              <CssParameter name="font-weight">bold</CssParameter>
             </Font>
             <LabelPlacement>
               <PointPlacement>
                 <AnchorPoint>
                   <AnchorPointX>0</AnchorPointX>
-                  <AnchorPointY>0.5</AnchorPointY>
+                  <AnchorPointY>0</AnchorPointY>
                 </AnchorPoint>
                 <Displacement>
                   <DisplacementX>20</DisplacementX>
-                  <DisplacementY>0</DisplacementY>
+                  <DisplacementY>10</DisplacementY>
                 </Displacement>
               </PointPlacement>
             </LabelPlacement>
@@ -67,17 +67,17 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="autoWrap">24</VendorOption>
           </TextSymbolizer>
         </Rule>
-       
+
       </FeatureTypeStyle>
-      
+
       <!-- London Underground Station -->
-      
+
       <FeatureTypeStyle>
         <Rule>
           <Name>London Underground Station</Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
+              <ogc:PropertyName>featcode</ogc:PropertyName>
               <ogc:Literal>15423</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -94,23 +94,23 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </PointSymbolizer>
           <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
-              <ogc:PropertyName>DISTNAME</ogc:PropertyName>
+              <ogc:PropertyName>distname</ogc:PropertyName>
               <ogc:Literal></ogc:Literal>
             </Label>
             <Font>
               <CssParameter name="font-family">Arial</CssParameter>
               <CssParameter name="font-size">28</CssParameter>
-              <CssParameter name="font-weight">normal</CssParameter>
+              <CssParameter name="font-weight">bold</CssParameter>
             </Font>
             <LabelPlacement>
               <PointPlacement>
                 <AnchorPoint>
                   <AnchorPointX>0</AnchorPointX>
-                  <AnchorPointY>0.5</AnchorPointY>
+                  <AnchorPointY>0</AnchorPointY>
                 </AnchorPoint>
                 <Displacement>
                   <DisplacementX>20</DisplacementX>
-                  <DisplacementY>0</DisplacementY>
+                  <DisplacementY>10</DisplacementY>
                 </Displacement>
               </PointPlacement>
             </LabelPlacement>
@@ -130,15 +130,15 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </TextSymbolizer>
         </Rule>
       </FeatureTypeStyle>
-      
+
       <!-- Combined Light Rapid Transit and London Underground Station -->
-      
+
       <FeatureTypeStyle>
         <Rule>
           <Name>Combined Light Rapid Transit and London Underground Station</Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
+              <ogc:PropertyName>featcode</ogc:PropertyName>
               <ogc:Literal>15426</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -155,23 +155,23 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </PointSymbolizer>
           <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
-              <ogc:PropertyName>DISTNAME</ogc:PropertyName>
+              <ogc:PropertyName>distname</ogc:PropertyName>
               <ogc:Literal></ogc:Literal>
             </Label>
             <Font>
               <CssParameter name="font-family">Arial</CssParameter>
               <CssParameter name="font-size">28</CssParameter>
-              <CssParameter name="font-weight">normal</CssParameter>
+              <CssParameter name="font-weight">bold</CssParameter>
             </Font>
             <LabelPlacement>
               <PointPlacement>
                 <AnchorPoint>
                   <AnchorPointX>0</AnchorPointX>
-                  <AnchorPointY>0.5</AnchorPointY>
+                  <AnchorPointY>0</AnchorPointY>
                 </AnchorPoint>
                 <Displacement>
-                  <DisplacementX>20</DisplacementX>
-                  <DisplacementY>0</DisplacementY>
+                  <DisplacementX>70</DisplacementX>
+                  <DisplacementY>10</DisplacementY>
                 </Displacement>
               </PointPlacement>
             </LabelPlacement>
@@ -191,15 +191,15 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </TextSymbolizer>
         </Rule>
       </FeatureTypeStyle>
-      
+
       <!-- Overground Railway Station -->
-      
+
       <FeatureTypeStyle>
         <Rule>
           <Name>Overground Railway Station</Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
+              <ogc:PropertyName>featcode</ogc:PropertyName>
               <ogc:Literal>15422</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -216,23 +216,23 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </PointSymbolizer>
           <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
-              <ogc:PropertyName>DISTNAME</ogc:PropertyName>
+              <ogc:PropertyName>distname</ogc:PropertyName>
               <ogc:Literal></ogc:Literal>
             </Label>
             <Font>
               <CssParameter name="font-family">Arial</CssParameter>
               <CssParameter name="font-size">28</CssParameter>
-              <CssParameter name="font-weight">normal</CssParameter>
+              <CssParameter name="font-weight">bold</CssParameter>
             </Font>
             <LabelPlacement>
               <PointPlacement>
                 <AnchorPoint>
                   <AnchorPointX>0</AnchorPointX>
-                  <AnchorPointY>0.5</AnchorPointY>
+                  <AnchorPointY>0</AnchorPointY>
                 </AnchorPoint>
                 <Displacement>
                   <DisplacementX>20</DisplacementX>
-                  <DisplacementY>0</DisplacementY>
+                  <DisplacementY>10</DisplacementY>
                 </Displacement>
               </PointPlacement>
             </LabelPlacement>
@@ -252,15 +252,15 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </TextSymbolizer>
         </Rule>
       </FeatureTypeStyle>
-      
+
       <!-- Combined Overground and London Underground Station -->
-      
+
       <FeatureTypeStyle>
         <Rule>
           <Name>Combined Overground and London Underground Station</Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
+              <ogc:PropertyName>featcode</ogc:PropertyName>
               <ogc:Literal>15424</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -277,23 +277,23 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </PointSymbolizer>
           <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
-              <ogc:PropertyName>DISTNAME</ogc:PropertyName>
+              <ogc:PropertyName>distname</ogc:PropertyName>
               <ogc:Literal></ogc:Literal>
             </Label>
             <Font>
               <CssParameter name="font-family">Arial</CssParameter>
               <CssParameter name="font-size">28</CssParameter>
-              <CssParameter name="font-weight">normal</CssParameter>
+              <CssParameter name="font-weight">bold</CssParameter>
             </Font>
             <LabelPlacement>
               <PointPlacement>
                 <AnchorPoint>
                   <AnchorPointX>0</AnchorPointX>
-                  <AnchorPointY>0.5</AnchorPointY>
+                  <AnchorPointY>0</AnchorPointY>
                 </AnchorPoint>
                 <Displacement>
-                  <DisplacementX>20</DisplacementX>
-                  <DisplacementY>0</DisplacementY>
+                  <DisplacementX>70</DisplacementX>
+                  <DisplacementY>10</DisplacementY>
                 </Displacement>
               </PointPlacement>
             </LabelPlacement>
@@ -313,15 +313,15 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </TextSymbolizer>
         </Rule>
       </FeatureTypeStyle>
-      
+
       <!-- Combined Overground and Light Rapid Transit Station -->
-      
+
       <FeatureTypeStyle>
         <Rule>
           <Name>Combined Overground and Light Rapid Transit Station</Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
+              <ogc:PropertyName>featcode</ogc:PropertyName>
               <ogc:Literal>15425</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -338,23 +338,23 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </PointSymbolizer>
           <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
-              <ogc:PropertyName>DISTNAME</ogc:PropertyName>
+              <ogc:PropertyName>distname</ogc:PropertyName>
               <ogc:Literal></ogc:Literal>
             </Label>
             <Font>
               <CssParameter name="font-family">Arial</CssParameter>
               <CssParameter name="font-size">28</CssParameter>
-              <CssParameter name="font-weight">normal</CssParameter>
+              <CssParameter name="font-weight">bold</CssParameter>
             </Font>
             <LabelPlacement>
               <PointPlacement>
                 <AnchorPoint>
                   <AnchorPointX>0</AnchorPointX>
-                  <AnchorPointY>0.5</AnchorPointY>
+                  <AnchorPointY>0</AnchorPointY>
                 </AnchorPoint>
                 <Displacement>
-                  <DisplacementX>20</DisplacementX>
-                  <DisplacementY>0</DisplacementY>
+                  <DisplacementX>70</DisplacementX>
+                  <DisplacementY>10</DisplacementY>
                 </Displacement>
               </PointPlacement>
             </LabelPlacement>
@@ -373,7 +373,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="autoWrap">24</VendorOption>
           </TextSymbolizer>
         </Rule>
-      </FeatureTypeStyle>           
+      </FeatureTypeStyle>
     </UserStyle>
   </NamedLayer>
 </StyledLayerDescriptor>
