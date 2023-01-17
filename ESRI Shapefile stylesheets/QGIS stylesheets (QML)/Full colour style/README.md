@@ -4,8 +4,6 @@ These are **QML** files for OS OpenMap - Local in **ESRI Shapefile** format for 
 
 *They have been designed to work with the data as it is supplied.*
 
-**NOTE** that the labelling won't work in QGIS versions from 2.12 as the label engine was upgraded.
-
 ## Quick start guide
 
 **1.**  Fork or [download](https://github.com/OrdnanceSurvey/OS-OpenMap-Local-stylesheets/archive/master.zip) the contents of this repository
@@ -14,17 +12,21 @@ These are **QML** files for OS OpenMap - Local in **ESRI Shapefile** format for 
 
 *Your machine may require a restart for QGIS to recognise this new font*
 
-**3.**  Load your OS Open Map Local ESRI Shapefile data into QGIS
+**3.** Copy the folder ‘ordnance_survey’ into your QGIS SVG directory (a typical Windows file path is C:\Program Files\QGIS xxxx\apps\qgis\svg, where xxxx represents whatever version of QGIS you are running).
 
-**4.**  Roads consist of 3 layers. The road casing, road fill and road centre line. This means you will need to duplicate your roads layer twice. This can be done by right clicking on the Road layer within your layer window and selecting Duplicate.Rename these layers and your original Road layer to RoadCase, RoadFill and RoadCentreLine. This can be done by right clicking on the layer and selecting Rename.
-Roundabouts consist of 2 layers. The roundabout casing and roundabout fill. You will need to duplicate your Roundabout layer once. 
-Rename the original Roundabout layer and new layer to RoundaboutCase and RoundaboutFill.
+*Your machine may require a restart for QGIS to recognise the new font and SVGs*
 
-**5.**  Double click on a layer to access the 'Layer Properties' window > click on 'Load Style...' > navigate to the directory containing the QML files (those ending .qml) > select the QML file that corresponds to that layer > click 'Open' > click 'OK'
+**4.**  Load your OS Open Map Local ESRI Shapefile data into QGIS
 
-*Repeat step 5 for all layers*
+**5.**  Roads consist of 2 layers: Roads and Road Names. This means you will need to duplicate your roads twice. This can be done by right clicking on the Road layer within your layer window and selecting Duplicate. Rename the layers to Roads and RoadNames. This can be done by right clicking on the layer and selecting Rename.
 
-**6.**  Although every feature is styled, for use as a contextual map we recommend the following layer order and visibility:
+Roundabouts consist of 2 layers. The roundabout casing and roundabout fill. You will need to duplicate your Roundabout layer. Rename the original Roundabout layer and new layer to RoundaboutCase and RoundaboutFill.
+
+**6.**  Double click on a layer to access the 'Layer Properties' window > click on 'Load Style...' > navigate to the directory containing the QML files (those ending .qml) > select the QML file that corresponds to that layer > click 'Open' > click 'OK'
+
+*Repeat step 6 for all layers*
+
+**7.**  Although every feature is styled, for use as a contextual map we recommend the following layer order and visibility:
 
   ![Screenshot](https://raw.githubusercontent.com/OrdnanceSurvey/OS-OpenMap-Local-stylesheets/master/ESRI%20Shapefile%20stylesheets/QGIS%20stylesheets%20%28QML%29/Full%20colour%20style/images/OML_FC_layer_order.png "Recommended layer order for OS Open Map Local")
 
