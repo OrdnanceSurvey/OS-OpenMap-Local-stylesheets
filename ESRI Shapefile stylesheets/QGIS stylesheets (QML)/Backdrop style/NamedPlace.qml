@@ -1,295 +1,330 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis version="2.16.1-Nødebo" simplifyAlgorithm="0" minimumScale="100000" maximumScale="1e+08" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" simplifyMaxScale="1" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
-  <edittypes>
-    <edittype widgetv2type="TextEdit" name="ID">
-      <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-    </edittype>
-    <edittype widgetv2type="TextEdit" name="DISTNAME">
-      <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-    </edittype>
-    <edittype widgetv2type="TextEdit" name="HTMLNAME">
-      <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-    </edittype>
-    <edittype widgetv2type="TextEdit" name="CLASSIFICA">
-      <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-    </edittype>
-    <edittype widgetv2type="TextEdit" name="FONTHEIGHT">
-      <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-    </edittype>
-    <edittype widgetv2type="TextEdit" name="ORIENTATIO">
-      <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-    </edittype>
-    <edittype widgetv2type="TextEdit" name="FEATCODE">
-      <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-    </edittype>
-  </edittypes>
-  <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
+<qgis version="3.16.7-Hannover" simplifyAlgorithm="0" simplifyLocal="1" simplifyDrawingTol="1" hasScaleBasedVisibilityFlag="1" simplifyDrawingHints="0" maxScale="2500" styleCategories="AllStyleCategories" labelsEnabled="1" simplifyMaxScale="1" minScale="20001" readOnly="0">
+  <flags>
+    <Identifiable>1</Identifiable>
+    <Removable>1</Removable>
+    <Searchable>1</Searchable>
+  </flags>
+  <temporal durationUnit="min" endField="" mode="0" enabled="0" startExpression="" endExpression="" startField="" fixedDuration="0" durationField="" accumulate="0">
+    <fixedRange>
+      <start></start>
+      <end></end>
+    </fixedRange>
+  </temporal>
+  <renderer-v2 type="singleSymbol" enableorderby="0" forceraster="0" symbollevels="0">
     <symbols>
-      <symbol alpha="1" clip_to_extent="1" type="marker" name="0">
-        <layer pass="0" class="SimpleMarker" locked="0">
+      <symbol type="marker" clip_to_extent="1" alpha="1" force_rhr="0" name="0">
+        <layer class="SimpleMarker" pass="0" enabled="1" locked="0">
           <prop k="angle" v="0"/>
           <prop k="color" v="0,0,0,0"/>
           <prop k="horizontal_anchor_point" v="1"/>
           <prop k="joinstyle" v="bevel"/>
           <prop k="name" v="circle"/>
           <prop k="offset" v="0,0"/>
-          <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+          <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
           <prop k="offset_unit" v="MM"/>
           <prop k="outline_color" v="0,0,0,0"/>
           <prop k="outline_style" v="solid"/>
           <prop k="outline_width" v="0"/>
-          <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+          <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
           <prop k="outline_width_unit" v="MM"/>
           <prop k="scale_method" v="area"/>
           <prop k="size" v="2"/>
-          <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+          <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
           <prop k="size_unit" v="MM"/>
           <prop k="vertical_anchor_point" v="1"/>
+          <data_defined_properties>
+            <Option type="Map">
+              <Option type="QString" value="" name="name"/>
+              <Option name="properties"/>
+              <Option type="QString" value="collection" name="type"/>
+            </Option>
+          </data_defined_properties>
         </layer>
       </symbol>
     </symbols>
     <rotation/>
-    <sizescale scalemethod="diameter"/>
+    <sizescale/>
   </renderer-v2>
-  <labeling type="simple"/>
+  <labeling type="simple">
+    <settings calloutType="simple">
+      <text-style fontWeight="50" textOpacity="1" fontStrikeout="0" textColor="115,115,115,255" capitalization="0" fontSizeMapUnitScale="3x:0,0,0,0,0,0" fieldName="DISTNAME" fontKerning="1" allowHtml="0" blendMode="0" fontSizeUnit="MapUnit" fontSize="28" useSubstitutions="0" textOrientation="horizontal" isExpression="0" fontWordSpacing="0" previewBkgrdColor="255,255,255,255" fontLetterSpacing="0" namedStyle="Regular" fontUnderline="0" fontItalic="0" fontFamily="Arial" multilineHeight="1">
+        <text-buffer bufferColor="255,255,255,255" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferJoinStyle="128" bufferSizeUnits="MapUnit" bufferNoFill="0" bufferOpacity="1" bufferSize="5" bufferBlendMode="0" bufferDraw="1"/>
+        <text-mask maskJoinStyle="128" maskOpacity="1" maskType="0" maskSizeMapUnitScale="3x:0,0,0,0,0,0" maskSizeUnits="MM" maskEnabled="0" maskSize="0" maskedSymbolLayers=""/>
+        <background shapeType="0" shapeBlendMode="0" shapeBorderColor="128,128,128,255" shapeJoinStyle="64" shapeOpacity="1" shapeOffsetX="0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeRotationType="0" shapeSVGFile="" shapeSizeX="0" shapeOffsetY="0" shapeSizeType="0" shapeRadiiY="0" shapeRotation="0" shapeSizeY="0" shapeFillColor="255,255,255,255" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeRadiiUnit="MM" shapeBorderWidth="0" shapeSizeUnit="MM" shapeBorderWidthUnit="MM" shapeRadiiX="0" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetUnit="MM" shapeDraw="0" shapeSizeMapUnitScale="3x:0,0,0,0,0,0">
+          <symbol type="marker" clip_to_extent="1" alpha="1" force_rhr="0" name="markerSymbol">
+            <layer class="SimpleMarker" pass="0" enabled="1" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="145,82,45,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="name" v="circle"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="35,35,35,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="2"/>
+              <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option type="QString" value="" name="name"/>
+                  <Option name="properties"/>
+                  <Option type="QString" value="collection" name="type"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </background>
+        <shadow shadowDraw="0" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowRadiusUnit="MM" shadowOffsetUnit="MM" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowOffsetAngle="135" shadowBlendMode="6" shadowOffsetDist="1" shadowOpacity="0.7" shadowColor="0,0,0,255" shadowRadius="1.5" shadowOffsetGlobal="1" shadowScale="100" shadowRadiusAlphaOnly="0" shadowUnder="0"/>
+        <dd_properties>
+          <Option type="Map">
+            <Option type="QString" value="" name="name"/>
+            <Option name="properties"/>
+            <Option type="QString" value="collection" name="type"/>
+          </Option>
+        </dd_properties>
+        <substitutions/>
+      </text-style>
+      <text-format wrapChar=" " useMaxLineLengthForAutoWrap="1" multilineAlign="1" autoWrapLength="0" leftDirectionSymbol="&lt;" plussign="0" rightDirectionSymbol=">" reverseDirectionSymbol="0" formatNumbers="0" decimals="3" placeDirectionSymbol="0" addDirectionSymbol="0"/>
+      <placement layerType="PointGeometry" xOffset="0" repeatDistance="0" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" polygonPlacementFlags="2" repeatDistanceUnits="MM" offsetUnits="MM" geometryGenerator="" geometryGeneratorEnabled="0" maxCurvedCharAngleOut="-20" distMapUnitScale="3x:0,0,0,0,0,0" centroidWhole="0" fitInPolygonOnly="0" quadOffset="4" placement="1" overrunDistanceUnit="MM" priority="10" dist="0" offsetType="0" lineAnchorType="0" geometryGeneratorType="PointGeometry" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" distUnits="MM" rotationAngle="0" preserveRotation="1" lineAnchorPercent="0.5" centroidInside="0" yOffset="0" placementFlags="0" maxCurvedCharAngleIn="20" overrunDistance="0"/>
+      <rendering obstacleFactor="1" obstacle="1" minFeatureSize="0" scaleMin="1" scaleVisibility="0" labelPerPart="0" zIndex="0" upsidedownLabels="0" maxNumLabels="2000" limitNumLabels="0" displayAll="0" fontMaxPixelSize="10000" obstacleType="0" fontMinPixelSize="3" fontLimitPixelSize="1" scaleMax="10000000" mergeLines="0" drawLabels="1"/>
+      <dd_properties>
+        <Option type="Map">
+          <Option type="QString" value="" name="name"/>
+          <Option type="Map" name="properties">
+            <Option type="Map" name="Color">
+              <Option type="bool" value="true" name="active"/>
+              <Option type="QString" value="CASE WHEN  &quot;CLASSIFICA&quot;   =   'Hydrography'  THEN  color_rgb(37,173,201) WHEN   &quot;CLASSIFICA&quot;   =   'Woodland Or Forest'  THEN  color_rgb(121,165,114) WHEN   &quot;CLASSIFICA&quot;   =   'Populated Place'  THEN  color_rgb(85,85,85) ELSE  color_rgb(115, 115, 115) END" name="expression"/>
+              <Option type="int" value="3" name="type"/>
+            </Option>
+            <Option type="Map" name="FontStyle">
+              <Option type="bool" value="true" name="active"/>
+              <Option type="QString" value="CASE WHEN  &quot;CLASSIFICA&quot;   =   'Populated Place'  THEN  'Bold' ELSE  'Normal' END" name="expression"/>
+              <Option type="int" value="3" name="type"/>
+            </Option>
+            <Option type="Map" name="LabelRotation">
+              <Option type="bool" value="true" name="active"/>
+              <Option type="QString" value="360 - (&quot;textOrientation&quot;)" name="expression"/>
+              <Option type="int" value="3" name="type"/>
+            </Option>
+            <Option type="Map" name="Priority">
+              <Option type="bool" value="false" name="active"/>
+              <Option type="QString" value="&quot;classification&quot; = 'Populated Place' AND  &quot;font_height&quot; = 'Large'" name="expression"/>
+              <Option type="int" value="3" name="type"/>
+            </Option>
+            <Option type="Map" name="Size">
+              <Option type="bool" value="true" name="active"/>
+              <Option type="QString" value="CASE WHEN   &quot;CLASSIFICA&quot; = 'Hydrography' AND &quot;FONTHEIGHT&quot; = 'Small' THEN  25&#xd;&#xa;WHEN  &quot;CLASSIFICA&quot; = 'Hydrography' AND&quot;FONTHEIGHT&quot; =  'Medium'  THEN 30&#xd;&#xa;WHEN  &quot;CLASSIFICA&quot; = 'Hydrography' AND &quot;FONTHEIGHT&quot; =  'Large'  THEN 35&#xd;&#xa;WHEN   &quot;CLASSIFICA&quot; =  'Landcover'  AND &quot;FONTHEIGHT&quot; = 'Small' THEN  30&#xd;&#xa;WHEN  &quot;CLASSIFICA&quot; = 'Landcover' AND&quot;FONTHEIGHT&quot; =  'Medium'  THEN 40&#xd;&#xa;WHEN  &quot;CLASSIFICA&quot; = 'Landcover' AND &quot;FONTHEIGHT&quot; =  'Large'  THEN 50&#xd;&#xa;WHEN   &quot;CLASSIFICA&quot; =  'Landform'  AND &quot;FONTHEIGHT&quot; = 'Small' THEN  30&#xd;&#xa;WHEN  &quot;CLASSIFICA&quot; = 'Landform' AND&quot;FONTHEIGHT&quot; =  'Medium'  THEN 40&#xd;&#xa;WHEN  &quot;CLASSIFICA&quot; = 'Landform' AND &quot;FONTHEIGHT&quot; =  'Large'  THEN 50&#xd;&#xa;WHEN   &quot;CLASSIFICA&quot; =  'Populated Place'  AND &quot;FONTHEIGHT&quot; = 'Small' THEN  30&#xd;&#xa;WHEN  &quot;CLASSIFICA&quot; =  'Populated Place'  AND&quot;FONTHEIGHT&quot; =  'Medium'  THEN 35&#xd;&#xa;WHEN  &quot;CLASSIFICA&quot; =  'Populated Place'  AND &quot;FONTHEIGHT&quot; =  'Large'  THEN 50&#xd;&#xa;WHEN   &quot;CLASSIFICA&quot; =  'Woodland Or Forest'  AND &quot;FONTHEIGHT&quot; = 'Small' THEN  30&#xd;&#xa;WHEN  &quot;CLASSIFICA&quot; =  'Woodland Or Forest'  AND&quot;FONTHEIGHT&quot; =  'Medium'  THEN 40&#xd;&#xa;WHEN  &quot;CLASSIFICA&quot; =  'Woodland Or Forest'  AND &quot;FONTHEIGHT&quot; =  'Large'  THEN 50 END" name="expression"/>
+              <Option type="int" value="3" name="type"/>
+            </Option>
+          </Option>
+          <Option type="QString" value="collection" name="type"/>
+        </Option>
+      </dd_properties>
+      <callout type="simple">
+        <Option type="Map">
+          <Option type="QString" value="pole_of_inaccessibility" name="anchorPoint"/>
+          <Option type="Map" name="ddProperties">
+            <Option type="QString" value="" name="name"/>
+            <Option name="properties"/>
+            <Option type="QString" value="collection" name="type"/>
+          </Option>
+          <Option type="bool" value="false" name="drawToAllParts"/>
+          <Option type="QString" value="0" name="enabled"/>
+          <Option type="QString" value="point_on_exterior" name="labelAnchorPoint"/>
+          <Option type="QString" value="&lt;symbol type=&quot;line&quot; clip_to_extent=&quot;1&quot; alpha=&quot;1&quot; force_rhr=&quot;0&quot; name=&quot;symbol&quot;>&lt;layer class=&quot;SimpleLine&quot; pass=&quot;0&quot; enabled=&quot;1&quot; locked=&quot;0&quot;>&lt;prop k=&quot;align_dash_pattern&quot; v=&quot;0&quot;/>&lt;prop k=&quot;capstyle&quot; v=&quot;square&quot;/>&lt;prop k=&quot;customdash&quot; v=&quot;5;2&quot;/>&lt;prop k=&quot;customdash_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;customdash_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;dash_pattern_offset&quot; v=&quot;0&quot;/>&lt;prop k=&quot;dash_pattern_offset_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;dash_pattern_offset_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;draw_inside_polygon&quot; v=&quot;0&quot;/>&lt;prop k=&quot;joinstyle&quot; v=&quot;bevel&quot;/>&lt;prop k=&quot;line_color&quot; v=&quot;60,60,60,255&quot;/>&lt;prop k=&quot;line_style&quot; v=&quot;solid&quot;/>&lt;prop k=&quot;line_width&quot; v=&quot;0.3&quot;/>&lt;prop k=&quot;line_width_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;offset&quot; v=&quot;0&quot;/>&lt;prop k=&quot;offset_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;offset_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;ring_filter&quot; v=&quot;0&quot;/>&lt;prop k=&quot;tweak_dash_pattern_on_corners&quot; v=&quot;0&quot;/>&lt;prop k=&quot;use_custom_dash&quot; v=&quot;0&quot;/>&lt;prop k=&quot;width_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option type=&quot;QString&quot; value=&quot;&quot; name=&quot;name&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;collection&quot; name=&quot;type&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;/layer>&lt;/symbol>" name="lineSymbol"/>
+          <Option type="double" value="0" name="minLength"/>
+          <Option type="QString" value="3x:0,0,0,0,0,0" name="minLengthMapUnitScale"/>
+          <Option type="QString" value="MM" name="minLengthUnit"/>
+          <Option type="double" value="0" name="offsetFromAnchor"/>
+          <Option type="QString" value="3x:0,0,0,0,0,0" name="offsetFromAnchorMapUnitScale"/>
+          <Option type="QString" value="MM" name="offsetFromAnchorUnit"/>
+          <Option type="double" value="0" name="offsetFromLabel"/>
+          <Option type="QString" value="3x:0,0,0,0,0,0" name="offsetFromLabelMapUnitScale"/>
+          <Option type="QString" value="MM" name="offsetFromLabelUnit"/>
+        </Option>
+      </callout>
+    </settings>
+  </labeling>
   <customproperties>
-    <property key="embeddedWidgets/count" value="0"/>
-    <property key="labeling" value="pal"/>
-    <property key="labeling/addDirectionSymbol" value="false"/>
-    <property key="labeling/angleOffset" value="0"/>
-    <property key="labeling/blendMode" value="0"/>
-    <property key="labeling/bufferBlendMode" value="0"/>
-    <property key="labeling/bufferColorA" value="255"/>
-    <property key="labeling/bufferColorB" value="255"/>
-    <property key="labeling/bufferColorG" value="255"/>
-    <property key="labeling/bufferColorR" value="255"/>
-    <property key="labeling/bufferDraw" value="true"/>
-    <property key="labeling/bufferJoinStyle" value="128"/>
-    <property key="labeling/bufferNoFill" value="false"/>
-    <property key="labeling/bufferSize" value="5"/>
-    <property key="labeling/bufferSizeInMapUnits" value="true"/>
-    <property key="labeling/bufferSizeMapUnitMaxScale" value="0"/>
-    <property key="labeling/bufferSizeMapUnitMinScale" value="0"/>
-    <property key="labeling/bufferSizeMapUnitScale" value="0,0,0,0,0,0"/>
-    <property key="labeling/bufferTransp" value="0"/>
-    <property key="labeling/centroidInside" value="false"/>
-    <property key="labeling/centroidWhole" value="false"/>
-    <property key="labeling/dataDefined/Color" value="1~~1~~CASE WHEN  &quot;CLASSIFICA&quot;   =   'Hydrography'  THEN  color_rgb(37,173,201) WHEN   &quot;CLASSIFICA&quot;   =   'Woodland Or Forest'  THEN  color_rgb(121,165,114) WHEN   &quot;CLASSIFICA&quot;   =   'Populated Place'  THEN  color_rgb(85,85,85) ELSE  color_rgb(115, 115, 115) END~~"/>
-    <property key="labeling/dataDefined/FontStyle" value="1~~1~~CASE WHEN  &quot;CLASSIFICA&quot;   =   'Populated Place'  THEN  'Bold' ELSE  'Normal' END~~"/>
-    <property key="labeling/dataDefined/Rotation" value="1~~1~~&quot;ORIENTATIO&quot;~~"/>
-    <property key="labeling/dataDefined/Size" value="1~~1~~CASE WHEN   &quot;CLASSIFICA&quot; = 'Hydrography' AND &quot;FONTHEIGHT&quot; = 'Small' THEN  25&#xd;&#xa;WHEN  &quot;CLASSIFICA&quot; = 'Hydrography' AND&quot;FONTHEIGHT&quot; =  'Medium'  THEN 30&#xd;&#xa;WHEN  &quot;CLASSIFICA&quot; = 'Hydrography' AND &quot;FONTHEIGHT&quot; =  'Large'  THEN 35&#xd;&#xa;WHEN   &quot;CLASSIFICA&quot; =  'Landcover'  AND &quot;FONTHEIGHT&quot; = 'Small' THEN  30&#xd;&#xa;WHEN  &quot;CLASSIFICA&quot; = 'Landcover' AND&quot;FONTHEIGHT&quot; =  'Medium'  THEN 40&#xd;&#xa;WHEN  &quot;CLASSIFICA&quot; = 'Landcover' AND &quot;FONTHEIGHT&quot; =  'Large'  THEN 50&#xd;&#xa;WHEN   &quot;CLASSIFICA&quot; =  'Landform'  AND &quot;FONTHEIGHT&quot; = 'Small' THEN  30&#xd;&#xa;WHEN  &quot;CLASSIFICA&quot; = 'Landform' AND&quot;FONTHEIGHT&quot; =  'Medium'  THEN 40&#xd;&#xa;WHEN  &quot;CLASSIFICA&quot; = 'Landform' AND &quot;FONTHEIGHT&quot; =  'Large'  THEN 50&#xd;&#xa;WHEN   &quot;CLASSIFICA&quot; =  'Populated Place'  AND &quot;FONTHEIGHT&quot; = 'Small' THEN  30&#xd;&#xa;WHEN  &quot;CLASSIFICA&quot; =  'Populated Place'  AND&quot;FONTHEIGHT&quot; =  'Medium'  THEN 35&#xd;&#xa;WHEN  &quot;CLASSIFICA&quot; =  'Populated Place'  AND &quot;FONTHEIGHT&quot; =  'Large'  THEN 50&#xd;&#xa;WHEN   &quot;CLASSIFICA&quot; =  'Woodland Or Forest'  AND &quot;FONTHEIGHT&quot; = 'Small' THEN  30&#xd;&#xa;WHEN  &quot;CLASSIFICA&quot; =  'Woodland Or Forest'  AND&quot;FONTHEIGHT&quot; =  'Medium'  THEN 40&#xd;&#xa;WHEN  &quot;CLASSIFICA&quot; =  'Woodland Or Forest'  AND &quot;FONTHEIGHT&quot; =  'Large'  THEN 50 END~~"/>
-    <property key="labeling/decimals" value="3"/>
-    <property key="labeling/displayAll" value="false"/>
-    <property key="labeling/dist" value="0"/>
-    <property key="labeling/distInMapUnits" value="false"/>
-    <property key="labeling/distMapUnitMaxScale" value="0"/>
-    <property key="labeling/distMapUnitMinScale" value="0"/>
-    <property key="labeling/distMapUnitScale" value="0,0,0,0,0,0"/>
-    <property key="labeling/drawLabels" value="true"/>
-    <property key="labeling/enabled" value="true"/>
-    <property key="labeling/fieldName" value="DISTNAME"/>
-    <property key="labeling/fitInPolygonOnly" value="false"/>
-    <property key="labeling/fontBold" value="false"/>
-    <property key="labeling/fontCapitals" value="0"/>
-    <property key="labeling/fontFamily" value="Arial"/>
-    <property key="labeling/fontItalic" value="false"/>
-    <property key="labeling/fontLetterSpacing" value="0"/>
-    <property key="labeling/fontLimitPixelSize" value="true"/>
-    <property key="labeling/fontMaxPixelSize" value="10000"/>
-    <property key="labeling/fontMinPixelSize" value="3"/>
-    <property key="labeling/fontSize" value="28"/>
-    <property key="labeling/fontSizeInMapUnits" value="true"/>
-    <property key="labeling/fontSizeMapUnitMaxScale" value="0"/>
-    <property key="labeling/fontSizeMapUnitMinScale" value="0"/>
-    <property key="labeling/fontSizeMapUnitScale" value="0,0,0,0,0,0"/>
-    <property key="labeling/fontStrikeout" value="false"/>
-    <property key="labeling/fontUnderline" value="false"/>
-    <property key="labeling/fontWeight" value="50"/>
-    <property key="labeling/fontWordSpacing" value="0"/>
-    <property key="labeling/formatNumbers" value="false"/>
-    <property key="labeling/isExpression" value="false"/>
-    <property key="labeling/labelOffsetInMapUnits" value="false"/>
-    <property key="labeling/labelOffsetMapUnitMaxScale" value="0"/>
-    <property key="labeling/labelOffsetMapUnitMinScale" value="0"/>
-    <property key="labeling/labelOffsetMapUnitScale" value="0,0,0,0,0,0"/>
-    <property key="labeling/labelPerPart" value="false"/>
-    <property key="labeling/leftDirectionSymbol" value="&lt;"/>
-    <property key="labeling/limitNumLabels" value="false"/>
-    <property key="labeling/maxCurvedCharAngleIn" value="20"/>
-    <property key="labeling/maxCurvedCharAngleOut" value="-20"/>
-    <property key="labeling/maxNumLabels" value="2000"/>
-    <property key="labeling/mergeLines" value="false"/>
-    <property key="labeling/minFeatureSize" value="0"/>
-    <property key="labeling/multilineAlign" value="1"/>
-    <property key="labeling/multilineHeight" value="1"/>
-    <property key="labeling/namedStyle" value="Normal"/>
-    <property key="labeling/obstacle" value="true"/>
-    <property key="labeling/obstacleFactor" value="1"/>
-    <property key="labeling/obstacleType" value="0"/>
-    <property key="labeling/offsetType" value="0"/>
-    <property key="labeling/placeDirectionSymbol" value="0"/>
-    <property key="labeling/placement" value="1"/>
-    <property key="labeling/placementFlags" value="0"/>
-    <property key="labeling/plussign" value="false"/>
-    <property key="labeling/predefinedPositionOrder" value="TR,TL,BR,BL,R,L,TSR,BSR"/>
-    <property key="labeling/preserveRotation" value="true"/>
-    <property key="labeling/previewBkgrdColor" value="#ffffff"/>
-    <property key="labeling/priority" value="10"/>
-    <property key="labeling/quadOffset" value="4"/>
-    <property key="labeling/repeatDistance" value="0"/>
-    <property key="labeling/repeatDistanceMapUnitMaxScale" value="0"/>
-    <property key="labeling/repeatDistanceMapUnitMinScale" value="0"/>
-    <property key="labeling/repeatDistanceMapUnitScale" value="0,0,0,0,0,0"/>
-    <property key="labeling/repeatDistanceUnit" value="1"/>
-    <property key="labeling/reverseDirectionSymbol" value="false"/>
-    <property key="labeling/rightDirectionSymbol" value=">"/>
-    <property key="labeling/scaleMax" value="10000000"/>
-    <property key="labeling/scaleMin" value="1"/>
-    <property key="labeling/scaleVisibility" value="false"/>
-    <property key="labeling/shadowBlendMode" value="6"/>
-    <property key="labeling/shadowColorB" value="0"/>
-    <property key="labeling/shadowColorG" value="0"/>
-    <property key="labeling/shadowColorR" value="0"/>
-    <property key="labeling/shadowDraw" value="false"/>
-    <property key="labeling/shadowOffsetAngle" value="135"/>
-    <property key="labeling/shadowOffsetDist" value="1"/>
-    <property key="labeling/shadowOffsetGlobal" value="true"/>
-    <property key="labeling/shadowOffsetMapUnitMaxScale" value="0"/>
-    <property key="labeling/shadowOffsetMapUnitMinScale" value="0"/>
-    <property key="labeling/shadowOffsetMapUnitScale" value="0,0,0,0,0,0"/>
-    <property key="labeling/shadowOffsetUnits" value="1"/>
-    <property key="labeling/shadowRadius" value="1.5"/>
-    <property key="labeling/shadowRadiusAlphaOnly" value="false"/>
-    <property key="labeling/shadowRadiusMapUnitMaxScale" value="0"/>
-    <property key="labeling/shadowRadiusMapUnitMinScale" value="0"/>
-    <property key="labeling/shadowRadiusMapUnitScale" value="0,0,0,0,0,0"/>
-    <property key="labeling/shadowRadiusUnits" value="1"/>
-    <property key="labeling/shadowScale" value="100"/>
-    <property key="labeling/shadowTransparency" value="30"/>
-    <property key="labeling/shadowUnder" value="0"/>
-    <property key="labeling/shapeBlendMode" value="0"/>
-    <property key="labeling/shapeBorderColorA" value="255"/>
-    <property key="labeling/shapeBorderColorB" value="128"/>
-    <property key="labeling/shapeBorderColorG" value="128"/>
-    <property key="labeling/shapeBorderColorR" value="128"/>
-    <property key="labeling/shapeBorderWidth" value="0"/>
-    <property key="labeling/shapeBorderWidthMapUnitMaxScale" value="0"/>
-    <property key="labeling/shapeBorderWidthMapUnitMinScale" value="0"/>
-    <property key="labeling/shapeBorderWidthMapUnitScale" value="0,0,0,0,0,0"/>
-    <property key="labeling/shapeBorderWidthUnits" value="1"/>
-    <property key="labeling/shapeDraw" value="false"/>
-    <property key="labeling/shapeFillColorA" value="255"/>
-    <property key="labeling/shapeFillColorB" value="255"/>
-    <property key="labeling/shapeFillColorG" value="255"/>
-    <property key="labeling/shapeFillColorR" value="255"/>
-    <property key="labeling/shapeJoinStyle" value="64"/>
-    <property key="labeling/shapeOffsetMapUnitMaxScale" value="0"/>
-    <property key="labeling/shapeOffsetMapUnitMinScale" value="0"/>
-    <property key="labeling/shapeOffsetMapUnitScale" value="0,0,0,0,0,0"/>
-    <property key="labeling/shapeOffsetUnits" value="1"/>
-    <property key="labeling/shapeOffsetX" value="0"/>
-    <property key="labeling/shapeOffsetY" value="0"/>
-    <property key="labeling/shapeRadiiMapUnitMaxScale" value="0"/>
-    <property key="labeling/shapeRadiiMapUnitMinScale" value="0"/>
-    <property key="labeling/shapeRadiiMapUnitScale" value="0,0,0,0,0,0"/>
-    <property key="labeling/shapeRadiiUnits" value="1"/>
-    <property key="labeling/shapeRadiiX" value="0"/>
-    <property key="labeling/shapeRadiiY" value="0"/>
-    <property key="labeling/shapeRotation" value="0"/>
-    <property key="labeling/shapeRotationType" value="0"/>
-    <property key="labeling/shapeSVGFile" value=""/>
-    <property key="labeling/shapeSizeMapUnitMaxScale" value="0"/>
-    <property key="labeling/shapeSizeMapUnitMinScale" value="0"/>
-    <property key="labeling/shapeSizeMapUnitScale" value="0,0,0,0,0,0"/>
-    <property key="labeling/shapeSizeType" value="0"/>
-    <property key="labeling/shapeSizeUnits" value="1"/>
-    <property key="labeling/shapeSizeX" value="0"/>
-    <property key="labeling/shapeSizeY" value="0"/>
-    <property key="labeling/shapeTransparency" value="0"/>
-    <property key="labeling/shapeType" value="0"/>
-    <property key="labeling/textColorA" value="255"/>
-    <property key="labeling/textColorB" value="115"/>
-    <property key="labeling/textColorG" value="115"/>
-    <property key="labeling/textColorR" value="115"/>
-    <property key="labeling/textTransp" value="0"/>
-    <property key="labeling/upsidedownLabels" value="0"/>
-    <property key="labeling/wrapChar" value=" "/>
-    <property key="labeling/xOffset" value="0"/>
-    <property key="labeling/yOffset" value="0"/>
-    <property key="labeling/zIndex" value="0"/>
-    <property key="variableNames" value="_fields_"/>
-    <property key="variableValues" value=""/>
+    <property value="0" key="embeddedWidgets/count"/>
+    <property key="variableNames"/>
+    <property key="variableValues"/>
   </customproperties>
   <blendMode>0</blendMode>
   <featureBlendMode>0</featureBlendMode>
-  <layerTransparency>0</layerTransparency>
-  <displayfield>DISTNAME</displayfield>
-  <label>0</label>
-  <labelattributes>
-    <label fieldname="" text="Label"/>
-    <family fieldname="" name="MS Shell Dlg 2"/>
-    <size fieldname="" units="pt" value="12"/>
-    <bold fieldname="" on="0"/>
-    <italic fieldname="" on="0"/>
-    <underline fieldname="" on="0"/>
-    <strikeout fieldname="" on="0"/>
-    <color fieldname="" red="0" blue="0" green="0"/>
-    <x fieldname=""/>
-    <y fieldname=""/>
-    <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
-    <angle fieldname="" value="0" auto="0"/>
-    <alignment fieldname="" value="center"/>
-    <buffercolor fieldname="" red="255" blue="255" green="255"/>
-    <buffersize fieldname="" units="pt" value="1"/>
-    <bufferenabled fieldname="" on=""/>
-    <multilineenabled fieldname="" on=""/>
-    <selectedonly on=""/>
-  </labelattributes>
-  <SingleCategoryDiagramRenderer diagramType="Histogram" sizeLegend="0" attributeLegend="1">
-    <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" sizeScale="0,0,0,0,0,0" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" lineSizeScale="0,0,0,0,0,0" sizeType="MM" lineSizeType="MM" minScaleDenominator="100000">
+  <layerOpacity>1</layerOpacity>
+  <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
+    <DiagramCategory sizeType="MM" diagramOrientation="Up" backgroundAlpha="255" height="15" width="15" sizeScale="3x:0,0,0,0,0,0" minScaleDenominator="2500" opacity="1" showAxis="0" enabled="0" backgroundColor="#ffffff" penWidth="0" spacingUnitScale="3x:0,0,0,0,0,0" penColor="#000000" spacing="0" scaleBasedVisibility="0" penAlpha="255" maxScaleDenominator="1e+08" labelPlacementMethod="XHeight" lineSizeScale="3x:0,0,0,0,0,0" minimumSize="0" direction="1" scaleDependency="Area" spacingUnit="MM" lineSizeType="MM" barWidth="5" rotationOffset="270">
       <fontProperties description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" style=""/>
+      <attribute field="" label="" color="#000000"/>
+      <axisSymbol>
+        <symbol type="line" clip_to_extent="1" alpha="1" force_rhr="0" name="">
+          <layer class="SimpleLine" pass="0" enabled="1" locked="0">
+            <prop k="align_dash_pattern" v="0"/>
+            <prop k="capstyle" v="square"/>
+            <prop k="customdash" v="5;2"/>
+            <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+            <prop k="customdash_unit" v="MM"/>
+            <prop k="dash_pattern_offset" v="0"/>
+            <prop k="dash_pattern_offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+            <prop k="dash_pattern_offset_unit" v="MM"/>
+            <prop k="draw_inside_polygon" v="0"/>
+            <prop k="joinstyle" v="bevel"/>
+            <prop k="line_color" v="35,35,35,255"/>
+            <prop k="line_style" v="solid"/>
+            <prop k="line_width" v="0.26"/>
+            <prop k="line_width_unit" v="MM"/>
+            <prop k="offset" v="0"/>
+            <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+            <prop k="offset_unit" v="MM"/>
+            <prop k="ring_filter" v="0"/>
+            <prop k="tweak_dash_pattern_on_corners" v="0"/>
+            <prop k="use_custom_dash" v="0"/>
+            <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+            <data_defined_properties>
+              <Option type="Map">
+                <Option type="QString" value="" name="name"/>
+                <Option name="properties"/>
+                <Option type="QString" value="collection" name="type"/>
+              </Option>
+            </data_defined_properties>
+          </layer>
+        </symbol>
+      </axisSymbol>
     </DiagramCategory>
-    <symbol alpha="1" clip_to_extent="1" type="marker" name="sizeSymbol">
-      <layer pass="0" class="SimpleMarker" locked="0">
-        <prop k="angle" v="0"/>
-        <prop k="color" v="255,0,0,255"/>
-        <prop k="horizontal_anchor_point" v="1"/>
-        <prop k="joinstyle" v="bevel"/>
-        <prop k="name" v="circle"/>
-        <prop k="offset" v="0,0"/>
-        <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-        <prop k="offset_unit" v="MM"/>
-        <prop k="outline_color" v="0,0,0,255"/>
-        <prop k="outline_style" v="solid"/>
-        <prop k="outline_width" v="0"/>
-        <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
-        <prop k="outline_width_unit" v="MM"/>
-        <prop k="scale_method" v="diameter"/>
-        <prop k="size" v="2"/>
-        <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
-        <prop k="size_unit" v="MM"/>
-        <prop k="vertical_anchor_point" v="1"/>
-      </layer>
-    </symbol>
   </SingleCategoryDiagramRenderer>
-  <DiagramLayerSettings yPosColumn="-1" showColumn="-1" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
-  <annotationform>.</annotationform>
-  <excludeAttributesWMS/>
-  <excludeAttributesWFS/>
-  <attributeactions default="-1"/>
-  <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+  <DiagramLayerSettings placement="0" linePlacementFlags="18" showAll="1" dist="0" priority="0" obstacle="0" zIndex="0">
+    <properties>
+      <Option type="Map">
+        <Option type="QString" value="" name="name"/>
+        <Option name="properties"/>
+        <Option type="QString" value="collection" name="type"/>
+      </Option>
+    </properties>
+  </DiagramLayerSettings>
+  <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+    <activeChecks/>
+    <checkConfiguration/>
+  </geometryOptions>
+  <legend type="default-vector"/>
+  <referencedLayers/>
+  <fieldConfiguration>
+    <field configurationFlags="None" name="ID">
+      <editWidget type="TextEdit">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field configurationFlags="None" name="DISTNAME">
+      <editWidget type="TextEdit">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field configurationFlags="None" name="HTMLNAME">
+      <editWidget type="TextEdit">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field configurationFlags="None" name="CLASSIFICA">
+      <editWidget type="TextEdit">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field configurationFlags="None" name="FONTHEIGHT">
+      <editWidget type="TextEdit">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field configurationFlags="None" name="ORIENTATIO">
+      <editWidget type="Range">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field configurationFlags="None" name="FEATCODE">
+      <editWidget type="Range">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+  </fieldConfiguration>
+  <aliases>
+    <alias field="ID" index="0" name=""/>
+    <alias field="DISTNAME" index="1" name=""/>
+    <alias field="HTMLNAME" index="2" name=""/>
+    <alias field="CLASSIFICA" index="3" name=""/>
+    <alias field="FONTHEIGHT" index="4" name=""/>
+    <alias field="ORIENTATIO" index="5" name=""/>
+    <alias field="FEATCODE" index="6" name=""/>
+  </aliases>
+  <defaults>
+    <default applyOnUpdate="0" field="ID" expression=""/>
+    <default applyOnUpdate="0" field="DISTNAME" expression=""/>
+    <default applyOnUpdate="0" field="HTMLNAME" expression=""/>
+    <default applyOnUpdate="0" field="CLASSIFICA" expression=""/>
+    <default applyOnUpdate="0" field="FONTHEIGHT" expression=""/>
+    <default applyOnUpdate="0" field="ORIENTATIO" expression=""/>
+    <default applyOnUpdate="0" field="FEATCODE" expression=""/>
+  </defaults>
+  <constraints>
+    <constraint constraints="1" notnull_strength="1" field="ID" exp_strength="0" unique_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="DISTNAME" exp_strength="0" unique_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="HTMLNAME" exp_strength="0" unique_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="CLASSIFICA" exp_strength="0" unique_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="FONTHEIGHT" exp_strength="0" unique_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="ORIENTATIO" exp_strength="0" unique_strength="0"/>
+    <constraint constraints="0" notnull_strength="0" field="FEATCODE" exp_strength="0" unique_strength="0"/>
+  </constraints>
+  <constraintExpressions>
+    <constraint exp="" field="ID" desc=""/>
+    <constraint exp="" field="DISTNAME" desc=""/>
+    <constraint exp="" field="HTMLNAME" desc=""/>
+    <constraint exp="" field="CLASSIFICA" desc=""/>
+    <constraint exp="" field="FONTHEIGHT" desc=""/>
+    <constraint exp="" field="ORIENTATIO" desc=""/>
+    <constraint exp="" field="FEATCODE" desc=""/>
+  </constraintExpressions>
+  <expressionfields/>
+  <attributeactions>
+    <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
+  </attributeactions>
+  <attributetableconfig sortExpression="" actionWidgetStyle="dropDown" sortOrder="0">
     <columns>
-      <column width="-1" hidden="0" type="field" name="ID"/>
-      <column width="-1" hidden="0" type="field" name="DISTNAME"/>
-      <column width="-1" hidden="0" type="field" name="HTMLNAME"/>
-      <column width="-1" hidden="0" type="field" name="CLASSIFICA"/>
-      <column width="-1" hidden="0" type="field" name="FONTHEIGHT"/>
-      <column width="-1" hidden="0" type="field" name="ORIENTATIO"/>
-      <column width="-1" hidden="0" type="field" name="FEATCODE"/>
-      <column width="-1" hidden="1" type="actions"/>
+      <column type="actions" width="-1" hidden="1"/>
+      <column type="field" width="-1" name="ID" hidden="0"/>
+      <column type="field" width="-1" name="DISTNAME" hidden="0"/>
+      <column type="field" width="-1" name="HTMLNAME" hidden="0"/>
+      <column type="field" width="-1" name="CLASSIFICA" hidden="0"/>
+      <column type="field" width="-1" name="FONTHEIGHT" hidden="0"/>
+      <column type="field" width="-1" name="ORIENTATIO" hidden="0"/>
+      <column type="field" width="-1" name="FEATCODE" hidden="0"/>
     </columns>
   </attributetableconfig>
-  <editform>.</editform>
+  <conditionalstyles>
+    <rowstyles/>
+    <fieldstyles/>
+  </conditionalstyles>
+  <storedexpressions/>
+  <editform tolerant="1">C:/Work/Stylesheet Project/OML_NPF/Geopackage/QGIS Stylesheets (QML)</editform>
   <editforminit/>
   <editforminitcodesource>0</editforminitcodesource>
   <editforminitfilepath></editforminitfilepath>
@@ -312,10 +347,51 @@ def my_form_open(dialog, layer, feature):
 ]]></editforminitcode>
   <featformsuppress>0</featformsuppress>
   <editorlayout>generatedlayout</editorlayout>
+  <editable>
+    <field editable="1" name="CLASSIFICA"/>
+    <field editable="1" name="DISTNAME"/>
+    <field editable="1" name="FEATCODE"/>
+    <field editable="1" name="FONTHEIGHT"/>
+    <field editable="1" name="HTMLNAME"/>
+    <field editable="1" name="ID"/>
+    <field editable="1" name="ORIENTATIO"/>
+    <field editable="1" name="classification"/>
+    <field editable="1" name="distinctiveName"/>
+    <field editable="1" name="distinctive_name"/>
+    <field editable="1" name="featureCode"/>
+    <field editable="1" name="feature_code"/>
+    <field editable="1" name="fid"/>
+    <field editable="1" name="fontHeight"/>
+    <field editable="1" name="font_height"/>
+    <field editable="1" name="id"/>
+    <field editable="1" name="textOrientation"/>
+    <field editable="1" name="textOrientation_uom"/>
+    <field editable="1" name="text_orientation"/>
+  </editable>
+  <labelOnTop>
+    <field labelOnTop="0" name="CLASSIFICA"/>
+    <field labelOnTop="0" name="DISTNAME"/>
+    <field labelOnTop="0" name="FEATCODE"/>
+    <field labelOnTop="0" name="FONTHEIGHT"/>
+    <field labelOnTop="0" name="HTMLNAME"/>
+    <field labelOnTop="0" name="ID"/>
+    <field labelOnTop="0" name="ORIENTATIO"/>
+    <field labelOnTop="0" name="classification"/>
+    <field labelOnTop="0" name="distinctiveName"/>
+    <field labelOnTop="0" name="distinctive_name"/>
+    <field labelOnTop="0" name="featureCode"/>
+    <field labelOnTop="0" name="feature_code"/>
+    <field labelOnTop="0" name="fid"/>
+    <field labelOnTop="0" name="fontHeight"/>
+    <field labelOnTop="0" name="font_height"/>
+    <field labelOnTop="0" name="id"/>
+    <field labelOnTop="0" name="textOrientation"/>
+    <field labelOnTop="0" name="textOrientation_uom"/>
+    <field labelOnTop="0" name="text_orientation"/>
+  </labelOnTop>
+  <dataDefinedFieldProperties/>
   <widgets/>
-  <conditionalstyles>
-    <rowstyles/>
-    <fieldstyles/>
-  </conditionalstyles>
+  <previewExpression>"fid"</previewExpression>
+  <mapTip>DISTNAME</mapTip>
   <layerGeometryType>0</layerGeometryType>
 </qgis>
