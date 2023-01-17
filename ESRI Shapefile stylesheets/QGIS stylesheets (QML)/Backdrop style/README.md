@@ -4,8 +4,6 @@ These are **QML** files for OS OpenMap - Local in **ESRI Shapefile** format for 
 
 *They have been designed to work with the data as it is supplied.*
 
-**NOTE** that the labelling won't work in QGIS versions from 2.12 as the label engine was upgraded.
-
 ## Quick start guide
 
 **1.**  Fork or [download](https://github.com/OrdnanceSurvey/OS-OpenMap-Local-stylesheets/archive/master.zip) the contents of this repository
@@ -16,9 +14,9 @@ These are **QML** files for OS OpenMap - Local in **ESRI Shapefile** format for 
 
 **3.**  Load your OS Open Map Local ESRI Shapefile data into QGIS
 
-**4.**  Roads consist of 3 layers. The road casing, road fill and road centre line. This means you will need to duplicate your roads layer twice. This can be done by right clicking on the Road layer within your layer window and selecting Duplicate.Rename these layers and your original Road layer to RoadCase, RoadFill and RoadCentreLine. This can be done by right clicking on the layer and selecting Rename.
-Roundabouts consist of 2 layers. The roundabout casing and roundabout fill. You will need to duplicate your Roundabout layer once. 
-Rename the original Roundabout layer and new layer to RoundaboutCase and RoundaboutFill.
+**4.**  Roads consist of 2 layers. The road casing and road fill. This means you will need to duplicate your roads layer. This can be done by right clicking on the Road layer within your layer window and selecting Duplicate. Rename the new layer and your original Road layer to RoadCase and RoadFill. This can be done by right clicking on the layer and selecting Rename.
+
+Roundabouts consist of 2 layers: roundabout casing and roundabout fill. You will need to duplicate your Roundabout layer. Rename the original Roundabout layer and new layer to RoundaboutCase and RoundaboutFill.
 
 **5.**  Double click on a layer to access the 'Layer Properties' window > click on 'Load Style...' > navigate to the directory containing the QML files (those ending .qml) > select the QML file that corresponds to that layer > click 'Open' > click 'OK'
 
