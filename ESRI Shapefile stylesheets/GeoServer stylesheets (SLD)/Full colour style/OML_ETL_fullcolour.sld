@@ -5,18 +5,18 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
   <NamedLayer>
     <Name>OS Open Map - Local&#174; ETL (Full colour style)</Name>
     <UserStyle>
-      <Title>Product SLD - November 2016</Title>
-      <Abstract>OS Open Map - Local&#174; Local. Ordnance Survey. &#169; Crown copyright and database rights 2016.</Abstract>
-    
+      <Title>Product SLD - October 2022</Title>
+      <Abstract>OS Open Map - Local&#174; Local. Ordnance Survey. &#169; Crown copyright and database rights 2022.</Abstract>
+
 
       <!-- Electricity Transmission Line -->
-        
+
        <FeatureTypeStyle>
         <Rule>
           <Name>Electricity Transmission Line</Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
+              <ogc:PropertyName>featcode</ogc:PropertyName>
               <ogc:Literal>15102</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -34,7 +34,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           <Name>Electricity Transmission Line</Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
+              <ogc:PropertyName>featcode</ogc:PropertyName>
               <ogc:Literal>15102</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
