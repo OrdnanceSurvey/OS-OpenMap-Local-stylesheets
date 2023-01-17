@@ -18,7 +18,7 @@ These are **QML** files for OS OpenMap - Local in **ESRI Shapefile** format for 
 
 **4.**  Load your OS Open Map Local ESRI Shapefile data into QGIS
 
-**5.**  Roads consist of 2 layers. The road casing and road fill. This means you will need to duplicate your roads layer. This can be done by right clicking on the Road layer within your layer window and selecting Duplicate. Rename the new layer and your original Road layer to RoadCase and RoadFill. This can be done by right clicking on the layer and selecting Rename.
+**5.**  Roads consist of 2 layers. The roads and road names. This means you will need to duplicate your roads layer. This can be done by right clicking on the Road layer within your layer window and selecting Duplicate. Rename the new layer and your original Road layer to Roads and RoadNames. This can be done by right clicking on the layer and selecting Rename.
 
 Roundabouts consist of 2 layers: roundabout casing and roundabout fill. You will need to duplicate your Roundabout layer. Rename the original Roundabout layer and new layer to RoundaboutCase and RoundaboutFill.
 
