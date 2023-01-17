@@ -5,156 +5,59 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
   <NamedLayer>
     <Name>OS Open Map - Local&#174; Roads (Full colour style)</Name>
     <UserStyle>
-      <Title>Product SLD - November 2016</Title>
-      <Abstract>OS Open Map - Local&#174; Local. Ordnance Survey. &#169; Crown copyright and database rights 2016.</Abstract>
-      
-<!-- Road Casing (motorway,primary,A,B and minor roads)-->
-        
-        <FeatureTypeStyle>
-      <Rule>
-          <Name>Road Case</Name>
-          <ogc:Filter>
-            <ogc:Or>
-              <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
-              <ogc:Literal>15750</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
-              <ogc:Literal>15759</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
-              <ogc:Literal>15743</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
-              <ogc:Literal>15749</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
-              <ogc:Literal>15729</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
-              <ogc:Literal>15739</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
-              <ogc:Literal>15723</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
-              <ogc:Literal>15735</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
-              <ogc:Literal>15710</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
-              <ogc:Literal>15719</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-  </ogc:Or>
-          </ogc:Filter>
-          <MinScaleDenominator>1000</MinScaleDenominator>
-          <MaxScaleDenominator>15000</MaxScaleDenominator>
-          <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <Stroke>
-              <CssParameter name="stroke">#505050</CssParameter>
-              <CssParameter name="stroke-width">17</CssParameter>
-              <CssParameter name="stroke-linecap">butt</CssParameter>
-              <CssParameter name="stroke-linejoin">round</CssParameter>
-            </Stroke>
-          </LineSymbolizer>
-        </Rule>
-          </FeatureTypeStyle>
-
-<!-- Local Road Casing -->
-        
-        <FeatureTypeStyle>
-      <Rule>
-          <Name>Local Road Case</Name>
-          <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
-              <ogc:Literal>15760</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <MinScaleDenominator>1000</MinScaleDenominator>
-          <MaxScaleDenominator>15000</MaxScaleDenominator>
-          <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <Stroke>
-              <CssParameter name="stroke">#505050</CssParameter>
-              <CssParameter name="stroke-width">15</CssParameter>
-              <CssParameter name="stroke-linecap">butt</CssParameter>
-              <CssParameter name="stroke-linejoin">round</CssParameter>
-            </Stroke>
-          </LineSymbolizer>
-        </Rule>
-          </FeatureTypeStyle>
+      <Title>Product SLD - October 2022</Title>
+      <Abstract>OS Open Map - Local&#174; Local. Ordnance Survey. &#169; Crown copyright and database rights 2022.</Abstract>
 
 
-<!-- Local Access Road Casing -->
-        
-        <FeatureTypeStyle>
-      <Rule>
-          <Name>Local Access Road Case</Name>
-          <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
-              <ogc:Literal>15761</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <MinScaleDenominator>1000</MinScaleDenominator>
-          <MaxScaleDenominator>15000</MaxScaleDenominator>
-          <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <Stroke>
-              <CssParameter name="stroke">#505050</CssParameter>
-              <CssParameter name="stroke-width">15</CssParameter>
-              <CssParameter name="stroke-linecap">butt</CssParameter>
-              <CssParameter name="stroke-linejoin">round</CssParameter>
-            </Stroke>
-          </LineSymbolizer>
-        </Rule>
-          </FeatureTypeStyle>
 
+<!-- LEVEL 0 CASING -->
+<!-- Guided Busway Carriageway Casing -->
 
-<!-- Shared Use Carriageway Casing -->
-        
-        <FeatureTypeStyle>
-      <Rule>
-          <Name>Shared Use Carriageway Case</Name>
-          <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
-              <ogc:Literal>15790</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <MinScaleDenominator>1000</MinScaleDenominator>
-          <MaxScaleDenominator>15000</MaxScaleDenominator>
-          <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <Stroke>
-              <CssParameter name="stroke">#505050</CssParameter>
-              <CssParameter name="stroke-width">13</CssParameter>
-              <CssParameter name="stroke-linecap">butt</CssParameter>
-              <CssParameter name="stroke-linejoin">round</CssParameter>
-            </Stroke>
-          </LineSymbolizer>
-        </Rule>
-          </FeatureTypeStyle>
+          <FeatureTypeStyle>
+            <Rule>
+                <Name>Guided Busway Carriageway Case</Name>
+                <ogc:Filter>
+                  <ogc:And>
+                    <ogc:PropertyIsEqualTo>
+                      <ogc:PropertyName>featcode</ogc:PropertyName>
+                      <ogc:Literal>15797</ogc:Literal>
+                    </ogc:PropertyIsEqualTo>
+                    <ogc:PropertyIsEqualTo>
+                      <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                      <ogc:Literal>0</ogc:Literal>
+                    </ogc:PropertyIsEqualTo>
+                  </ogc:And>
+                </ogc:Filter>
+                <MinScaleDenominator>1000</MinScaleDenominator>
+                <MaxScaleDenominator>15000</MaxScaleDenominator>
+                <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+                  <Stroke>
+                    <CssParameter name="stroke">#505050</CssParameter>
+                    <CssParameter name="stroke-width">13</CssParameter>
+                    <CssParameter name="stroke-linecap">round</CssParameter>
+                    <CssParameter name="stroke-linejoin">round</CssParameter>
+                  </Stroke>
+                </LineSymbolizer>
+              </Rule>
+                </FeatureTypeStyle>
 
 
 <!-- Restricted Local Access Road Casing -->
-        
-        <FeatureTypeStyle>
+
+    <FeatureTypeStyle>
       <Rule>
           <Name>Restricted Local Access Road Case</Name>
           <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
-              <ogc:Literal>15762</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>featcode</ogc:PropertyName>
+                <ogc:Literal>15762</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                <ogc:Literal>0</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:And>
           </ogc:Filter>
           <MinScaleDenominator>1000</MinScaleDenominator>
           <MaxScaleDenominator>15000</MaxScaleDenominator>
@@ -162,24 +65,30 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <Stroke>
               <CssParameter name="stroke">#505050</CssParameter>
               <CssParameter name="stroke-width">11</CssParameter>
-              <CssParameter name="stroke-linecap">butt</CssParameter>
+              <CssParameter name="stroke-linecap">round</CssParameter>
               <CssParameter name="stroke-linejoin">round</CssParameter>
             </Stroke>
           </LineSymbolizer>
         </Rule>
-          </FeatureTypeStyle>
+      </FeatureTypeStyle>
 
 
-<!-- Guided Busway Carriageway Casing -->
-        
-        <FeatureTypeStyle>
+<!-- Shared Use Carriageway Casing -->
+
+    <FeatureTypeStyle>
       <Rule>
-          <Name>Guided Busway Carriageway Case</Name>
+          <Name>Shared Use Carriageway Case</Name>
           <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
-              <ogc:Literal>15797</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
+            <And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>featcode</ogc:PropertyName>
+                <ogc:Literal>15790</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                <ogc:Literal>0</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </And>
           </ogc:Filter>
           <MinScaleDenominator>1000</MinScaleDenominator>
           <MaxScaleDenominator>15000</MaxScaleDenominator>
@@ -187,23 +96,274 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <Stroke>
               <CssParameter name="stroke">#505050</CssParameter>
               <CssParameter name="stroke-width">13</CssParameter>
-              <CssParameter name="stroke-linecap">butt</CssParameter>
+              <CssParameter name="stroke-linecap">round</CssParameter>
               <CssParameter name="stroke-linejoin">round</CssParameter>
             </Stroke>
           </LineSymbolizer>
         </Rule>
-          </FeatureTypeStyle>
-      
+      </FeatureTypeStyle>
+
+
+<!-- Local Road Casing -->
+
+        <FeatureTypeStyle>
+          <Rule>
+            <Name>Local Road Case</Name>
+            <ogc:Filter>
+              <And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featcode</ogc:PropertyName>
+                  <ogc:Literal>15760</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                  <ogc:Literal>0</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </And>
+            </ogc:Filter>
+            <MinScaleDenominator>1000</MinScaleDenominator>
+            <MaxScaleDenominator>15000</MaxScaleDenominator>
+            <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+              <Stroke>
+                <CssParameter name="stroke">#505050</CssParameter>
+                <CssParameter name="stroke-width">15</CssParameter>
+                <CssParameter name="stroke-linecap">round</CssParameter>
+                <CssParameter name="stroke-linejoin">round</CssParameter>
+              </Stroke>
+            </LineSymbolizer>
+          </Rule>
+        </FeatureTypeStyle>
+
+
+<!-- Local Access Road Casing -->
+
+    <FeatureTypeStyle>
+      <Rule>
+          <Name>Local Access Road Case</Name>
+          <ogc:Filter>
+            <And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>featcode</ogc:PropertyName>
+                <ogc:Literal>15761</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                <ogc:Literal>0</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </And>
+          </ogc:Filter>
+          <MinScaleDenominator>1000</MinScaleDenominator>
+          <MaxScaleDenominator>15000</MaxScaleDenominator>
+          <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <Stroke>
+              <CssParameter name="stroke">#505050</CssParameter>
+              <CssParameter name="stroke-width">15</CssParameter>
+              <CssParameter name="stroke-linecap">round</CssParameter>
+              <CssParameter name="stroke-linejoin">round</CssParameter>
+            </Stroke>
+          </LineSymbolizer>
+        </Rule>
+      </FeatureTypeStyle>
+
+
+<!-- Road Casing (motorway,primary,A,B and minor roads)-->
+
+    <FeatureTypeStyle>
+      <Rule>
+          <Name>Road Case</Name>
+          <ogc:Filter>
+            <ogc:Or>
+              <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featcode</ogc:PropertyName>
+                  <ogc:Literal>15750</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                  <ogc:Literal>0</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:And>
+              <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15759</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>0</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:And>
+              <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featcode</ogc:PropertyName>
+                  <ogc:Literal>15743</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                  <ogc:Literal>0</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:And>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>featcode</ogc:PropertyName>
+                <ogc:Literal>15749</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                <ogc:Literal>0</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:And>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>featcode</ogc:PropertyName>
+                <ogc:Literal>15729</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                <ogc:Literal>0</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:And>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>featcode</ogc:PropertyName>
+                <ogc:Literal>15739</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                <ogc:Literal>0</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:And>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>featcode</ogc:PropertyName>
+                <ogc:Literal>15723</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                <ogc:Literal>0</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:And>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>featcode</ogc:PropertyName>
+                <ogc:Literal>15735</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                <ogc:Literal>0</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:And>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>featcode</ogc:PropertyName>
+                <ogc:Literal>15710</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                <ogc:Literal>0</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:And>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>featcode</ogc:PropertyName>
+                <ogc:Literal>15719</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                <ogc:Literal>0</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:And>
+          </ogc:Or>
+          </ogc:Filter>
+          <MinScaleDenominator>1000</MinScaleDenominator>
+          <MaxScaleDenominator>15000</MaxScaleDenominator>
+          <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <Stroke>
+              <CssParameter name="stroke">#505050</CssParameter>
+              <CssParameter name="stroke-width">17</CssParameter>
+              <CssParameter name="stroke-linecap">round</CssParameter>
+              <CssParameter name="stroke-linejoin">round</CssParameter>
+            </Stroke>
+          </LineSymbolizer>
+        </Rule>
+      </FeatureTypeStyle>
+
+
+
+<!-- LEVEL 0 FILL -->
+
+<!-- OVERRIDE = T - draw first -->
+
+<!-- Shared Use Carriageway/Guided Busway Carriageway Fill -->
+
+      <FeatureTypeStyle>
+      <Rule>
+          <Name>Shared Use Carriageway/Guided Busway Carriageway fill</Name>
+          <ogc:Filter>
+            <ogc:Or>
+              <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featcode</ogc:PropertyName>
+                  <ogc:Literal>15790</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                  <ogc:Literal>0</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>override</ogc:PropertyName>
+                  <ogc:Literal>T</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:And>
+              <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featcode</ogc:PropertyName>
+                  <ogc:Literal>15797</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                  <ogc:Literal>0</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>override</ogc:PropertyName>
+                  <ogc:Literal>T</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:And>
+            </ogc:Or>
+          </ogc:Filter>
+          <MinScaleDenominator>1000</MinScaleDenominator>
+          <MaxScaleDenominator>15000</MaxScaleDenominator>
+          <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <Stroke>
+              <CssParameter name="stroke">#D7D7D7</CssParameter>
+              <CssParameter name="stroke-width">8</CssParameter>
+              <CssParameter name="stroke-linecap">round</CssParameter>
+              <CssParameter name="stroke-linejoin">round</CssParameter>
+            </Stroke>
+          </LineSymbolizer>
+        </Rule>
+        </FeatureTypeStyle>
+
 <!-- Restricted Local Access Road Fill -->
-      
-      <FeatureTypeStyle>  
+
+      <FeatureTypeStyle>
       <Rule>
           <Name>Restricted Local Access Road fill</Name>
           <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
-              <ogc:Literal>15762</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>featcode</ogc:PropertyName>
+                <ogc:Literal>15762</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                <ogc:Literal>0</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>override</ogc:PropertyName>
+                <ogc:Literal>T</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:And>
           </ogc:Filter>
           <MinScaleDenominator>1000</MinScaleDenominator>
           <MaxScaleDenominator>15000</MaxScaleDenominator>
@@ -218,52 +378,42 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
         </Rule>
         </FeatureTypeStyle>
 
-<!-- Shared Use Carriageway/Guided Busway Carriageway Fill -->
-      
-      <FeatureTypeStyle>  
-      <Rule>
-          <Name>hared Use Carriageway/Guided Busway Carriageway fill</Name>
-          <ogc:Filter>
-            <ogc:Or>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
-              <ogc:Literal>15790</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-  <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
-              <ogc:Literal>15797</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-  </ogc:Or>
-          </ogc:Filter>
-          <MinScaleDenominator>1000</MinScaleDenominator>
-          <MaxScaleDenominator>15000</MaxScaleDenominator>
-          <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <Stroke>
-              <CssParameter name="stroke">#D7D7D7</CssParameter>
-              <CssParameter name="stroke-width">8</CssParameter>
-              <CssParameter name="stroke-linecap">round</CssParameter>
-              <CssParameter name="stroke-linejoin">round</CssParameter>
-            </Stroke>
-          </LineSymbolizer>
-        </Rule>
-        </FeatureTypeStyle> 
-
 <!-- Local Road/Local Access Road Fill -->
-      
-      <FeatureTypeStyle>  
+
+      <FeatureTypeStyle>
       <Rule>
           <Name>Local Road/Local Access Road</Name>
           <ogc:Filter>
             <ogc:Or>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
-              <ogc:Literal>15760</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-  <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
-              <ogc:Literal>15761</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-  </ogc:Or>
+              <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featcode</ogc:PropertyName>
+                  <ogc:Literal>15760</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                  <ogc:Literal>0</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>override</ogc:PropertyName>
+                  <ogc:Literal>T</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:And>
+              <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featcode</ogc:PropertyName>
+                  <ogc:Literal>15761</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                  <ogc:Literal>0</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>override</ogc:PropertyName>
+                  <ogc:Literal>T</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:And>
+            </ogc:Or>
           </ogc:Filter>
           <MinScaleDenominator>1000</MinScaleDenominator>
           <MaxScaleDenominator>15000</MaxScaleDenominator>
@@ -277,24 +427,45 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </LineSymbolizer>
         </Rule>
         </FeatureTypeStyle>
-          
-           <!-- Minor Road Fill -->
-      
-      <FeatureTypeStyle>  
+
+
+  <!-- Minor Road Fill -->
+
+      <FeatureTypeStyle>
       <Rule>
           <Name>Minor Road fill</Name>
           <ogc:Filter>
             <ogc:Or>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
-              <ogc:Literal>15750</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
-              <ogc:Literal>15759</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-  </ogc:Or>
-</ogc:Filter>
+              <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featcode</ogc:PropertyName>
+                  <ogc:Literal>15750</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                  <ogc:Literal>0</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>override</ogc:PropertyName>
+                  <ogc:Literal>T</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:And>
+              <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featcode</ogc:PropertyName>
+                  <ogc:Literal>15759</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                  <ogc:Literal>0</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>override</ogc:PropertyName>
+                  <ogc:Literal>T</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:And>
+            </ogc:Or>
+          </ogc:Filter>
           <MinScaleDenominator>1000</MinScaleDenominator>
           <MaxScaleDenominator>15000</MaxScaleDenominator>
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
@@ -308,23 +479,43 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
         </Rule>
         </FeatureTypeStyle>
 
-          <!-- B Road Fill -->
-      
-      <FeatureTypeStyle>  
+<!-- B Road Fill -->
+
+      <FeatureTypeStyle>
       <Rule>
           <Name>B Road fill</Name>
           <ogc:Filter>
             <ogc:Or>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
-              <ogc:Literal>15743</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
-              <ogc:Literal>15749</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-  </ogc:Or>
-       </ogc:Filter>
+              <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featcode</ogc:PropertyName>
+                  <ogc:Literal>15743</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                  <ogc:Literal>0</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>override</ogc:PropertyName>
+                  <ogc:Literal>T</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:And>
+              <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featcode</ogc:PropertyName>
+                  <ogc:Literal>15749</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                  <ogc:Literal>0</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>override</ogc:PropertyName>
+                  <ogc:Literal>T</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:And>
+            </ogc:Or>
+          </ogc:Filter>
           <MinScaleDenominator>1000</MinScaleDenominator>
           <MaxScaleDenominator>15000</MaxScaleDenominator>
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
@@ -337,24 +528,44 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </LineSymbolizer>
         </Rule>
         </FeatureTypeStyle>
-          
-           <!-- A Road Fill-->
-      
-      <FeatureTypeStyle>  
+
+  <!-- A Road Fill-->
+
+      <FeatureTypeStyle>
       <Rule>
           <Name>A Road fill</Name>
           <ogc:Filter>
             <ogc:Or>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
-              <ogc:Literal>15729</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
-              <ogc:Literal>15739</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-  </ogc:Or>
-</ogc:Filter>
+              <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featcode</ogc:PropertyName>
+                  <ogc:Literal>15729</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                  <ogc:Literal>0</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>override</ogc:PropertyName>
+                  <ogc:Literal>T</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:And>
+              <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featcode</ogc:PropertyName>
+                  <ogc:Literal>15739</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                  <ogc:Literal>0</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>override</ogc:PropertyName>
+                  <ogc:Literal>T</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:And>
+            </ogc:Or>
+          </ogc:Filter>
           <MinScaleDenominator>1000</MinScaleDenominator>
           <MaxScaleDenominator>15000</MaxScaleDenominator>
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
@@ -368,23 +579,44 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
         </Rule>
         </FeatureTypeStyle>
 
-          <!-- Primary Road Fill -->
-      
-      <FeatureTypeStyle>  
+
+  <!-- Primary Road Fill -->
+
+      <FeatureTypeStyle>
       <Rule>
           <Name>Primary Road fill</Name>
           <ogc:Filter>
             <ogc:Or>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
-              <ogc:Literal>15723</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
-              <ogc:Literal>15735</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-  </ogc:Or>
-   </ogc:Filter>
+              <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featcode</ogc:PropertyName>
+                  <ogc:Literal>15723</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                  <ogc:Literal>0</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>override</ogc:PropertyName>
+                  <ogc:Literal>T</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:And>
+              <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featcode</ogc:PropertyName>
+                  <ogc:Literal>15735</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                  <ogc:Literal>0</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>override</ogc:PropertyName>
+                  <ogc:Literal>T</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:And>
+            </ogc:Or>
+          </ogc:Filter>
           <MinScaleDenominator>1000</MinScaleDenominator>
           <MaxScaleDenominator>15000</MaxScaleDenominator>
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
@@ -397,23 +629,43 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </LineSymbolizer>
         </Rule>
         </FeatureTypeStyle>
-          
-          <!-- Motorways Fill -->
-     
+
+<!-- Motorways Fill -->
+
         <FeatureTypeStyle>
           <Rule>
           <Name>Motorway fill</Name>
           <ogc:Filter>
             <ogc:Or>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
-              <ogc:Literal>15710</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
-              <ogc:Literal>15719</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-  </ogc:Or>
+              <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featcode</ogc:PropertyName>
+                  <ogc:Literal>15710</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                  <ogc:Literal>0</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>override</ogc:PropertyName>
+                  <ogc:Literal>T</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:And>
+              <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featcode</ogc:PropertyName>
+                  <ogc:Literal>15719</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                  <ogc:Literal>0</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>override</ogc:PropertyName>
+                  <ogc:Literal>T</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:And>
+            </ogc:Or>
           </ogc:Filter>
           <MinScaleDenominator>1000</MinScaleDenominator>
           <MaxScaleDenominator>15000</MaxScaleDenominator>
@@ -421,23 +673,36 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <Stroke>
               <CssParameter name="stroke">#06B1CA</CssParameter>
               <CssParameter name="stroke-width">12</CssParameter>
-             <CssParameter name="stroke-linecap">round</CssParameter>
-              <CssParameter name="stroke-linejoin">round</CssParameter>
+              <CssParameter name="stroke-linecap">butt</CssParameter>
+              <CssParameter name="stroke-linejoin">butt</CssParameter>
             </Stroke>
           </LineSymbolizer>
         </Rule>
           </FeatureTypeStyle>
 
+
+<!-- LEVEL 0 CENTRE LINE-->
+
 <!-- Guided Busway Carriageway Centre Line-->
-      
-      <FeatureTypeStyle>  
+
+      <FeatureTypeStyle>
       <Rule>
           <Name>Guided Busway Carriageway Centre Line</Name>
           <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
-              <ogc:Literal>15797</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>featcode</ogc:PropertyName>
+                <ogc:Literal>15797</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                <ogc:Literal>0</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>override</ogc:PropertyName>
+                <ogc:Literal>T</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:And>
           </ogc:Filter>
           <MinScaleDenominator>1000</MinScaleDenominator>
           <MaxScaleDenominator>15000</MaxScaleDenominator>
@@ -451,17 +716,27 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </LineSymbolizer>
         </Rule>
         </FeatureTypeStyle>
-          
-          <!-- Minor Road Centre Line-->
-      
-      <FeatureTypeStyle>  
+
+  <!-- Minor Road Centre Line-->
+
+      <FeatureTypeStyle>
       <Rule>
           <Name>Minor Road Centre Line</Name>
           <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
-              <ogc:Literal>15759</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>featcode</ogc:PropertyName>
+                <ogc:Literal>15759</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                <ogc:Literal>0</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>override</ogc:PropertyName>
+                <ogc:Literal>T</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:And>
           </ogc:Filter>
           <MinScaleDenominator>1000</MinScaleDenominator>
           <MaxScaleDenominator>15000</MaxScaleDenominator>
@@ -475,18 +750,28 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </LineSymbolizer>
         </Rule>
         </FeatureTypeStyle>
-          
-          <!-- B Road Centre Line-->
-      
+
+<!-- B Road Centre Line-->
+
         <FeatureTypeStyle>
           <Rule>
           <Name>B Road Centre Line</Name>
           <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
-              <ogc:Literal>15749</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-       </ogc:Filter>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>featcode</ogc:PropertyName>
+                <ogc:Literal>15749</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                <ogc:Literal>0</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>override</ogc:PropertyName>
+                <ogc:Literal>T</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:And>
+          </ogc:Filter>
           <MinScaleDenominator>1000</MinScaleDenominator>
           <MaxScaleDenominator>15000</MaxScaleDenominator>
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
@@ -499,18 +784,28 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </LineSymbolizer>
         </Rule>
           </FeatureTypeStyle>
-          
-          <!-- A Road Centre Line-->
-      
+
+<!-- A Road Centre Line-->
+
         <FeatureTypeStyle>
           <Rule>
           <Name>A Road Centre Line</Name>
           <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
-              <ogc:Literal>15739</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-</ogc:Filter>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>featcode</ogc:PropertyName>
+                <ogc:Literal>15739</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                <ogc:Literal>0</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>override</ogc:PropertyName>
+                <ogc:Literal>T</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:And>
+          </ogc:Filter>
           <MinScaleDenominator>1000</MinScaleDenominator>
           <MaxScaleDenominator>15000</MaxScaleDenominator>
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
@@ -523,42 +818,28 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </LineSymbolizer>
         </Rule>
           </FeatureTypeStyle>
-          
-          <!-- Primary Road Centre Line-->
-      
+
+<!-- Primary Road Centre Line-->
+
         <FeatureTypeStyle>
           <Rule>
           <Name>Primary Road Centre Line</Name>
           <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
-              <ogc:Literal>15735</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-   </ogc:Filter>
-          <MinScaleDenominator>1000</MinScaleDenominator>
-          <MaxScaleDenominator>15000</MaxScaleDenominator>
-          <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <Stroke>
-              <CssParameter name="stroke">#FFFFFF</CssParameter>
-              <CssParameter name="stroke-width">1</CssParameter>
-              <CssParameter name="stroke-linecap">round</CssParameter>
-              <CssParameter name="stroke-linejoin">round</CssParameter>
-            </Stroke>
-          </LineSymbolizer>
-        </Rule>
-          </FeatureTypeStyle>
-          
-          <!-- Motorway Road Centre Line-->
-      
-        <FeatureTypeStyle>
-          <Rule>
-          <Name>Motorway Road Centre Line</Name>
-          <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
-              <ogc:Literal>15719</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-   </ogc:Filter>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>featcode</ogc:PropertyName>
+                <ogc:Literal>15735</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                <ogc:Literal>0</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>override</ogc:PropertyName>
+                <ogc:Literal>T</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:And>
+          </ogc:Filter>
           <MinScaleDenominator>1000</MinScaleDenominator>
           <MaxScaleDenominator>15000</MaxScaleDenominator>
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
@@ -572,25 +853,675 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
         </Rule>
           </FeatureTypeStyle>
 
-<!-- Shared Use Carriageway/Guided Busway Carriageway/Restricted Local Access Road Labels -->   
-              
+<!-- Motorway Road Centre Line-->
+
+        <FeatureTypeStyle>
+          <Rule>
+          <Name>Motorway Road Centre Line</Name>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>featcode</ogc:PropertyName>
+                <ogc:Literal>15719</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                <ogc:Literal>0</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>override</ogc:PropertyName>
+                <ogc:Literal>T</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:And>
+          </ogc:Filter>
+          <MinScaleDenominator>1000</MinScaleDenominator>
+          <MaxScaleDenominator>15000</MaxScaleDenominator>
+          <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <Stroke>
+              <CssParameter name="stroke">#FFFFFF</CssParameter>
+              <CssParameter name="stroke-width">1</CssParameter>
+              <CssParameter name="stroke-linecap">round</CssParameter>
+              <CssParameter name="stroke-linejoin">round</CssParameter>
+            </Stroke>
+          </LineSymbolizer>
+        </Rule>
+          </FeatureTypeStyle>
+
+
+  <!-- OVERRIDE = F - draw second -->
+
+  <!-- Shared Use Carriageway/Guided Busway Carriageway Fill -->
+
+        <FeatureTypeStyle>
+        <Rule>
+            <Name>Shared Use Carriageway/Guided Busway Carriageway fill</Name>
+            <ogc:Filter>
+              <ogc:Or>
+                <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15790</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>0</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>override</ogc:PropertyName>
+                    <ogc:Literal>F</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+                <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15797</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>0</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>override</ogc:PropertyName>
+                    <ogc:Literal>F</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+              </ogc:Or>
+            </ogc:Filter>
+            <MinScaleDenominator>1000</MinScaleDenominator>
+            <MaxScaleDenominator>15000</MaxScaleDenominator>
+            <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+              <Stroke>
+                <CssParameter name="stroke">#D7D7D7</CssParameter>
+                <CssParameter name="stroke-width">8</CssParameter>
+                <CssParameter name="stroke-linecap">round</CssParameter>
+                <CssParameter name="stroke-linejoin">round</CssParameter>
+              </Stroke>
+            </LineSymbolizer>
+          </Rule>
+          </FeatureTypeStyle>
+
+  <!-- Restricted Local Access Road Fill -->
+
+        <FeatureTypeStyle>
+        <Rule>
+            <Name>Restricted Local Access Road fill</Name>
+            <ogc:Filter>
+              <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featcode</ogc:PropertyName>
+                  <ogc:Literal>15762</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                  <ogc:Literal>0</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>override</ogc:PropertyName>
+                  <ogc:Literal>F</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:And>
+            </ogc:Filter>
+            <MinScaleDenominator>1000</MinScaleDenominator>
+            <MaxScaleDenominator>15000</MaxScaleDenominator>
+            <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+              <Stroke>
+                <CssParameter name="stroke">#D7D7D7</CssParameter>
+                <CssParameter name="stroke-width">6</CssParameter>
+                <CssParameter name="stroke-linecap">round</CssParameter>
+                <CssParameter name="stroke-linejoin">round</CssParameter>
+              </Stroke>
+            </LineSymbolizer>
+          </Rule>
+          </FeatureTypeStyle>
+
+  <!-- Local Road/Local Access Road Fill -->
+
+        <FeatureTypeStyle>
+        <Rule>
+            <Name>Local Road/Local Access Road</Name>
+            <ogc:Filter>
+              <ogc:Or>
+                <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15760</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>0</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>override</ogc:PropertyName>
+                    <ogc:Literal>F</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+                <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15761</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>0</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>override</ogc:PropertyName>
+                    <ogc:Literal>F</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+              </ogc:Or>
+            </ogc:Filter>
+            <MinScaleDenominator>1000</MinScaleDenominator>
+            <MaxScaleDenominator>15000</MaxScaleDenominator>
+            <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+              <Stroke>
+                <CssParameter name="stroke">#FFFFFF</CssParameter>
+                <CssParameter name="stroke-width">10</CssParameter>
+                <CssParameter name="stroke-linecap">round</CssParameter>
+                <CssParameter name="stroke-linejoin">round</CssParameter>
+              </Stroke>
+            </LineSymbolizer>
+          </Rule>
+          </FeatureTypeStyle>
+
+
+    <!-- Minor Road Fill -->
+
+        <FeatureTypeStyle>
+        <Rule>
+            <Name>Minor Road fill</Name>
+            <ogc:Filter>
+              <ogc:Or>
+                <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15750</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>0</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>override</ogc:PropertyName>
+                    <ogc:Literal>F</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+                <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15759</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>0</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>override</ogc:PropertyName>
+                    <ogc:Literal>F</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+              </ogc:Or>
+            </ogc:Filter>
+            <MinScaleDenominator>1000</MinScaleDenominator>
+            <MaxScaleDenominator>15000</MaxScaleDenominator>
+            <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+              <Stroke>
+                <CssParameter name="stroke">#FFF3B5</CssParameter>
+                <CssParameter name="stroke-width">12</CssParameter>
+                 <CssParameter name="stroke-linecap">round</CssParameter>
+                <CssParameter name="stroke-linejoin">round</CssParameter>
+              </Stroke>
+            </LineSymbolizer>
+          </Rule>
+          </FeatureTypeStyle>
+
+  <!-- B Road Fill -->
+
+        <FeatureTypeStyle>
+        <Rule>
+            <Name>B Road fill</Name>
+            <ogc:Filter>
+              <ogc:Or>
+                <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15743</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>0</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>override</ogc:PropertyName>
+                    <ogc:Literal>F</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+                <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15749</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>0</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>override</ogc:PropertyName>
+                    <ogc:Literal>F</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+              </ogc:Or>
+            </ogc:Filter>
+            <MinScaleDenominator>1000</MinScaleDenominator>
+            <MaxScaleDenominator>15000</MaxScaleDenominator>
+            <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+              <Stroke>
+                <CssParameter name="stroke">#FFC073</CssParameter>
+                <CssParameter name="stroke-width">12</CssParameter>
+                <CssParameter name="stroke-linecap">round</CssParameter>
+                <CssParameter name="stroke-linejoin">round</CssParameter>
+              </Stroke>
+            </LineSymbolizer>
+          </Rule>
+          </FeatureTypeStyle>
+
+    <!-- A Road Fill-->
+
+        <FeatureTypeStyle>
+        <Rule>
+            <Name>A Road fill</Name>
+            <ogc:Filter>
+              <ogc:Or>
+                <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15729</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>0</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>override</ogc:PropertyName>
+                    <ogc:Literal>F</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+                <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15739</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>0</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>override</ogc:PropertyName>
+                    <ogc:Literal>F</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+              </ogc:Or>
+            </ogc:Filter>
+            <MinScaleDenominator>1000</MinScaleDenominator>
+            <MaxScaleDenominator>15000</MaxScaleDenominator>
+            <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+              <Stroke>
+                <CssParameter name="stroke">#FF879E</CssParameter>
+                <CssParameter name="stroke-width">12</CssParameter>
+                 <CssParameter name="stroke-linecap">round</CssParameter>
+                <CssParameter name="stroke-linejoin">round</CssParameter>
+              </Stroke>
+            </LineSymbolizer>
+          </Rule>
+          </FeatureTypeStyle>
+
+
+    <!-- Primary Road Fill -->
+
+        <FeatureTypeStyle>
+        <Rule>
+            <Name>Primary Road fill</Name>
+            <ogc:Filter>
+              <ogc:Or>
+                <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15723</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>0</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>override</ogc:PropertyName>
+                    <ogc:Literal>F</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+                <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15735</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>0</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>override</ogc:PropertyName>
+                    <ogc:Literal>F</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+              </ogc:Or>
+            </ogc:Filter>
+            <MinScaleDenominator>1000</MinScaleDenominator>
+            <MaxScaleDenominator>15000</MaxScaleDenominator>
+            <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+              <Stroke>
+                <CssParameter name="stroke">#37C35B</CssParameter>
+                <CssParameter name="stroke-width">12</CssParameter>
+                 <CssParameter name="stroke-linecap">round</CssParameter>
+                <CssParameter name="stroke-linejoin">round</CssParameter>
+              </Stroke>
+            </LineSymbolizer>
+          </Rule>
+          </FeatureTypeStyle>
+
+  <!-- Motorways Fill -->
+
+          <FeatureTypeStyle>
+            <Rule>
+            <Name>Motorway fill</Name>
+            <ogc:Filter>
+              <ogc:Or>
+                <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15710</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>0</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>override</ogc:PropertyName>
+                    <ogc:Literal>F</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+                <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15719</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>0</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>override</ogc:PropertyName>
+                    <ogc:Literal>F</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+              </ogc:Or>
+            </ogc:Filter>
+            <MinScaleDenominator>1000</MinScaleDenominator>
+            <MaxScaleDenominator>15000</MaxScaleDenominator>
+            <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+              <Stroke>
+                <CssParameter name="stroke">#06B1CA</CssParameter>
+                <CssParameter name="stroke-width">12</CssParameter>
+                <CssParameter name="stroke-linecap">butt</CssParameter>
+                <CssParameter name="stroke-linejoin">butt</CssParameter>
+              </Stroke>
+            </LineSymbolizer>
+          </Rule>
+            </FeatureTypeStyle>
+
+
+  <!-- LEVEL 0 CENTRE LINE-->
+
+  <!-- Guided Busway Carriageway Centre Line-->
+
+        <FeatureTypeStyle>
+        <Rule>
+            <Name>Guided Busway Carriageway Centre Line</Name>
+            <ogc:Filter>
+              <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featcode</ogc:PropertyName>
+                  <ogc:Literal>15797</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                  <ogc:Literal>0</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>override</ogc:PropertyName>
+                  <ogc:Literal>F</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:And>
+            </ogc:Filter>
+            <MinScaleDenominator>1000</MinScaleDenominator>
+            <MaxScaleDenominator>15000</MaxScaleDenominator>
+            <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+              <Stroke>
+                <CssParameter name="stroke">#505050</CssParameter>
+                <CssParameter name="stroke-width">1</CssParameter>
+                 <CssParameter name="stroke-linecap">round</CssParameter>
+                <CssParameter name="stroke-linejoin">round</CssParameter>
+              </Stroke>
+            </LineSymbolizer>
+          </Rule>
+          </FeatureTypeStyle>
+
+    <!-- Minor Road Centre Line-->
+
+        <FeatureTypeStyle>
+        <Rule>
+            <Name>Minor Road Centre Line</Name>
+            <ogc:Filter>
+              <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featcode</ogc:PropertyName>
+                  <ogc:Literal>15759</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                  <ogc:Literal>0</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>override</ogc:PropertyName>
+                  <ogc:Literal>F</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:And>
+            </ogc:Filter>
+            <MinScaleDenominator>1000</MinScaleDenominator>
+            <MaxScaleDenominator>15000</MaxScaleDenominator>
+            <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+              <Stroke>
+                <CssParameter name="stroke">#505050</CssParameter>
+                <CssParameter name="stroke-width">1</CssParameter>
+                 <CssParameter name="stroke-linecap">round</CssParameter>
+                <CssParameter name="stroke-linejoin">round</CssParameter>
+              </Stroke>
+            </LineSymbolizer>
+          </Rule>
+          </FeatureTypeStyle>
+
+  <!-- B Road Centre Line-->
+
+          <FeatureTypeStyle>
+            <Rule>
+            <Name>B Road Centre Line</Name>
+            <ogc:Filter>
+              <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featcode</ogc:PropertyName>
+                  <ogc:Literal>15749</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                  <ogc:Literal>0</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>override</ogc:PropertyName>
+                  <ogc:Literal>F</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:And>
+            </ogc:Filter>
+            <MinScaleDenominator>1000</MinScaleDenominator>
+            <MaxScaleDenominator>15000</MaxScaleDenominator>
+            <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+              <Stroke>
+                <CssParameter name="stroke">#505050</CssParameter>
+                <CssParameter name="stroke-width">1</CssParameter>
+                <CssParameter name="stroke-linecap">round</CssParameter>
+                <CssParameter name="stroke-linejoin">round</CssParameter>
+              </Stroke>
+            </LineSymbolizer>
+          </Rule>
+            </FeatureTypeStyle>
+
+  <!-- A Road Centre Line-->
+
+          <FeatureTypeStyle>
+            <Rule>
+            <Name>A Road Centre Line</Name>
+            <ogc:Filter>
+              <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featcode</ogc:PropertyName>
+                  <ogc:Literal>15739</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                  <ogc:Literal>0</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>override</ogc:PropertyName>
+                  <ogc:Literal>F</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:And>
+            </ogc:Filter>
+            <MinScaleDenominator>1000</MinScaleDenominator>
+            <MaxScaleDenominator>15000</MaxScaleDenominator>
+            <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+              <Stroke>
+                <CssParameter name="stroke">#505050</CssParameter>
+                <CssParameter name="stroke-width">1</CssParameter>
+                 <CssParameter name="stroke-linecap">round</CssParameter>
+                <CssParameter name="stroke-linejoin">round</CssParameter>
+              </Stroke>
+            </LineSymbolizer>
+          </Rule>
+            </FeatureTypeStyle>
+
+  <!-- Primary Road Centre Line-->
+
+          <FeatureTypeStyle>
+            <Rule>
+            <Name>Primary Road Centre Line</Name>
+            <ogc:Filter>
+              <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featcode</ogc:PropertyName>
+                  <ogc:Literal>15735</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                  <ogc:Literal>0</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>override</ogc:PropertyName>
+                  <ogc:Literal>F</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:And>
+            </ogc:Filter>
+            <MinScaleDenominator>1000</MinScaleDenominator>
+            <MaxScaleDenominator>15000</MaxScaleDenominator>
+            <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+              <Stroke>
+                <CssParameter name="stroke">#FFFFFF</CssParameter>
+                <CssParameter name="stroke-width">1</CssParameter>
+                <CssParameter name="stroke-linecap">round</CssParameter>
+                <CssParameter name="stroke-linejoin">round</CssParameter>
+              </Stroke>
+            </LineSymbolizer>
+          </Rule>
+            </FeatureTypeStyle>
+
+  <!-- Motorway Road Centre Line-->
+
+          <FeatureTypeStyle>
+            <Rule>
+            <Name>Motorway Road Centre Line</Name>
+            <ogc:Filter>
+              <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featcode</ogc:PropertyName>
+                  <ogc:Literal>15719</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                  <ogc:Literal>0</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>override</ogc:PropertyName>
+                  <ogc:Literal>F</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:And>
+            </ogc:Filter>
+            <MinScaleDenominator>1000</MinScaleDenominator>
+            <MaxScaleDenominator>15000</MaxScaleDenominator>
+            <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+              <Stroke>
+                <CssParameter name="stroke">#FFFFFF</CssParameter>
+                <CssParameter name="stroke-width">1</CssParameter>
+                <CssParameter name="stroke-linecap">round</CssParameter>
+                <CssParameter name="stroke-linejoin">round</CssParameter>
+              </Stroke>
+            </LineSymbolizer>
+          </Rule>
+            </FeatureTypeStyle>
+
+<!-- LEVEL 0 LABELS-->
+
+<!-- Shared Use Carriageway/Guided Busway Carriageway/Restricted Local Access Road Labels -->
+
         <FeatureTypeStyle>
           <Rule>
           <Name>Shared Use Carriageway/Guided Busway Carriageway/Restricted Local Access Road</Name>
           <ogc:Filter>
             <ogc:Or>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
-              <ogc:Literal>15790</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
-              <ogc:Literal>15797</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
-              <ogc:Literal>15762</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
+              <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featcode</ogc:PropertyName>
+                  <ogc:Literal>15790</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                  <ogc:Literal>0</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:And>
+              <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featcode</ogc:PropertyName>
+                  <ogc:Literal>15797</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                  <ogc:Literal>0</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:And>
+              <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featcode</ogc:PropertyName>
+                  <ogc:Literal>15762</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                  <ogc:Literal>0</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:And>
             </ogc:Or>
           </ogc:Filter>
           <MinScaleDenominator>1000</MinScaleDenominator>
@@ -598,7 +1529,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
               <ogc:Function name="strToUpperCase">
-              <ogc:PropertyName>DISTNAME</ogc:PropertyName>
+              <ogc:PropertyName>distname</ogc:PropertyName>
               </ogc:Function>
             </Label>
             <Font>
@@ -625,24 +1556,36 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="repeat">1000</VendorOption>
             <VendorOption name="conflictResolution">true</VendorOption>
           </TextSymbolizer>
-        </Rule> 
+        </Rule>
       </FeatureTypeStyle>
 
-<!-- Local Road/Local Access Road Labels -->   
-              
+<!-- Local Road/Local Access Road Labels -->
+
         <FeatureTypeStyle>
           <Rule>
           <Name>Local Road/Local Access Road</Name>
           <ogc:Filter>
             <ogc:Or>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
-              <ogc:Literal>15760</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
-              <ogc:Literal>15761</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
+              <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featcode</ogc:PropertyName>
+                  <ogc:Literal>15760</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                  <ogc:Literal>0</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:And>
+              <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featcode</ogc:PropertyName>
+                  <ogc:Literal>15761</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                  <ogc:Literal>0</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:And>
             </ogc:Or>
           </ogc:Filter>
           <MinScaleDenominator>1000</MinScaleDenominator>
@@ -650,7 +1593,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
               <ogc:Function name="strToUpperCase">
-              <ogc:PropertyName>DISTNAME</ogc:PropertyName>
+              <ogc:PropertyName>distname</ogc:PropertyName>
               </ogc:Function>
             </Label>
             <Font>
@@ -677,24 +1620,36 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="repeat">1000</VendorOption>
             <VendorOption name="conflictResolution">true</VendorOption>
           </TextSymbolizer>
-        </Rule> 
+        </Rule>
       </FeatureTypeStyle>
-        
-        <!-- Minor Roads Labels -->        
-        
+
+<!-- Minor Roads Labels -->
+
         <FeatureTypeStyle>
           <Rule>
           <Name>Minor Road Labels</Name>
           <ogc:Filter>
            <ogc:Or>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
-              <ogc:Literal>15750</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
-              <ogc:Literal>15759</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
+             <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featcode</ogc:PropertyName>
+                  <ogc:Literal>15750</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                  <ogc:Literal>0</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:And>
+              <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featcode</ogc:PropertyName>
+                  <ogc:Literal>15759</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                  <ogc:Literal>0</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:And>
           </ogc:Or>
           </ogc:Filter>
           <MinScaleDenominator>1000</MinScaleDenominator>
@@ -702,7 +1657,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
               <ogc:Function name="strToUpperCase">
-              <ogc:PropertyName>DISTNAME</ogc:PropertyName>
+              <ogc:PropertyName>distname</ogc:PropertyName>
               </ogc:Function>
             </Label>
             <Font>
@@ -726,26 +1681,38 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="group">yes</VendorOption>
             <VendorOption name="maxAngleDelta">45</VendorOption>
             <VendorOption name="maxDisplacement">175</VendorOption>
-            <VendorOption name="repeat">1000</VendorOption>      
+            <VendorOption name="repeat">1000</VendorOption>
           </TextSymbolizer>
         </Rule>
       </FeatureTypeStyle>
-      
-  <!-- B Road Labels -->        
-        
+
+  <!-- B Road Labels -->
+
         <FeatureTypeStyle>
           <Rule>
           <Name>B Road Labels</Name>
           <ogc:Filter>
            <ogc:Or>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
-              <ogc:Literal>15743</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
-              <ogc:Literal>15749</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
+             <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featcode</ogc:PropertyName>
+                  <ogc:Literal>15743</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                  <ogc:Literal>0</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:And>
+              <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featcode</ogc:PropertyName>
+                  <ogc:Literal>15749</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                  <ogc:Literal>0</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:And>
             </ogc:Or>
           </ogc:Filter>
           <MinScaleDenominator>1000</MinScaleDenominator>
@@ -753,12 +1720,12 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
               <ogc:Function name="strToUpperCase">
-              <ogc:PropertyName>DISTNAME</ogc:PropertyName>
+              <ogc:PropertyName>distname</ogc:PropertyName>
               </ogc:Function>
             </Label>
             <Font>
               <CssParameter name="font-family">Arial</CssParameter>
-              <CssParameter name="font-size">18</CssParameter>
+              <CssParameter name="font-size">25</CssParameter>
               <CssParameter name="font-weight">bold</CssParameter>
             </Font>
             <LabelPlacement>
@@ -767,18 +1734,18 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
               </LinePlacement>
             </LabelPlacement>
             <Halo>
-              <Radius>1.2</Radius>
+              <Radius>2</Radius>
               <Fill><CssParameter name="fill">#FFFFFF</CssParameter></Fill>
             </Halo>
             <Fill>
-              <CssParameter name="fill">#000000</CssParameter>
+              <CssParameter name="fill">#D68522</CssParameter>
             </Fill>
             <VendorOption name="spaceAround">10</VendorOption>
             <VendorOption name="followLine">true</VendorOption>
             <VendorOption name="group">yes</VendorOption>
             <VendorOption name="maxAngleDelta">45</VendorOption>
             <VendorOption name="maxDisplacement">2500</VendorOption>
-            <VendorOption name="repeat">1000</VendorOption>      
+            <VendorOption name="repeat">1000</VendorOption>
           </TextSymbolizer>
         </Rule>
       </FeatureTypeStyle>
@@ -790,21 +1757,33 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           <Name>B Road Numbers</Name>
           <ogc:Filter>
             <ogc:Or>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>FEATCODE</ogc:PropertyName>
-                <ogc:Literal>15743</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>FEATCODE</ogc:PropertyName>
-                <ogc:Literal>15749</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
+              <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featcode</ogc:PropertyName>
+                  <ogc:Literal>15743</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                  <ogc:Literal>0</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:And>
+              <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featcode</ogc:PropertyName>
+                  <ogc:Literal>15749</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                  <ogc:Literal>0</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:And>
             </ogc:Or>
           </ogc:Filter>
           <MinScaleDenominator>1000</MinScaleDenominator>
           <MaxScaleDenominator>15000</MaxScaleDenominator>
           <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
-              <ogc:PropertyName>ROADNUMBER</ogc:PropertyName>
+              <ogc:PropertyName>roadnumber</ogc:PropertyName>
             </Label>
             <Font>
               <CssParameter name="font-family">Arial</CssParameter>
@@ -833,22 +1812,34 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </TextSymbolizer>
         </Rule>
       </FeatureTypeStyle>
- 
-        <!-- A Roads Labels -->        
-        
+
+<!-- A Roads Labels -->
+
         <FeatureTypeStyle>
           <Rule>
           <Name>A Road Labels</Name>
           <ogc:Filter>
            <ogc:Or>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
-              <ogc:Literal>15792</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
-              <ogc:Literal>15739</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
+             <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featcode</ogc:PropertyName>
+                  <ogc:Literal>15792</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                  <ogc:Literal>0</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:And>
+              <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featcode</ogc:PropertyName>
+                  <ogc:Literal>15739</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                  <ogc:Literal>0</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:And>
             </ogc:Or>
           </ogc:Filter>
           <MinScaleDenominator>1000</MinScaleDenominator>
@@ -856,12 +1847,12 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
               <ogc:Function name="strToUpperCase">
-              <ogc:PropertyName>DISTNAME</ogc:PropertyName>
+              <ogc:PropertyName>distname</ogc:PropertyName>
               </ogc:Function>
             </Label>
             <Font>
               <CssParameter name="font-family">Arial</CssParameter>
-              <CssParameter name="font-size">18</CssParameter>
+              <CssParameter name="font-size">25</CssParameter>
               <CssParameter name="font-weight">bold</CssParameter>
             </Font>
             <LabelPlacement>
@@ -870,18 +1861,18 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
               </LinePlacement>
             </LabelPlacement>
             <Halo>
-              <Radius>1.2</Radius>
+              <Radius>2</Radius>
               <Fill><CssParameter name="fill">#FFFFFF</CssParameter></Fill>
             </Halo>
             <Fill>
-              <CssParameter name="fill">#000000</CssParameter>
+              <CssParameter name="fill">#D41C40</CssParameter>
             </Fill>
             <VendorOption name="spaceAround">10</VendorOption>
             <VendorOption name="followLine">true</VendorOption>
             <VendorOption name="group">yes</VendorOption>
             <VendorOption name="maxAngleDelta">45</VendorOption>
             <VendorOption name="maxDisplacement">2500</VendorOption>
-            <VendorOption name="repeat">1000</VendorOption>      
+            <VendorOption name="repeat">1000</VendorOption>
           </TextSymbolizer>
         </Rule>
           </FeatureTypeStyle>
@@ -893,21 +1884,33 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           <Name>A Road Numbers</Name>
           <ogc:Filter>
             <ogc:Or>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>FEATCODE</ogc:PropertyName>
-                <ogc:Literal>15792</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>FEATCODE</ogc:PropertyName>
-                <ogc:Literal>15739</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
+              <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15792</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>0</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+                <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15739</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>0</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
             </ogc:Or>
           </ogc:Filter>
           <MinScaleDenominator>1000</MinScaleDenominator>
           <MaxScaleDenominator>15000</MaxScaleDenominator>
           <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
-              <ogc:PropertyName>ROADNUMBER</ogc:PropertyName>
+              <ogc:PropertyName>roadnumber</ogc:PropertyName>
             </Label>
             <Font>
               <CssParameter name="font-family">Arial</CssParameter>
@@ -934,24 +1937,36 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="repeat">700</VendorOption>
             <VendorOption name="forceLeftToRight">true</VendorOption>
           </TextSymbolizer>
-        </Rule> 
+        </Rule>
       </FeatureTypeStyle>
-       
-        <!-- Primary Road Labels -->        
-        
+
+<!-- Primary Road Labels -->
+
         <FeatureTypeStyle>
           <Rule>
           <Name>Primary Road Labels</Name>
           <ogc:Filter>
            <ogc:Or>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
-              <ogc:Literal>15723</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
-              <ogc:Literal>15735</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
+               <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featcode</ogc:PropertyName>
+                  <ogc:Literal>15723</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                  <ogc:Literal>0</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:And>
+              <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featcode</ogc:PropertyName>
+                  <ogc:Literal>15735</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                  <ogc:Literal>0</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:And>
             </ogc:Or>
           </ogc:Filter>
           <MinScaleDenominator>1000</MinScaleDenominator>
@@ -959,12 +1974,12 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
               <ogc:Function name="strToUpperCase">
-              <ogc:PropertyName>DISTNAME</ogc:PropertyName>
+              <ogc:PropertyName>distname</ogc:PropertyName>
               </ogc:Function>
             </Label>
             <Font>
               <CssParameter name="font-family">Arial</CssParameter>
-              <CssParameter name="font-size">18</CssParameter>
+              <CssParameter name="font-size">28</CssParameter>
               <CssParameter name="font-weight">bold</CssParameter>
             </Font>
             <LabelPlacement>
@@ -973,11 +1988,11 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
               </LinePlacement>
             </LabelPlacement>
             <Halo>
-              <Radius>1.2</Radius>
+              <Radius>2</Radius>
               <Fill><CssParameter name="fill">#FFFFFF</CssParameter></Fill>
             </Halo>
             <Fill>
-              <CssParameter name="fill">#000000</CssParameter>
+              <CssParameter name="fill">#00A629</CssParameter>
             </Fill>
             <Priority>880</Priority>
             <VendorOption name="spaceAround">10</VendorOption>
@@ -985,33 +2000,45 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="group">yes</VendorOption>
             <VendorOption name="maxAngleDelta">45</VendorOption>
             <VendorOption name="maxDisplacement">175</VendorOption>
-            <VendorOption name="repeat">1000</VendorOption>      
+            <VendorOption name="repeat">1000</VendorOption>
           </TextSymbolizer>
         </Rule>
           </FeatureTypeStyle>
 
-       <!-- Primary Road Numbers -->
-        
+<!-- Primary Road Numbers -->
+
         <FeatureTypeStyle>
           <Rule>
           <Name>Primary Road Numbers</Name>
           <ogc:Filter>
             <ogc:Or>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>FEATCODE</ogc:PropertyName>
-                <ogc:Literal>15723</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>FEATCODE</ogc:PropertyName>
-                <ogc:Literal>15735</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
+              <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featcode</ogc:PropertyName>
+                  <ogc:Literal>15723</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                  <ogc:Literal>0</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:And>
+              <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featcode</ogc:PropertyName>
+                  <ogc:Literal>15735</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                  <ogc:Literal>0</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:And>
             </ogc:Or>
           </ogc:Filter>
           <MinScaleDenominator>1000</MinScaleDenominator>
           <MaxScaleDenominator>15000</MaxScaleDenominator>
           <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
-              <ogc:PropertyName>ROADNUMBER</ogc:PropertyName>
+              <ogc:PropertyName>roadnumber</ogc:PropertyName>
             </Label>
             <Font>
               <CssParameter name="font-family">Arial</CssParameter>
@@ -1040,29 +2067,42 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </TextSymbolizer>
         </Rule>
       </FeatureTypeStyle>
-      
-        <!-- Motorway Numbers -->
+
+
+<!-- Motorway Numbers -->
 
     <FeatureTypeStyle>
       <Rule>
           <Name>Motorway Numbers</Name>
           <ogc:Filter>
             <ogc:Or>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>FEATCODE</ogc:PropertyName>
-                <ogc:Literal>15710</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>FEATCODE</ogc:PropertyName>
-                <ogc:Literal>15719</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
+              <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featcode</ogc:PropertyName>
+                  <ogc:Literal>15710</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                  <ogc:Literal>0</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:And>
+              <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featcode</ogc:PropertyName>
+                  <ogc:Literal>15719</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                  <ogc:Literal>0</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:And>
             </ogc:Or>
           </ogc:Filter>
           <MinScaleDenominator>1000</MinScaleDenominator>
           <MaxScaleDenominator>15000</MaxScaleDenominator>
           <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
-              <ogc:PropertyName>ROADNUMBER</ogc:PropertyName>
+              <ogc:PropertyName>roadnumber</ogc:PropertyName>
             </Label>
             <Font>
               <CssParameter name="font-family">Arial</CssParameter>
@@ -1091,6 +2131,4245 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </TextSymbolizer>
         </Rule>
       </FeatureTypeStyle>
+
+
+  <!-- LEVEL 1 CASING -->
+  <!-- Guided Busway Carriageway Casing -->
+
+            <FeatureTypeStyle>
+              <Rule>
+                  <Name>Guided Busway Carriageway Case</Name>
+                  <ogc:Filter>
+                    <ogc:And>
+                      <ogc:PropertyIsEqualTo>
+                        <ogc:PropertyName>featcode</ogc:PropertyName>
+                        <ogc:Literal>15797</ogc:Literal>
+                      </ogc:PropertyIsEqualTo>
+                      <ogc:PropertyIsEqualTo>
+                        <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                        <ogc:Literal>1</ogc:Literal>
+                      </ogc:PropertyIsEqualTo>
+                    </ogc:And>
+                  </ogc:Filter>
+                  <MinScaleDenominator>1000</MinScaleDenominator>
+                  <MaxScaleDenominator>15000</MaxScaleDenominator>
+                  <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+                    <Stroke>
+                      <CssParameter name="stroke">#505050</CssParameter>
+                      <CssParameter name="stroke-width">13</CssParameter>
+                      <CssParameter name="stroke-linejoin">round</CssParameter>
+                    </Stroke>
+                  </LineSymbolizer>
+                </Rule>
+                  </FeatureTypeStyle>
+
+
+  <!-- Restricted Local Access Road Casing -->
+
+      <FeatureTypeStyle>
+        <Rule>
+            <Name>Restricted Local Access Road Case</Name>
+            <ogc:Filter>
+              <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featcode</ogc:PropertyName>
+                  <ogc:Literal>15762</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                  <ogc:Literal>1</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:And>
+            </ogc:Filter>
+            <MinScaleDenominator>1000</MinScaleDenominator>
+            <MaxScaleDenominator>15000</MaxScaleDenominator>
+            <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+              <Stroke>
+                <CssParameter name="stroke">#505050</CssParameter>
+                <CssParameter name="stroke-width">11</CssParameter>
+                <CssParameter name="stroke-linejoin">round</CssParameter>
+              </Stroke>
+            </LineSymbolizer>
+          </Rule>
+        </FeatureTypeStyle>
+
+
+  <!-- Shared Use Carriageway Casing -->
+
+      <FeatureTypeStyle>
+        <Rule>
+            <Name>Shared Use Carriageway Case</Name>
+            <ogc:Filter>
+              <And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featcode</ogc:PropertyName>
+                  <ogc:Literal>15790</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                  <ogc:Literal>1</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </And>
+            </ogc:Filter>
+            <MinScaleDenominator>1000</MinScaleDenominator>
+            <MaxScaleDenominator>15000</MaxScaleDenominator>
+            <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+              <Stroke>
+                <CssParameter name="stroke">#505050</CssParameter>
+                <CssParameter name="stroke-width">13</CssParameter>
+                <CssParameter name="stroke-linejoin">round</CssParameter>
+              </Stroke>
+            </LineSymbolizer>
+          </Rule>
+        </FeatureTypeStyle>
+
+
+  <!-- Local Road Casing -->
+
+          <FeatureTypeStyle>
+            <Rule>
+              <Name>Local Road Case</Name>
+              <ogc:Filter>
+                <And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15760</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>1</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </And>
+              </ogc:Filter>
+              <MinScaleDenominator>1000</MinScaleDenominator>
+              <MaxScaleDenominator>15000</MaxScaleDenominator>
+              <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+                <Stroke>
+                  <CssParameter name="stroke">#505050</CssParameter>
+                  <CssParameter name="stroke-width">15</CssParameter>
+                  <CssParameter name="stroke-linejoin">round</CssParameter>
+                </Stroke>
+              </LineSymbolizer>
+            </Rule>
+          </FeatureTypeStyle>
+
+
+  <!-- Local Access Road Casing -->
+
+      <FeatureTypeStyle>
+        <Rule>
+            <Name>Local Access Road Case</Name>
+            <ogc:Filter>
+              <And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featcode</ogc:PropertyName>
+                  <ogc:Literal>15761</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                  <ogc:Literal>1</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </And>
+            </ogc:Filter>
+            <MinScaleDenominator>1000</MinScaleDenominator>
+            <MaxScaleDenominator>15000</MaxScaleDenominator>
+            <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+              <Stroke>
+                <CssParameter name="stroke">#505050</CssParameter>
+                <CssParameter name="stroke-width">15</CssParameter>
+                <CssParameter name="stroke-linejoin">round</CssParameter>
+              </Stroke>
+            </LineSymbolizer>
+          </Rule>
+        </FeatureTypeStyle>
+
+
+  <!-- Road Casing (motorway,primary,A,B and minor roads)-->
+
+      <FeatureTypeStyle>
+        <Rule>
+            <Name>Road Case</Name>
+            <ogc:Filter>
+              <ogc:Or>
+                <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15750</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>1</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+                <ogc:And>
+                    <ogc:PropertyIsEqualTo>
+                      <ogc:PropertyName>featcode</ogc:PropertyName>
+                      <ogc:Literal>15759</ogc:Literal>
+                    </ogc:PropertyIsEqualTo>
+                    <ogc:PropertyIsEqualTo>
+                      <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                      <ogc:Literal>1</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+                <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15743</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>1</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:And>
+              <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featcode</ogc:PropertyName>
+                  <ogc:Literal>15749</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                  <ogc:Literal>1</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:And>
+              <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featcode</ogc:PropertyName>
+                  <ogc:Literal>15729</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                  <ogc:Literal>1</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:And>
+              <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featcode</ogc:PropertyName>
+                  <ogc:Literal>15739</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                  <ogc:Literal>1</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:And>
+              <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featcode</ogc:PropertyName>
+                  <ogc:Literal>15723</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                  <ogc:Literal>1</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:And>
+              <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featcode</ogc:PropertyName>
+                  <ogc:Literal>15735</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                  <ogc:Literal>1</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:And>
+              <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featcode</ogc:PropertyName>
+                  <ogc:Literal>15710</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                  <ogc:Literal>1</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:And>
+              <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featcode</ogc:PropertyName>
+                  <ogc:Literal>15719</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                  <ogc:Literal>1</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:And>
+            </ogc:Or>
+            </ogc:Filter>
+            <MinScaleDenominator>1000</MinScaleDenominator>
+            <MaxScaleDenominator>15000</MaxScaleDenominator>
+            <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+              <Stroke>
+                <CssParameter name="stroke">#505050</CssParameter>
+                <CssParameter name="stroke-width">17</CssParameter>
+                <CssParameter name="stroke-linejoin">round</CssParameter>
+              </Stroke>
+            </LineSymbolizer>
+          </Rule>
+        </FeatureTypeStyle>
+
+
+
+  <!-- LEVEL 1 FILL -->
+
+  <!-- OVERRIDE = T - DRAW FIRST -->
+
+  <!-- Shared Use Carriageway/Guided Busway Carriageway Fill -->
+
+        <FeatureTypeStyle>
+        <Rule>
+            <Name>Shared Use Carriageway/Guided Busway Carriageway fill</Name>
+            <ogc:Filter>
+              <ogc:Or>
+                <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15790</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>1</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>override</ogc:PropertyName>
+                    <ogc:Literal>T</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+                <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15797</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>1</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>override</ogc:PropertyName>
+                    <ogc:Literal>T</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+              </ogc:Or>
+            </ogc:Filter>
+            <MinScaleDenominator>1000</MinScaleDenominator>
+            <MaxScaleDenominator>15000</MaxScaleDenominator>
+            <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+              <Stroke>
+                <CssParameter name="stroke">#D7D7D7</CssParameter>
+                <CssParameter name="stroke-width">8</CssParameter>
+                <CssParameter name="stroke-linecap">butt</CssParameter>
+                <CssParameter name="stroke-linejoin">round</CssParameter>
+              </Stroke>
+            </LineSymbolizer>
+          </Rule>
+          </FeatureTypeStyle>
+
+  <!-- Restricted Local Access Road Fill -->
+
+        <FeatureTypeStyle>
+        <Rule>
+            <Name>Restricted Local Access Road fill</Name>
+            <ogc:Filter>
+              <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featcode</ogc:PropertyName>
+                  <ogc:Literal>15762</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                  <ogc:Literal>1</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>override</ogc:PropertyName>
+                  <ogc:Literal>T</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:And>
+            </ogc:Filter>
+            <MinScaleDenominator>1000</MinScaleDenominator>
+            <MaxScaleDenominator>15000</MaxScaleDenominator>
+            <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+              <Stroke>
+                <CssParameter name="stroke">#D7D7D7</CssParameter>
+                <CssParameter name="stroke-width">6</CssParameter>
+                <CssParameter name="stroke-linecap">butt</CssParameter>
+                <CssParameter name="stroke-linejoin">round</CssParameter>
+              </Stroke>
+            </LineSymbolizer>
+          </Rule>
+          </FeatureTypeStyle>
+
+  <!-- Local Road/Local Access Road Fill -->
+
+        <FeatureTypeStyle>
+        <Rule>
+            <Name>Local Road/Local Access Road</Name>
+            <ogc:Filter>
+              <ogc:Or>
+                <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15760</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>1</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>override</ogc:PropertyName>
+                    <ogc:Literal>T</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+                <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15761</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>1</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>override</ogc:PropertyName>
+                    <ogc:Literal>T</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+              </ogc:Or>
+            </ogc:Filter>
+            <MinScaleDenominator>1000</MinScaleDenominator>
+            <MaxScaleDenominator>15000</MaxScaleDenominator>
+            <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+              <Stroke>
+                <CssParameter name="stroke">#FFFFFF</CssParameter>
+                <CssParameter name="stroke-width">10</CssParameter>
+                <CssParameter name="stroke-linecap">butt</CssParameter>
+                <CssParameter name="stroke-linejoin">round</CssParameter>
+              </Stroke>
+            </LineSymbolizer>
+          </Rule>
+          </FeatureTypeStyle>
+
+
+    <!-- Minor Road Fill -->
+
+        <FeatureTypeStyle>
+        <Rule>
+            <Name>Minor Road fill</Name>
+            <ogc:Filter>
+              <ogc:Or>
+                <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15750</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>1</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>override</ogc:PropertyName>
+                    <ogc:Literal>T</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+                <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15759</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>1</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>override</ogc:PropertyName>
+                    <ogc:Literal>T</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+              </ogc:Or>
+            </ogc:Filter>
+            <MinScaleDenominator>1000</MinScaleDenominator>
+            <MaxScaleDenominator>15000</MaxScaleDenominator>
+            <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+              <Stroke>
+                <CssParameter name="stroke">#FFF3B5</CssParameter>
+                <CssParameter name="stroke-width">12</CssParameter>
+                 <CssParameter name="stroke-linecap">butt</CssParameter>
+                <CssParameter name="stroke-linejoin">round</CssParameter>
+              </Stroke>
+            </LineSymbolizer>
+          </Rule>
+          </FeatureTypeStyle>
+
+  <!-- B Road Fill -->
+
+        <FeatureTypeStyle>
+        <Rule>
+            <Name>B Road fill</Name>
+            <ogc:Filter>
+              <ogc:Or>
+                <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15743</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>1</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>override</ogc:PropertyName>
+                    <ogc:Literal>T</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+                <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15749</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>1</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>override</ogc:PropertyName>
+                    <ogc:Literal>T</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+              </ogc:Or>
+         </ogc:Filter>
+            <MinScaleDenominator>1000</MinScaleDenominator>
+            <MaxScaleDenominator>15000</MaxScaleDenominator>
+            <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+              <Stroke>
+                <CssParameter name="stroke">#FFC073</CssParameter>
+                <CssParameter name="stroke-width">12</CssParameter>
+                <CssParameter name="stroke-linecap">butt</CssParameter>
+                <CssParameter name="stroke-linejoin">round</CssParameter>
+              </Stroke>
+            </LineSymbolizer>
+          </Rule>
+          </FeatureTypeStyle>
+
+    <!-- A Road Fill-->
+
+        <FeatureTypeStyle>
+        <Rule>
+            <Name>A Road fill</Name>
+            <ogc:Filter>
+              <ogc:Or>
+                <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15729</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>1</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>override</ogc:PropertyName>
+                    <ogc:Literal>T</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+                <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15739</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>1</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>override</ogc:PropertyName>
+                    <ogc:Literal>T</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+              </ogc:Or>
+            </ogc:Filter>
+            <MinScaleDenominator>1000</MinScaleDenominator>
+            <MaxScaleDenominator>15000</MaxScaleDenominator>
+            <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+              <Stroke>
+                <CssParameter name="stroke">#FF879E</CssParameter>
+                <CssParameter name="stroke-width">12</CssParameter>
+                 <CssParameter name="stroke-linecap">butt</CssParameter>
+                <CssParameter name="stroke-linejoin">round</CssParameter>
+              </Stroke>
+            </LineSymbolizer>
+          </Rule>
+          </FeatureTypeStyle>
+
+
+    <!-- Primary Road Fill -->
+
+        <FeatureTypeStyle>
+        <Rule>
+            <Name>Primary Road fill</Name>
+            <ogc:Filter>
+              <ogc:Or>
+                <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15723</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>1</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>override</ogc:PropertyName>
+                    <ogc:Literal>T</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+                <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15735</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>1</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>override</ogc:PropertyName>
+                    <ogc:Literal>T</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+              </ogc:Or>
+            </ogc:Filter>
+            <MinScaleDenominator>1000</MinScaleDenominator>
+            <MaxScaleDenominator>15000</MaxScaleDenominator>
+            <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+              <Stroke>
+                <CssParameter name="stroke">#37C35B</CssParameter>
+                <CssParameter name="stroke-width">12</CssParameter>
+                 <CssParameter name="stroke-linecap">butt</CssParameter>
+                <CssParameter name="stroke-linejoin">round</CssParameter>
+              </Stroke>
+            </LineSymbolizer>
+          </Rule>
+          </FeatureTypeStyle>
+
+            <!-- Motorways Fill -->
+
+          <FeatureTypeStyle>
+            <Rule>
+            <Name>Motorway fill</Name>
+            <ogc:Filter>
+              <ogc:Or>
+                <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15710</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>1</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>override</ogc:PropertyName>
+                    <ogc:Literal>T</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+                <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15719</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>1</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>override</ogc:PropertyName>
+                    <ogc:Literal>T</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+              </ogc:Or>
+            </ogc:Filter>
+            <MinScaleDenominator>1000</MinScaleDenominator>
+            <MaxScaleDenominator>15000</MaxScaleDenominator>
+            <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+              <Stroke>
+                <CssParameter name="stroke">#06B1CA</CssParameter>
+                <CssParameter name="stroke-width">12</CssParameter>
+               <CssParameter name="stroke-linecap">butt</CssParameter>
+                <CssParameter name="stroke-linejoin">round</CssParameter>
+              </Stroke>
+            </LineSymbolizer>
+          </Rule>
+            </FeatureTypeStyle>
+
+
+  <!-- LEVEL 1 CENTRE LINE-->
+
+  <!-- Guided Busway Carriageway Centre Line-->
+
+        <FeatureTypeStyle>
+        <Rule>
+            <Name>Guided Busway Carriageway Centre Line</Name>
+            <ogc:Filter>
+              <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featcode</ogc:PropertyName>
+                  <ogc:Literal>15797</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                  <ogc:Literal>1</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>override</ogc:PropertyName>
+                  <ogc:Literal>T</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:And>
+            </ogc:Filter>
+            <MinScaleDenominator>1000</MinScaleDenominator>
+            <MaxScaleDenominator>15000</MaxScaleDenominator>
+            <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+              <Stroke>
+                <CssParameter name="stroke">#505050</CssParameter>
+                <CssParameter name="stroke-width">1</CssParameter>
+                 <CssParameter name="stroke-linecap">round</CssParameter>
+                <CssParameter name="stroke-linejoin">round</CssParameter>
+              </Stroke>
+            </LineSymbolizer>
+          </Rule>
+          </FeatureTypeStyle>
+
+    <!-- Minor Road Centre Line-->
+
+        <FeatureTypeStyle>
+        <Rule>
+            <Name>Minor Road Centre Line</Name>
+            <ogc:Filter>
+              <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featcode</ogc:PropertyName>
+                  <ogc:Literal>15759</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                  <ogc:Literal>1</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>override</ogc:PropertyName>
+                  <ogc:Literal>T</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:And>
+            </ogc:Filter>
+            <MinScaleDenominator>1000</MinScaleDenominator>
+            <MaxScaleDenominator>15000</MaxScaleDenominator>
+            <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+              <Stroke>
+                <CssParameter name="stroke">#505050</CssParameter>
+                <CssParameter name="stroke-width">1</CssParameter>
+                 <CssParameter name="stroke-linecap">round</CssParameter>
+                <CssParameter name="stroke-linejoin">round</CssParameter>
+              </Stroke>
+            </LineSymbolizer>
+          </Rule>
+          </FeatureTypeStyle>
+
+  <!-- B Road Centre Line-->
+
+          <FeatureTypeStyle>
+            <Rule>
+            <Name>B Road Centre Line</Name>
+            <ogc:Filter>
+              <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featcode</ogc:PropertyName>
+                  <ogc:Literal>15749</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                  <ogc:Literal>1</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>override</ogc:PropertyName>
+                  <ogc:Literal>T</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:And>
+         </ogc:Filter>
+            <MinScaleDenominator>1000</MinScaleDenominator>
+            <MaxScaleDenominator>15000</MaxScaleDenominator>
+            <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+              <Stroke>
+                <CssParameter name="stroke">#505050</CssParameter>
+                <CssParameter name="stroke-width">1</CssParameter>
+                <CssParameter name="stroke-linecap">round</CssParameter>
+                <CssParameter name="stroke-linejoin">round</CssParameter>
+              </Stroke>
+            </LineSymbolizer>
+          </Rule>
+            </FeatureTypeStyle>
+
+  <!-- A Road Centre Line-->
+
+          <FeatureTypeStyle>
+            <Rule>
+            <Name>A Road Centre Line</Name>
+            <ogc:Filter>
+              <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featcode</ogc:PropertyName>
+                  <ogc:Literal>15739</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                  <ogc:Literal>1</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>override</ogc:PropertyName>
+                  <ogc:Literal>T</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:And>
+            </ogc:Filter>
+            <MinScaleDenominator>1000</MinScaleDenominator>
+            <MaxScaleDenominator>15000</MaxScaleDenominator>
+            <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+              <Stroke>
+                <CssParameter name="stroke">#505050</CssParameter>
+                <CssParameter name="stroke-width">1</CssParameter>
+                 <CssParameter name="stroke-linecap">round</CssParameter>
+                <CssParameter name="stroke-linejoin">round</CssParameter>
+              </Stroke>
+            </LineSymbolizer>
+          </Rule>
+            </FeatureTypeStyle>
+
+  <!-- Primary Road Centre Line-->
+
+          <FeatureTypeStyle>
+            <Rule>
+            <Name>Primary Road Centre Line</Name>
+            <ogc:Filter>
+              <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featcode</ogc:PropertyName>
+                  <ogc:Literal>15735</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                  <ogc:Literal>1</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>override</ogc:PropertyName>
+                  <ogc:Literal>T</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:And>
+            </ogc:Filter>
+            <MinScaleDenominator>1000</MinScaleDenominator>
+            <MaxScaleDenominator>15000</MaxScaleDenominator>
+            <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+              <Stroke>
+                <CssParameter name="stroke">#FFFFFF</CssParameter>
+                <CssParameter name="stroke-width">1</CssParameter>
+                <CssParameter name="stroke-linecap">round</CssParameter>
+                <CssParameter name="stroke-linejoin">round</CssParameter>
+              </Stroke>
+            </LineSymbolizer>
+          </Rule>
+            </FeatureTypeStyle>
+
+  <!-- Motorway Road Centre Line-->
+
+          <FeatureTypeStyle>
+            <Rule>
+            <Name>Motorway Road Centre Line</Name>
+            <ogc:Filter>
+              <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featcode</ogc:PropertyName>
+                  <ogc:Literal>15719</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                  <ogc:Literal>1</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>override</ogc:PropertyName>
+                  <ogc:Literal>T</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:And>
+            </ogc:Filter>
+            <MinScaleDenominator>1000</MinScaleDenominator>
+            <MaxScaleDenominator>15000</MaxScaleDenominator>
+            <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+              <Stroke>
+                <CssParameter name="stroke">#FFFFFF</CssParameter>
+                <CssParameter name="stroke-width">1</CssParameter>
+                <CssParameter name="stroke-linecap">round</CssParameter>
+                <CssParameter name="stroke-linejoin">round</CssParameter>
+              </Stroke>
+            </LineSymbolizer>
+          </Rule>
+            </FeatureTypeStyle>
+
+
+<!-- OVERRIDE = F - DRAW SECOND -->
+
+<!-- Shared Use Carriageway/Guided Busway Carriageway Fill -->
+
+    <FeatureTypeStyle>
+    <Rule>
+        <Name>Shared Use Carriageway/Guided Busway Carriageway fill</Name>
+        <ogc:Filter>
+          <ogc:Or>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>featcode</ogc:PropertyName>
+                <ogc:Literal>15790</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                <ogc:Literal>1</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>override</ogc:PropertyName>
+                <ogc:Literal>F</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:And>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>featcode</ogc:PropertyName>
+                <ogc:Literal>15797</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                <ogc:Literal>1</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>override</ogc:PropertyName>
+                <ogc:Literal>F</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:And>
+          </ogc:Or>
+        </ogc:Filter>
+        <MinScaleDenominator>1000</MinScaleDenominator>
+        <MaxScaleDenominator>15000</MaxScaleDenominator>
+        <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+          <Stroke>
+            <CssParameter name="stroke">#D7D7D7</CssParameter>
+            <CssParameter name="stroke-width">8</CssParameter>
+            <CssParameter name="stroke-linecap">butt</CssParameter>
+            <CssParameter name="stroke-linejoin">round</CssParameter>
+          </Stroke>
+        </LineSymbolizer>
+      </Rule>
+      </FeatureTypeStyle>
+
+<!-- Restricted Local Access Road Fill -->
+
+    <FeatureTypeStyle>
+    <Rule>
+        <Name>Restricted Local Access Road fill</Name>
+        <ogc:Filter>
+          <ogc:And>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>featcode</ogc:PropertyName>
+              <ogc:Literal>15762</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>drawlevel</ogc:PropertyName>
+              <ogc:Literal>1</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>override</ogc:PropertyName>
+              <ogc:Literal>F</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:And>
+        </ogc:Filter>
+        <MinScaleDenominator>1000</MinScaleDenominator>
+        <MaxScaleDenominator>15000</MaxScaleDenominator>
+        <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+          <Stroke>
+            <CssParameter name="stroke">#D7D7D7</CssParameter>
+            <CssParameter name="stroke-width">6</CssParameter>
+            <CssParameter name="stroke-linecap">butt</CssParameter>
+            <CssParameter name="stroke-linejoin">round</CssParameter>
+          </Stroke>
+        </LineSymbolizer>
+      </Rule>
+      </FeatureTypeStyle>
+
+<!-- Local Road/Local Access Road Fill -->
+
+    <FeatureTypeStyle>
+    <Rule>
+        <Name>Local Road/Local Access Road</Name>
+        <ogc:Filter>
+          <ogc:Or>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>featcode</ogc:PropertyName>
+                <ogc:Literal>15760</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                <ogc:Literal>1</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>override</ogc:PropertyName>
+                <ogc:Literal>F</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:And>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>featcode</ogc:PropertyName>
+                <ogc:Literal>15761</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                <ogc:Literal>1</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>override</ogc:PropertyName>
+                <ogc:Literal>F</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:And>
+          </ogc:Or>
+        </ogc:Filter>
+        <MinScaleDenominator>1000</MinScaleDenominator>
+        <MaxScaleDenominator>15000</MaxScaleDenominator>
+        <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+          <Stroke>
+            <CssParameter name="stroke">#FFFFFF</CssParameter>
+            <CssParameter name="stroke-width">10</CssParameter>
+            <CssParameter name="stroke-linecap">butt</CssParameter>
+            <CssParameter name="stroke-linejoin">round</CssParameter>
+          </Stroke>
+        </LineSymbolizer>
+      </Rule>
+      </FeatureTypeStyle>
+
+
+<!-- Minor Road Fill -->
+
+    <FeatureTypeStyle>
+    <Rule>
+        <Name>Minor Road fill</Name>
+        <ogc:Filter>
+          <ogc:Or>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>featcode</ogc:PropertyName>
+                <ogc:Literal>15750</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                <ogc:Literal>1</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>override</ogc:PropertyName>
+                <ogc:Literal>F</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:And>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>featcode</ogc:PropertyName>
+                <ogc:Literal>15759</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                <ogc:Literal>1</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>override</ogc:PropertyName>
+                <ogc:Literal>F</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:And>
+          </ogc:Or>
+        </ogc:Filter>
+        <MinScaleDenominator>1000</MinScaleDenominator>
+        <MaxScaleDenominator>15000</MaxScaleDenominator>
+        <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+          <Stroke>
+            <CssParameter name="stroke">#FFF3B5</CssParameter>
+            <CssParameter name="stroke-width">12</CssParameter>
+             <CssParameter name="stroke-linecap">butt</CssParameter>
+            <CssParameter name="stroke-linejoin">round</CssParameter>
+          </Stroke>
+        </LineSymbolizer>
+      </Rule>
+      </FeatureTypeStyle>
+
+<!-- B Road Fill -->
+
+    <FeatureTypeStyle>
+    <Rule>
+        <Name>B Road fill</Name>
+        <ogc:Filter>
+          <ogc:Or>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>featcode</ogc:PropertyName>
+                <ogc:Literal>15743</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                <ogc:Literal>1</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>override</ogc:PropertyName>
+                <ogc:Literal>F</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:And>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>featcode</ogc:PropertyName>
+                <ogc:Literal>15749</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                <ogc:Literal>1</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>override</ogc:PropertyName>
+                <ogc:Literal>F</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:And>
+          </ogc:Or>
+     </ogc:Filter>
+        <MinScaleDenominator>1000</MinScaleDenominator>
+        <MaxScaleDenominator>15000</MaxScaleDenominator>
+        <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+          <Stroke>
+            <CssParameter name="stroke">#FFC073</CssParameter>
+            <CssParameter name="stroke-width">12</CssParameter>
+            <CssParameter name="stroke-linecap">butt</CssParameter>
+            <CssParameter name="stroke-linejoin">round</CssParameter>
+          </Stroke>
+        </LineSymbolizer>
+      </Rule>
+      </FeatureTypeStyle>
+
+<!-- A Road Fill-->
+
+    <FeatureTypeStyle>
+    <Rule>
+        <Name>A Road fill</Name>
+        <ogc:Filter>
+          <ogc:Or>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>featcode</ogc:PropertyName>
+                <ogc:Literal>15729</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                <ogc:Literal>1</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>override</ogc:PropertyName>
+                <ogc:Literal>F</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:And>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>featcode</ogc:PropertyName>
+                <ogc:Literal>15739</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                <ogc:Literal>1</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>override</ogc:PropertyName>
+                <ogc:Literal>F</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:And>
+          </ogc:Or>
+        </ogc:Filter>
+        <MinScaleDenominator>1000</MinScaleDenominator>
+        <MaxScaleDenominator>15000</MaxScaleDenominator>
+        <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+          <Stroke>
+            <CssParameter name="stroke">#FF879E</CssParameter>
+            <CssParameter name="stroke-width">12</CssParameter>
+             <CssParameter name="stroke-linecap">butt</CssParameter>
+            <CssParameter name="stroke-linejoin">round</CssParameter>
+          </Stroke>
+        </LineSymbolizer>
+      </Rule>
+      </FeatureTypeStyle>
+
+
+<!-- Primary Road Fill -->
+
+    <FeatureTypeStyle>
+    <Rule>
+        <Name>Primary Road fill</Name>
+        <ogc:Filter>
+          <ogc:Or>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>featcode</ogc:PropertyName>
+                <ogc:Literal>15723</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                <ogc:Literal>1</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>override</ogc:PropertyName>
+                <ogc:Literal>F</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:And>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>featcode</ogc:PropertyName>
+                <ogc:Literal>15735</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                <ogc:Literal>1</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>override</ogc:PropertyName>
+                <ogc:Literal>F</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:And>
+          </ogc:Or>
+        </ogc:Filter>
+        <MinScaleDenominator>1000</MinScaleDenominator>
+        <MaxScaleDenominator>15000</MaxScaleDenominator>
+        <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+          <Stroke>
+            <CssParameter name="stroke">#37C35B</CssParameter>
+            <CssParameter name="stroke-width">12</CssParameter>
+             <CssParameter name="stroke-linecap">butt</CssParameter>
+            <CssParameter name="stroke-linejoin">round</CssParameter>
+          </Stroke>
+        </LineSymbolizer>
+      </Rule>
+      </FeatureTypeStyle>
+
+        <!-- Motorways Fill -->
+
+      <FeatureTypeStyle>
+        <Rule>
+        <Name>Motorway fill</Name>
+        <ogc:Filter>
+          <ogc:Or>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>featcode</ogc:PropertyName>
+                <ogc:Literal>15710</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                <ogc:Literal>1</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>override</ogc:PropertyName>
+                <ogc:Literal>F</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:And>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>featcode</ogc:PropertyName>
+                <ogc:Literal>15719</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                <ogc:Literal>1</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>override</ogc:PropertyName>
+                <ogc:Literal>F</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:And>
+          </ogc:Or>
+        </ogc:Filter>
+        <MinScaleDenominator>1000</MinScaleDenominator>
+        <MaxScaleDenominator>15000</MaxScaleDenominator>
+        <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+          <Stroke>
+            <CssParameter name="stroke">#06B1CA</CssParameter>
+            <CssParameter name="stroke-width">12</CssParameter>
+           <CssParameter name="stroke-linecap">butt</CssParameter>
+            <CssParameter name="stroke-linejoin">round</CssParameter>
+          </Stroke>
+        </LineSymbolizer>
+      </Rule>
+        </FeatureTypeStyle>
+
+
+<!-- LEVEL 1 CENTRE LINE-->
+
+<!-- Guided Busway Carriageway Centre Line-->
+
+    <FeatureTypeStyle>
+    <Rule>
+        <Name>Guided Busway Carriageway Centre Line</Name>
+        <ogc:Filter>
+          <ogc:And>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>featcode</ogc:PropertyName>
+              <ogc:Literal>15797</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>drawlevel</ogc:PropertyName>
+              <ogc:Literal>1</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>override</ogc:PropertyName>
+              <ogc:Literal>F</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:And>
+        </ogc:Filter>
+        <MinScaleDenominator>1000</MinScaleDenominator>
+        <MaxScaleDenominator>15000</MaxScaleDenominator>
+        <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+          <Stroke>
+            <CssParameter name="stroke">#505050</CssParameter>
+            <CssParameter name="stroke-width">1</CssParameter>
+             <CssParameter name="stroke-linecap">round</CssParameter>
+            <CssParameter name="stroke-linejoin">round</CssParameter>
+          </Stroke>
+        </LineSymbolizer>
+      </Rule>
+      </FeatureTypeStyle>
+
+<!-- Minor Road Centre Line-->
+
+    <FeatureTypeStyle>
+    <Rule>
+        <Name>Minor Road Centre Line</Name>
+        <ogc:Filter>
+          <ogc:And>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>featcode</ogc:PropertyName>
+              <ogc:Literal>15759</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>drawlevel</ogc:PropertyName>
+              <ogc:Literal>1</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>override</ogc:PropertyName>
+              <ogc:Literal>F</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:And>
+        </ogc:Filter>
+        <MinScaleDenominator>1000</MinScaleDenominator>
+        <MaxScaleDenominator>15000</MaxScaleDenominator>
+        <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+          <Stroke>
+            <CssParameter name="stroke">#505050</CssParameter>
+            <CssParameter name="stroke-width">1</CssParameter>
+             <CssParameter name="stroke-linecap">round</CssParameter>
+            <CssParameter name="stroke-linejoin">round</CssParameter>
+          </Stroke>
+        </LineSymbolizer>
+      </Rule>
+      </FeatureTypeStyle>
+
+<!-- B Road Centre Line-->
+
+      <FeatureTypeStyle>
+        <Rule>
+        <Name>B Road Centre Line</Name>
+        <ogc:Filter>
+          <ogc:And>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>featcode</ogc:PropertyName>
+              <ogc:Literal>15749</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>drawlevel</ogc:PropertyName>
+              <ogc:Literal>1</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>override</ogc:PropertyName>
+              <ogc:Literal>F</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:And>
+     </ogc:Filter>
+        <MinScaleDenominator>1000</MinScaleDenominator>
+        <MaxScaleDenominator>15000</MaxScaleDenominator>
+        <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+          <Stroke>
+            <CssParameter name="stroke">#505050</CssParameter>
+            <CssParameter name="stroke-width">1</CssParameter>
+            <CssParameter name="stroke-linecap">round</CssParameter>
+            <CssParameter name="stroke-linejoin">round</CssParameter>
+          </Stroke>
+        </LineSymbolizer>
+      </Rule>
+        </FeatureTypeStyle>
+
+<!-- A Road Centre Line-->
+
+      <FeatureTypeStyle>
+        <Rule>
+        <Name>A Road Centre Line</Name>
+        <ogc:Filter>
+          <ogc:And>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>featcode</ogc:PropertyName>
+              <ogc:Literal>15739</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>drawlevel</ogc:PropertyName>
+              <ogc:Literal>1</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>override</ogc:PropertyName>
+              <ogc:Literal>F</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:And>
+        </ogc:Filter>
+        <MinScaleDenominator>1000</MinScaleDenominator>
+        <MaxScaleDenominator>15000</MaxScaleDenominator>
+        <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+          <Stroke>
+            <CssParameter name="stroke">#505050</CssParameter>
+            <CssParameter name="stroke-width">1</CssParameter>
+             <CssParameter name="stroke-linecap">round</CssParameter>
+            <CssParameter name="stroke-linejoin">round</CssParameter>
+          </Stroke>
+        </LineSymbolizer>
+      </Rule>
+        </FeatureTypeStyle>
+
+<!-- Primary Road Centre Line-->
+
+      <FeatureTypeStyle>
+        <Rule>
+        <Name>Primary Road Centre Line</Name>
+        <ogc:Filter>
+          <ogc:And>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>featcode</ogc:PropertyName>
+              <ogc:Literal>15735</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>drawlevel</ogc:PropertyName>
+              <ogc:Literal>1</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>override</ogc:PropertyName>
+              <ogc:Literal>F</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:And>
+        </ogc:Filter>
+        <MinScaleDenominator>1000</MinScaleDenominator>
+        <MaxScaleDenominator>15000</MaxScaleDenominator>
+        <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+          <Stroke>
+            <CssParameter name="stroke">#FFFFFF</CssParameter>
+            <CssParameter name="stroke-width">1</CssParameter>
+            <CssParameter name="stroke-linecap">round</CssParameter>
+            <CssParameter name="stroke-linejoin">round</CssParameter>
+          </Stroke>
+        </LineSymbolizer>
+      </Rule>
+        </FeatureTypeStyle>
+
+<!-- Motorway Road Centre Line-->
+
+      <FeatureTypeStyle>
+        <Rule>
+        <Name>Motorway Road Centre Line</Name>
+        <ogc:Filter>
+          <ogc:And>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>featcode</ogc:PropertyName>
+              <ogc:Literal>15719</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>drawlevel</ogc:PropertyName>
+              <ogc:Literal>1</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>override</ogc:PropertyName>
+              <ogc:Literal>F</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:And>
+        </ogc:Filter>
+        <MinScaleDenominator>1000</MinScaleDenominator>
+        <MaxScaleDenominator>15000</MaxScaleDenominator>
+        <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+          <Stroke>
+            <CssParameter name="stroke">#FFFFFF</CssParameter>
+            <CssParameter name="stroke-width">1</CssParameter>
+            <CssParameter name="stroke-linecap">round</CssParameter>
+            <CssParameter name="stroke-linejoin">round</CssParameter>
+          </Stroke>
+        </LineSymbolizer>
+      </Rule>
+        </FeatureTypeStyle>
+
+  <!-- LEVEL 1 LABELS-->
+
+  <!-- Shared Use Carriageway/Guided Busway Carriageway/Restricted Local Access Road Labels -->
+
+          <FeatureTypeStyle>
+            <Rule>
+            <Name>Shared Use Carriageway/Guided Busway Carriageway/Restricted Local Access Road</Name>
+            <ogc:Filter>
+              <ogc:Or>
+                <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15790</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>1</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+                <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15797</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>1</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+                <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15762</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>1</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+              </ogc:Or>
+            </ogc:Filter>
+            <MinScaleDenominator>1000</MinScaleDenominator>
+            <MaxScaleDenominator>15000</MaxScaleDenominator>
+            <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+              <Label>
+                <ogc:Function name="strToUpperCase">
+                <ogc:PropertyName>distname</ogc:PropertyName>
+                </ogc:Function>
+              </Label>
+              <Font>
+                <CssParameter name="font-family">Arial</CssParameter>
+                <CssParameter name="font-size">18</CssParameter>
+                <CssParameter name="font-weight">bold</CssParameter>
+              </Font>
+              <LabelPlacement>
+                <LinePlacement>
+                  <PerpendicularOffset>0</PerpendicularOffset>
+                </LinePlacement>
+              </LabelPlacement>
+              <Halo>
+                <Radius>1.2</Radius>
+                <Fill><CssParameter name="fill">#FFFFFF</CssParameter></Fill>
+              </Halo>
+              <Fill>
+                <CssParameter name="fill">#000000</CssParameter>
+              </Fill>
+              <VendorOption name="followLine">true</VendorOption>
+              <VendorOption name="group">yes</VendorOption>
+              <VendorOption name="maxAngleDelta">45</VendorOption>
+              <VendorOption name="maxDisplacement">175</VendorOption>
+              <VendorOption name="repeat">1000</VendorOption>
+              <VendorOption name="conflictResolution">true</VendorOption>
+            </TextSymbolizer>
+          </Rule>
+        </FeatureTypeStyle>
+
+  <!-- Local Road/Local Access Road Labels -->
+
+          <FeatureTypeStyle>
+            <Rule>
+            <Name>Local Road/Local Access Road</Name>
+            <ogc:Filter>
+              <ogc:Or>
+                <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15760</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>1</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+                <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15761</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>1</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+              </ogc:Or>
+            </ogc:Filter>
+            <MinScaleDenominator>1000</MinScaleDenominator>
+            <MaxScaleDenominator>15000</MaxScaleDenominator>
+            <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+              <Label>
+                <ogc:Function name="strToUpperCase">
+                <ogc:PropertyName>distname</ogc:PropertyName>
+                </ogc:Function>
+              </Label>
+              <Font>
+                <CssParameter name="font-family">Arial</CssParameter>
+                <CssParameter name="font-size">18</CssParameter>
+                <CssParameter name="font-weight">bold</CssParameter>
+              </Font>
+              <LabelPlacement>
+                <LinePlacement>
+                  <PerpendicularOffset>0</PerpendicularOffset>
+                </LinePlacement>
+              </LabelPlacement>
+              <Halo>
+                <Radius>1.2</Radius>
+                <Fill><CssParameter name="fill">#FFFFFF</CssParameter></Fill>
+              </Halo>
+              <Fill>
+                <CssParameter name="fill">#000000</CssParameter>
+              </Fill>
+              <VendorOption name="followLine">true</VendorOption>
+              <VendorOption name="group">yes</VendorOption>
+              <VendorOption name="maxAngleDelta">45</VendorOption>
+              <VendorOption name="maxDisplacement">175</VendorOption>
+              <VendorOption name="repeat">1000</VendorOption>
+              <VendorOption name="conflictResolution">true</VendorOption>
+            </TextSymbolizer>
+          </Rule>
+        </FeatureTypeStyle>
+
+          <!-- Minor Roads Labels -->
+
+          <FeatureTypeStyle>
+            <Rule>
+            <Name>Minor Road Labels</Name>
+            <ogc:Filter>
+             <ogc:Or>
+               <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15750</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>1</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+                <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15759</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>1</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+            </ogc:Or>
+            </ogc:Filter>
+            <MinScaleDenominator>1000</MinScaleDenominator>
+            <MaxScaleDenominator>15000</MaxScaleDenominator>
+            <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+              <Label>
+                <ogc:Function name="strToUpperCase">
+                <ogc:PropertyName>distname</ogc:PropertyName>
+                </ogc:Function>
+              </Label>
+              <Font>
+                <CssParameter name="font-family">Arial</CssParameter>
+                <CssParameter name="font-size">18</CssParameter>
+                <CssParameter name="font-weight">bold</CssParameter>
+              </Font>
+              <LabelPlacement>
+                <LinePlacement>
+                  <PerpendicularOffset>0</PerpendicularOffset>
+                </LinePlacement>
+              </LabelPlacement>
+              <Halo>
+                <Radius>1.2</Radius>
+                <Fill><CssParameter name="fill">#FFFFFF</CssParameter></Fill>
+              </Halo>
+              <Fill>
+                <CssParameter name="fill">#000000</CssParameter>
+              </Fill>
+              <VendorOption name="followLine">true</VendorOption>
+              <VendorOption name="group">yes</VendorOption>
+              <VendorOption name="maxAngleDelta">45</VendorOption>
+              <VendorOption name="maxDisplacement">175</VendorOption>
+              <VendorOption name="repeat">1000</VendorOption>
+            </TextSymbolizer>
+          </Rule>
+        </FeatureTypeStyle>
+
+    <!-- B Road Labels -->
+
+          <FeatureTypeStyle>
+            <Rule>
+            <Name>B Road Labels</Name>
+            <ogc:Filter>
+             <ogc:Or>
+               <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15743</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>1</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+                <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15749</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>1</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+              </ogc:Or>
+            </ogc:Filter>
+            <MinScaleDenominator>1000</MinScaleDenominator>
+            <MaxScaleDenominator>15000</MaxScaleDenominator>
+            <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+              <Label>
+                <ogc:Function name="strToUpperCase">
+                <ogc:PropertyName>distname</ogc:PropertyName>
+                </ogc:Function>
+              </Label>
+              <Font>
+                <CssParameter name="font-family">Arial</CssParameter>
+                <CssParameter name="font-size">25</CssParameter>
+                <CssParameter name="font-weight">bold</CssParameter>
+              </Font>
+              <LabelPlacement>
+                <LinePlacement>
+                  <PerpendicularOffset>0</PerpendicularOffset>
+                </LinePlacement>
+              </LabelPlacement>
+              <Halo>
+                <Radius>2</Radius>
+                <Fill><CssParameter name="fill">#FFFFFF</CssParameter></Fill>
+              </Halo>
+              <Fill>
+                <CssParameter name="fill">#D68522</CssParameter>
+              </Fill>
+              <VendorOption name="spaceAround">10</VendorOption>
+              <VendorOption name="followLine">true</VendorOption>
+              <VendorOption name="group">yes</VendorOption>
+              <VendorOption name="maxAngleDelta">45</VendorOption>
+              <VendorOption name="maxDisplacement">2500</VendorOption>
+              <VendorOption name="repeat">1000</VendorOption>
+            </TextSymbolizer>
+          </Rule>
+        </FeatureTypeStyle>
+
+   <!-- B Road Numbers -->
+
+      <FeatureTypeStyle>
+        <Rule>
+            <Name>B Road Numbers</Name>
+            <ogc:Filter>
+              <ogc:Or>
+                <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15743</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>1</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+                <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15749</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>1</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+              </ogc:Or>
+            </ogc:Filter>
+            <MinScaleDenominator>1000</MinScaleDenominator>
+            <MaxScaleDenominator>15000</MaxScaleDenominator>
+            <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+              <Label>
+                <ogc:PropertyName>roadnumber</ogc:PropertyName>
+              </Label>
+              <Font>
+                <CssParameter name="font-family">Arial</CssParameter>
+                <CssParameter name="font-size">25</CssParameter>
+                <CssParameter name="font-weight">bold</CssParameter>
+              </Font>
+              <LabelPlacement>
+                <LinePlacement>
+                  <PerpendicularOffset>0</PerpendicularOffset>
+                </LinePlacement>
+              </LabelPlacement>
+              <Halo>
+                <Radius>2</Radius>
+                <Fill><CssParameter name="fill">#FFFFFF</CssParameter></Fill>
+              </Halo>
+              <Fill>
+                <CssParameter name="fill">#D68522</CssParameter>
+              </Fill>
+              <Priority>910</Priority>
+              <VendorOption name="spaceAround">0</VendorOption>
+              <VendorOption name="group">yes</VendorOption>
+              <VendorOption name="maxAngleDelta">45</VendorOption>
+              <VendorOption name="maxDisplacement">150</VendorOption>
+              <VendorOption name="repeat">700</VendorOption>
+              <VendorOption name="forceLeftToRight">true</VendorOption>
+            </TextSymbolizer>
+          </Rule>
+        </FeatureTypeStyle>
+
+          <!-- A Roads Labels -->
+
+          <FeatureTypeStyle>
+            <Rule>
+            <Name>A Road Labels</Name>
+            <ogc:Filter>
+             <ogc:Or>
+               <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15792</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>1</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+                <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15739</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>1</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+              </ogc:Or>
+            </ogc:Filter>
+            <MinScaleDenominator>1000</MinScaleDenominator>
+            <MaxScaleDenominator>15000</MaxScaleDenominator>
+            <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+              <Label>
+                <ogc:Function name="strToUpperCase">
+                <ogc:PropertyName>distname</ogc:PropertyName>
+                </ogc:Function>
+              </Label>
+              <Font>
+                <CssParameter name="font-family">Arial</CssParameter>
+                <CssParameter name="font-size">25</CssParameter>
+                <CssParameter name="font-weight">bold</CssParameter>
+              </Font>
+              <LabelPlacement>
+                <LinePlacement>
+                  <PerpendicularOffset>0</PerpendicularOffset>
+                </LinePlacement>
+              </LabelPlacement>
+              <Halo>
+                <Radius>2</Radius>
+                <Fill><CssParameter name="fill">#FFFFFF</CssParameter></Fill>
+              </Halo>
+              <Fill>
+                <CssParameter name="fill">#D41C40</CssParameter>
+              </Fill>
+              <VendorOption name="spaceAround">10</VendorOption>
+              <VendorOption name="followLine">true</VendorOption>
+              <VendorOption name="group">yes</VendorOption>
+              <VendorOption name="maxAngleDelta">45</VendorOption>
+              <VendorOption name="maxDisplacement">2500</VendorOption>
+              <VendorOption name="repeat">1000</VendorOption>
+            </TextSymbolizer>
+          </Rule>
+            </FeatureTypeStyle>
+
+     <!-- A Road Numbers -->
+
+      <FeatureTypeStyle>
+        <Rule>
+            <Name>A Road Numbers</Name>
+            <ogc:Filter>
+              <ogc:Or>
+                <ogc:And>
+                    <ogc:PropertyIsEqualTo>
+                      <ogc:PropertyName>featcode</ogc:PropertyName>
+                      <ogc:Literal>15792</ogc:Literal>
+                    </ogc:PropertyIsEqualTo>
+                    <ogc:PropertyIsEqualTo>
+                      <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                      <ogc:Literal>1</ogc:Literal>
+                    </ogc:PropertyIsEqualTo>
+                  </ogc:And>
+                  <ogc:And>
+                    <ogc:PropertyIsEqualTo>
+                      <ogc:PropertyName>featcode</ogc:PropertyName>
+                      <ogc:Literal>15739</ogc:Literal>
+                    </ogc:PropertyIsEqualTo>
+                    <ogc:PropertyIsEqualTo>
+                      <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                      <ogc:Literal>1</ogc:Literal>
+                    </ogc:PropertyIsEqualTo>
+                  </ogc:And>
+              </ogc:Or>
+            </ogc:Filter>
+            <MinScaleDenominator>1000</MinScaleDenominator>
+            <MaxScaleDenominator>15000</MaxScaleDenominator>
+            <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+              <Label>
+                <ogc:PropertyName>roadnumber</ogc:PropertyName>
+              </Label>
+              <Font>
+                <CssParameter name="font-family">Arial</CssParameter>
+                <CssParameter name="font-size">25</CssParameter>
+                <CssParameter name="font-weight">bold</CssParameter>
+              </Font>
+              <LabelPlacement>
+                <LinePlacement>
+                  <PerpendicularOffset>0</PerpendicularOffset>
+                </LinePlacement>
+              </LabelPlacement>
+              <Halo>
+                <Radius>2</Radius>
+                <Fill><CssParameter name="fill">#FFFFFF</CssParameter></Fill>
+              </Halo>
+              <Fill>
+                <CssParameter name="fill">#D41C40</CssParameter>
+              </Fill>
+              <Priority>910</Priority>
+              <VendorOption name="spaceAround">0</VendorOption>
+              <VendorOption name="group">yes</VendorOption>
+              <VendorOption name="maxAngleDelta">45</VendorOption>
+              <VendorOption name="maxDisplacement">150</VendorOption>
+              <VendorOption name="repeat">700</VendorOption>
+              <VendorOption name="forceLeftToRight">true</VendorOption>
+            </TextSymbolizer>
+          </Rule>
+        </FeatureTypeStyle>
+
+  <!-- Primary Road Labels -->
+
+          <FeatureTypeStyle>
+            <Rule>
+            <Name>Primary Road Labels</Name>
+            <ogc:Filter>
+             <ogc:Or>
+                 <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15723</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>1</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+                <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15735</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>1</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+              </ogc:Or>
+            </ogc:Filter>
+            <MinScaleDenominator>1000</MinScaleDenominator>
+            <MaxScaleDenominator>15000</MaxScaleDenominator>
+            <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+              <Label>
+                <ogc:Function name="strToUpperCase">
+                <ogc:PropertyName>distname</ogc:PropertyName>
+                </ogc:Function>
+              </Label>
+              <Font>
+                <CssParameter name="font-family">Arial</CssParameter>
+                <CssParameter name="font-size">28</CssParameter>
+                <CssParameter name="font-weight">bold</CssParameter>
+              </Font>
+              <LabelPlacement>
+                <LinePlacement>
+                  <PerpendicularOffset>0</PerpendicularOffset>
+                </LinePlacement>
+              </LabelPlacement>
+              <Halo>
+                <Radius>2</Radius>
+                <Fill><CssParameter name="fill">#FFFFFF</CssParameter></Fill>
+              </Halo>
+              <Fill>
+                <CssParameter name="fill">#00A629</CssParameter>
+              </Fill>
+              <Priority>880</Priority>
+              <VendorOption name="spaceAround">10</VendorOption>
+              <VendorOption name="followLine">true</VendorOption>
+              <VendorOption name="group">yes</VendorOption>
+              <VendorOption name="maxAngleDelta">45</VendorOption>
+              <VendorOption name="maxDisplacement">175</VendorOption>
+              <VendorOption name="repeat">1000</VendorOption>
+            </TextSymbolizer>
+          </Rule>
+            </FeatureTypeStyle>
+
+  <!-- Primary Road Numbers -->
+
+          <FeatureTypeStyle>
+            <Rule>
+            <Name>Primary Road Numbers</Name>
+            <ogc:Filter>
+              <ogc:Or>
+                <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15723</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>1</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+                <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15735</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>1</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+              </ogc:Or>
+            </ogc:Filter>
+            <MinScaleDenominator>1000</MinScaleDenominator>
+            <MaxScaleDenominator>15000</MaxScaleDenominator>
+            <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+              <Label>
+                <ogc:PropertyName>roadnumber</ogc:PropertyName>
+              </Label>
+              <Font>
+                <CssParameter name="font-family">Arial</CssParameter>
+                <CssParameter name="font-size">28</CssParameter>
+                <CssParameter name="font-weight">bold</CssParameter>
+              </Font>
+              <LabelPlacement>
+                <LinePlacement>
+                  <PerpendicularOffset>0</PerpendicularOffset>
+                </LinePlacement>
+              </LabelPlacement>
+              <Halo>
+                <Radius>2</Radius>
+                <Fill><CssParameter name="fill">#FFFFFF</CssParameter></Fill>
+              </Halo>
+              <Fill>
+                <CssParameter name="fill">#00A629</CssParameter>
+              </Fill>
+              <Priority>910</Priority>
+              <VendorOption name="spaceAround">0</VendorOption>
+              <VendorOption name="group">yes</VendorOption>
+              <VendorOption name="maxAngleDelta">45</VendorOption>
+              <VendorOption name="maxDisplacement">150</VendorOption>
+              <VendorOption name="repeat">700</VendorOption>
+              <VendorOption name="forceLeftToRight">true</VendorOption>
+            </TextSymbolizer>
+          </Rule>
+        </FeatureTypeStyle>
+
+
+  <!-- Motorway Numbers -->
+
+      <FeatureTypeStyle>
+        <Rule>
+            <Name>Motorway Numbers</Name>
+            <ogc:Filter>
+              <ogc:Or>
+                <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15710</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>1</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+                <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15719</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>1</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+              </ogc:Or>
+            </ogc:Filter>
+            <MinScaleDenominator>1000</MinScaleDenominator>
+            <MaxScaleDenominator>15000</MaxScaleDenominator>
+            <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+              <Label>
+                <ogc:PropertyName>roadnumber</ogc:PropertyName>
+              </Label>
+              <Font>
+                <CssParameter name="font-family">Arial</CssParameter>
+                <CssParameter name="font-size">30</CssParameter>
+                <CssParameter name="font-weight">bold</CssParameter>
+              </Font>
+              <LabelPlacement>
+                <LinePlacement>
+                  <PerpendicularOffset>0</PerpendicularOffset>
+                </LinePlacement>
+              </LabelPlacement>
+              <Halo>
+                <Radius>2</Radius>
+                <Fill><CssParameter name="fill">#FFFFFF</CssParameter></Fill>
+              </Halo>
+              <Fill>
+                <CssParameter name="fill">#009FB8</CssParameter>
+              </Fill>
+              <Priority>910</Priority>
+              <VendorOption name="spaceAround">0</VendorOption>
+              <VendorOption name="group">yes</VendorOption>
+              <VendorOption name="maxAngleDelta">45</VendorOption>
+              <VendorOption name="maxDisplacement">150</VendorOption>
+              <VendorOption name="repeat">700</VendorOption>
+              <VendorOption name="forceLeftToRight">true</VendorOption>
+            </TextSymbolizer>
+          </Rule>
+        </FeatureTypeStyle>
+
+
+
+
+  <!-- LEVEL 2 CASING -->
+  <!-- Guided Busway Carriageway Casing -->
+
+            <FeatureTypeStyle>
+              <Rule>
+                  <Name>Guided Busway Carriageway Case</Name>
+                  <ogc:Filter>
+                    <ogc:And>
+                      <ogc:PropertyIsEqualTo>
+                        <ogc:PropertyName>featcode</ogc:PropertyName>
+                        <ogc:Literal>15797</ogc:Literal>
+                      </ogc:PropertyIsEqualTo>
+                      <ogc:PropertyIsEqualTo>
+                        <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                        <ogc:Literal>2</ogc:Literal>
+                      </ogc:PropertyIsEqualTo>
+                    </ogc:And>
+                  </ogc:Filter>
+                  <MinScaleDenominator>1000</MinScaleDenominator>
+                  <MaxScaleDenominator>15000</MaxScaleDenominator>
+                  <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+                    <Stroke>
+                      <CssParameter name="stroke">#505050</CssParameter>
+                      <CssParameter name="stroke-width">13</CssParameter>
+                      <CssParameter name="stroke-linejoin">round</CssParameter>
+                    </Stroke>
+                  </LineSymbolizer>
+                </Rule>
+                  </FeatureTypeStyle>
+
+
+  <!-- Restricted Local Access Road Casing -->
+
+      <FeatureTypeStyle>
+        <Rule>
+            <Name>Restricted Local Access Road Case</Name>
+            <ogc:Filter>
+              <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featcode</ogc:PropertyName>
+                  <ogc:Literal>15762</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                  <ogc:Literal>2</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:And>
+            </ogc:Filter>
+            <MinScaleDenominator>1000</MinScaleDenominator>
+            <MaxScaleDenominator>15000</MaxScaleDenominator>
+            <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+              <Stroke>
+                <CssParameter name="stroke">#505050</CssParameter>
+                <CssParameter name="stroke-width">11</CssParameter>
+                <CssParameter name="stroke-linejoin">round</CssParameter>
+              </Stroke>
+            </LineSymbolizer>
+          </Rule>
+        </FeatureTypeStyle>
+
+
+  <!-- Shared Use Carriageway Casing -->
+
+      <FeatureTypeStyle>
+        <Rule>
+            <Name>Shared Use Carriageway Case</Name>
+            <ogc:Filter>
+              <And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featcode</ogc:PropertyName>
+                  <ogc:Literal>15790</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                  <ogc:Literal>2</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </And>
+            </ogc:Filter>
+            <MinScaleDenominator>1000</MinScaleDenominator>
+            <MaxScaleDenominator>15000</MaxScaleDenominator>
+            <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+              <Stroke>
+                <CssParameter name="stroke">#505050</CssParameter>
+                <CssParameter name="stroke-width">13</CssParameter>
+                <CssParameter name="stroke-linejoin">round</CssParameter>
+              </Stroke>
+            </LineSymbolizer>
+          </Rule>
+        </FeatureTypeStyle>
+
+
+  <!-- Local Road Casing -->
+
+          <FeatureTypeStyle>
+            <Rule>
+              <Name>Local Road Case</Name>
+              <ogc:Filter>
+                <And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15760</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>2</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </And>
+              </ogc:Filter>
+              <MinScaleDenominator>1000</MinScaleDenominator>
+              <MaxScaleDenominator>15000</MaxScaleDenominator>
+              <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+                <Stroke>
+                  <CssParameter name="stroke">#505050</CssParameter>
+                  <CssParameter name="stroke-width">15</CssParameter>
+                  <CssParameter name="stroke-linejoin">round</CssParameter>
+                </Stroke>
+              </LineSymbolizer>
+            </Rule>
+          </FeatureTypeStyle>
+
+
+  <!-- Local Access Road Casing -->
+
+      <FeatureTypeStyle>
+        <Rule>
+            <Name>Local Access Road Case</Name>
+            <ogc:Filter>
+              <And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featcode</ogc:PropertyName>
+                  <ogc:Literal>15761</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                  <ogc:Literal>2</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </And>
+            </ogc:Filter>
+            <MinScaleDenominator>1000</MinScaleDenominator>
+            <MaxScaleDenominator>15000</MaxScaleDenominator>
+            <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+              <Stroke>
+                <CssParameter name="stroke">#505050</CssParameter>
+                <CssParameter name="stroke-width">15</CssParameter>
+                <CssParameter name="stroke-linejoin">round</CssParameter>
+              </Stroke>
+            </LineSymbolizer>
+          </Rule>
+        </FeatureTypeStyle>
+
+
+  <!-- Road Casing (motorway,primary,A,B and minor roads)-->
+
+      <FeatureTypeStyle>
+        <Rule>
+            <Name>Road Case</Name>
+            <ogc:Filter>
+              <ogc:Or>
+                <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15750</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>2</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+                <ogc:And>
+                    <ogc:PropertyIsEqualTo>
+                      <ogc:PropertyName>featcode</ogc:PropertyName>
+                      <ogc:Literal>15759</ogc:Literal>
+                    </ogc:PropertyIsEqualTo>
+                    <ogc:PropertyIsEqualTo>
+                      <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                      <ogc:Literal>2</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+                <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15743</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>2</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:And>
+              <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featcode</ogc:PropertyName>
+                  <ogc:Literal>15749</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                  <ogc:Literal>2</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:And>
+              <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featcode</ogc:PropertyName>
+                  <ogc:Literal>15729</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                  <ogc:Literal>2</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:And>
+              <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featcode</ogc:PropertyName>
+                  <ogc:Literal>15739</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                  <ogc:Literal>2</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:And>
+              <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featcode</ogc:PropertyName>
+                  <ogc:Literal>15723</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                  <ogc:Literal>2</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:And>
+              <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featcode</ogc:PropertyName>
+                  <ogc:Literal>15735</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                  <ogc:Literal>2</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:And>
+              <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featcode</ogc:PropertyName>
+                  <ogc:Literal>15710</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                  <ogc:Literal>2</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:And>
+              <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featcode</ogc:PropertyName>
+                  <ogc:Literal>15719</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                  <ogc:Literal>2</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:And>
+            </ogc:Or>
+            </ogc:Filter>
+            <MinScaleDenominator>1000</MinScaleDenominator>
+            <MaxScaleDenominator>15000</MaxScaleDenominator>
+            <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+              <Stroke>
+                <CssParameter name="stroke">#505050</CssParameter>
+                <CssParameter name="stroke-width">17</CssParameter>
+                <CssParameter name="stroke-linejoin">round</CssParameter>
+              </Stroke>
+            </LineSymbolizer>
+          </Rule>
+        </FeatureTypeStyle>
+
+
+
+  <!-- LEVEL 2 FILL -->
+
+  <!-- OVERRIDE = T - DRAW FIRST -->
+
+
+  <!-- Shared Use Carriageway/Guided Busway Carriageway Fill -->
+
+        <FeatureTypeStyle>
+        <Rule>
+            <Name>Shared Use Carriageway/Guided Busway Carriageway fill</Name>
+            <ogc:Filter>
+              <ogc:Or>
+                <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15790</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>2</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>override</ogc:PropertyName>
+                    <ogc:Literal>T</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+                <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15797</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>2</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>override</ogc:PropertyName>
+                    <ogc:Literal>T</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+              </ogc:Or>
+            </ogc:Filter>
+            <MinScaleDenominator>1000</MinScaleDenominator>
+            <MaxScaleDenominator>15000</MaxScaleDenominator>
+            <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+              <Stroke>
+                <CssParameter name="stroke">#D7D7D7</CssParameter>
+                <CssParameter name="stroke-width">8</CssParameter>
+                <CssParameter name="stroke-linecap">butt</CssParameter>
+                <CssParameter name="stroke-linejoin">round</CssParameter>
+              </Stroke>
+            </LineSymbolizer>
+          </Rule>
+          </FeatureTypeStyle>
+
+  <!-- Restricted Local Access Road Fill -->
+
+        <FeatureTypeStyle>
+        <Rule>
+            <Name>Restricted Local Access Road fill</Name>
+            <ogc:Filter>
+              <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featcode</ogc:PropertyName>
+                  <ogc:Literal>15762</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                  <ogc:Literal>2</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>override</ogc:PropertyName>
+                  <ogc:Literal>T</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:And>
+            </ogc:Filter>
+            <MinScaleDenominator>1000</MinScaleDenominator>
+            <MaxScaleDenominator>15000</MaxScaleDenominator>
+            <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+              <Stroke>
+                <CssParameter name="stroke">#D7D7D7</CssParameter>
+                <CssParameter name="stroke-width">6</CssParameter>
+                <CssParameter name="stroke-linecap">butt</CssParameter>
+                <CssParameter name="stroke-linejoin">round</CssParameter>
+              </Stroke>
+            </LineSymbolizer>
+          </Rule>
+          </FeatureTypeStyle>
+
+  <!-- Local Road/Local Access Road Fill -->
+
+        <FeatureTypeStyle>
+        <Rule>
+            <Name>Local Road/Local Access Road</Name>
+            <ogc:Filter>
+              <ogc:Or>
+                <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15760</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>2</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>override</ogc:PropertyName>
+                    <ogc:Literal>T</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+                <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15761</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>2</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>override</ogc:PropertyName>
+                    <ogc:Literal>T</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+              </ogc:Or>
+            </ogc:Filter>
+            <MinScaleDenominator>1000</MinScaleDenominator>
+            <MaxScaleDenominator>15000</MaxScaleDenominator>
+            <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+              <Stroke>
+                <CssParameter name="stroke">#FFFFFF</CssParameter>
+                <CssParameter name="stroke-width">10</CssParameter>
+                <CssParameter name="stroke-linecap">butt</CssParameter>
+                <CssParameter name="stroke-linejoin">round</CssParameter>
+              </Stroke>
+            </LineSymbolizer>
+          </Rule>
+          </FeatureTypeStyle>
+
+
+    <!-- Minor Road Fill -->
+
+        <FeatureTypeStyle>
+        <Rule>
+            <Name>Minor Road fill</Name>
+            <ogc:Filter>
+              <ogc:Or>
+                <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15750</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>2</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>override</ogc:PropertyName>
+                    <ogc:Literal>T</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+                <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15759</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>2</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>override</ogc:PropertyName>
+                    <ogc:Literal>T</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+              </ogc:Or>
+            </ogc:Filter>
+            <MinScaleDenominator>1000</MinScaleDenominator>
+            <MaxScaleDenominator>15000</MaxScaleDenominator>
+            <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+              <Stroke>
+                <CssParameter name="stroke">#FFF3B5</CssParameter>
+                <CssParameter name="stroke-width">12</CssParameter>
+                 <CssParameter name="stroke-linecap">butt</CssParameter>
+                <CssParameter name="stroke-linejoin">round</CssParameter>
+              </Stroke>
+            </LineSymbolizer>
+          </Rule>
+          </FeatureTypeStyle>
+
+  <!-- B Road Fill -->
+
+        <FeatureTypeStyle>
+        <Rule>
+            <Name>B Road fill</Name>
+            <ogc:Filter>
+              <ogc:Or>
+                <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15743</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>2</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>override</ogc:PropertyName>
+                    <ogc:Literal>T</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+                <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15749</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>2</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>override</ogc:PropertyName>
+                    <ogc:Literal>T</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+              </ogc:Or>
+         </ogc:Filter>
+            <MinScaleDenominator>1000</MinScaleDenominator>
+            <MaxScaleDenominator>15000</MaxScaleDenominator>
+            <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+              <Stroke>
+                <CssParameter name="stroke">#FFC073</CssParameter>
+                <CssParameter name="stroke-width">12</CssParameter>
+                <CssParameter name="stroke-linecap">butt</CssParameter>
+                <CssParameter name="stroke-linejoin">round</CssParameter>
+              </Stroke>
+            </LineSymbolizer>
+          </Rule>
+          </FeatureTypeStyle>
+
+    <!-- A Road Fill-->
+
+        <FeatureTypeStyle>
+        <Rule>
+            <Name>A Road fill</Name>
+            <ogc:Filter>
+              <ogc:Or>
+                <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15729</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>2</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>override</ogc:PropertyName>
+                    <ogc:Literal>T</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+                <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15739</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>2</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>override</ogc:PropertyName>
+                    <ogc:Literal>T</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+              </ogc:Or>
+            </ogc:Filter>
+            <MinScaleDenominator>1000</MinScaleDenominator>
+            <MaxScaleDenominator>15000</MaxScaleDenominator>
+            <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+              <Stroke>
+                <CssParameter name="stroke">#FF879E</CssParameter>
+                <CssParameter name="stroke-width">12</CssParameter>
+                 <CssParameter name="stroke-linecap">butt</CssParameter>
+                <CssParameter name="stroke-linejoin">round</CssParameter>
+              </Stroke>
+            </LineSymbolizer>
+          </Rule>
+          </FeatureTypeStyle>
+
+
+    <!-- Primary Road Fill -->
+
+        <FeatureTypeStyle>
+        <Rule>
+            <Name>Primary Road fill</Name>
+            <ogc:Filter>
+              <ogc:Or>
+                <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15723</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>2</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>override</ogc:PropertyName>
+                    <ogc:Literal>T</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+                <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15735</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>2</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>override</ogc:PropertyName>
+                    <ogc:Literal>T</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+              </ogc:Or>
+            </ogc:Filter>
+            <MinScaleDenominator>1000</MinScaleDenominator>
+            <MaxScaleDenominator>15000</MaxScaleDenominator>
+            <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+              <Stroke>
+                <CssParameter name="stroke">#37C35B</CssParameter>
+                <CssParameter name="stroke-width">12</CssParameter>
+                 <CssParameter name="stroke-linecap">butt</CssParameter>
+                <CssParameter name="stroke-linejoin">round</CssParameter>
+              </Stroke>
+            </LineSymbolizer>
+          </Rule>
+          </FeatureTypeStyle>
+
+            <!-- Motorways Fill -->
+
+          <FeatureTypeStyle>
+            <Rule>
+            <Name>Motorway fill</Name>
+            <ogc:Filter>
+              <ogc:Or>
+                <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15710</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>2</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>override</ogc:PropertyName>
+                    <ogc:Literal>T</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+                <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15719</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>2</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>override</ogc:PropertyName>
+                    <ogc:Literal>T</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+              </ogc:Or>
+            </ogc:Filter>
+            <MinScaleDenominator>1000</MinScaleDenominator>
+            <MaxScaleDenominator>15000</MaxScaleDenominator>
+            <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+              <Stroke>
+                <CssParameter name="stroke">#06B1CA</CssParameter>
+                <CssParameter name="stroke-width">12</CssParameter>
+               <CssParameter name="stroke-linecap">butt</CssParameter>
+                <CssParameter name="stroke-linejoin">round</CssParameter>
+              </Stroke>
+            </LineSymbolizer>
+          </Rule>
+            </FeatureTypeStyle>
+
+
+  <!-- LEVEL 2 CENTRE LINE-->
+
+  <!-- Guided Busway Carriageway Centre Line-->
+
+        <FeatureTypeStyle>
+        <Rule>
+            <Name>Guided Busway Carriageway Centre Line</Name>
+            <ogc:Filter>
+              <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featcode</ogc:PropertyName>
+                  <ogc:Literal>15797</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                  <ogc:Literal>2</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>override</ogc:PropertyName>
+                  <ogc:Literal>T</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:And>
+            </ogc:Filter>
+            <MinScaleDenominator>1000</MinScaleDenominator>
+            <MaxScaleDenominator>15000</MaxScaleDenominator>
+            <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+              <Stroke>
+                <CssParameter name="stroke">#505050</CssParameter>
+                <CssParameter name="stroke-width">1</CssParameter>
+                 <CssParameter name="stroke-linecap">round</CssParameter>
+                <CssParameter name="stroke-linejoin">round</CssParameter>
+              </Stroke>
+            </LineSymbolizer>
+          </Rule>
+          </FeatureTypeStyle>
+
+    <!-- Minor Road Centre Line-->
+
+        <FeatureTypeStyle>
+        <Rule>
+            <Name>Minor Road Centre Line</Name>
+            <ogc:Filter>
+              <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featcode</ogc:PropertyName>
+                  <ogc:Literal>15759</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                  <ogc:Literal>2</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>override</ogc:PropertyName>
+                  <ogc:Literal>T</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:And>
+            </ogc:Filter>
+            <MinScaleDenominator>1000</MinScaleDenominator>
+            <MaxScaleDenominator>15000</MaxScaleDenominator>
+            <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+              <Stroke>
+                <CssParameter name="stroke">#505050</CssParameter>
+                <CssParameter name="stroke-width">1</CssParameter>
+                 <CssParameter name="stroke-linecap">round</CssParameter>
+                <CssParameter name="stroke-linejoin">round</CssParameter>
+              </Stroke>
+            </LineSymbolizer>
+          </Rule>
+          </FeatureTypeStyle>
+
+  <!-- B Road Centre Line-->
+
+          <FeatureTypeStyle>
+            <Rule>
+            <Name>B Road Centre Line</Name>
+            <ogc:Filter>
+              <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featcode</ogc:PropertyName>
+                  <ogc:Literal>15749</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                  <ogc:Literal>2</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>override</ogc:PropertyName>
+                  <ogc:Literal>T</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:And>
+         </ogc:Filter>
+            <MinScaleDenominator>1000</MinScaleDenominator>
+            <MaxScaleDenominator>15000</MaxScaleDenominator>
+            <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+              <Stroke>
+                <CssParameter name="stroke">#505050</CssParameter>
+                <CssParameter name="stroke-width">1</CssParameter>
+                <CssParameter name="stroke-linecap">round</CssParameter>
+                <CssParameter name="stroke-linejoin">round</CssParameter>
+              </Stroke>
+            </LineSymbolizer>
+          </Rule>
+            </FeatureTypeStyle>
+
+  <!-- A Road Centre Line-->
+
+          <FeatureTypeStyle>
+            <Rule>
+            <Name>A Road Centre Line</Name>
+            <ogc:Filter>
+              <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featcode</ogc:PropertyName>
+                  <ogc:Literal>15739</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                  <ogc:Literal>2</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>override</ogc:PropertyName>
+                  <ogc:Literal>T</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:And>
+            </ogc:Filter>
+            <MinScaleDenominator>1000</MinScaleDenominator>
+            <MaxScaleDenominator>15000</MaxScaleDenominator>
+            <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+              <Stroke>
+                <CssParameter name="stroke">#505050</CssParameter>
+                <CssParameter name="stroke-width">1</CssParameter>
+                 <CssParameter name="stroke-linecap">round</CssParameter>
+                <CssParameter name="stroke-linejoin">round</CssParameter>
+              </Stroke>
+            </LineSymbolizer>
+          </Rule>
+            </FeatureTypeStyle>
+
+  <!-- Primary Road Centre Line-->
+
+          <FeatureTypeStyle>
+            <Rule>
+            <Name>Primary Road Centre Line</Name>
+            <ogc:Filter>
+              <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featcode</ogc:PropertyName>
+                  <ogc:Literal>15735</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                  <ogc:Literal>2</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>override</ogc:PropertyName>
+                  <ogc:Literal>T</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:And>
+            </ogc:Filter>
+            <MinScaleDenominator>1000</MinScaleDenominator>
+            <MaxScaleDenominator>15000</MaxScaleDenominator>
+            <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+              <Stroke>
+                <CssParameter name="stroke">#FFFFFF</CssParameter>
+                <CssParameter name="stroke-width">1</CssParameter>
+                <CssParameter name="stroke-linecap">round</CssParameter>
+                <CssParameter name="stroke-linejoin">round</CssParameter>
+              </Stroke>
+            </LineSymbolizer>
+          </Rule>
+            </FeatureTypeStyle>
+
+  <!-- Motorway Road Centre Line-->
+
+          <FeatureTypeStyle>
+            <Rule>
+            <Name>Motorway Road Centre Line</Name>
+            <ogc:Filter>
+              <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featcode</ogc:PropertyName>
+                  <ogc:Literal>15719</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                  <ogc:Literal>2</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>override</ogc:PropertyName>
+                  <ogc:Literal>T</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:And>
+            </ogc:Filter>
+            <MinScaleDenominator>1000</MinScaleDenominator>
+            <MaxScaleDenominator>15000</MaxScaleDenominator>
+            <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+              <Stroke>
+                <CssParameter name="stroke">#FFFFFF</CssParameter>
+                <CssParameter name="stroke-width">1</CssParameter>
+                <CssParameter name="stroke-linecap">round</CssParameter>
+                <CssParameter name="stroke-linejoin">round</CssParameter>
+              </Stroke>
+            </LineSymbolizer>
+          </Rule>
+            </FeatureTypeStyle>
+
+
+            <!-- OVERRIDE = F - DRAW SECOND -->
+
+            <!-- Shared Use Carriageway/Guided Busway Carriageway Fill -->
+
+                  <FeatureTypeStyle>
+                  <Rule>
+                      <Name>Shared Use Carriageway/Guided Busway Carriageway fill</Name>
+                      <ogc:Filter>
+                        <ogc:Or>
+                          <ogc:And>
+                            <ogc:PropertyIsEqualTo>
+                              <ogc:PropertyName>featcode</ogc:PropertyName>
+                              <ogc:Literal>15790</ogc:Literal>
+                            </ogc:PropertyIsEqualTo>
+                            <ogc:PropertyIsEqualTo>
+                              <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                              <ogc:Literal>2</ogc:Literal>
+                            </ogc:PropertyIsEqualTo>
+                            <ogc:PropertyIsEqualTo>
+                              <ogc:PropertyName>override</ogc:PropertyName>
+                              <ogc:Literal>F</ogc:Literal>
+                            </ogc:PropertyIsEqualTo>
+                          </ogc:And>
+                          <ogc:And>
+                            <ogc:PropertyIsEqualTo>
+                              <ogc:PropertyName>featcode</ogc:PropertyName>
+                              <ogc:Literal>15797</ogc:Literal>
+                            </ogc:PropertyIsEqualTo>
+                            <ogc:PropertyIsEqualTo>
+                              <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                              <ogc:Literal>2</ogc:Literal>
+                            </ogc:PropertyIsEqualTo>
+                            <ogc:PropertyIsEqualTo>
+                              <ogc:PropertyName>override</ogc:PropertyName>
+                              <ogc:Literal>F</ogc:Literal>
+                            </ogc:PropertyIsEqualTo>
+                          </ogc:And>
+                        </ogc:Or>
+                      </ogc:Filter>
+                      <MinScaleDenominator>1000</MinScaleDenominator>
+                      <MaxScaleDenominator>15000</MaxScaleDenominator>
+                      <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+                        <Stroke>
+                          <CssParameter name="stroke">#D7D7D7</CssParameter>
+                          <CssParameter name="stroke-width">8</CssParameter>
+                          <CssParameter name="stroke-linecap">butt</CssParameter>
+                          <CssParameter name="stroke-linejoin">round</CssParameter>
+                        </Stroke>
+                      </LineSymbolizer>
+                    </Rule>
+                    </FeatureTypeStyle>
+
+            <!-- Restricted Local Access Road Fill -->
+
+                  <FeatureTypeStyle>
+                  <Rule>
+                      <Name>Restricted Local Access Road fill</Name>
+                      <ogc:Filter>
+                        <ogc:And>
+                          <ogc:PropertyIsEqualTo>
+                            <ogc:PropertyName>featcode</ogc:PropertyName>
+                            <ogc:Literal>15762</ogc:Literal>
+                          </ogc:PropertyIsEqualTo>
+                          <ogc:PropertyIsEqualTo>
+                            <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                            <ogc:Literal>2</ogc:Literal>
+                          </ogc:PropertyIsEqualTo>
+                          <ogc:PropertyIsEqualTo>
+                            <ogc:PropertyName>override</ogc:PropertyName>
+                            <ogc:Literal>F</ogc:Literal>
+                          </ogc:PropertyIsEqualTo>
+                        </ogc:And>
+                      </ogc:Filter>
+                      <MinScaleDenominator>1000</MinScaleDenominator>
+                      <MaxScaleDenominator>15000</MaxScaleDenominator>
+                      <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+                        <Stroke>
+                          <CssParameter name="stroke">#D7D7D7</CssParameter>
+                          <CssParameter name="stroke-width">6</CssParameter>
+                          <CssParameter name="stroke-linecap">butt</CssParameter>
+                          <CssParameter name="stroke-linejoin">round</CssParameter>
+                        </Stroke>
+                      </LineSymbolizer>
+                    </Rule>
+                    </FeatureTypeStyle>
+
+            <!-- Local Road/Local Access Road Fill -->
+
+                  <FeatureTypeStyle>
+                  <Rule>
+                      <Name>Local Road/Local Access Road</Name>
+                      <ogc:Filter>
+                        <ogc:Or>
+                          <ogc:And>
+                            <ogc:PropertyIsEqualTo>
+                              <ogc:PropertyName>featcode</ogc:PropertyName>
+                              <ogc:Literal>15760</ogc:Literal>
+                            </ogc:PropertyIsEqualTo>
+                            <ogc:PropertyIsEqualTo>
+                              <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                              <ogc:Literal>2</ogc:Literal>
+                            </ogc:PropertyIsEqualTo>
+                            <ogc:PropertyIsEqualTo>
+                              <ogc:PropertyName>override</ogc:PropertyName>
+                              <ogc:Literal>F</ogc:Literal>
+                            </ogc:PropertyIsEqualTo>
+                          </ogc:And>
+                          <ogc:And>
+                            <ogc:PropertyIsEqualTo>
+                              <ogc:PropertyName>featcode</ogc:PropertyName>
+                              <ogc:Literal>15761</ogc:Literal>
+                            </ogc:PropertyIsEqualTo>
+                            <ogc:PropertyIsEqualTo>
+                              <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                              <ogc:Literal>2</ogc:Literal>
+                            </ogc:PropertyIsEqualTo>
+                            <ogc:PropertyIsEqualTo>
+                              <ogc:PropertyName>override</ogc:PropertyName>
+                              <ogc:Literal>F</ogc:Literal>
+                            </ogc:PropertyIsEqualTo>
+                          </ogc:And>
+                        </ogc:Or>
+                      </ogc:Filter>
+                      <MinScaleDenominator>1000</MinScaleDenominator>
+                      <MaxScaleDenominator>15000</MaxScaleDenominator>
+                      <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+                        <Stroke>
+                          <CssParameter name="stroke">#FFFFFF</CssParameter>
+                          <CssParameter name="stroke-width">10</CssParameter>
+                          <CssParameter name="stroke-linecap">butt</CssParameter>
+                          <CssParameter name="stroke-linejoin">round</CssParameter>
+                        </Stroke>
+                      </LineSymbolizer>
+                    </Rule>
+                    </FeatureTypeStyle>
+
+
+              <!-- Minor Road Fill -->
+
+                  <FeatureTypeStyle>
+                  <Rule>
+                      <Name>Minor Road fill</Name>
+                      <ogc:Filter>
+                        <ogc:Or>
+                          <ogc:And>
+                            <ogc:PropertyIsEqualTo>
+                              <ogc:PropertyName>featcode</ogc:PropertyName>
+                              <ogc:Literal>15750</ogc:Literal>
+                            </ogc:PropertyIsEqualTo>
+                            <ogc:PropertyIsEqualTo>
+                              <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                              <ogc:Literal>2</ogc:Literal>
+                            </ogc:PropertyIsEqualTo>
+                            <ogc:PropertyIsEqualTo>
+                              <ogc:PropertyName>override</ogc:PropertyName>
+                              <ogc:Literal>F</ogc:Literal>
+                            </ogc:PropertyIsEqualTo>
+                          </ogc:And>
+                          <ogc:And>
+                            <ogc:PropertyIsEqualTo>
+                              <ogc:PropertyName>featcode</ogc:PropertyName>
+                              <ogc:Literal>15759</ogc:Literal>
+                            </ogc:PropertyIsEqualTo>
+                            <ogc:PropertyIsEqualTo>
+                              <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                              <ogc:Literal>2</ogc:Literal>
+                            </ogc:PropertyIsEqualTo>
+                            <ogc:PropertyIsEqualTo>
+                              <ogc:PropertyName>override</ogc:PropertyName>
+                              <ogc:Literal>F</ogc:Literal>
+                            </ogc:PropertyIsEqualTo>
+                          </ogc:And>
+                        </ogc:Or>
+                      </ogc:Filter>
+                      <MinScaleDenominator>1000</MinScaleDenominator>
+                      <MaxScaleDenominator>15000</MaxScaleDenominator>
+                      <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+                        <Stroke>
+                          <CssParameter name="stroke">#FFF3B5</CssParameter>
+                          <CssParameter name="stroke-width">12</CssParameter>
+                           <CssParameter name="stroke-linecap">butt</CssParameter>
+                          <CssParameter name="stroke-linejoin">round</CssParameter>
+                        </Stroke>
+                      </LineSymbolizer>
+                    </Rule>
+                    </FeatureTypeStyle>
+
+            <!-- B Road Fill -->
+
+                  <FeatureTypeStyle>
+                  <Rule>
+                      <Name>B Road fill</Name>
+                      <ogc:Filter>
+                        <ogc:Or>
+                          <ogc:And>
+                            <ogc:PropertyIsEqualTo>
+                              <ogc:PropertyName>featcode</ogc:PropertyName>
+                              <ogc:Literal>15743</ogc:Literal>
+                            </ogc:PropertyIsEqualTo>
+                            <ogc:PropertyIsEqualTo>
+                              <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                              <ogc:Literal>2</ogc:Literal>
+                            </ogc:PropertyIsEqualTo>
+                            <ogc:PropertyIsEqualTo>
+                              <ogc:PropertyName>override</ogc:PropertyName>
+                              <ogc:Literal>F</ogc:Literal>
+                            </ogc:PropertyIsEqualTo>
+                          </ogc:And>
+                          <ogc:And>
+                            <ogc:PropertyIsEqualTo>
+                              <ogc:PropertyName>featcode</ogc:PropertyName>
+                              <ogc:Literal>15749</ogc:Literal>
+                            </ogc:PropertyIsEqualTo>
+                            <ogc:PropertyIsEqualTo>
+                              <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                              <ogc:Literal>2</ogc:Literal>
+                            </ogc:PropertyIsEqualTo>
+                            <ogc:PropertyIsEqualTo>
+                              <ogc:PropertyName>override</ogc:PropertyName>
+                              <ogc:Literal>F</ogc:Literal>
+                            </ogc:PropertyIsEqualTo>
+                          </ogc:And>
+                        </ogc:Or>
+                   </ogc:Filter>
+                      <MinScaleDenominator>1000</MinScaleDenominator>
+                      <MaxScaleDenominator>15000</MaxScaleDenominator>
+                      <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+                        <Stroke>
+                          <CssParameter name="stroke">#FFC073</CssParameter>
+                          <CssParameter name="stroke-width">12</CssParameter>
+                          <CssParameter name="stroke-linecap">butt</CssParameter>
+                          <CssParameter name="stroke-linejoin">round</CssParameter>
+                        </Stroke>
+                      </LineSymbolizer>
+                    </Rule>
+                    </FeatureTypeStyle>
+
+              <!-- A Road Fill-->
+
+                  <FeatureTypeStyle>
+                  <Rule>
+                      <Name>A Road fill</Name>
+                      <ogc:Filter>
+                        <ogc:Or>
+                          <ogc:And>
+                            <ogc:PropertyIsEqualTo>
+                              <ogc:PropertyName>featcode</ogc:PropertyName>
+                              <ogc:Literal>15729</ogc:Literal>
+                            </ogc:PropertyIsEqualTo>
+                            <ogc:PropertyIsEqualTo>
+                              <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                              <ogc:Literal>2</ogc:Literal>
+                            </ogc:PropertyIsEqualTo>
+                            <ogc:PropertyIsEqualTo>
+                              <ogc:PropertyName>override</ogc:PropertyName>
+                              <ogc:Literal>F</ogc:Literal>
+                            </ogc:PropertyIsEqualTo>
+                          </ogc:And>
+                          <ogc:And>
+                            <ogc:PropertyIsEqualTo>
+                              <ogc:PropertyName>featcode</ogc:PropertyName>
+                              <ogc:Literal>15739</ogc:Literal>
+                            </ogc:PropertyIsEqualTo>
+                            <ogc:PropertyIsEqualTo>
+                              <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                              <ogc:Literal>2</ogc:Literal>
+                            </ogc:PropertyIsEqualTo>
+                            <ogc:PropertyIsEqualTo>
+                              <ogc:PropertyName>override</ogc:PropertyName>
+                              <ogc:Literal>F</ogc:Literal>
+                            </ogc:PropertyIsEqualTo>
+                          </ogc:And>
+                        </ogc:Or>
+                      </ogc:Filter>
+                      <MinScaleDenominator>1000</MinScaleDenominator>
+                      <MaxScaleDenominator>15000</MaxScaleDenominator>
+                      <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+                        <Stroke>
+                          <CssParameter name="stroke">#FF879E</CssParameter>
+                          <CssParameter name="stroke-width">12</CssParameter>
+                           <CssParameter name="stroke-linecap">butt</CssParameter>
+                          <CssParameter name="stroke-linejoin">round</CssParameter>
+                        </Stroke>
+                      </LineSymbolizer>
+                    </Rule>
+                    </FeatureTypeStyle>
+
+
+              <!-- Primary Road Fill -->
+
+                  <FeatureTypeStyle>
+                  <Rule>
+                      <Name>Primary Road fill</Name>
+                      <ogc:Filter>
+                        <ogc:Or>
+                          <ogc:And>
+                            <ogc:PropertyIsEqualTo>
+                              <ogc:PropertyName>featcode</ogc:PropertyName>
+                              <ogc:Literal>15723</ogc:Literal>
+                            </ogc:PropertyIsEqualTo>
+                            <ogc:PropertyIsEqualTo>
+                              <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                              <ogc:Literal>2</ogc:Literal>
+                            </ogc:PropertyIsEqualTo>
+                            <ogc:PropertyIsEqualTo>
+                              <ogc:PropertyName>override</ogc:PropertyName>
+                              <ogc:Literal>F</ogc:Literal>
+                            </ogc:PropertyIsEqualTo>
+                          </ogc:And>
+                          <ogc:And>
+                            <ogc:PropertyIsEqualTo>
+                              <ogc:PropertyName>featcode</ogc:PropertyName>
+                              <ogc:Literal>15735</ogc:Literal>
+                            </ogc:PropertyIsEqualTo>
+                            <ogc:PropertyIsEqualTo>
+                              <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                              <ogc:Literal>2</ogc:Literal>
+                            </ogc:PropertyIsEqualTo>
+                            <ogc:PropertyIsEqualTo>
+                              <ogc:PropertyName>override</ogc:PropertyName>
+                              <ogc:Literal>F</ogc:Literal>
+                            </ogc:PropertyIsEqualTo>
+                          </ogc:And>
+                        </ogc:Or>
+                      </ogc:Filter>
+                      <MinScaleDenominator>1000</MinScaleDenominator>
+                      <MaxScaleDenominator>15000</MaxScaleDenominator>
+                      <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+                        <Stroke>
+                          <CssParameter name="stroke">#37C35B</CssParameter>
+                          <CssParameter name="stroke-width">12</CssParameter>
+                           <CssParameter name="stroke-linecap">butt</CssParameter>
+                          <CssParameter name="stroke-linejoin">round</CssParameter>
+                        </Stroke>
+                      </LineSymbolizer>
+                    </Rule>
+                    </FeatureTypeStyle>
+
+                      <!-- Motorways Fill -->
+
+                    <FeatureTypeStyle>
+                      <Rule>
+                      <Name>Motorway fill</Name>
+                      <ogc:Filter>
+                        <ogc:Or>
+                          <ogc:And>
+                            <ogc:PropertyIsEqualTo>
+                              <ogc:PropertyName>featcode</ogc:PropertyName>
+                              <ogc:Literal>15710</ogc:Literal>
+                            </ogc:PropertyIsEqualTo>
+                            <ogc:PropertyIsEqualTo>
+                              <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                              <ogc:Literal>2</ogc:Literal>
+                            </ogc:PropertyIsEqualTo>
+                            <ogc:PropertyIsEqualTo>
+                              <ogc:PropertyName>override</ogc:PropertyName>
+                              <ogc:Literal>F</ogc:Literal>
+                            </ogc:PropertyIsEqualTo>
+                          </ogc:And>
+                          <ogc:And>
+                            <ogc:PropertyIsEqualTo>
+                              <ogc:PropertyName>featcode</ogc:PropertyName>
+                              <ogc:Literal>15719</ogc:Literal>
+                            </ogc:PropertyIsEqualTo>
+                            <ogc:PropertyIsEqualTo>
+                              <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                              <ogc:Literal>2</ogc:Literal>
+                            </ogc:PropertyIsEqualTo>
+                            <ogc:PropertyIsEqualTo>
+                              <ogc:PropertyName>override</ogc:PropertyName>
+                              <ogc:Literal>F</ogc:Literal>
+                            </ogc:PropertyIsEqualTo>
+                          </ogc:And>
+                        </ogc:Or>
+                      </ogc:Filter>
+                      <MinScaleDenominator>1000</MinScaleDenominator>
+                      <MaxScaleDenominator>15000</MaxScaleDenominator>
+                      <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+                        <Stroke>
+                          <CssParameter name="stroke">#06B1CA</CssParameter>
+                          <CssParameter name="stroke-width">12</CssParameter>
+                         <CssParameter name="stroke-linecap">butt</CssParameter>
+                          <CssParameter name="stroke-linejoin">round</CssParameter>
+                        </Stroke>
+                      </LineSymbolizer>
+                    </Rule>
+                      </FeatureTypeStyle>
+
+
+            <!-- LEVEL 2 CENTRE LINE-->
+
+            <!-- Guided Busway Carriageway Centre Line-->
+
+                  <FeatureTypeStyle>
+                  <Rule>
+                      <Name>Guided Busway Carriageway Centre Line</Name>
+                      <ogc:Filter>
+                        <ogc:And>
+                          <ogc:PropertyIsEqualTo>
+                            <ogc:PropertyName>featcode</ogc:PropertyName>
+                            <ogc:Literal>15797</ogc:Literal>
+                          </ogc:PropertyIsEqualTo>
+                          <ogc:PropertyIsEqualTo>
+                            <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                            <ogc:Literal>2</ogc:Literal>
+                          </ogc:PropertyIsEqualTo>
+                          <ogc:PropertyIsEqualTo>
+                            <ogc:PropertyName>override</ogc:PropertyName>
+                            <ogc:Literal>F</ogc:Literal>
+                          </ogc:PropertyIsEqualTo>
+                        </ogc:And>
+                      </ogc:Filter>
+                      <MinScaleDenominator>1000</MinScaleDenominator>
+                      <MaxScaleDenominator>15000</MaxScaleDenominator>
+                      <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+                        <Stroke>
+                          <CssParameter name="stroke">#505050</CssParameter>
+                          <CssParameter name="stroke-width">1</CssParameter>
+                           <CssParameter name="stroke-linecap">round</CssParameter>
+                          <CssParameter name="stroke-linejoin">round</CssParameter>
+                        </Stroke>
+                      </LineSymbolizer>
+                    </Rule>
+                    </FeatureTypeStyle>
+
+              <!-- Minor Road Centre Line-->
+
+                  <FeatureTypeStyle>
+                  <Rule>
+                      <Name>Minor Road Centre Line</Name>
+                      <ogc:Filter>
+                        <ogc:And>
+                          <ogc:PropertyIsEqualTo>
+                            <ogc:PropertyName>featcode</ogc:PropertyName>
+                            <ogc:Literal>15759</ogc:Literal>
+                          </ogc:PropertyIsEqualTo>
+                          <ogc:PropertyIsEqualTo>
+                            <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                            <ogc:Literal>2</ogc:Literal>
+                          </ogc:PropertyIsEqualTo>
+                          <ogc:PropertyIsEqualTo>
+                            <ogc:PropertyName>override</ogc:PropertyName>
+                            <ogc:Literal>F</ogc:Literal>
+                          </ogc:PropertyIsEqualTo>
+                        </ogc:And>
+                      </ogc:Filter>
+                      <MinScaleDenominator>1000</MinScaleDenominator>
+                      <MaxScaleDenominator>15000</MaxScaleDenominator>
+                      <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+                        <Stroke>
+                          <CssParameter name="stroke">#505050</CssParameter>
+                          <CssParameter name="stroke-width">1</CssParameter>
+                           <CssParameter name="stroke-linecap">round</CssParameter>
+                          <CssParameter name="stroke-linejoin">round</CssParameter>
+                        </Stroke>
+                      </LineSymbolizer>
+                    </Rule>
+                    </FeatureTypeStyle>
+
+            <!-- B Road Centre Line-->
+
+                    <FeatureTypeStyle>
+                      <Rule>
+                      <Name>B Road Centre Line</Name>
+                      <ogc:Filter>
+                        <ogc:And>
+                          <ogc:PropertyIsEqualTo>
+                            <ogc:PropertyName>featcode</ogc:PropertyName>
+                            <ogc:Literal>15749</ogc:Literal>
+                          </ogc:PropertyIsEqualTo>
+                          <ogc:PropertyIsEqualTo>
+                            <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                            <ogc:Literal>2</ogc:Literal>
+                          </ogc:PropertyIsEqualTo>
+                          <ogc:PropertyIsEqualTo>
+                            <ogc:PropertyName>override</ogc:PropertyName>
+                            <ogc:Literal>F</ogc:Literal>
+                          </ogc:PropertyIsEqualTo>
+                        </ogc:And>
+                   </ogc:Filter>
+                      <MinScaleDenominator>1000</MinScaleDenominator>
+                      <MaxScaleDenominator>15000</MaxScaleDenominator>
+                      <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+                        <Stroke>
+                          <CssParameter name="stroke">#505050</CssParameter>
+                          <CssParameter name="stroke-width">1</CssParameter>
+                          <CssParameter name="stroke-linecap">round</CssParameter>
+                          <CssParameter name="stroke-linejoin">round</CssParameter>
+                        </Stroke>
+                      </LineSymbolizer>
+                    </Rule>
+                      </FeatureTypeStyle>
+
+            <!-- A Road Centre Line-->
+
+                    <FeatureTypeStyle>
+                      <Rule>
+                      <Name>A Road Centre Line</Name>
+                      <ogc:Filter>
+                        <ogc:And>
+                          <ogc:PropertyIsEqualTo>
+                            <ogc:PropertyName>featcode</ogc:PropertyName>
+                            <ogc:Literal>15739</ogc:Literal>
+                          </ogc:PropertyIsEqualTo>
+                          <ogc:PropertyIsEqualTo>
+                            <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                            <ogc:Literal>2</ogc:Literal>
+                          </ogc:PropertyIsEqualTo>
+                          <ogc:PropertyIsEqualTo>
+                            <ogc:PropertyName>override</ogc:PropertyName>
+                            <ogc:Literal>F</ogc:Literal>
+                          </ogc:PropertyIsEqualTo>
+                        </ogc:And>
+                      </ogc:Filter>
+                      <MinScaleDenominator>1000</MinScaleDenominator>
+                      <MaxScaleDenominator>15000</MaxScaleDenominator>
+                      <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+                        <Stroke>
+                          <CssParameter name="stroke">#505050</CssParameter>
+                          <CssParameter name="stroke-width">1</CssParameter>
+                           <CssParameter name="stroke-linecap">round</CssParameter>
+                          <CssParameter name="stroke-linejoin">round</CssParameter>
+                        </Stroke>
+                      </LineSymbolizer>
+                    </Rule>
+                      </FeatureTypeStyle>
+
+            <!-- Primary Road Centre Line-->
+
+                    <FeatureTypeStyle>
+                      <Rule>
+                      <Name>Primary Road Centre Line</Name>
+                      <ogc:Filter>
+                        <ogc:And>
+                          <ogc:PropertyIsEqualTo>
+                            <ogc:PropertyName>featcode</ogc:PropertyName>
+                            <ogc:Literal>15735</ogc:Literal>
+                          </ogc:PropertyIsEqualTo>
+                          <ogc:PropertyIsEqualTo>
+                            <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                            <ogc:Literal>2</ogc:Literal>
+                          </ogc:PropertyIsEqualTo>
+                          <ogc:PropertyIsEqualTo>
+                            <ogc:PropertyName>override</ogc:PropertyName>
+                            <ogc:Literal>F</ogc:Literal>
+                          </ogc:PropertyIsEqualTo>
+                        </ogc:And>
+                      </ogc:Filter>
+                      <MinScaleDenominator>1000</MinScaleDenominator>
+                      <MaxScaleDenominator>15000</MaxScaleDenominator>
+                      <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+                        <Stroke>
+                          <CssParameter name="stroke">#FFFFFF</CssParameter>
+                          <CssParameter name="stroke-width">1</CssParameter>
+                          <CssParameter name="stroke-linecap">round</CssParameter>
+                          <CssParameter name="stroke-linejoin">round</CssParameter>
+                        </Stroke>
+                      </LineSymbolizer>
+                    </Rule>
+                      </FeatureTypeStyle>
+
+            <!-- Motorway Road Centre Line-->
+
+                    <FeatureTypeStyle>
+                      <Rule>
+                      <Name>Motorway Road Centre Line</Name>
+                      <ogc:Filter>
+                        <ogc:And>
+                          <ogc:PropertyIsEqualTo>
+                            <ogc:PropertyName>featcode</ogc:PropertyName>
+                            <ogc:Literal>15719</ogc:Literal>
+                          </ogc:PropertyIsEqualTo>
+                          <ogc:PropertyIsEqualTo>
+                            <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                            <ogc:Literal>2</ogc:Literal>
+                          </ogc:PropertyIsEqualTo>
+                          <ogc:PropertyIsEqualTo>
+                            <ogc:PropertyName>override</ogc:PropertyName>
+                            <ogc:Literal>F</ogc:Literal>
+                          </ogc:PropertyIsEqualTo>
+                        </ogc:And>
+                      </ogc:Filter>
+                      <MinScaleDenominator>1000</MinScaleDenominator>
+                      <MaxScaleDenominator>15000</MaxScaleDenominator>
+                      <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+                        <Stroke>
+                          <CssParameter name="stroke">#FFFFFF</CssParameter>
+                          <CssParameter name="stroke-width">1</CssParameter>
+                          <CssParameter name="stroke-linecap">round</CssParameter>
+                          <CssParameter name="stroke-linejoin">round</CssParameter>
+                        </Stroke>
+                      </LineSymbolizer>
+                    </Rule>
+                      </FeatureTypeStyle>
+
+  <!-- LEVEL 2 LABELS-->
+
+  <!-- Shared Use Carriageway/Guided Busway Carriageway/Restricted Local Access Road Labels -->
+
+          <FeatureTypeStyle>
+            <Rule>
+            <Name>Shared Use Carriageway/Guided Busway Carriageway/Restricted Local Access Road</Name>
+            <ogc:Filter>
+              <ogc:Or>
+                <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15790</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>2</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+                <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15797</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>2</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+                <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15762</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>2</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+              </ogc:Or>
+            </ogc:Filter>
+            <MinScaleDenominator>1000</MinScaleDenominator>
+            <MaxScaleDenominator>15000</MaxScaleDenominator>
+            <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+              <Label>
+                <ogc:Function name="strToUpperCase">
+                <ogc:PropertyName>distname</ogc:PropertyName>
+                </ogc:Function>
+              </Label>
+              <Font>
+                <CssParameter name="font-family">Arial</CssParameter>
+                <CssParameter name="font-size">18</CssParameter>
+                <CssParameter name="font-weight">bold</CssParameter>
+              </Font>
+              <LabelPlacement>
+                <LinePlacement>
+                  <PerpendicularOffset>0</PerpendicularOffset>
+                </LinePlacement>
+              </LabelPlacement>
+              <Halo>
+                <Radius>1.2</Radius>
+                <Fill><CssParameter name="fill">#FFFFFF</CssParameter></Fill>
+              </Halo>
+              <Fill>
+                <CssParameter name="fill">#000000</CssParameter>
+              </Fill>
+              <VendorOption name="followLine">true</VendorOption>
+              <VendorOption name="group">yes</VendorOption>
+              <VendorOption name="maxAngleDelta">45</VendorOption>
+              <VendorOption name="maxDisplacement">175</VendorOption>
+              <VendorOption name="repeat">1000</VendorOption>
+              <VendorOption name="conflictResolution">true</VendorOption>
+            </TextSymbolizer>
+          </Rule>
+        </FeatureTypeStyle>
+
+  <!-- Local Road/Local Access Road Labels -->
+
+          <FeatureTypeStyle>
+            <Rule>
+            <Name>Local Road/Local Access Road</Name>
+            <ogc:Filter>
+              <ogc:Or>
+                <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15760</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>2</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+                <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15761</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>2</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+              </ogc:Or>
+            </ogc:Filter>
+            <MinScaleDenominator>1000</MinScaleDenominator>
+            <MaxScaleDenominator>15000</MaxScaleDenominator>
+            <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+              <Label>
+                <ogc:Function name="strToUpperCase">
+                <ogc:PropertyName>distname</ogc:PropertyName>
+                </ogc:Function>
+              </Label>
+              <Font>
+                <CssParameter name="font-family">Arial</CssParameter>
+                <CssParameter name="font-size">18</CssParameter>
+                <CssParameter name="font-weight">bold</CssParameter>
+              </Font>
+              <LabelPlacement>
+                <LinePlacement>
+                  <PerpendicularOffset>0</PerpendicularOffset>
+                </LinePlacement>
+              </LabelPlacement>
+              <Halo>
+                <Radius>1.2</Radius>
+                <Fill><CssParameter name="fill">#FFFFFF</CssParameter></Fill>
+              </Halo>
+              <Fill>
+                <CssParameter name="fill">#000000</CssParameter>
+              </Fill>
+              <VendorOption name="followLine">true</VendorOption>
+              <VendorOption name="group">yes</VendorOption>
+              <VendorOption name="maxAngleDelta">45</VendorOption>
+              <VendorOption name="maxDisplacement">175</VendorOption>
+              <VendorOption name="repeat">1000</VendorOption>
+              <VendorOption name="conflictResolution">true</VendorOption>
+            </TextSymbolizer>
+          </Rule>
+        </FeatureTypeStyle>
+
+          <!-- Minor Roads Labels -->
+
+          <FeatureTypeStyle>
+            <Rule>
+            <Name>Minor Road Labels</Name>
+            <ogc:Filter>
+             <ogc:Or>
+               <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15750</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>2</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+                <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15759</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>2</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+            </ogc:Or>
+            </ogc:Filter>
+            <MinScaleDenominator>1000</MinScaleDenominator>
+            <MaxScaleDenominator>15000</MaxScaleDenominator>
+            <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+              <Label>
+                <ogc:Function name="strToUpperCase">
+                <ogc:PropertyName>distname</ogc:PropertyName>
+                </ogc:Function>
+              </Label>
+              <Font>
+                <CssParameter name="font-family">Arial</CssParameter>
+                <CssParameter name="font-size">18</CssParameter>
+                <CssParameter name="font-weight">bold</CssParameter>
+              </Font>
+              <LabelPlacement>
+                <LinePlacement>
+                  <PerpendicularOffset>0</PerpendicularOffset>
+                </LinePlacement>
+              </LabelPlacement>
+              <Halo>
+                <Radius>1.2</Radius>
+                <Fill><CssParameter name="fill">#FFFFFF</CssParameter></Fill>
+              </Halo>
+              <Fill>
+                <CssParameter name="fill">#000000</CssParameter>
+              </Fill>
+              <VendorOption name="followLine">true</VendorOption>
+              <VendorOption name="group">yes</VendorOption>
+              <VendorOption name="maxAngleDelta">45</VendorOption>
+              <VendorOption name="maxDisplacement">175</VendorOption>
+              <VendorOption name="repeat">1000</VendorOption>
+            </TextSymbolizer>
+          </Rule>
+        </FeatureTypeStyle>
+
+    <!-- B Road Labels -->
+
+          <FeatureTypeStyle>
+            <Rule>
+            <Name>B Road Labels</Name>
+            <ogc:Filter>
+             <ogc:Or>
+               <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15743</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>2</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+                <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15749</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>2</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+              </ogc:Or>
+            </ogc:Filter>
+            <MinScaleDenominator>1000</MinScaleDenominator>
+            <MaxScaleDenominator>15000</MaxScaleDenominator>
+            <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+              <Label>
+                <ogc:Function name="strToUpperCase">
+                <ogc:PropertyName>distname</ogc:PropertyName>
+                </ogc:Function>
+              </Label>
+              <Font>
+                <CssParameter name="font-family">Arial</CssParameter>
+                <CssParameter name="font-size">25</CssParameter>
+                <CssParameter name="font-weight">bold</CssParameter>
+              </Font>
+              <LabelPlacement>
+                <LinePlacement>
+                  <PerpendicularOffset>0</PerpendicularOffset>
+                </LinePlacement>
+              </LabelPlacement>
+              <Halo>
+                <Radius>2</Radius>
+                <Fill><CssParameter name="fill">#FFFFFF</CssParameter></Fill>
+              </Halo>
+              <Fill>
+                <CssParameter name="fill">#D68522</CssParameter>
+              </Fill>
+              <VendorOption name="spaceAround">10</VendorOption>
+              <VendorOption name="followLine">true</VendorOption>
+              <VendorOption name="group">yes</VendorOption>
+              <VendorOption name="maxAngleDelta">45</VendorOption>
+              <VendorOption name="maxDisplacement">2500</VendorOption>
+              <VendorOption name="repeat">1000</VendorOption>
+            </TextSymbolizer>
+          </Rule>
+        </FeatureTypeStyle>
+
+   <!-- B Road Numbers -->
+
+      <FeatureTypeStyle>
+        <Rule>
+            <Name>B Road Numbers</Name>
+            <ogc:Filter>
+              <ogc:Or>
+                <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15743</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>2</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+                <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15749</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>2</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+              </ogc:Or>
+            </ogc:Filter>
+            <MinScaleDenominator>1000</MinScaleDenominator>
+            <MaxScaleDenominator>15000</MaxScaleDenominator>
+            <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+              <Label>
+                <ogc:PropertyName>roadnumber</ogc:PropertyName>
+              </Label>
+              <Font>
+                <CssParameter name="font-family">Arial</CssParameter>
+                <CssParameter name="font-size">25</CssParameter>
+                <CssParameter name="font-weight">bold</CssParameter>
+              </Font>
+              <LabelPlacement>
+                <LinePlacement>
+                  <PerpendicularOffset>0</PerpendicularOffset>
+                </LinePlacement>
+              </LabelPlacement>
+              <Halo>
+                <Radius>2</Radius>
+                <Fill><CssParameter name="fill">#FFFFFF</CssParameter></Fill>
+              </Halo>
+              <Fill>
+                <CssParameter name="fill">#D68522</CssParameter>
+              </Fill>
+              <Priority>910</Priority>
+              <VendorOption name="spaceAround">0</VendorOption>
+              <VendorOption name="group">yes</VendorOption>
+              <VendorOption name="maxAngleDelta">45</VendorOption>
+              <VendorOption name="maxDisplacement">150</VendorOption>
+              <VendorOption name="repeat">700</VendorOption>
+              <VendorOption name="forceLeftToRight">true</VendorOption>
+            </TextSymbolizer>
+          </Rule>
+        </FeatureTypeStyle>
+
+          <!-- A Roads Labels -->
+
+          <FeatureTypeStyle>
+            <Rule>
+            <Name>A Road Labels</Name>
+            <ogc:Filter>
+             <ogc:Or>
+               <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15792</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>2</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+                <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15739</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>2</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+              </ogc:Or>
+            </ogc:Filter>
+            <MinScaleDenominator>1000</MinScaleDenominator>
+            <MaxScaleDenominator>15000</MaxScaleDenominator>
+            <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+              <Label>
+                <ogc:Function name="strToUpperCase">
+                <ogc:PropertyName>distname</ogc:PropertyName>
+                </ogc:Function>
+              </Label>
+              <Font>
+                <CssParameter name="font-family">Arial</CssParameter>
+                <CssParameter name="font-size">25</CssParameter>
+                <CssParameter name="font-weight">bold</CssParameter>
+              </Font>
+              <LabelPlacement>
+                <LinePlacement>
+                  <PerpendicularOffset>0</PerpendicularOffset>
+                </LinePlacement>
+              </LabelPlacement>
+              <Halo>
+                <Radius>2</Radius>
+                <Fill><CssParameter name="fill">#FFFFFF</CssParameter></Fill>
+              </Halo>
+              <Fill>
+                <CssParameter name="fill">#D41C40</CssParameter>
+              </Fill>
+              <VendorOption name="spaceAround">10</VendorOption>
+              <VendorOption name="followLine">true</VendorOption>
+              <VendorOption name="group">yes</VendorOption>
+              <VendorOption name="maxAngleDelta">45</VendorOption>
+              <VendorOption name="maxDisplacement">2500</VendorOption>
+              <VendorOption name="repeat">1000</VendorOption>
+            </TextSymbolizer>
+          </Rule>
+            </FeatureTypeStyle>
+
+     <!-- A Road Numbers -->
+
+      <FeatureTypeStyle>
+        <Rule>
+            <Name>A Road Numbers</Name>
+            <ogc:Filter>
+              <ogc:Or>
+                <ogc:And>
+                    <ogc:PropertyIsEqualTo>
+                      <ogc:PropertyName>featcode</ogc:PropertyName>
+                      <ogc:Literal>15792</ogc:Literal>
+                    </ogc:PropertyIsEqualTo>
+                    <ogc:PropertyIsEqualTo>
+                      <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                      <ogc:Literal>2</ogc:Literal>
+                    </ogc:PropertyIsEqualTo>
+                  </ogc:And>
+                  <ogc:And>
+                    <ogc:PropertyIsEqualTo>
+                      <ogc:PropertyName>featcode</ogc:PropertyName>
+                      <ogc:Literal>15739</ogc:Literal>
+                    </ogc:PropertyIsEqualTo>
+                    <ogc:PropertyIsEqualTo>
+                      <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                      <ogc:Literal>2</ogc:Literal>
+                    </ogc:PropertyIsEqualTo>
+                  </ogc:And>
+              </ogc:Or>
+            </ogc:Filter>
+            <MinScaleDenominator>1000</MinScaleDenominator>
+            <MaxScaleDenominator>15000</MaxScaleDenominator>
+            <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+              <Label>
+                <ogc:PropertyName>roadnumber</ogc:PropertyName>
+              </Label>
+              <Font>
+                <CssParameter name="font-family">Arial</CssParameter>
+                <CssParameter name="font-size">25</CssParameter>
+                <CssParameter name="font-weight">bold</CssParameter>
+              </Font>
+              <LabelPlacement>
+                <LinePlacement>
+                  <PerpendicularOffset>0</PerpendicularOffset>
+                </LinePlacement>
+              </LabelPlacement>
+              <Halo>
+                <Radius>2</Radius>
+                <Fill><CssParameter name="fill">#FFFFFF</CssParameter></Fill>
+              </Halo>
+              <Fill>
+                <CssParameter name="fill">#D41C40</CssParameter>
+              </Fill>
+              <Priority>910</Priority>
+              <VendorOption name="spaceAround">0</VendorOption>
+              <VendorOption name="group">yes</VendorOption>
+              <VendorOption name="maxAngleDelta">45</VendorOption>
+              <VendorOption name="maxDisplacement">150</VendorOption>
+              <VendorOption name="repeat">700</VendorOption>
+              <VendorOption name="forceLeftToRight">true</VendorOption>
+            </TextSymbolizer>
+          </Rule>
+        </FeatureTypeStyle>
+
+  <!-- Primary Road Labels -->
+
+          <FeatureTypeStyle>
+            <Rule>
+            <Name>Primary Road Labels</Name>
+            <ogc:Filter>
+             <ogc:Or>
+                 <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15723</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>2</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+                <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15735</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>2</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+              </ogc:Or>
+            </ogc:Filter>
+            <MinScaleDenominator>1000</MinScaleDenominator>
+            <MaxScaleDenominator>15000</MaxScaleDenominator>
+            <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+              <Label>
+                <ogc:Function name="strToUpperCase">
+                <ogc:PropertyName>distname</ogc:PropertyName>
+                </ogc:Function>
+              </Label>
+              <Font>
+                <CssParameter name="font-family">Arial</CssParameter>
+                <CssParameter name="font-size">28</CssParameter>
+                <CssParameter name="font-weight">bold</CssParameter>
+              </Font>
+              <LabelPlacement>
+                <LinePlacement>
+                  <PerpendicularOffset>0</PerpendicularOffset>
+                </LinePlacement>
+              </LabelPlacement>
+              <Halo>
+                <Radius>2</Radius>
+                <Fill><CssParameter name="fill">#FFFFFF</CssParameter></Fill>
+              </Halo>
+              <Fill>
+                <CssParameter name="fill">#00A629</CssParameter>
+              </Fill>
+              <Priority>880</Priority>
+              <VendorOption name="spaceAround">10</VendorOption>
+              <VendorOption name="followLine">true</VendorOption>
+              <VendorOption name="group">yes</VendorOption>
+              <VendorOption name="maxAngleDelta">45</VendorOption>
+              <VendorOption name="maxDisplacement">175</VendorOption>
+              <VendorOption name="repeat">1000</VendorOption>
+            </TextSymbolizer>
+          </Rule>
+            </FeatureTypeStyle>
+
+  <!-- Primary Road Numbers -->
+
+          <FeatureTypeStyle>
+            <Rule>
+            <Name>Primary Road Numbers</Name>
+            <ogc:Filter>
+              <ogc:Or>
+                <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15723</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>2</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+                <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15735</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>2</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+              </ogc:Or>
+            </ogc:Filter>
+            <MinScaleDenominator>1000</MinScaleDenominator>
+            <MaxScaleDenominator>15000</MaxScaleDenominator>
+            <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+              <Label>
+                <ogc:PropertyName>roadnumber</ogc:PropertyName>
+              </Label>
+              <Font>
+                <CssParameter name="font-family">Arial</CssParameter>
+                <CssParameter name="font-size">28</CssParameter>
+                <CssParameter name="font-weight">bold</CssParameter>
+              </Font>
+              <LabelPlacement>
+                <LinePlacement>
+                  <PerpendicularOffset>0</PerpendicularOffset>
+                </LinePlacement>
+              </LabelPlacement>
+              <Halo>
+                <Radius>2</Radius>
+                <Fill><CssParameter name="fill">#FFFFFF</CssParameter></Fill>
+              </Halo>
+              <Fill>
+                <CssParameter name="fill">#00A629</CssParameter>
+              </Fill>
+              <Priority>910</Priority>
+              <VendorOption name="spaceAround">0</VendorOption>
+              <VendorOption name="group">yes</VendorOption>
+              <VendorOption name="maxAngleDelta">45</VendorOption>
+              <VendorOption name="maxDisplacement">150</VendorOption>
+              <VendorOption name="repeat">700</VendorOption>
+              <VendorOption name="forceLeftToRight">true</VendorOption>
+            </TextSymbolizer>
+          </Rule>
+        </FeatureTypeStyle>
+
+
+  <!-- Motorway Numbers -->
+
+      <FeatureTypeStyle>
+        <Rule>
+            <Name>Motorway Numbers</Name>
+            <ogc:Filter>
+              <ogc:Or>
+                <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15710</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>2</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+                <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>featcode</ogc:PropertyName>
+                    <ogc:Literal>15719</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>drawlevel</ogc:PropertyName>
+                    <ogc:Literal>2</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+              </ogc:Or>
+            </ogc:Filter>
+            <MinScaleDenominator>1000</MinScaleDenominator>
+            <MaxScaleDenominator>15000</MaxScaleDenominator>
+            <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+              <Label>
+                <ogc:PropertyName>roadnumber</ogc:PropertyName>
+              </Label>
+              <Font>
+                <CssParameter name="font-family">Arial</CssParameter>
+                <CssParameter name="font-size">30</CssParameter>
+                <CssParameter name="font-weight">bold</CssParameter>
+              </Font>
+              <LabelPlacement>
+                <LinePlacement>
+                  <PerpendicularOffset>0</PerpendicularOffset>
+                </LinePlacement>
+              </LabelPlacement>
+              <Halo>
+                <Radius>2</Radius>
+                <Fill><CssParameter name="fill">#FFFFFF</CssParameter></Fill>
+              </Halo>
+              <Fill>
+                <CssParameter name="fill">#009FB8</CssParameter>
+              </Fill>
+              <Priority>910</Priority>
+              <VendorOption name="spaceAround">0</VendorOption>
+              <VendorOption name="group">yes</VendorOption>
+              <VendorOption name="maxAngleDelta">45</VendorOption>
+              <VendorOption name="maxDisplacement">150</VendorOption>
+              <VendorOption name="repeat">700</VendorOption>
+              <VendorOption name="forceLeftToRight">true</VendorOption>
+            </TextSymbolizer>
+          </Rule>
+        </FeatureTypeStyle>
+
+
     </UserStyle>
   </NamedLayer>
 </StyledLayerDescriptor>
