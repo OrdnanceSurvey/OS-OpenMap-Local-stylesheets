@@ -28,7 +28,7 @@ Roundabouts consist of 2 layers. The roundabout casing and roundabout fill. You 
 
 **7.**  Although every feature is styled, for use as a contextual map we recommend the following layer order and visibility:
 
-  ![Screenshot](https://raw.githubusercontent.com/OrdnanceSurvey/OS-OpenMap-Local-stylesheets/master/ESRI%20Shapefile%20stylesheets/QGIS%20stylesheets%20%28QML%29/Full%20colour%20style/images/OML_FC_layer_order.png "Recommended layer order for OS Open Map Local")
+  ![Screenshot](https://github.com/OrdnanceSurvey/OS-OpenMap-Local-stylesheets/blob/6428ddcc5e74bbbbb852a77ef179678ed04f56b9/ESRI%20Shapefile%20stylesheets/QGIS%20stylesheets%20(QML)/Full%20colour%20style/images/OML_FC_layer_order1.png "Recommended layer order for OS Open Map Local")
 
 We recommend viewing the map between **1:2,500** and **1:10,000** for maximum legibility
 
