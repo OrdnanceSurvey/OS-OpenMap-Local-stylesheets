@@ -5,17 +5,17 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
   <NamedLayer>
     <Name>OS Open Map - Local&#174; Tidal Boundary (Backdrop style)</Name>
     <UserStyle>
-      <Title>Product SLD - October 2015</Title>
-      <Abstract>OS Open Map - Local&#174; Local. Ordnance Survey. &#169; Crown copyright and database rights 2016.</Abstract>
+      <Title>Product SLD - October 2022</Title>
+      <Abstract>OS Open Map - Local&#174; Local. Ordnance Survey. &#169; Crown copyright and database rights 2022.</Abstract>
 
 <!-- Mean Low Water -->
 
-<FeatureTypeStyle>        
+<FeatureTypeStyle>
         <Rule>
           <Name>Mean Low Water</Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
+              <ogc:PropertyName>featcode</ogc:PropertyName>
               <ogc:Literal>15605</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -30,12 +30,12 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
         </Rule>
 
       <!-- Mean High Water -->
-      
+
         <Rule>
           <Name>Mean High Water</Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
+              <ogc:PropertyName>featcode</ogc:PropertyName>
               <ogc:Literal>15604</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
