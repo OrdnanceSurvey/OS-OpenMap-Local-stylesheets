@@ -5,17 +5,17 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
   <NamedLayer>
     <Name>OS Open Map - Local&#174; Railway Track (Full colour style)</Name>
     <UserStyle>
-      <Title>Product SLD - November 2016</Title>
-      <Abstract>OS Open Map - Local&#174; Local. Ordnance Survey. &#169; Crown copyright and database rights 2016.</Abstract>
+      <Title>Product SLD - October 2022</Title>
+      <Abstract>OS Open Map - Local&#174; Local. Ordnance Survey. &#169; Crown copyright and database rights 2022.</Abstract>
 
       <!-- Narrow Gauge Railway -->
-        
+
       <FeatureTypeStyle>
         <Rule>
           <Name>Narrow Gauge Railway (Line)</Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
+              <ogc:PropertyName>featcode</ogc:PropertyName>
               <ogc:Literal>15302</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -32,7 +32,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           <Name>Narrow gauge railway (bars)</Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
+              <ogc:PropertyName>featcode</ogc:PropertyName>
               <ogc:Literal>15302</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -46,15 +46,15 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </Stroke>
           </LineSymbolizer>
         </Rule>
-       
-        
+
+
       <!-- Single Track -->
-        
+
         <Rule>
           <Name>Single Track</Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
+              <ogc:PropertyName>featcode</ogc:PropertyName>
               <ogc:Literal>15301</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -67,15 +67,15 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </Stroke>
           </LineSymbolizer>
         </Rule>
- 
-        
+
+
       <!-- Multi Track Railway -->
-        
+
         <Rule>
           <Name>Multi Track Railway</Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>FEATCODE</ogc:PropertyName>
+              <ogc:PropertyName>featcode</ogc:PropertyName>
               <ogc:Literal>15300</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
