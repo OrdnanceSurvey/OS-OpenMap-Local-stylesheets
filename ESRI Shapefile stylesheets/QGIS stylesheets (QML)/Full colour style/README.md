@@ -1,4 +1,4 @@
-# OS OpenMap - Full colour style
+# OS OpenMap Local - Full colour style
 
 These are **QML** files for OS OpenMap - Local in **ESRI Shapefile** format for use in **QGIS**.
 
