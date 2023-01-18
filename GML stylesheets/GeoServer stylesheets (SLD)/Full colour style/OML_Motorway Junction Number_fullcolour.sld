@@ -5,53 +5,167 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
   <NamedLayer>
     <Name>OS Open Map - Local&#174; Motorway Junction Numbers (Full colour style)</Name>
     <UserStyle>
-      <Title>Product SLD - November 2016</Title>
-      <Abstract>OS Open Map - Local&#174; Local. Ordnance Survey. &#169; Crown copyright and database rights 2016.</Abstract>
+      <Title>Product SLD - October 2022</Title>
+      <Abstract>OS Open Map - Local&#174; Local. Ordnance Survey. &#169; Crown copyright and database rights 2022.</Abstract>
 
  <!-- Motorway Junction Numbers -->
-      
-      <FeatureTypeStyle> 
-      <Rule>
-          <Name>Motorway Junction Numbers</Name>
-          <ogc:Filter>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>featurecode</ogc:PropertyName>
-                <ogc:Literal>15796</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <MinScaleDenominator>1000</MinScaleDenominator>
-          <MaxScaleDenominator>15000</MaxScaleDenominator>
-          <TextSymbolizer>
-            <Label>
-              <ogc:PropertyName>junctionnumber</ogc:PropertyName>
-            </Label>
-            <Font>
-              <CssParameter name="font-family">Arial</CssParameter>
-              <CssParameter name="font-size">30</CssParameter>
-              <CssParameter name="font-weight">bold</CssParameter>
-            </Font>
-            <LabelPlacement>
-              <LinePlacement>
-                <PerpendicularOffset>0</PerpendicularOffset>
-              </LinePlacement>
-            </LabelPlacement>
-            <Halo>
-              <Radius>1.5</Radius>
-              <Fill><CssParameter name="fill">#FFFFFF</CssParameter></Fill>
-            </Halo>
+
+ <FeatureTypeStyle>
+   <Rule>
+     <Name>Motorway Simple Junction - 1:10,000 to 1:50,000</Name>
+     <ogc:Filter>
+       <ogc:Or>
+         <ogc:PropertyIsLessThan>
+           <ogc:Function name="strLength">
+             <ogc:PropertyName>junctionnumber</ogc:PropertyName>
+           </ogc:Function>
+           <ogc:Literal>10</ogc:Literal>
+         </ogc:PropertyIsLessThan>
+         <ogc:PropertyIsLike wildCard="*" singleChar="." escape="!">
+           <ogc:PropertyName>junctionnumber</ogc:PropertyName>
+           <ogc:Literal>*Toll*</ogc:Literal>
+         </ogc:PropertyIsLike>
+       </ogc:Or>
+     </ogc:Filter>
+     <MinScaleDenominator>2001</MinScaleDenominator>
+     <MaxScaleDenominator>50000</MaxScaleDenominator>
+     <TextSymbolizer>
+       <Label>
+           <ogc:Function name="strReplace">
+           <ogc:PropertyName>junctionnumber</ogc:PropertyName>
+           <ogc:Literal>M.*J</ogc:Literal>
+           <ogc:Literal> </ogc:Literal>
+           <ogc:Literal>true</ogc:Literal>
+           </ogc:Function>
+       </Label>
+       <Font>
+         <CssParameter name="font-family">Arial</CssParameter>
+         <CssParameter name="font-size">13</CssParameter>
+         <CssParameter name="font-weight">bold</CssParameter>
+       </Font>
+       <LabelPlacement>
+         <PointPlacement>
+           <AnchorPoint>
+             <AnchorPointX>0.5</AnchorPointX>
+             <AnchorPointY>0.5</AnchorPointY>
+           </AnchorPoint>
+           <Displacement>
+             <DisplacementX>18</DisplacementX>
+             <DisplacementY>35</DisplacementY>
+           </Displacement>
+         </PointPlacement>
+       </LabelPlacement>
+       <Fill>
+         <CssParameter name="fill">#009fb8</CssParameter>
+       </Fill>
+       <Graphic>
+           <Mark>
+            <WellKnownName>square</WellKnownName>
             <Fill>
-              <CssParameter name="fill">#009FB8</CssParameter>
+             <CssParameter name="fill">#FFFFFF</CssParameter>
             </Fill>
-            <Priority>910</Priority>
-            <VendorOption name="spaceAround">0</VendorOption>
-            <VendorOption name="group">yes</VendorOption>
-            <VendorOption name="maxAngleDelta">45</VendorOption>
-            <VendorOption name="maxDisplacement">150</VendorOption>
-            <VendorOption name="repeat">700</VendorOption>
-            <VendorOption name="forceLeftToRight">true</VendorOption>
-          </TextSymbolizer>
-        </Rule>
-      </FeatureTypeStyle>           
-    </UserStyle>
-  </NamedLayer>
+            <Stroke>
+             <CssParameter name="stroke">#009fb8</CssParameter>
+             <CssParameter name="stroke-width">2</CssParameter>
+             <CssParameter name="stroke-linejoin">round</CssParameter>
+             <CssParameter name="stroke-linecap">round</CssParameter>
+            </Stroke>
+           </Mark>
+         <Size>13</Size>
+       </Graphic>
+       <VendorOption name="graphic-resize">stretch</VendorOption>
+       <VendorOption name="graphic-margin">4</VendorOption>
+     </TextSymbolizer>
+   </Rule>
+   <Rule>
+     <Name>Motorway Merge Junction - 1:10,000 to 1:50,000</Name>
+     <ogc:Filter>
+       <ogc:PropertyIsGreaterThanOrEqualTo>
+             <ogc:Function name="strLength">
+               <ogc:PropertyName>junctionnumber</ogc:PropertyName>
+             </ogc:Function>
+             <ogc:Literal>10</ogc:Literal>
+       </ogc:PropertyIsGreaterThanOrEqualTo>
+     </ogc:Filter>
+     <MinScaleDenominator>2001</MinScaleDenominator>
+     <MaxScaleDenominator>50000</MaxScaleDenominator>
+     <TextSymbolizer>
+       <Label>
+       <ogc:Function name="strConcat">
+         <ogc:Function name="strSubString">
+           <ogc:Function name="strSubstring">
+             <ogc:PropertyName>junctionnumber</ogc:PropertyName>
+             <ogc:Literal>0</ogc:Literal>
+             <ogc:Literal>8</ogc:Literal>
+           </ogc:Function>
+           <ogc:Add>
+             <ogc:Function name="strIndexOf">
+               <ogc:Function name="strSubstring">
+               <ogc:PropertyName>junctionnumber</ogc:PropertyName>
+               <ogc:Literal>0</ogc:Literal>
+               <ogc:Literal>8</ogc:Literal>
+             </ogc:Function>
+               <ogc:Literal>J</ogc:Literal>
+             </ogc:Function>
+             <ogc:Literal>1</ogc:Literal>
+           </ogc:Add>
+           <ogc:Function name="strIndexOf">
+             <ogc:Function name="strSubstring">
+             <ogc:PropertyName>junctionnumber</ogc:PropertyName>
+             <ogc:Literal>0</ogc:Literal>
+             <ogc:Literal>8</ogc:Literal>
+           </ogc:Function>
+             <ogc:Literal>/</ogc:Literal>
+           </ogc:Function>
+         </ogc:Function>
+         <ogc:Function name="strReplace">
+           <ogc:PropertyName>junctionnumber</ogc:PropertyName>
+           <ogc:Literal>M.*J</ogc:Literal>
+           <ogc:Literal> &amp; </ogc:Literal>
+           <ogc:Literal>true</ogc:Literal>
+         </ogc:Function>
+       </ogc:Function>
+       </Label>
+       <Font>
+         <CssParameter name="font-family">Arial</CssParameter>
+         <CssParameter name="font-size">13</CssParameter>
+         <CssParameter name="font-weight">bold</CssParameter>
+       </Font>
+       <LabelPlacement>
+         <PointPlacement>
+           <AnchorPoint>
+             <AnchorPointX>0.5</AnchorPointX>
+             <AnchorPointY>0.5</AnchorPointY>
+           </AnchorPoint>
+           <Displacement>
+             <DisplacementX>18</DisplacementX>
+             <DisplacementY>35</DisplacementY>
+           </Displacement>
+         </PointPlacement>
+       </LabelPlacement>
+       <Fill>
+         <CssParameter name="fill">#009fb8</CssParameter>
+       </Fill>
+       <Graphic>
+           <Mark>
+            <WellKnownName>square</WellKnownName>
+            <Fill>
+             <CssParameter name="fill">#FFFFFF</CssParameter>
+            </Fill>
+            <Stroke>
+             <CssParameter name="stroke">#009fb8</CssParameter>
+             <CssParameter name="stroke-width">2</CssParameter>
+             <CssParameter name="stroke-linejoin">round</CssParameter>
+             <CssParameter name="stroke-linecap">round</CssParameter>
+            </Stroke>
+           </Mark>
+         <Size>13</Size>
+       </Graphic>
+       <VendorOption name="graphic-resize">stretch</VendorOption>
+       <VendorOption name="graphic-margin">4</VendorOption>
+     </TextSymbolizer>
+   </Rule>
+ </FeatureTypeStyle>
+</UserStyle>
+</NamedLayer>
 </StyledLayerDescriptor>
