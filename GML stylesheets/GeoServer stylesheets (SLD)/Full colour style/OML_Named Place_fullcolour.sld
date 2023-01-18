@@ -5,11 +5,11 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
   <NamedLayer>
     <Name>OS Open Map - Local&#174; Named Place (Full colour style)</Name>
     <UserStyle>
-      <Title>Product SLD - November 2016</Title>
-      <Abstract>OS Open Map - Local&#174; Local. Ordnance Survey. &#169; Crown copyright and database rights 2016.</Abstract>  
-      
-     <!-- Hydrography Text -->       
-      
+      <Title>Product SLD - October 2022</Title>
+      <Abstract>OS Open Map - Local&#174; Local. Ordnance Survey. &#169; Crown copyright and database rights 2022.</Abstract>
+
+     <!-- Hydrography Text -->
+
       <FeatureTypeStyle>
         <Rule>
           <Name>Hydrography Text Small - 1:1000 to 1:3701</Name>
@@ -42,8 +42,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
                   <AnchorPointY>0.5</AnchorPointY>
                 </AnchorPoint>
 		            <Rotation>
-                  <ogc:PropertyName>orientation</ogc:PropertyName>
-                </Rotation>  
+                  <ogc:PropertyName>textorientation</ogc:PropertyName>
+                </Rotation>
               </PointPlacement>
             </LabelPlacement>
             <Halo>
@@ -56,7 +56,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
-        
+
            <Rule>
           <Name>Hydrography Text Small - 1:3701 to 1:6001</Name>
           <ogc:Filter>
@@ -88,8 +88,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
                   <AnchorPointY>0.5</AnchorPointY>
                 </AnchorPoint>
 		 <Rotation>
-                  <ogc:PropertyName>orientation</ogc:PropertyName>
-                </Rotation>  
+                  <ogc:PropertyName>textorientation</ogc:PropertyName>
+                </Rotation>
               </PointPlacement>
             </LabelPlacement>
             <Halo>
@@ -102,7 +102,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
-        
+
            <Rule>
           <Name>Hydrography Text Small - 1:6001 to 1:10001</Name>
           <ogc:Filter>
@@ -134,8 +134,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
                   <AnchorPointY>0.5</AnchorPointY>
                 </AnchorPoint>
 		 <Rotation>
-                  <ogc:PropertyName>orientation</ogc:PropertyName>
-                </Rotation>  
+                  <ogc:PropertyName>textorientation</ogc:PropertyName>
+                </Rotation>
               </PointPlacement>
             </LabelPlacement>
             <Halo>
@@ -148,7 +148,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
-        
+
            <Rule>
           <Name>Hydrography Text Small - 1:10001 to 1:15000</Name>
           <ogc:Filter>
@@ -180,8 +180,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
                   <AnchorPointY>0.5</AnchorPointY>
                 </AnchorPoint>
 		 <Rotation>
-                  <ogc:PropertyName>orientation</ogc:PropertyName>
-                </Rotation>  
+                  <ogc:PropertyName>textorientation</ogc:PropertyName>
+                </Rotation>
               </PointPlacement>
             </LabelPlacement>
             <Halo>
@@ -195,7 +195,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </TextSymbolizer>
         </Rule>
 
- 
+
         <Rule>
           <Name>Hydrography Text Medium - 1:1000 to 1:3701</Name>
           <ogc:Filter>
@@ -227,8 +227,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
                   <AnchorPointY>0.5</AnchorPointY>
                 </AnchorPoint>
  		<Rotation>
-                  <ogc:PropertyName>orientation</ogc:PropertyName>
-                </Rotation>  
+                  <ogc:PropertyName>textorientation</ogc:PropertyName>
+                </Rotation>
               </PointPlacement>
             </LabelPlacement>
             <Halo>
@@ -241,7 +241,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
-        
+
         <Rule>
           <Name>Hydrography Text Medium - 1:3701 to 1:6001</Name>
           <ogc:Filter>
@@ -273,8 +273,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
                   <AnchorPointY>0.5</AnchorPointY>
                 </AnchorPoint>
  		<Rotation>
-                  <ogc:PropertyName>orientation</ogc:PropertyName>
-                </Rotation>  
+                  <ogc:PropertyName>textorientation</ogc:PropertyName>
+                </Rotation>
               </PointPlacement>
             </LabelPlacement>
             <Halo>
@@ -319,8 +319,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
                   <AnchorPointY>0.5</AnchorPointY>
                 </AnchorPoint>
  		<Rotation>
-                  <ogc:PropertyName>orientation</ogc:PropertyName>
-                </Rotation>  
+                  <ogc:PropertyName>textorientation</ogc:PropertyName>
+                </Rotation>
               </PointPlacement>
             </LabelPlacement>
             <Halo>
@@ -365,8 +365,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
                   <AnchorPointY>0.5</AnchorPointY>
                 </AnchorPoint>
  		<Rotation>
-                  <ogc:PropertyName>orientation</ogc:PropertyName>
-                </Rotation>  
+                  <ogc:PropertyName>textorientation</ogc:PropertyName>
+                </Rotation>
               </PointPlacement>
             </LabelPlacement>
             <Halo>
@@ -411,8 +411,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
                   <AnchorPointY>0.5</AnchorPointY>
                 </AnchorPoint>
  		<Rotation>
-                  <ogc:PropertyName>orientation</ogc:PropertyName>
-                </Rotation>  
+                  <ogc:PropertyName>textorientation</ogc:PropertyName>
+                </Rotation>
               </PointPlacement>
             </LabelPlacement>
             <Halo>
@@ -425,7 +425,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
-        
+
         <Rule>
           <Name>Hydrography Text Large - 1:6001 to 1:10001</Name>
           <ogc:Filter>
@@ -457,8 +457,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
                   <AnchorPointY>0.5</AnchorPointY>
                 </AnchorPoint>
  		<Rotation>
-                  <ogc:PropertyName>orientation</ogc:PropertyName>
-                </Rotation>  
+                  <ogc:PropertyName>textorientation</ogc:PropertyName>
+                </Rotation>
               </PointPlacement>
             </LabelPlacement>
             <Halo>
@@ -503,8 +503,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
                   <AnchorPointY>0.5</AnchorPointY>
                 </AnchorPoint>
  		<Rotation>
-                  <ogc:PropertyName>orientation</ogc:PropertyName>
-                </Rotation>  
+                  <ogc:PropertyName>textorientation</ogc:PropertyName>
+                </Rotation>
               </PointPlacement>
             </LabelPlacement>
             <Halo>
@@ -519,8 +519,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
         </Rule>
 
 
-<!-- Landcover Text -->       
-      
+<!-- Landcover Text -->
+
         <Rule>
           <Name>Landcover Text Small - 1:1000 to 1:3701</Name>
           <ogc:Filter>
@@ -606,7 +606,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
-        
+
          <Rule>
           <Name>Landcover Text Small - 1:6001 to 1:10001</Name>
           <ogc:Filter>
@@ -649,7 +649,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
-        
+
          <Rule>
           <Name>Landcover Text Small - 1:10001 to 1:15000</Name>
           <ogc:Filter>
@@ -692,7 +692,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
- 
+
         <Rule>
           <Name>Landcover Text Medium - 1:1000 to 1:3701</Name>
           <ogc:Filter>
@@ -735,7 +735,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
-        
+
         <Rule>
           <Name>Landcover Text Medium - 1:3701 to 1:6001</Name>
           <ogc:Filter>
@@ -866,7 +866,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
         </Rule>
 
 
- 
+
         <Rule>
           <Name>Landcover Text Large - 1:3701 to 1:6001</Name>
           <ogc:Filter>
@@ -909,7 +909,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
-        
+
         <Rule>
           <Name>Landcover Text Large - 1:6001 to 1:10001</Name>
           <ogc:Filter>
@@ -997,8 +997,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
         </Rule>
 
 
-<!-- Landform Text -->       
-      
+<!-- Landform Text -->
+
         <Rule>
           <Name>Landform Text Small - 1:1000 to 1:3701</Name>
           <ogc:Filter>
@@ -1030,8 +1030,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
                   <AnchorPointY>0.5</AnchorPointY>
                 </AnchorPoint>
  		<Rotation>
-                  <ogc:PropertyName>orientation</ogc:PropertyName>
-                </Rotation>  
+                  <ogc:PropertyName>textorientation</ogc:PropertyName>
+                </Rotation>
               </PointPlacement>
             </LabelPlacement>
             <Halo>
@@ -1044,7 +1044,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
-        
+
          <Rule>
           <Name>Landform Text Small - 1:3701 to 1:6001</Name>
           <ogc:Filter>
@@ -1076,8 +1076,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
                   <AnchorPointY>0.5</AnchorPointY>
                 </AnchorPoint>
  		<Rotation>
-                  <ogc:PropertyName>orientation</ogc:PropertyName>
-                </Rotation>  
+                  <ogc:PropertyName>textorientation</ogc:PropertyName>
+                </Rotation>
               </PointPlacement>
             </LabelPlacement>
             <Halo>
@@ -1090,7 +1090,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
-        
+
          <Rule>
           <Name>Landform Text Small - 1:6001 to 1:10001</Name>
           <ogc:Filter>
@@ -1122,8 +1122,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
                   <AnchorPointY>0.5</AnchorPointY>
                 </AnchorPoint>
  		<Rotation>
-                  <ogc:PropertyName>orientation</ogc:PropertyName>
-                </Rotation>  
+                  <ogc:PropertyName>textorientation</ogc:PropertyName>
+                </Rotation>
               </PointPlacement>
             </LabelPlacement>
             <Halo>
@@ -1136,7 +1136,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
-        
+
          <Rule>
           <Name>Landform Text Small - 1:10001 to 1:15000</Name>
           <ogc:Filter>
@@ -1168,8 +1168,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
                   <AnchorPointY>0.5</AnchorPointY>
                 </AnchorPoint>
  		<Rotation>
-                  <ogc:PropertyName>orientation</ogc:PropertyName>
-                </Rotation>  
+                  <ogc:PropertyName>textorientation</ogc:PropertyName>
+                </Rotation>
               </PointPlacement>
             </LabelPlacement>
             <Halo>
@@ -1183,7 +1183,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </TextSymbolizer>
         </Rule>
 
- 
+
         <Rule>
           <Name>Landform Text Medium - 1:1000 to 1:3701</Name>
           <ogc:Filter>
@@ -1215,8 +1215,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
                   <AnchorPointY>0.5</AnchorPointY>
                 </AnchorPoint>
  		<Rotation>
-                  <ogc:PropertyName>orientation</ogc:PropertyName>
-                </Rotation>  
+                  <ogc:PropertyName>textorientation</ogc:PropertyName>
+                </Rotation>
               </PointPlacement>
             </LabelPlacement>
             <Halo>
@@ -1229,7 +1229,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
-        
+
             <Rule>
           <Name>Landform Text Medium - 1:3701 to 1:6001</Name>
           <ogc:Filter>
@@ -1261,8 +1261,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
                   <AnchorPointY>0.5</AnchorPointY>
                 </AnchorPoint>
  		<Rotation>
-                  <ogc:PropertyName>orientation</ogc:PropertyName>
-                </Rotation>  
+                  <ogc:PropertyName>textorientation</ogc:PropertyName>
+                </Rotation>
               </PointPlacement>
             </LabelPlacement>
             <Halo>
@@ -1275,7 +1275,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
-        
+
             <Rule>
           <Name>Landform Text Medium - 1:6001 to 1:10001</Name>
           <ogc:Filter>
@@ -1307,8 +1307,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
                   <AnchorPointY>0.5</AnchorPointY>
                 </AnchorPoint>
  		<Rotation>
-                  <ogc:PropertyName>orientation</ogc:PropertyName>
-                </Rotation>  
+                  <ogc:PropertyName>textorientation</ogc:PropertyName>
+                </Rotation>
               </PointPlacement>
             </LabelPlacement>
             <Halo>
@@ -1321,7 +1321,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
-        
+
             <Rule>
           <Name>Landform Text Medium - 1:10001 to 1:15000</Name>
           <ogc:Filter>
@@ -1353,8 +1353,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
                   <AnchorPointY>0.5</AnchorPointY>
                 </AnchorPoint>
  		<Rotation>
-                  <ogc:PropertyName>orientation</ogc:PropertyName>
-                </Rotation>  
+                  <ogc:PropertyName>textorientation</ogc:PropertyName>
+                </Rotation>
               </PointPlacement>
             </LabelPlacement>
             <Halo>
@@ -1368,7 +1368,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </TextSymbolizer>
         </Rule>
 
- 
+
         <Rule>
           <Name>Landform Text Large - 1:3701 to 1:6001</Name>
           <ogc:Filter>
@@ -1400,8 +1400,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
                   <AnchorPointY>0.5</AnchorPointY>
                 </AnchorPoint>
  		<Rotation>
-                  <ogc:PropertyName>orientation</ogc:PropertyName>
-                </Rotation>  
+                  <ogc:PropertyName>textorientation</ogc:PropertyName>
+                </Rotation>
               </PointPlacement>
             </LabelPlacement>
             <Halo>
@@ -1414,7 +1414,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
-        
+
             <Rule>
           <Name>Landform Text Large - 1:6001 to 1:10001</Name>
           <ogc:Filter>
@@ -1446,8 +1446,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
                   <AnchorPointY>0.5</AnchorPointY>
                 </AnchorPoint>
  		<Rotation>
-                  <ogc:PropertyName>orientation</ogc:PropertyName>
-                </Rotation>  
+                  <ogc:PropertyName>textorientation</ogc:PropertyName>
+                </Rotation>
               </PointPlacement>
             </LabelPlacement>
             <Halo>
@@ -1460,7 +1460,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
-        
+
             <Rule>
           <Name>Landform Text Large - 1:10001 to 1:15000</Name>
           <ogc:Filter>
@@ -1492,8 +1492,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
                   <AnchorPointY>0.5</AnchorPointY>
                 </AnchorPoint>
  		<Rotation>
-                  <ogc:PropertyName>orientation</ogc:PropertyName>
-                </Rotation>  
+                  <ogc:PropertyName>textorientation</ogc:PropertyName>
+                </Rotation>
               </PointPlacement>
             </LabelPlacement>
             <Halo>
@@ -1507,8 +1507,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </TextSymbolizer>
         </Rule>
 
-<!-- Populated Place Text -->       
-      
+<!-- Populated Place Text -->
+
         <Rule>
           <Name>Populated Place Text Small - 1:1000 to 1:3701</Name>
           <ogc:Filter>
@@ -1552,7 +1552,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
-        
+
              <Rule>
           <Name>Populated Place Text Small - 1:3701 to 1:6001</Name>
           <ogc:Filter>
@@ -1596,7 +1596,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
-        
+
              <Rule>
           <Name>Populated Place Text Small - 1:6001 to 1:10001</Name>
           <ogc:Filter>
@@ -1640,7 +1640,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
-        
+
              <Rule>
           <Name>Populated Place Text Small - 1:10001 to 1:15000</Name>
           <ogc:Filter>
@@ -1685,7 +1685,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </TextSymbolizer>
         </Rule>
 
- 
+
         <Rule>
           <Name>Populated Place Text Medium - 1:1000 to 1:3701</Name>
           <ogc:Filter>
@@ -1729,7 +1729,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
-        
+
         <Rule>
           <Name>Populated Place Text Medium - 1:3701 to 1:6001</Name>
           <ogc:Filter>
@@ -1773,7 +1773,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
-        
+
         <Rule>
           <Name>Populated Place Text Medium - 1:6001 to 1:10001</Name>
           <ogc:Filter>
@@ -1863,8 +1863,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
         </Rule>
 
 
- 
-        
+
+
         <Rule>
           <Name>Populated Place Text Large - 1:3701 to 1:6001</Name>
           <ogc:Filter>
@@ -1908,7 +1908,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
-        
+
         <Rule>
           <Name>Populated Place Text Large - 1:6001 to 1:10001</Name>
           <ogc:Filter>
@@ -1952,7 +1952,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
-        
+
         <Rule>
           <Name>Populated Place Text Large - 1:10001 to 1:15000</Name>
           <ogc:Filter>
@@ -1996,9 +1996,9 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
-        
 
-<!-- Woodland Or Forest Text -->       
+
+<!-- Woodland Or Forest Text -->
 
         <Rule>
           <Name>Woodland Or Forest Text Small - 1:1000 to 1:3701</Name>
@@ -2085,7 +2085,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
-        
+
         <Rule>
           <Name>Woodland Or Forest Text Small - 1:6001 to 1:10001</Name>
           <ogc:Filter>
@@ -2128,7 +2128,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
-        
+
         <Rule>
           <Name>Woodland Or Forest Text Small - 1:10001 to 1:15000</Name>
           <ogc:Filter>
@@ -2171,7 +2171,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
- 
+
         <Rule>
           <Name>Woodland Or Forest Text Medium - 1:1000 to 1:3701</Name>
           <ogc:Filter>
@@ -2214,7 +2214,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
-        
+
         <Rule>
           <Name>Woodland Or Forest Text Medium - 1:3701 to 1:6001</Name>
           <ogc:Filter>
@@ -2300,7 +2300,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
-        
+
         <Rule>
           <Name>Woodland Or Forest Text Medium - 1:10001 to 1:15000</Name>
           <ogc:Filter>
@@ -2386,7 +2386,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
-        
+
         <Rule>
           <Name>Woodland Or Forest Text Large - 1:6001 to 1:10001</Name>
           <ogc:Filter>
@@ -2429,8 +2429,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
-        
-        
+
+
         <Rule>
           <Name>Woodland Or Forest Text Large - 1:10001 to 1:15000</Name>
           <ogc:Filter>
