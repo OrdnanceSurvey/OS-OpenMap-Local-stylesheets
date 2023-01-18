@@ -16,7 +16,7 @@ These are **QML** files for OS OpenMap - Local in **GML/GZ** format for use in *
 
 *Your machine may require a restart for QGIS to recognise the new font and SVGs*
 
-**4.**  Load your OS Open Map Local ESRI Shapefile data into QGIS
+**4.**  Load your OS Open Map Local GML data into QGIS
 
 **5.**  Roads consist of 2 layers. The roads and road names. This means you will need to duplicate your roads layer. This can be done by right clicking on the Road layer within your layer window and selecting Duplicate. Rename the new layer and your original Road layer to Roads and RoadNames. This can be done by right clicking on the layer and selecting Rename.
 
