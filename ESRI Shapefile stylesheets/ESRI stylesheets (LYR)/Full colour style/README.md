@@ -24,7 +24,7 @@ These are **LYR** files for OS OpenMap - Local in **ESRI Shapefile** format for 
 
 **8.**  Your Table of Contents should now look like this. This is the recommended layer order: 
 
-  ![Screenshot](https://raw.githubusercontent.com/OrdnanceSurvey/OS-OpenMap-Local-stylesheets/master/ESRI%20Shapefile%20stylesheets/ESRI%20stylesheets%20%28LYR%29/Full%20colour%20style/images/OML_FC_layer_order.png "Recommended layer order for OS Open Map Local")
+  ![Screenshot](https://github.com/OrdnanceSurvey/OS-OpenMap-Local-stylesheets/blob/a8a705e3058a578428cad3f139434df622ff25ff/ESRI%20Shapefile%20stylesheets/ESRI%20stylesheets%20(LYR)/Full%20colour%20style/images/OML_FC_layer_order.png "Recommended layer order for OS Open Map Local")
 
 **9.**  Double-click on a layer to access the ‘Layer Properties’ window > select the ‘Source tab’ > click on ‘Set Data Source…’ > navigate to your OS Open Map Local data > select the data that matches the layer for example, Text = Building.shp > select ‘Add’
 
