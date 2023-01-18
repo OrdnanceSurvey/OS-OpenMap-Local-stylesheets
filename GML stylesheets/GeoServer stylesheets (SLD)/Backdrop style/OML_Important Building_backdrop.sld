@@ -3,13 +3,13 @@
 xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.0.0/StyledLayerDescriptor.xsd">
   <NamedLayer>
-    <Name>OS Open Map - Local&#174; Important Buildings (Full colour style)</Name>
+    <Name>OS Open Map - Local&#174; Important Buildings (Backdrop style)</Name>
     <UserStyle>
-      <Title>Product SLD - November 2016</Title>
-      <Abstract>OS Open Map - Local&#174; Local. Ordnance Survey. &#169; Crown copyright and database rights 2016.</Abstract>
-      
+      <Title>Product SLD - October 2022</Title>
+      <Abstract>OS Open Map - Local&#174; Local. Ordnance Survey. &#169; Crown copyright and database rights 2022.</Abstract>
+
         <!--  Important Building  -->
-        
+
         <FeatureTypeStyle>
           <Rule>
           <Name>Important Building</Name>
@@ -59,7 +59,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
               <ogc:PropertyName>featurecode</ogc:PropertyName>
               <ogc:Literal>15028</ogc:Literal>
             </ogc:PropertyIsEqualTo>
-             </ogc:Or> 
+             </ogc:Or>
           </ogc:Filter>
           <MinScaleDenominator>1000</MinScaleDenominator>
           <MaxScaleDenominator>15000</MaxScaleDenominator>
@@ -71,14 +71,14 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
               <CssParameter name="stroke">#8F887F</CssParameter>
               <CssParameter name="stroke-width">1</CssParameter>
             </Stroke>
-          </PolygonSymbolizer>             
+          </PolygonSymbolizer>
         </Rule>
       </FeatureTypeStyle>
 
 <!-- Labels not covered by Functional Sites, we prefer sites to avoid repetition -->
 
 <!-- Police Station Label -->
-      
+
       <FeatureTypeStyle>
         <Rule>
           <Name>Police Station</Name>
@@ -91,12 +91,6 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           <MinScaleDenominator>1000</MinScaleDenominator>
           <MaxScaleDenominator>15000</MaxScaleDenominator>
           <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <Geometry>
-              <ogc:Function name="buffer">
-                <ogc:PropertyName>the_geom</ogc:PropertyName>
-                <ogc:Literal>100</ogc:Literal>
-              </ogc:Function>
-            </Geometry>
             <Label>
               <ogc:PropertyName>classification</ogc:PropertyName>
               <ogc:Literal></ogc:Literal>
@@ -136,7 +130,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
       </FeatureTypeStyle>
 
 <!-- Fire Station Label -->
-      
+
       <FeatureTypeStyle>
         <Rule>
           <Name>Fire Station</Name>
@@ -149,12 +143,6 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           <MinScaleDenominator>1000</MinScaleDenominator>
           <MaxScaleDenominator>15000</MaxScaleDenominator>
           <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <Geometry>
-              <ogc:Function name="buffer">
-                <ogc:PropertyName>the_geom</ogc:PropertyName>
-                <ogc:Literal>100</ogc:Literal>
-              </ogc:Function>
-            </Geometry>
             <Label>
               <ogc:PropertyName>classification</ogc:PropertyName>
               <ogc:Literal></ogc:Literal>
@@ -191,10 +179,10 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
-      </FeatureTypeStyle> 
+      </FeatureTypeStyle>
 
 <!-- Museum Label -->
-      
+
       <FeatureTypeStyle>
         <Rule>
           <Name>Museum</Name>
@@ -207,12 +195,6 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           <MinScaleDenominator>1000</MinScaleDenominator>
           <MaxScaleDenominator>15000</MaxScaleDenominator>
           <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <Geometry>
-              <ogc:Function name="buffer">
-                <ogc:PropertyName>the_geom</ogc:PropertyName>
-                <ogc:Literal>100</ogc:Literal>
-              </ogc:Function>
-            </Geometry>
             <Label>
               <ogc:PropertyName>classification</ogc:PropertyName>
               <ogc:Literal></ogc:Literal>
@@ -249,10 +231,10 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="autoWrap">200</VendorOption>
           </TextSymbolizer>
         </Rule>
-      </FeatureTypeStyle> 
+      </FeatureTypeStyle>
 
 <!-- Art Gallery Label -->
-      
+
       <FeatureTypeStyle>
            <Rule>
           <Name>Art Gallery</Name>
@@ -265,12 +247,6 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           <MinScaleDenominator>1000</MinScaleDenominator>
           <MaxScaleDenominator>15000</MaxScaleDenominator>
           <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <Geometry>
-              <ogc:Function name="buffer">
-                <ogc:PropertyName>the_geom</ogc:PropertyName>
-                <ogc:Literal>100</ogc:Literal>
-              </ogc:Function>
-            </Geometry>
             <Label>
               <ogc:PropertyName>classification</ogc:PropertyName>
               <ogc:Literal></ogc:Literal>
@@ -310,7 +286,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
       </FeatureTypeStyle>
 
 <!-- Library Label -->
-      
+
       <FeatureTypeStyle>
         <Rule>
           <Name>Library</Name>
@@ -323,12 +299,6 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           <MinScaleDenominator>1000</MinScaleDenominator>
           <MaxScaleDenominator>15000</MaxScaleDenominator>
           <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <Geometry>
-              <ogc:Function name="buffer">
-                <ogc:PropertyName>the_geom</ogc:PropertyName>
-                <ogc:Literal>100</ogc:Literal>
-              </ogc:Function>
-            </Geometry>
             <Label>
               <ogc:PropertyName>classification</ogc:PropertyName>
               <ogc:Literal></ogc:Literal>
@@ -368,7 +338,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
       </FeatureTypeStyle>
 
 <!-- Place of Worship Label -->
-      
+
       <FeatureTypeStyle>
         <Rule>
           <Name>Place of Worship</Name>
@@ -381,12 +351,6 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           <MinScaleDenominator>1000</MinScaleDenominator>
           <MaxScaleDenominator>15000</MaxScaleDenominator>
           <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <Geometry>
-              <ogc:Function name="buffer">
-                <ogc:PropertyName>the_geom</ogc:PropertyName>
-                <ogc:Literal>100</ogc:Literal>
-              </ogc:Function>
-            </Geometry>
             <Label>
               <ogc:Literal>PW</ogc:Literal>
             </Label>
@@ -425,7 +389,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
       </FeatureTypeStyle>
 
 <!-- Post Office Label -->
-      
+
       <FeatureTypeStyle>
         <Rule>
           <Name>Police Station</Name>
@@ -438,12 +402,6 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           <MinScaleDenominator>1000</MinScaleDenominator>
           <MaxScaleDenominator>15000</MaxScaleDenominator>
           <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <Geometry>
-              <ogc:Function name="buffer">
-                <ogc:PropertyName>the_geom</ogc:PropertyName>
-                <ogc:Literal>100</ogc:Literal>
-              </ogc:Function>
-            </Geometry>
             <Label>
               <ogc:Literal>PO</ogc:Literal>
             </Label>
@@ -482,27 +440,21 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
       </FeatureTypeStyle>
 
 <!-- Sports and Leisure Centre Label -->
-      
+
       <FeatureTypeStyle>
         <Rule>
           <Name>Sports and Leisure Centre</Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>classification</ogc:PropertyName>
-              <ogc:Literal>Sports + Leisure Centre</ogc:Literal>
+              <ogc:Literal>Sports And Leisure Centre</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <MinScaleDenominator>1000</MinScaleDenominator>
           <MaxScaleDenominator>15000</MaxScaleDenominator>
           <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <Geometry>
-              <ogc:Function name="buffer">
-                <ogc:PropertyName>the_geom</ogc:PropertyName>
-                <ogc:Literal>50</ogc:Literal>
-              </ogc:Function>
-            </Geometry>
             <Label>
-              <ogc:Literal>Sports or Leisure Centre</ogc:Literal>
+              <ogc:Literal>Sports/Leisure Centre</ogc:Literal>
             </Label>
             <Font>
               <CssParameter name="font-family">Arial</CssParameter>
@@ -539,7 +491,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
       </FeatureTypeStyle>
 
 <!-- Tourist Information Label -->
-      
+
       <FeatureTypeStyle>
         <Rule>
           <Name>Tourist Information</Name>
@@ -552,12 +504,6 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           <MinScaleDenominator>1000</MinScaleDenominator>
           <MaxScaleDenominator>15000</MaxScaleDenominator>
           <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <Geometry>
-              <ogc:Function name="buffer">
-                <ogc:PropertyName>the_geom</ogc:PropertyName>
-                <ogc:Literal>100</ogc:Literal>
-              </ogc:Function>
-            </Geometry>
             <Label>
               <ogc:Literal>Tourist Info</ogc:Literal>
             </Label>
