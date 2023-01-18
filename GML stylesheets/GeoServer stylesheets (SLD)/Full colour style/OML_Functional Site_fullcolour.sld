@@ -5,11 +5,11 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
 <NamedLayer>
     <Name>OS Open Map - Local&#174; Functional Site (Full colour style)</Name>
     <UserStyle>
-      <Title>Product SLD - November 2016</Title>
-      <Abstract>OS Open Map - Local&#174; Local. Ordnance Survey. &#169; Crown copyright and database rights 2016.</Abstract>
-      
+      <Title>Product SLD - October 2022</Title>
+      <Abstract>OS Open Map - Local&#174; Local. Ordnance Survey. &#169; Crown copyright and database rights 2022.</Abstract>
+
    <!--  Air Transport  -->
-      
+
       <FeatureTypeStyle>
         <Rule>
           <Name>Airport</Name>
@@ -20,25 +20,19 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <MinScaleDenominator>1000</MinScaleDenominator>
-          <MaxScaleDenominator>15000</MaxScaleDenominator>       
+          <MaxScaleDenominator>15000</MaxScaleDenominator>
           <PolygonSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Fill>
               <CssParameter name="fill">#FFFF7F</CssParameter>
- 	            <CssParameter name="fill-opacity">0.25</CssParameter>
+ 	            <CssParameter name="fill-opacity">0.20</CssParameter>
             </Fill>
 		        <Stroke>
               <CssParameter name="stroke">#848000</CssParameter>
               <CssParameter name="stroke-width">2</CssParameter>
-              <CssParameter name="stroke-opacity">0.25</CssParameter>
+              <CssParameter name="stroke-opacity">0.30</CssParameter>
             </Stroke>
           </PolygonSymbolizer>
           <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <Geometry>
-              <ogc:Function name="buffer">
-                <ogc:PropertyName>the_geom</ogc:PropertyName>
-                <ogc:Literal>200</ogc:Literal>
-              </ogc:Function>
-            </Geometry>
             <Label>
               <ogc:PropertyName>distinctivename</ogc:PropertyName>
               <ogc:Literal></ogc:Literal>
@@ -78,39 +72,59 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
         </Rule>
       </FeatureTypeStyle>
 
-   <!--  Education  -->
-      
+   <!--  Education Fill -->
+
       <FeatureTypeStyle>
         <Rule>
           <Name>Education Facility</Name>
           <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>featurecode</ogc:PropertyName>
-              <ogc:Literal>15810</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featurecode</ogc:PropertyName>
+                  <ogc:Literal>15810</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <MinScaleDenominator>1000</MinScaleDenominator>
-          <MaxScaleDenominator>15000</MaxScaleDenominator>       
+          <MaxScaleDenominator>15000</MaxScaleDenominator>
           <PolygonSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Fill>
               <CssParameter name="fill">#DB7FFF</CssParameter>
-              <CssParameter name="fill-opacity">0.25</CssParameter>
+              <CssParameter name="fill-opacity">0.20</CssParameter>
             </Fill>
             <Stroke>
               <CssParameter name="stroke">#7900B2</CssParameter>
               <CssParameter name="stroke-width">2</CssParameter>
-            <CssParameter name="stroke-opacity">0.25</CssParameter>
+            <CssParameter name="stroke-opacity">0.30</CssParameter>
             </Stroke>
-          </PolygonSymbolizer> 
+          </PolygonSymbolizer>
+        </Rule>
+      </FeatureTypeStyle>
+
+<!--  Education Labels -->
+
+      <FeatureTypeStyle>
+        <Rule>
+          <Name>Education Facility</Name>
+          <ogc:Filter>
+              <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featurecode</ogc:PropertyName>
+                  <ogc:Literal>15810</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsLike wildCard="*" singleChar="." escapeChar="!">
+                  <ogc:PropertyName>distinctivename</ogc:PropertyName>
+                  <ogc:Literal>*School*</ogc:Literal>
+              </ogc:PropertyIsLike>
+              <ogc:PropertyIsNotEqualTo>
+                  <ogc:PropertyName>classification</ogc:PropertyName>
+                  <ogc:Literal>Higher or University Education</ogc:Literal>
+              </ogc:PropertyIsNotEqualTo>
+              </ogc:And>
+          </ogc:Filter>
+          <MinScaleDenominator>1000</MinScaleDenominator>
+          <MaxScaleDenominator>15000</MaxScaleDenominator>
           <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <Geometry>
-              <ogc:Function name="buffer">
-                <ogc:PropertyName>the_geom</ogc:PropertyName>
-                <ogc:Literal>200</ogc:Literal>
-              </ogc:Function>
-            </Geometry>
             <Label>
-              <ogc:Literal>Education Facility</ogc:Literal>
+              <ogc:Literal>School</ogc:Literal>
             </Label>
             <Font>
               <CssParameter name="font-family">Arial</CssParameter>
@@ -146,8 +160,183 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
         </Rule>
       </FeatureTypeStyle>
 
-   <!--  Medical  -->
-      
+      <FeatureTypeStyle>
+        <Rule>
+          <Name>Education Facility</Name>
+          <ogc:Filter>
+              <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featurecode</ogc:PropertyName>
+                  <ogc:Literal>15810</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsLike wildCard="*" singleChar="." escapeChar="!">
+                  <ogc:PropertyName>distinctivename</ogc:PropertyName>
+                  <ogc:Literal>*College*</ogc:Literal>
+              </ogc:PropertyIsLike>
+              <ogc:PropertyIsNotEqualTo>
+                  <ogc:PropertyName>classification</ogc:PropertyName>
+                  <ogc:Literal>Higher or University Education</ogc:Literal>
+              </ogc:PropertyIsNotEqualTo>
+            </ogc:And>
+          </ogc:Filter>
+          <MinScaleDenominator>1000</MinScaleDenominator>
+          <MaxScaleDenominator>15000</MaxScaleDenominator>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <Label>
+              <ogc:Literal>College</ogc:Literal>
+            </Label>
+            <Font>
+              <CssParameter name="font-family">Arial</CssParameter>
+              <CssParameter name="font-size">24</CssParameter>
+              <CssParameter name="font-weight">bold</CssParameter>
+            </Font>
+            <LabelPlacement>
+              <PointPlacement>
+                <AnchorPoint>
+                  <AnchorPointX>0.25</AnchorPointX>
+                  <AnchorPointY>0.5</AnchorPointY>
+                </AnchorPoint>
+                <Displacement>
+                  <DisplacementX>10</DisplacementX>
+                  <DisplacementY>3</DisplacementY>
+                </Displacement>
+              </PointPlacement>
+            </LabelPlacement>
+            <Halo>
+              <Radius>2.5</Radius>
+              <Fill>
+                <CssParameter name="fill">#FFFFFF</CssParameter>
+                <CssParameter name="opacity">0.75</CssParameter>
+              </Fill>
+            </Halo>
+            <Fill>
+              <CssParameter name="fill">#48403C</CssParameter>
+            </Fill>
+            <Priority>1000</Priority>
+            <VendorOption name="spaceAround">5</VendorOption>
+            <VendorOption name="autoWrap">160</VendorOption>
+          </TextSymbolizer>
+        </Rule>
+      </FeatureTypeStyle>
+
+      <FeatureTypeStyle>
+        <Rule>
+          <Name>Education Facility</Name>
+          <ogc:Filter>
+              <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>featurecode</ogc:PropertyName>
+                  <ogc:Literal>15810</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsLike wildCard="*" singleChar="." escapeChar="!">
+                  <ogc:PropertyName>distinctivename</ogc:PropertyName>
+                  <ogc:Literal>*Academy*</ogc:Literal>
+                </ogc:PropertyIsLike>
+                <ogc:PropertyIsNotEqualTo>
+                    <ogc:PropertyName>classification</ogc:PropertyName>
+                    <ogc:Literal>Higher or University Education</ogc:Literal>
+                </ogc:PropertyIsNotEqualTo>
+            </ogc:And>
+          </ogc:Filter>
+          <MinScaleDenominator>1000</MinScaleDenominator>
+          <MaxScaleDenominator>15000</MaxScaleDenominator>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <Label>
+              <ogc:Literal>Academy</ogc:Literal>
+            </Label>
+            <Font>
+              <CssParameter name="font-family">Arial</CssParameter>
+              <CssParameter name="font-size">24</CssParameter>
+              <CssParameter name="font-weight">bold</CssParameter>
+            </Font>
+            <LabelPlacement>
+              <PointPlacement>
+                <AnchorPoint>
+                  <AnchorPointX>0.25</AnchorPointX>
+                  <AnchorPointY>0.5</AnchorPointY>
+                </AnchorPoint>
+                <Displacement>
+                  <DisplacementX>10</DisplacementX>
+                  <DisplacementY>3</DisplacementY>
+                </Displacement>
+              </PointPlacement>
+            </LabelPlacement>
+            <Halo>
+              <Radius>2.5</Radius>
+              <Fill>
+                <CssParameter name="fill">#FFFFFF</CssParameter>
+                <CssParameter name="opacity">0.75</CssParameter>
+              </Fill>
+            </Halo>
+            <Fill>
+              <CssParameter name="fill">#48403C</CssParameter>
+            </Fill>
+            <Priority>1000</Priority>
+            <VendorOption name="spaceAround">5</VendorOption>
+            <VendorOption name="autoWrap">160</VendorOption>
+          </TextSymbolizer>
+        </Rule>
+      </FeatureTypeStyle>
+
+
+      <FeatureTypeStyle>
+        <Rule>
+          <Name>Education Facility</Name>
+          <ogc:Filter>
+                  <ogc:And>
+                    <ogc:PropertyIsEqualTo>
+                      <ogc:PropertyName>featurecode</ogc:PropertyName>
+                      <ogc:Literal>15810</ogc:Literal>
+                    </ogc:PropertyIsEqualTo>
+                    <ogc:PropertyIsEqualTo>
+                      <ogc:PropertyName>classification</ogc:PropertyName>
+                      <ogc:Literal>Higher or University Education</ogc:Literal>
+                    </ogc:PropertyIsEqualTo>
+                  </ogc:And>
+          </ogc:Filter>
+          <MinScaleDenominator>1000</MinScaleDenominator>
+          <MaxScaleDenominator>15000</MaxScaleDenominator>
+          <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <Label>
+              <ogc:Literal>University</ogc:Literal>
+            </Label>
+            <Font>
+              <CssParameter name="font-family">Arial</CssParameter>
+              <CssParameter name="font-size">24</CssParameter>
+              <CssParameter name="font-weight">bold</CssParameter>
+            </Font>
+            <LabelPlacement>
+              <PointPlacement>
+                <AnchorPoint>
+                  <AnchorPointX>0.25</AnchorPointX>
+                  <AnchorPointY>0.5</AnchorPointY>
+                </AnchorPoint>
+                <Displacement>
+                  <DisplacementX>10</DisplacementX>
+                  <DisplacementY>3</DisplacementY>
+                </Displacement>
+              </PointPlacement>
+            </LabelPlacement>
+            <Halo>
+              <Radius>2.5</Radius>
+              <Fill>
+                <CssParameter name="fill">#FFFFFF</CssParameter>
+                <CssParameter name="opacity">0.75</CssParameter>
+              </Fill>
+            </Halo>
+            <Fill>
+              <CssParameter name="fill">#48403C</CssParameter>
+            </Fill>
+            <Priority>1000</Priority>
+            <VendorOption name="spaceAround">5</VendorOption>
+            <VendorOption name="autoWrap">160</VendorOption>
+          </TextSymbolizer>
+        </Rule>
+      </FeatureTypeStyle>
+
+
+   <!--  Hospice  -->
+
       <FeatureTypeStyle>
         <Rule>
           <Name>Hospice</Name>
@@ -158,25 +347,19 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <MinScaleDenominator>1000</MinScaleDenominator>
-          <MaxScaleDenominator>15000</MaxScaleDenominator>       
+          <MaxScaleDenominator>15000</MaxScaleDenominator>
           <PolygonSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Fill>
               <CssParameter name="fill">#7FFF88</CssParameter>
-              <CssParameter name="fill-opacity">0.25</CssParameter>
+              <CssParameter name="fill-opacity">0.20</CssParameter>
             </Fill>
             <Stroke>
               <CssParameter name="stroke">#007F06</CssParameter>
               <CssParameter name="stroke-width">2</CssParameter>
-            <CssParameter name="stroke-opacity">0.25</CssParameter>
+            <CssParameter name="stroke-opacity">0.30</CssParameter>
             </Stroke>
-          </PolygonSymbolizer>  
+          </PolygonSymbolizer>
           <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <Geometry>
-              <ogc:Function name="buffer">
-                <ogc:PropertyName>the_geom</ogc:PropertyName>
-                <ogc:Literal>200</ogc:Literal>
-              </ogc:Function>
-            </Geometry>
             <Label>
               <ogc:PropertyName>classification</ogc:PropertyName>
               <ogc:Literal></ogc:Literal>
@@ -214,6 +397,9 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="group">yes</VendorOption>
           </TextSymbolizer>
         </Rule>
+
+   <!--  Hospital  -->
+
         <Rule>
           <Name>Hospital</Name>
           <ogc:Filter>
@@ -223,25 +409,19 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <MinScaleDenominator>1000</MinScaleDenominator>
-          <MaxScaleDenominator>15000</MaxScaleDenominator>       
+          <MaxScaleDenominator>15000</MaxScaleDenominator>
           <PolygonSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Fill>
               <CssParameter name="fill">#7FFF88</CssParameter>
-              <CssParameter name="fill-opacity">0.25</CssParameter>
+              <CssParameter name="fill-opacity">0.20</CssParameter>
             </Fill>
             <Stroke>
               <CssParameter name="stroke">#007F06</CssParameter>
               <CssParameter name="stroke-width">2</CssParameter>
-            <CssParameter name="stroke-opacity">0.25</CssParameter>
+            <CssParameter name="stroke-opacity">0.30</CssParameter>
             </Stroke>
-          </PolygonSymbolizer>  
+          </PolygonSymbolizer>
           <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <Geometry>
-              <ogc:Function name="buffer">
-                <ogc:PropertyName>the_geom</ogc:PropertyName>
-                <ogc:Literal>200</ogc:Literal>
-              </ogc:Function>
-            </Geometry>
             <Label>
               <ogc:PropertyName>classification</ogc:PropertyName>
               <ogc:Literal></ogc:Literal>
@@ -279,6 +459,9 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="group">yes</VendorOption>
           </TextSymbolizer>
         </Rule>
+
+   <!--  Medical Care Accommodation  -->
+
         <Rule>
           <Name>Medical Care Accommodation</Name>
           <ogc:Filter>
@@ -288,25 +471,19 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <MinScaleDenominator>1000</MinScaleDenominator>
-          <MaxScaleDenominator>15000</MaxScaleDenominator>       
+          <MaxScaleDenominator>15000</MaxScaleDenominator>
           <PolygonSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Fill>
               <CssParameter name="fill">#7FFF88</CssParameter>
-              <CssParameter name="fill-opacity">0.25</CssParameter>
+              <CssParameter name="fill-opacity">0.20</CssParameter>
             </Fill>
             <Stroke>
               <CssParameter name="stroke">#007F06</CssParameter>
               <CssParameter name="stroke-width">2</CssParameter>
-            <CssParameter name="stroke-opacity">0.25</CssParameter>
+            <CssParameter name="stroke-opacity">0.30</CssParameter>
             </Stroke>
-          </PolygonSymbolizer>  
+          </PolygonSymbolizer>
           <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <Geometry>
-              <ogc:Function name="buffer">
-                <ogc:PropertyName>the_geom</ogc:PropertyName>
-                <ogc:Literal>200</ogc:Literal>
-              </ogc:Function>
-            </Geometry>
             <Label>
               <ogc:Literal>Medical Care</ogc:Literal>
             </Label>
@@ -345,8 +522,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
         </Rule>
       </FeatureTypeStyle>
 
-   <!--  Road Transport  -->
-      
+   <!--  Bus Station  -->
+
       <FeatureTypeStyle>
         <Rule>
           <Name>Bus Station</Name>
@@ -357,25 +534,19 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <MinScaleDenominator>1000</MinScaleDenominator>
-          <MaxScaleDenominator>15000</MaxScaleDenominator>       
+          <MaxScaleDenominator>15000</MaxScaleDenominator>
           <PolygonSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Fill>
-              <CssParameter name="fill">#7FFFEE</CssParameter>
-              <CssParameter name="fill-opacity">0.25</CssParameter>
+              <CssParameter name="fill">#ff8a7f</CssParameter>
+              <CssParameter name="fill-opacity">0.20</CssParameter>
             </Fill>
             <Stroke>
-              <CssParameter name="stroke">#007A65</CssParameter>
+              <CssParameter name="stroke">#96241e</CssParameter>
               <CssParameter name="stroke-width">2</CssParameter>
-            <CssParameter name="stroke-opacity">0.25</CssParameter>
+            <CssParameter name="stroke-opacity">0.30</CssParameter>
             </Stroke>
           </PolygonSymbolizer>
           <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <Geometry>
-              <ogc:Function name="buffer">
-                <ogc:PropertyName>the_geom</ogc:PropertyName>
-                <ogc:Literal>200</ogc:Literal>
-              </ogc:Function>
-            </Geometry>
             <Label>
               <ogc:PropertyName>classification</ogc:PropertyName>
               <ogc:Literal></ogc:Literal>
@@ -413,6 +584,9 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="group">yes</VendorOption>
           </TextSymbolizer>
         </Rule>
+
+     <!--  Coach Station  -->
+
         <Rule>
           <Name>Coach Station</Name>
           <ogc:Filter>
@@ -422,25 +596,19 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <MinScaleDenominator>1000</MinScaleDenominator>
-          <MaxScaleDenominator>15000</MaxScaleDenominator>       
+          <MaxScaleDenominator>15000</MaxScaleDenominator>
           <PolygonSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Fill>
-              <CssParameter name="fill">#7FFFEE</CssParameter>
-              <CssParameter name="fill-opacity">0.25</CssParameter>
+              <CssParameter name="fill">#ff8a7f</CssParameter>
+              <CssParameter name="fill-opacity">0.20</CssParameter>
             </Fill>
             <Stroke>
-              <CssParameter name="stroke">#007A65</CssParameter>
+              <CssParameter name="stroke">#96241e</CssParameter>
               <CssParameter name="stroke-width">2</CssParameter>
-            <CssParameter name="stroke-opacity">0.25</CssParameter>
+            <CssParameter name="stroke-opacity">0.30</CssParameter>
             </Stroke>
           </PolygonSymbolizer>
           <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <Geometry>
-              <ogc:Function name="buffer">
-                <ogc:PropertyName>the_geom</ogc:PropertyName>
-                <ogc:Literal>200</ogc:Literal>
-              </ogc:Function>
-            </Geometry>
             <Label>
               <ogc:PropertyName>classification</ogc:PropertyName>
               <ogc:Literal></ogc:Literal>
@@ -478,6 +646,9 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="group">yes</VendorOption>
           </TextSymbolizer>
         </Rule>
+
+     <!--  Bus and Coach Station  -->
+
         <Rule>
           <Name>Bus and Coach Station</Name>
           <ogc:Filter>
@@ -487,25 +658,19 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <MinScaleDenominator>1000</MinScaleDenominator>
-          <MaxScaleDenominator>15000</MaxScaleDenominator>       
+          <MaxScaleDenominator>15000</MaxScaleDenominator>
           <PolygonSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Fill>
-              <CssParameter name="fill">#7FFFEE</CssParameter>
-              <CssParameter name="fill-opacity">0.25</CssParameter>
+              <CssParameter name="fill">#ff8a7f</CssParameter>
+              <CssParameter name="fill-opacity">0.20</CssParameter>
             </Fill>
             <Stroke>
-              <CssParameter name="stroke">#007A65</CssParameter>
+              <CssParameter name="stroke">#96241e</CssParameter>
               <CssParameter name="stroke-width">2</CssParameter>
-            <CssParameter name="stroke-opacity">0.25</CssParameter>
+            <CssParameter name="stroke-opacity">0.30</CssParameter>
             </Stroke>
           </PolygonSymbolizer>
           <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <Geometry>
-              <ogc:Function name="buffer">
-                <ogc:PropertyName>the_geom</ogc:PropertyName>
-                <ogc:Literal>200</ogc:Literal>
-              </ogc:Function>
-            </Geometry>
             <Label>
               <ogc:Literal>Bus &amp; Coach Station</ogc:Literal>
             </Label>
@@ -542,6 +707,9 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="group">yes</VendorOption>
           </TextSymbolizer>
         </Rule>
+
+   <!--  Services  -->
+
         <Rule>
           <Name>Services</Name>
           <ogc:Filter>
@@ -551,25 +719,19 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <MinScaleDenominator>1000</MinScaleDenominator>
-          <MaxScaleDenominator>15000</MaxScaleDenominator>       
+          <MaxScaleDenominator>15000</MaxScaleDenominator>
           <PolygonSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Fill>
-              <CssParameter name="fill">#7FFFEE</CssParameter>
-              <CssParameter name="fill-opacity">0.25</CssParameter>
+              <CssParameter name="fill">#ff8a7f</CssParameter>
+              <CssParameter name="fill-opacity">0.20</CssParameter>
             </Fill>
             <Stroke>
-              <CssParameter name="stroke">#007A65</CssParameter>
+              <CssParameter name="stroke">#96241e</CssParameter>
               <CssParameter name="stroke-width">2</CssParameter>
-            <CssParameter name="stroke-opacity">0.25</CssParameter>
+            <CssParameter name="stroke-opacity">0.30</CssParameter>
             </Stroke>
           </PolygonSymbolizer>
           <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <Geometry>
-              <ogc:Function name="buffer">
-                <ogc:PropertyName>the_geom</ogc:PropertyName>
-                <ogc:Literal>200</ogc:Literal>
-              </ogc:Function>
-            </Geometry>
             <Label>
               <ogc:Literal>Services</ogc:Literal>
             </Label>
@@ -610,8 +772,11 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
 
 
    <!--  Water Transport  -->
-      
+
       <FeatureTypeStyle>
+
+        <!--
+
         <Rule>
           <Name>Passenger Ferry</Name>
           <ogc:Filter>
@@ -621,27 +786,21 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <MinScaleDenominator>1000</MinScaleDenominator>
-          <MaxScaleDenominator>15000</MaxScaleDenominator>       
+          <MaxScaleDenominator>15000</MaxScaleDenominator>
           <PolygonSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Fill>
               <CssParameter name="fill">#FF8A7F</CssParameter>
-              <CssParameter name="fill-opacity">0.25</CssParameter>
+              <CssParameter name="fill-opacity">0.20</CssParameter>
             </Fill>
             <Stroke>
               <CssParameter name="stroke">#96241E</CssParameter>
               <CssParameter name="stroke-width">2</CssParameter>
-            <CssParameter name="stroke-opacity">0.25</CssParameter>
+            <CssParameter name="stroke-opacity">0.30</CssParameter>
             </Stroke>
-          </PolygonSymbolizer> 
+          </PolygonSymbolizer>
           <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <Geometry>
-              <ogc:Function name="buffer">
-                <ogc:PropertyName>the_geom</ogc:PropertyName>
-                <ogc:Literal>200</ogc:Literal>
-              </ogc:Function>
-            </Geometry>
             <Label>
-              <ogc:Literal>Ferry (P)</ogc:Literal>
+              <ogc:Literal></ogc:Literal>
             </Label>
             <Font>
               <CssParameter name="font-family">Arial</CssParameter>
@@ -676,6 +835,10 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="group">yes</VendorOption>
           </TextSymbolizer>
         </Rule>
+
+      -->
+
+
         <Rule>
           <Name>Vehicle Ferry</Name>
           <ogc:Filter>
@@ -685,25 +848,19 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <MinScaleDenominator>1000</MinScaleDenominator>
-          <MaxScaleDenominator>15000</MaxScaleDenominator>       
+          <MaxScaleDenominator>15000</MaxScaleDenominator>
           <PolygonSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Fill>
               <CssParameter name="fill">#FF8A7F</CssParameter>
-              <CssParameter name="fill-opacity">0.25</CssParameter>
+              <CssParameter name="fill-opacity">0.20</CssParameter>
             </Fill>
             <Stroke>
               <CssParameter name="stroke">#96241E</CssParameter>
               <CssParameter name="stroke-width">2</CssParameter>
-            <CssParameter name="stroke-opacity">0.25</CssParameter>
+            <CssParameter name="stroke-opacity">0.30</CssParameter>
             </Stroke>
-          </PolygonSymbolizer> 
+          </PolygonSymbolizer>
           <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <Geometry>
-              <ogc:Function name="buffer">
-                <ogc:PropertyName>the_geom</ogc:PropertyName>
-                <ogc:Literal>200</ogc:Literal>
-              </ogc:Function>
-            </Geometry>
             <Label>
               <ogc:Literal>Ferry (V)</ogc:Literal>
             </Label>
@@ -740,6 +897,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="group">yes</VendorOption>
           </TextSymbolizer>
         </Rule>
+
+
         <Rule>
           <Name>Passenger and Vehicle Ferry</Name>
           <ogc:Filter>
@@ -749,25 +908,19 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <MinScaleDenominator>1000</MinScaleDenominator>
-          <MaxScaleDenominator>15000</MaxScaleDenominator>       
+          <MaxScaleDenominator>15000</MaxScaleDenominator>
           <PolygonSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Fill>
               <CssParameter name="fill">#FF8A7F</CssParameter>
-              <CssParameter name="fill-opacity">0.25</CssParameter>
+              <CssParameter name="fill-opacity">0.20</CssParameter>
             </Fill>
             <Stroke>
               <CssParameter name="stroke">#96241E</CssParameter>
               <CssParameter name="stroke-width">2</CssParameter>
-            <CssParameter name="stroke-opacity">0.25</CssParameter>
+            <CssParameter name="stroke-opacity">0.30</CssParameter>
             </Stroke>
-          </PolygonSymbolizer> 
+          </PolygonSymbolizer>
           <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <Geometry>
-              <ogc:Function name="buffer">
-                <ogc:PropertyName>the_geom</ogc:PropertyName>
-                <ogc:Literal>200</ogc:Literal>
-              </ogc:Function>
-            </Geometry>
             <Label>
               <ogc:Literal>Ferry (P,V)</ogc:Literal>
             </Label>
@@ -804,6 +957,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="group">yes</VendorOption>
           </TextSymbolizer>
         </Rule>
+
+
         <Rule>
           <Name>Port</Name>
           <ogc:Filter>
@@ -813,25 +968,19 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <MinScaleDenominator>1000</MinScaleDenominator>
-          <MaxScaleDenominator>15000</MaxScaleDenominator>       
+          <MaxScaleDenominator>15000</MaxScaleDenominator>
           <PolygonSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Fill>
               <CssParameter name="fill">#FF8A7F</CssParameter>
-              <CssParameter name="fill-opacity">0.25</CssParameter>
+              <CssParameter name="fill-opacity">0.20</CssParameter>
             </Fill>
             <Stroke>
               <CssParameter name="stroke">#96241E</CssParameter>
               <CssParameter name="stroke-width">2</CssParameter>
-            <CssParameter name="stroke-opacity">0.25</CssParameter>
+            <CssParameter name="stroke-opacity">0.30</CssParameter>
             </Stroke>
-          </PolygonSymbolizer> 
+          </PolygonSymbolizer>
           <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <Geometry>
-              <ogc:Function name="buffer">
-                <ogc:PropertyName>the_geom</ogc:PropertyName>
-                <ogc:Literal>200</ogc:Literal>
-              </ogc:Function>
-            </Geometry>
             <Label>
               <ogc:Literal>Port</ogc:Literal>
             </Label>
