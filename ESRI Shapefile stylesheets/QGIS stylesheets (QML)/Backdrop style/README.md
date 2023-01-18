@@ -36,6 +36,10 @@ Your map should now look similar to this:
 
   ![Screenshot](https://raw.githubusercontent.com/OrdnanceSurvey/OS-OpenMap-Local-stylesheets/master/ESRI%20Shapefile%20stylesheets/QGIS%20stylesheets%20%28QML%29/Backdrop%20style/images/OML_BD_screenshot.png "Screenshot of OS OpenMap - Local")
 
+## Compatibility Notes
+
+Our QML files are created in QGIS 3.16.7 and we believe are compatible with any QGIS v3.x
+
 ## Additional information
 
 [More information about OS OpenMap - Local](http://www.ordnancesurvey.co.uk/business-and-government/products/os-open-map-local.html)
