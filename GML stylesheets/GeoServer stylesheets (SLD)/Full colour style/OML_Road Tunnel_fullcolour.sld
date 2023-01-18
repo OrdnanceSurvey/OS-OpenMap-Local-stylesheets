@@ -5,12 +5,12 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
   <NamedLayer>
     <Name>OS Open Map - Local&#174; Road Tunnel (Full colour style)</Name>
     <UserStyle>
-      <Title>Product SLD - November 2016</Title>
-      <Abstract>OS Open Map - Local&#174; Local. Ordnance Survey. &#169; Crown copyright and database rights 2016.</Abstract>
+      <Title>Product SLD - October 2022</Title>
+      <Abstract>OS Open Map - Local&#174; Local. Ordnance Survey. &#169; Crown copyright and database rights 2019.</Abstract>
 
      <!-- Road Tunnel -->
-        
-      <FeatureTypeStyle>  
+
+      <FeatureTypeStyle>
       <Rule>
           <Name>Road Tunnel</Name>
           <ogc:Filter>
@@ -27,6 +27,15 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
               <CssParameter name="stroke-width">0.075</CssParameter>
               <CssParameter name="stroke-dasharray">5 5</CssParameter>
             </Stroke>
+            <PerpendicularOffset>5</PerpendicularOffset>
+          </LineSymbolizer>
+        <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <Stroke>
+              <CssParameter name="stroke">#505050</CssParameter>
+              <CssParameter name="stroke-width">0.075</CssParameter>
+              <CssParameter name="stroke-dasharray">5 5</CssParameter>
+            </Stroke>
+          	<PerpendicularOffset>-5</PerpendicularOffset>
           </LineSymbolizer>
         </Rule>
       </FeatureTypeStyle>
