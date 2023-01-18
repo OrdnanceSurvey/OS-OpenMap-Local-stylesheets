@@ -5,11 +5,11 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
   <NamedLayer>
     <Name>OS Open Map - Local&#174; Railway Track (Backdrop style)</Name>
     <UserStyle>
-      <Title>Product SLD - October 2016</Title>
-      <Abstract>OS Open Map - Local&#174; Local. Ordnance Survey. &#169; Crown copyright and database rights 2016.</Abstract>
+      <Title>Product SLD - October 2022</Title>
+      <Abstract>OS Open Map - Local&#174; Local. Ordnance Survey. &#169; Crown copyright and database rights 2022.</Abstract>
 
       <!-- Narrow Gauge Railway -->
-        
+
       <FeatureTypeStyle>
         <Rule>
           <Name>Narrow Gauge Railway (Line)</Name>
@@ -46,10 +46,10 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </Stroke>
           </LineSymbolizer>
         </Rule>
-       
-        
+
+
       <!-- Single Track -->
-        
+
         <Rule>
           <Name>Single Track</Name>
           <ogc:Filter>
@@ -67,10 +67,10 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </Stroke>
           </LineSymbolizer>
         </Rule>
- 
-        
+
+
       <!-- Multi Track Railway -->
-        
+
         <Rule>
           <Name>Multi Track Railway</Name>
           <ogc:Filter>
