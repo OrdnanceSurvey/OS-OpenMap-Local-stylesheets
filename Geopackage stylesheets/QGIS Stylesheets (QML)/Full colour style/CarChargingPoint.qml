@@ -1,72 +1,82 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis readOnly="0" simplifyMaxScale="1" simplifyDrawingHints="0" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" minScale="1e+08" simplifyDrawingTol="1" maxScale="100000" simplifyAlgorithm="0" version="3.4.1-Madeira" styleCategories="AllStyleCategories" labelsEnabled="0">
+<qgis maxScale="2500" simplifyAlgorithm="0" simplifyDrawingHints="0" hasScaleBasedVisibilityFlag="1" minScale="20001" version="3.16.7-Hannover" styleCategories="AllStyleCategories" labelsEnabled="0" readOnly="0" simplifyDrawingTol="1" simplifyLocal="1" simplifyMaxScale="1">
   <flags>
     <Identifiable>1</Identifiable>
     <Removable>1</Removable>
     <Searchable>1</Searchable>
   </flags>
-  <renderer-v2 type="singleSymbol" forceraster="0" symbollevels="0" enableorderby="0">
-    <symbols>
-      <symbol type="marker" alpha="1" name="0" clip_to_extent="1">
-        <layer enabled="1" class="FontMarker" pass="0" locked="0">
-          <prop v="0" k="angle"/>
-          <prop v="1" k="chr"/>
-          <prop v="255,255,255,255" k="color"/>
-          <prop v="OS OpenMap Local Normal" k="font"/>
-          <prop v="1" k="horizontal_anchor_point"/>
-          <prop v="bevel" k="joinstyle"/>
-          <prop v="0,0" k="offset"/>
-          <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-          <prop v="MM" k="offset_unit"/>
-          <prop v="0,0,0,255" k="outline_color"/>
-          <prop v="0" k="outline_width"/>
-          <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
-          <prop v="MM" k="outline_width_unit"/>
-          <prop v="5" k="size"/>
-          <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
-          <prop v="MM" k="size_unit"/>
-          <prop v="1" k="vertical_anchor_point"/>
-          <data_defined_properties>
-            <Option type="Map">
-              <Option type="QString" value="" name="name"/>
-              <Option name="properties"/>
-              <Option type="QString" value="collection" name="type"/>
-            </Option>
-          </data_defined_properties>
-        </layer>
-        <layer enabled="1" class="FontMarker" pass="0" locked="0">
-          <prop v="0" k="angle"/>
-          <prop v="D" k="chr"/>
-          <prop v="73,99,199,255" k="color"/>
-          <prop v="OS OpenMap Local Normal" k="font"/>
-          <prop v="1" k="horizontal_anchor_point"/>
-          <prop v="bevel" k="joinstyle"/>
-          <prop v="0,0" k="offset"/>
-          <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-          <prop v="MM" k="offset_unit"/>
-          <prop v="0,0,0,255" k="outline_color"/>
-          <prop v="0" k="outline_width"/>
-          <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
-          <prop v="MM" k="outline_width_unit"/>
-          <prop v="5" k="size"/>
-          <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
-          <prop v="MM" k="size_unit"/>
-          <prop v="1" k="vertical_anchor_point"/>
-          <data_defined_properties>
-            <Option type="Map">
-              <Option type="QString" value="" name="name"/>
-              <Option name="properties"/>
-              <Option type="QString" value="collection" name="type"/>
-            </Option>
-          </data_defined_properties>
-        </layer>
-      </symbol>
-    </symbols>
-    <rotation/>
-    <sizescale/>
+  <temporal enabled="0" startField="" durationUnit="min" endField="" durationField="" fixedDuration="0" accumulate="0" startExpression="" mode="0" endExpression="">
+    <fixedRange>
+      <start></start>
+      <end></end>
+    </fixedRange>
+  </temporal>
+  <renderer-v2 toleranceUnit="MM" toleranceUnitScale="3x:0,0,0,0,0,0" type="pointCluster" forceraster="0" tolerance="8" enableorderby="0">
+    <renderer-v2 type="singleSymbol" forceraster="0" symbollevels="0" enableorderby="0">
+      <symbols>
+        <symbol force_rhr="0" alpha="1" clip_to_extent="1" type="marker" name="0">
+          <layer locked="0" enabled="1" class="SvgMarker" pass="0">
+            <prop v="0" k="angle"/>
+            <prop v="73,81,199,255" k="color"/>
+            <prop v="0" k="fixedAspectRatio"/>
+            <prop v="1" k="horizontal_anchor_point"/>
+            <prop v="ordnance_survey_oml/carcharge-fc.svg" k="name"/>
+            <prop v="0,0" k="offset"/>
+            <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+            <prop v="MapUnit" k="offset_unit"/>
+            <prop v="0,0,0,255" k="outline_color"/>
+            <prop v="0" k="outline_width"/>
+            <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+            <prop v="MapUnit" k="outline_width_unit"/>
+            <prop v="diameter" k="scale_method"/>
+            <prop v="30" k="size"/>
+            <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
+            <prop v="MapUnit" k="size_unit"/>
+            <prop v="1" k="vertical_anchor_point"/>
+            <data_defined_properties>
+              <Option type="Map">
+                <Option type="QString" value="" name="name"/>
+                <Option name="properties"/>
+                <Option type="QString" value="collection" name="type"/>
+              </Option>
+            </data_defined_properties>
+          </layer>
+        </symbol>
+      </symbols>
+      <rotation/>
+      <sizescale/>
+    </renderer-v2>
+    <symbol force_rhr="0" alpha="1" clip_to_extent="1" type="marker" name="centerSymbol">
+      <layer locked="0" enabled="1" class="SvgMarker" pass="0">
+        <prop v="0" k="angle"/>
+        <prop v="255,255,255,255" k="color"/>
+        <prop v="0" k="fixedAspectRatio"/>
+        <prop v="1" k="horizontal_anchor_point"/>
+        <prop v="ordnance_survey_oml/carcharge-fc.svg" k="name"/>
+        <prop v="0,-0.5" k="offset"/>
+        <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+        <prop v="MM" k="offset_unit"/>
+        <prop v="255,255,255,255" k="outline_color"/>
+        <prop v="0" k="outline_width"/>
+        <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+        <prop v="MM" k="outline_width_unit"/>
+        <prop v="diameter" k="scale_method"/>
+        <prop v="30" k="size"/>
+        <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
+        <prop v="MapUnit" k="size_unit"/>
+        <prop v="1" k="vertical_anchor_point"/>
+        <data_defined_properties>
+          <Option type="Map">
+            <Option type="QString" value="" name="name"/>
+            <Option name="properties"/>
+            <Option type="QString" value="collection" name="type"/>
+          </Option>
+        </data_defined_properties>
+      </layer>
+    </symbol>
   </renderer-v2>
   <customproperties>
-    <property value="0" key="embeddedWidgets/count"/>
+    <property key="embeddedWidgets/count" value="0"/>
     <property key="variableNames"/>
     <property key="variableValues"/>
   </customproperties>
@@ -74,11 +84,46 @@
   <featureBlendMode>0</featureBlendMode>
   <layerOpacity>1</layerOpacity>
   <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
-    <DiagramCategory penAlpha="255" barWidth="5" maxScaleDenominator="1e+08" minimumSize="0" height="15" sizeType="MM" backgroundColor="#ffffff" backgroundAlpha="255" scaleDependency="Area" opacity="1" sizeScale="3x:0,0,0,0,0,0" penWidth="0" rotationOffset="270" penColor="#000000" minScaleDenominator="100000" diagramOrientation="Up" width="15" lineSizeScale="3x:0,0,0,0,0,0" labelPlacementMethod="XHeight" scaleBasedVisibility="0" lineSizeType="MM" enabled="0">
+    <DiagramCategory backgroundColor="#ffffff" scaleDependency="Area" maxScaleDenominator="1e+08" penWidth="0" labelPlacementMethod="XHeight" lineSizeType="MM" penColor="#000000" penAlpha="255" sizeType="MM" enabled="0" spacingUnitScale="3x:0,0,0,0,0,0" showAxis="0" minScaleDenominator="100000" height="15" diagramOrientation="Up" minimumSize="0" barWidth="5" spacing="0" opacity="1" backgroundAlpha="255" spacingUnit="MM" width="15" scaleBasedVisibility="0" sizeScale="3x:0,0,0,0,0,0" rotationOffset="270" direction="1" lineSizeScale="3x:0,0,0,0,0,0">
       <fontProperties description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" style=""/>
+      <attribute color="#000000" field="" label=""/>
+      <axisSymbol>
+        <symbol force_rhr="0" alpha="1" clip_to_extent="1" type="line" name="">
+          <layer locked="0" enabled="1" class="SimpleLine" pass="0">
+            <prop v="0" k="align_dash_pattern"/>
+            <prop v="square" k="capstyle"/>
+            <prop v="5;2" k="customdash"/>
+            <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+            <prop v="MM" k="customdash_unit"/>
+            <prop v="0" k="dash_pattern_offset"/>
+            <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
+            <prop v="MM" k="dash_pattern_offset_unit"/>
+            <prop v="0" k="draw_inside_polygon"/>
+            <prop v="bevel" k="joinstyle"/>
+            <prop v="35,35,35,255" k="line_color"/>
+            <prop v="solid" k="line_style"/>
+            <prop v="0.26" k="line_width"/>
+            <prop v="MM" k="line_width_unit"/>
+            <prop v="0" k="offset"/>
+            <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+            <prop v="MM" k="offset_unit"/>
+            <prop v="0" k="ring_filter"/>
+            <prop v="0" k="tweak_dash_pattern_on_corners"/>
+            <prop v="0" k="use_custom_dash"/>
+            <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+            <data_defined_properties>
+              <Option type="Map">
+                <Option type="QString" value="" name="name"/>
+                <Option name="properties"/>
+                <Option type="QString" value="collection" name="type"/>
+              </Option>
+            </data_defined_properties>
+          </layer>
+        </symbol>
+      </axisSymbol>
     </DiagramCategory>
   </SingleCategoryDiagramRenderer>
-  <DiagramLayerSettings linePlacementFlags="18" priority="0" zIndex="0" dist="0" showAll="1" placement="0" obstacle="0">
+  <DiagramLayerSettings dist="0" priority="0" placement="0" zIndex="0" linePlacementFlags="18" showAll="1" obstacle="0">
     <properties>
       <Option type="Map">
         <Option type="QString" value="" name="name"/>
@@ -87,47 +132,49 @@
       </Option>
     </properties>
   </DiagramLayerSettings>
-  <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+  <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
     <activeChecks/>
     <checkConfiguration/>
   </geometryOptions>
+  <legend type="default-vector"/>
+  <referencedLayers/>
   <fieldConfiguration>
-    <field name="fid">
+    <field configurationFlags="None" name="fid">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="id">
+    <field configurationFlags="None" name="id">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="featureCode">
+    <field configurationFlags="None" name="featureCode">
       <editWidget type="Range">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="chargeMethod">
+    <field configurationFlags="None" name="chargeMethod">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="ratedVoltage">
+    <field configurationFlags="None" name="ratedVoltage">
       <editWidget type="Range">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="type">
+    <field configurationFlags="None" name="type">
       <editWidget type="TextEdit">
         <config>
           <Option/>
@@ -136,58 +183,57 @@
     </field>
   </fieldConfiguration>
   <aliases>
-    <alias field="fid" index="0" name=""/>
-    <alias field="id" index="1" name=""/>
-    <alias field="featureCode" index="2" name=""/>
-    <alias field="chargeMethod" index="3" name=""/>
-    <alias field="ratedVoltage" index="4" name=""/>
-    <alias field="type" index="5" name=""/>
+    <alias index="0" field="fid" name=""/>
+    <alias index="1" field="id" name=""/>
+    <alias index="2" field="featureCode" name=""/>
+    <alias index="3" field="chargeMethod" name=""/>
+    <alias index="4" field="ratedVoltage" name=""/>
+    <alias index="5" field="type" name=""/>
   </aliases>
-  <excludeAttributesWMS/>
-  <excludeAttributesWFS/>
   <defaults>
-    <default field="fid" expression="" applyOnUpdate="0"/>
-    <default field="id" expression="" applyOnUpdate="0"/>
-    <default field="featureCode" expression="" applyOnUpdate="0"/>
-    <default field="chargeMethod" expression="" applyOnUpdate="0"/>
-    <default field="ratedVoltage" expression="" applyOnUpdate="0"/>
-    <default field="type" expression="" applyOnUpdate="0"/>
+    <default applyOnUpdate="0" expression="" field="fid"/>
+    <default applyOnUpdate="0" expression="" field="id"/>
+    <default applyOnUpdate="0" expression="" field="featureCode"/>
+    <default applyOnUpdate="0" expression="" field="chargeMethod"/>
+    <default applyOnUpdate="0" expression="" field="ratedVoltage"/>
+    <default applyOnUpdate="0" expression="" field="type"/>
   </defaults>
   <constraints>
-    <constraint field="fid" constraints="3" notnull_strength="1" exp_strength="0" unique_strength="1"/>
-    <constraint field="id" constraints="1" notnull_strength="1" exp_strength="0" unique_strength="0"/>
-    <constraint field="featureCode" constraints="1" notnull_strength="1" exp_strength="0" unique_strength="0"/>
-    <constraint field="chargeMethod" constraints="1" notnull_strength="1" exp_strength="0" unique_strength="0"/>
-    <constraint field="ratedVoltage" constraints="1" notnull_strength="1" exp_strength="0" unique_strength="0"/>
-    <constraint field="type" constraints="1" notnull_strength="1" exp_strength="0" unique_strength="0"/>
+    <constraint unique_strength="1" notnull_strength="1" constraints="3" field="fid" exp_strength="0"/>
+    <constraint unique_strength="0" notnull_strength="1" constraints="1" field="id" exp_strength="0"/>
+    <constraint unique_strength="0" notnull_strength="1" constraints="1" field="featureCode" exp_strength="0"/>
+    <constraint unique_strength="0" notnull_strength="1" constraints="1" field="chargeMethod" exp_strength="0"/>
+    <constraint unique_strength="0" notnull_strength="1" constraints="1" field="ratedVoltage" exp_strength="0"/>
+    <constraint unique_strength="0" notnull_strength="1" constraints="1" field="type" exp_strength="0"/>
   </constraints>
   <constraintExpressions>
-    <constraint field="fid" exp="" desc=""/>
-    <constraint field="id" exp="" desc=""/>
-    <constraint field="featureCode" exp="" desc=""/>
-    <constraint field="chargeMethod" exp="" desc=""/>
-    <constraint field="ratedVoltage" exp="" desc=""/>
-    <constraint field="type" exp="" desc=""/>
+    <constraint exp="" field="fid" desc=""/>
+    <constraint exp="" field="id" desc=""/>
+    <constraint exp="" field="featureCode" desc=""/>
+    <constraint exp="" field="chargeMethod" desc=""/>
+    <constraint exp="" field="ratedVoltage" desc=""/>
+    <constraint exp="" field="type" desc=""/>
   </constraintExpressions>
   <expressionfields/>
   <attributeactions>
-    <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
+    <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
   </attributeactions>
-  <attributetableconfig sortExpression="" actionWidgetStyle="dropDown" sortOrder="0">
+  <attributetableconfig sortOrder="0" sortExpression="" actionWidgetStyle="dropDown">
     <columns>
       <column hidden="1" type="actions" width="-1"/>
-      <column hidden="0" type="field" width="-1" name="fid"/>
-      <column hidden="0" type="field" width="-1" name="id"/>
-      <column hidden="0" type="field" width="-1" name="featureCode"/>
-      <column hidden="0" type="field" width="-1" name="chargeMethod"/>
-      <column hidden="0" type="field" width="-1" name="ratedVoltage"/>
-      <column hidden="0" type="field" width="-1" name="type"/>
+      <column hidden="0" type="field" name="fid" width="-1"/>
+      <column hidden="0" type="field" name="id" width="-1"/>
+      <column hidden="0" type="field" name="type" width="-1"/>
+      <column hidden="0" type="field" name="featureCode" width="-1"/>
+      <column hidden="0" type="field" name="chargeMethod" width="-1"/>
+      <column hidden="0" type="field" name="ratedVoltage" width="-1"/>
     </columns>
   </attributetableconfig>
   <conditionalstyles>
     <rowstyles/>
     <fieldstyles/>
   </conditionalstyles>
+  <storedexpressions/>
   <editform tolerant="1"></editform>
   <editforminit/>
   <editforminitcodesource>0</editforminitcodesource>
@@ -212,23 +258,30 @@ def my_form_open(dialog, layer, feature):
   <featformsuppress>0</featformsuppress>
   <editorlayout>generatedlayout</editorlayout>
   <editable>
-    <field editable="1" name="chargeMethod"/>
-    <field editable="1" name="featureCode"/>
-    <field editable="1" name="fid"/>
-    <field editable="1" name="id"/>
-    <field editable="1" name="ratedVoltage"/>
-    <field editable="1" name="type"/>
+    <field name="chargeMethod" editable="1"/>
+    <field name="charge_method" editable="1"/>
+    <field name="featureCode" editable="1"/>
+    <field name="feature_code" editable="1"/>
+    <field name="fid" editable="1"/>
+    <field name="id" editable="1"/>
+    <field name="ratedVoltage" editable="1"/>
+    <field name="rated_voltage" editable="1"/>
+    <field name="type" editable="1"/>
   </editable>
   <labelOnTop>
-    <field labelOnTop="0" name="chargeMethod"/>
-    <field labelOnTop="0" name="featureCode"/>
-    <field labelOnTop="0" name="fid"/>
-    <field labelOnTop="0" name="id"/>
-    <field labelOnTop="0" name="ratedVoltage"/>
-    <field labelOnTop="0" name="type"/>
+    <field name="chargeMethod" labelOnTop="0"/>
+    <field name="charge_method" labelOnTop="0"/>
+    <field name="featureCode" labelOnTop="0"/>
+    <field name="feature_code" labelOnTop="0"/>
+    <field name="fid" labelOnTop="0"/>
+    <field name="id" labelOnTop="0"/>
+    <field name="ratedVoltage" labelOnTop="0"/>
+    <field name="rated_voltage" labelOnTop="0"/>
+    <field name="type" labelOnTop="0"/>
   </labelOnTop>
+  <dataDefinedFieldProperties/>
   <widgets/>
-  <previewExpression>id</previewExpression>
+  <previewExpression>"id"</previewExpression>
   <mapTip></mapTip>
   <layerGeometryType>0</layerGeometryType>
 </qgis>
