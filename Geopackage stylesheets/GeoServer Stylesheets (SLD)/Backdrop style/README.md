@@ -26,7 +26,7 @@ The scale denominators have been set to allow viewing between **1:1,000** and **
 
 Your map should now look similar to this: 
 
-  ![Screenshot](https://raw.githubusercontent.com/OrdnanceSurvey/OS-OpenMap-Local-stylesheets/master/GML%20stylesheets/GeoServer%20stylesheets%20%28SLD%29/Backdrop%20style/images/OML_BD_screenshot.png "Screenshot of OS OpenMap - Local")
+  ![Screenshot](https://github.com/OrdnanceSurvey/OS-OpenMap-Local-stylesheets/blob/12db855a4bf68240a839ad76dc391bba2f01843f/Geopackage%20stylesheets/GeoServer%20Stylesheets%20(SLD)/Backdrop%20style/images/OML_BD_screenshot_SLD.JPG "Screenshot of OS OpenMap - Local")
 
 ## Compatibility notes
 
