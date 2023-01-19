@@ -1,10 +1,8 @@
-# OS OpenMap - Local Backdrop style
+# OS OpenMap Local - Backdrop style
 
 These are **QML** files for OS OpenMap - Local in **Geopackage** format for use in **QGIS**.
 
 *They have been designed to work with the data as it is supplied.*
-
-**NOTE** that the labelling won't work in QGIS versions from 2.12 as the label engine was upgraded.
 
 ## Quick start guide
 
@@ -33,6 +31,10 @@ We recommend viewing the map between **1:2,500** and **1:10,000** for maximum le
 Your map should now look similar to this: 
 
   ![Screenshot](https://github.com/OrdnanceSurvey/OS-OpenMap-Local-stylesheets/raw/master/Geopackage%20stylesheets/QGIS%20Stylesheets%20(QML)/Backdrop%20style/images/OML_BD_screenshot.png "Screenshot of OS OpenMap - Local")
+  
+## Compatibility Notes
+
+Our QML files are created in QGIS 3.16.7 and we believe are compatible with any QGIS v3.x
   
 ## Additional information
 
