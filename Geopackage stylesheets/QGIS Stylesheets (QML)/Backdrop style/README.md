@@ -30,7 +30,7 @@ We recommend viewing the map between **1:2,500** and **1:10,000** for maximum le
 
 Your map should now look similar to this: 
 
-  ![Screenshot](https://github.com/OrdnanceSurvey/OS-OpenMap-Local-stylesheets/raw/master/Geopackage%20stylesheets/QGIS%20Stylesheets%20(QML)/Backdrop%20style/images/OML_BD_screenshot.png "Screenshot of OS OpenMap - Local")
+  ![Screenshot](https://github.com/OrdnanceSurvey/OS-OpenMap-Local-stylesheets/blob/68e84046e1cefd8193737b9343aff1be63e600d1/Geopackage%20stylesheets/QGIS%20Stylesheets%20(QML)/Backdrop%20style/images/OML_BD_screenshot_QGIS.png "Screenshot of OS OpenMap - Local")
   
 ## Compatibility Notes
 
