@@ -5,34 +5,34 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
   <NamedLayer>
     <Name>OS Open Map - Local&#174; Roundabout (Backdrop style)</Name>
     <UserStyle>
-      <Title>Product SLD - August 2019</Title>
-      <Abstract>OS Open Map - Local&#174; Local. Ordnance Survey. &#169; Crown copyright and database rights 2019.</Abstract>
-        
+      <Title>Product SLD - October 2022</Title>
+      <Abstract>OS Open Map - Local&#174; Local. Ordnance Survey. &#169; Crown copyright and database rights 2022.</Abstract>
+
          <!-- Roundabout casing -->
-      
+
       <FeatureTypeStyle>
         <Rule>
           <Name>Roundabout casing</Name>
           <ogc:Filter>
             <ogc:Or>
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>featureCode</ogc:PropertyName>
+              <ogc:PropertyName>featurecode</ogc:PropertyName>
               <ogc:Literal>15706</ogc:Literal>
             </ogc:PropertyIsEqualTo>
              <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>featureCode</ogc:PropertyName>
+              <ogc:PropertyName>featurecode</ogc:PropertyName>
               <ogc:Literal>15707</ogc:Literal>
             </ogc:PropertyIsEqualTo>
               <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>featureCode</ogc:PropertyName>
+              <ogc:PropertyName>featurecode</ogc:PropertyName>
               <ogc:Literal>15705</ogc:Literal>
             </ogc:PropertyIsEqualTo>
               <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>featureCode</ogc:PropertyName>
+              <ogc:PropertyName>featurecode</ogc:PropertyName>
               <ogc:Literal>15704</ogc:Literal>
             </ogc:PropertyIsEqualTo>
               <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>featureCode</ogc:PropertyName>
+              <ogc:PropertyName>featurecode</ogc:PropertyName>
               <ogc:Literal>15703</ogc:Literal>
             </ogc:PropertyIsEqualTo>
   </ogc:Or>
@@ -51,16 +51,16 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </Graphic>
           </PointSymbolizer>
         </Rule>
-      </FeatureTypeStyle> 
+      </FeatureTypeStyle>
 
 <!-- Restricted Roundabout -->
-      
+
       <FeatureTypeStyle>
         <Rule>
           <Name>Restricted Roundabout</Name>
           <ogc:Filter>
               <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>featureCode</ogc:PropertyName>
+                <ogc:PropertyName>featurecode</ogc:PropertyName>
                 <ogc:Literal>15709</ogc:Literal>
               </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -78,7 +78,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </Graphic>
           </PointSymbolizer>
         </Rule>
-      </FeatureTypeStyle>           
+      </FeatureTypeStyle>
     </UserStyle>
   </NamedLayer>
 </StyledLayerDescriptor>
