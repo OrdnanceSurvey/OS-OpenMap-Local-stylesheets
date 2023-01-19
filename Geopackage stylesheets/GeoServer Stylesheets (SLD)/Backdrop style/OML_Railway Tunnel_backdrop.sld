@@ -5,17 +5,17 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
   <NamedLayer>
     <Name>OS Open Map - Local&#174; Railway Tunnel (Backdrop style)</Name>
     <UserStyle>
-      <Title>Product SLD - August 2019</Title>
-      <Abstract>OS Open Map - Local&#174; Local. Ordnance Survey. &#169; Crown copyright and database rights 2019.</Abstract>
-      
+      <Title>Product SLD - October 2022</Title>
+      <Abstract>OS Open Map - Local&#174; Local. Ordnance Survey. &#169; Crown copyright and database rights 2022.</Abstract>
+
       <!-- Railway Tunnel -->
-        
-      <FeatureTypeStyle>  
+
+      <FeatureTypeStyle>
       <Rule>
           <Name>Railway Tunnel</Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>featureCode</ogc:PropertyName>
+              <ogc:PropertyName>featurecode</ogc:PropertyName>
               <ogc:Literal>15303</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
