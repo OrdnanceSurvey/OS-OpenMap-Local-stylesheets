@@ -5,17 +5,17 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
   <NamedLayer>
     <Name>OS Open Map - Local&#174; Surface Water Line (Backdrop style)</Name>
     <UserStyle>
-      <Title>Product SLD - August 2019</Title>
-      <Abstract>OS Open Map - Local&#174; Local. Ordnance Survey. &#169; Crown copyright and database rights 2019.</Abstract>
+      <Title>Product SLD - October 2022</Title>
+      <Abstract>OS Open Map - Local&#174; Local. Ordnance Survey. &#169; Crown copyright and database rights 2022.</Abstract>
 
   <!-- Surface Water Line -->
-        
+
         <FeatureTypeStyle>
           <Rule>
           <Name>Surface Water Line</Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>featureCode</ogc:PropertyName>
+              <ogc:PropertyName>featurecode</ogc:PropertyName>
               <ogc:Literal>15600</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
