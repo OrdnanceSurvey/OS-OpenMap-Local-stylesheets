@@ -5,19 +5,19 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
   <NamedLayer>
     <Name>OS Open Map - Local&#174; Woodland (Full colour style)</Name>
     <UserStyle>
-      <Title>Product SLD - August 2019</Title>
-      <Abstract>OS Open Map - Local&#174; Local. Ordnance Survey. &#169; Crown copyright and database rights 2019.</Abstract>
-      
-   
-        
+      <Title>Product SLD - October 2022</Title>
+      <Abstract>OS Open Map - Local&#174; Local. Ordnance Survey. &#169; Crown copyright and database rights 2022.</Abstract>
+
+
+
         <!--  Woodland  -->
-        
+
         <FeatureTypeStyle>
           <Rule>
           <Name>Woodland</Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>featureCode</ogc:PropertyName>
+              <ogc:PropertyName>featurecode</ogc:PropertyName>
               <ogc:Literal>15999</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -27,7 +27,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <Fill>
               <CssParameter name="fill">#D1F0CE</CssParameter>
             </Fill>
-          </PolygonSymbolizer>        
+          </PolygonSymbolizer>
         </Rule>
       </FeatureTypeStyle>
     </UserStyle>
