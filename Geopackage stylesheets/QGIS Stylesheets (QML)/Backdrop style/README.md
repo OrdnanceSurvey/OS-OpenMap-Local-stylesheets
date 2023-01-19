@@ -12,17 +12,21 @@ These are **QML** files for OS OpenMap - Local in **Geopackage** format for use 
 
 *Your machine may require a restart for QGIS to recognise this new font*
 
-**3.**  Load your OS Open Map Local Geopackage data into QGIS
+**3.** Copy the folder ‘ordnance_survey_oml’ into your QGIS SVG directory (a typical Windows file path is C:\Program Files\QGIS xxxx\apps\qgis\svg, where xxxx represents whatever version of QGIS you are running).
 
-**4.**  Roads consist of 2 layers. The road style and road labels. You will need to duplicate your Road layer once. Rename the new Road layer to RoadNames.
+*Your machine may require a restart for QGIS to recognise the new font and SVGs*
 
-**5.**  Roundabouts consist of 2 layers. The roundabout casing and roundabout fill. You will need to duplicate your Roundabout layer once. Rename the original Roundabout layer and new layer to RoundaboutCase and RoundaboutFill.
+**4.**  Load your OS Open Map Local Geopackage data into QGIS
 
-**6.**  Double click on a layer to access the 'Layer Properties' window > click on 'Load Style...' > navigate to the directory containing the QML files (those ending .qml) > select the QML file that corresponds to that layer > click 'Open' > click 'OK'
+**5.**  Roads consist of 2 layers. The road style and road labels. You will need to duplicate your Road layer once. Rename the new Road layer to RoadNames.
 
-*Repeat step 6 for all layers*
+**6.**  Roundabouts consist of 2 layers. The roundabout casing and roundabout fill. You will need to duplicate your Roundabout layer once. Rename the original Roundabout layer and new layer to RoundaboutCase and RoundaboutFill.
 
-**7.**  Although every feature is styled, for use as a contextual map we recommend the following layer order and visibility:
+**7.**  Double click on a layer to access the 'Layer Properties' window > click on 'Load Style...' > navigate to the directory containing the QML files (those ending .qml) > select the QML file that corresponds to that layer > click 'Open' > click 'OK'
+
+*Repeat step 7 for all layers*
+
+**8.**  Although every feature is styled, for use as a contextual map we recommend the following layer order and visibility:
 
   ![Screenshot](https://github.com/OrdnanceSurvey/OS-OpenMap-Local-stylesheets/blob/78d231476f0607e22104d690de1fd5dbf8809495/Geopackage%20stylesheets/QGIS%20Stylesheets%20(QML)/Backdrop%20style/images/OML_BD_layer_order1.png "Recommended layer order for OS Open Map Local")
 
