@@ -36,7 +36,7 @@ We recommend viewing the map between **1:2,500** and **1:10,000** for maximum le
 
 Your map should now look similar to this: 
 
-  ![Screenshot](https://raw.githubusercontent.com/OrdnanceSurvey/OS-OpenMap-Local-stylesheets/master/ESRI%20Shapefile%20stylesheets/ESRI%20stylesheets%20%28LYR%29/Full%20colour%20style/images/OML_FC_screenshot.png "Screenshot of OS OpenMap - Local")
+  ![Screenshot](https://github.com/OrdnanceSurvey/OS-OpenMap-Local-stylesheets/blob/c2194495586227a3e71319dd4d1bdde6024d26f4/Geopackage%20stylesheets/ESRI%20Stylesheets%20(LYR)/Full%20colour%20style/images/OML_FC_screenshot.png "Screenshot of OS OpenMap - Local")
 
 ## Additional information
 
