@@ -1,5 +1,5 @@
-This repository contains stylesheets for **OS OpenMap Local**
+Select the **format of stylesheet** that you need for your software package
 
-Select the directory that matches the **format of your data**
+For more information about data styling and visualisation, take a look at our [GeoDataViz toolkit](https://github.com/OrdnanceSurvey/GeoDataViz-Toolkit)
 
-Please note that in April 2023, there was a change to the data format of the geopackage for OS OpenMap Local. Please ensure you download the stylesheets that match the download date of your geopackage data.
+These are stylesheets for OS OpenMap Local in geopackage format downloaded from the OS DataHub **after April 2023**
