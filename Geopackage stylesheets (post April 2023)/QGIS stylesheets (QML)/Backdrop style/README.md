@@ -28,7 +28,7 @@ These are **QML** files for OS OpenMap - Local in **Geopackage** format for use 
 
 **8.**  Although every feature is styled, for use as a contextual map we recommend the following layer order and visibility:
 
-  ![Screenshot](https://github.com/OrdnanceSurvey/OS-OpenMap-Local-stylesheets/blob/78d231476f0607e22104d690de1fd5dbf8809495/Geopackage%20stylesheets/QGIS%20Stylesheets%20(QML)/Backdrop%20style/images/OML_BD_layer_order1.png "Recommended layer order for OS Open Map Local")
+  ![Screenshot](https://github.com/OrdnanceSurvey/OS-OpenMap-Local-stylesheets/blob/5c79ba23045878a2c4ce509b0833c334f9f1137b/Geopackage%20stylesheets%20(post%20April%202023)/QGIS%20stylesheets%20(QML)/Backdrop%20style/images/OML_BD_layer_order1.png "Recommended layer order for OS Open Map Local")
 
 We recommend viewing the map between **1:2,500** and **1:10,000** for maximum legibility
 
