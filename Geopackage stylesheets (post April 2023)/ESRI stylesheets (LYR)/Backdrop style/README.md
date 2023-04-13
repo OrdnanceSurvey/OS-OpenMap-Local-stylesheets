@@ -8,7 +8,7 @@ These are **LYR** files for OS OpenMap - Local in **Geopackage** format for use 
 
 **1.**  Fork or [download](https://github.com/OrdnanceSurvey/OS-OpenMap-Local-stylesheets/archive/master.zip) the contents of this repository
 
-**2.**  Copy the font file 'OSOpenMapLocal-Normal_0.otf' into your systems font directory (on Windows machines this is (C:\Windows\Fonts)
+**2.**  Copy the font file 'OSOpenMapLocal-Normal.otf' into your systems font directory (on Windows machines this is (C:\Windows\Fonts)
 
 *Your machine may require a restart for ArcGIS to recognise this new font*
 
