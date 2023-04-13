@@ -2,7 +2,7 @@
 
 These are **QML** files for OS OpenMap - Local in **Geopackage** format for use in **QGIS**.
 
-*They have been designed to work with the data as it is supplied.*
+*They have been designed to work with the data as it is supplied and designed to work with geopackage data downloaded from the OS DataHub **prior to April 2023***
 
 ## Quick start guide
 
