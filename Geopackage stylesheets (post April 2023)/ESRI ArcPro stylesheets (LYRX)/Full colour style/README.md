@@ -38,7 +38,7 @@ We recommend viewing the map between 1:2,500 and 1:10,000 for maximum legibility
 
 Your map should now look similar to this: 
 
-  ![Screenshot](https://raw.githubusercontent.com/OrdnanceSurvey/OS-OpenMap-Local-stylesheets/master/ESRI%20Shapefile%20stylesheets/ESRI%20ArcPro%20Stylesheets%20(LYRX)/Full%20colour%20style/images/OML_FullColour.JPG "Screenshot of OS OpenMap - Local")
+  ![Screenshot](https://github.com/OrdnanceSurvey/OS-OpenMap-Local-stylesheets/blob/d3c903a8934e82da7618cbf6ddad9144f1dabd9b/Geopackage%20stylesheets%20(post%20April%202023)/ESRI%20ArcPro%20stylesheets%20(LYRX)/Full%20colour%20style/images/OML_FullColour.JPG "Screenshot of OS OpenMap - Local")
 
 ## Additional information
 
