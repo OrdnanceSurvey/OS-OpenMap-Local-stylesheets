@@ -26,7 +26,7 @@ These are **LYR** files for OS OpenMap - Local in **Geopackage** format for use 
 
 **9.**  Your Table of Contents should now look like this. This is the recommended layer order:
 
-  ![Screenshot](https://raw.githubusercontent.com/OrdnanceSurvey/OS-OpenMap-Local-stylesheets/master/Geopackage%20stylesheets/ESRI%20Stylesheets%20(LYR)/Full%20colour%20style/images/OML_FC_layer_order.png "Recommended layer order for OS Open Map Local")
+  ![Screenshot](https://github.com/OrdnanceSurvey/OS-OpenMap-Local-stylesheets/blob/74e9b544df4b7c00037c1a17875f81794e5c0f29/Geopackage%20stylesheets%20(pre%20April%202023)/ESRI%20Stylesheets%20(LYR)/Full%20colour%20style/images/OML_FC_layer_order.png "Recommended layer order for OS Open Map Local")
 
 **10.**  Double-click on a layer to access the ‘Layer Properties’ window > select the ‘Source tab’ > click on ‘Set Data Source…’ > navigate to your OS Open Map Local data > select the data that matches the layer for example, RoadFill = Roads > select ‘Add’
 
