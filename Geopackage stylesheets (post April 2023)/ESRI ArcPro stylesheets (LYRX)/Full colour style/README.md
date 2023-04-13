@@ -26,7 +26,7 @@ These are **lyrx** files for OS OpenMap - Local in **Geopackage** format for use
 
 **9.**  Your Table of Contents should now look like this. This is the recommended layer order:
 
-  ![Screenshot](https://raw.githubusercontent.com/OrdnanceSurvey/OS-OpenMap-Local-stylesheets/master/Geopackage%20stylesheets/ESRI%20ArcPro%20Stylesheets%20(LYRX)/Full%20colour%20style/images/OML_FC_layer_order.JPG "Recommended layer order for OS Open Map Local")
+  ![Screenshot](https://github.com/OrdnanceSurvey/OS-OpenMap-Local-stylesheets/blob/10dd5d4292dee76ab6490a90cf4eed346730203b/Geopackage%20stylesheets%20(post%20April%202023)/ESRI%20ArcPro%20stylesheets%20(LYRX)/Full%20colour%20style/images/OML_FC_layer_order.JPG "Recommended layer order for OS Open Map Local")
 
 **10.**  To fix the data links, click on the exclamation marks. A file explorer window will open. Navigate to where your OS Open Map Local data is stored and select the data that matches the layer. For example, RoadFill = Roads > select ‘Add’. Alternatively, right click on the layer and go to Properties > On the Source tab click 'Set Data Source'. Navigate to where your OS Open Map Local data is stored and select the data that matches the layer. For example, RoadFill = Roads > select ‘Add’.
 
