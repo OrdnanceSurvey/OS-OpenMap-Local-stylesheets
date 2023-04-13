@@ -2,7 +2,7 @@
 
 These are **LYR** files for OS OpenMap - Local in **Geopackage** format for use in **ESRI ArcGIS**.
 
-*They have been designed to work with the data as it is supplied.*
+*They have been designed to work with the data as it is supplied and are designed to work with geopackage data downloaded from the OS DataHub **prior to April 2023***
 
 ## Quick start guide
 
