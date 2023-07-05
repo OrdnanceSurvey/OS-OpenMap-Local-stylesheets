@@ -28,11 +28,9 @@ These are **lyrx** files for OS OpenMap - Local in **Geopackage** format for use
 
   ![Screenshot](https://github.com/OrdnanceSurvey/OS-OpenMap-Local-stylesheets/blob/165f611799907231a5168d1d805c5e7d2f9bf71b/Geopackage%20stylesheets%20(post%20April%202023)/ESRI%20ArcPro%20stylesheets%20(LYRX)/Backdrop%20style/images/OML_BD_layer_order.JPG "Recommended layer order for OS Open Map Local")
 
-**10.**  To fix the data links, click on the exclamation marks. A file explorer window will open. Navigate to where your OS Open Map Local data is stored and select the data that matches the layer. For example, RoadFill = Roads > select ‘Add’. Alternatively, right click on the layer and go to Properties > On the Source tab click 'Set Data Source'. Navigate to where your OS Open Map Local data is stored and select the data that matches the layer. For example, RoadFill = Roads > select ‘Add’.
+**10.**  To fix the data links, click on the exclamation marks. A file explorer window will open. Navigate to where your OS Open Map Local data is stored and select the data that matches the layer. For example, RoadFill = Roads > select ‘Add’. Alternatively, right click on the layer and go to Properties > On the Source tab click 'Set Data Source'.
 
 Repeat step 10 for all layers if it doesn't fix the other data links automatically.
-
-If the file explorer window doesn’t open. Right click on the layer and go to Properties > Source > Set Data Source.
 
 We recommend viewing the map between 1:2,500 and 1:10,000 for maximum legibility. No data will show when zoomed out beyond 1:20,000.
 
