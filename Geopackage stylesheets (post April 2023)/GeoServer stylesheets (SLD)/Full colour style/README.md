@@ -20,7 +20,7 @@ These are **SLD** files for OS OpenMap-Local in **Geopackage** format for use in
 
 **6.**  To create OS Open Map-Local in GeoServer you will need to create a Layer Group. If using the GUI then navigate to Layer Groups > Add new layer group > Add Layer and choose each layer in turn. Your drawing order should be set up as follows:
 
- ![Screenshot](https://github.com/OrdnanceSurvey/OS-OpenMap-Local-stylesheets/blob/14ced699777704fca4702e5d0a9d61d4bc006d11/Geopackage%20stylesheets%20(post%20April%202023)/GeoServer%20stylesheets%20(SLD)/Full%20colour%20style/images/OML_layer_order.png "Recommended layer order in GeoServer - OS OpenMap - Local")
+ ![Screenshot](https://github.com/OrdnanceSurvey/OS-OpenMap-Local-stylesheets/blob/2fdadbcb49c262312c49fea475da430fb0183156/Geopackage%20stylesheets%20(post%20April%202023)/GeoServer%20stylesheets%20(SLD)/Full%20colour%20style/images/SLD%20Layer%20Order.png "Recommended layer order in GeoServer - OS OpenMap - Local")
 
 The name of this Layer Group is the ‘layer’ your web map service (WMS) will need to call.
 Although every feature is styled, for use as a general contextual map we have commented some of them out by default.
