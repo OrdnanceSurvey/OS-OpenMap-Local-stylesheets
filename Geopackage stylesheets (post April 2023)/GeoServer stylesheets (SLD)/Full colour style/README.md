@@ -34,6 +34,8 @@ Your map should now look similar to this:
 
 Although SLD is an open OGC standard, these SLDs do contain some extended code used by GeoServer, namely the ‘vendor option’ tags. Also, as aforementioned, the field names referenced in the SLDs are in full and in lowercase.
 
+In the Functional Sites SLD, we use the 'escapeChar' attribute within each 'PropertyIsLike' filter to allow wildcard characters (such as *, ?, and %) to be treated as literal characters in the filter string. However, we’ve been notified that some SLD implementations require the use of 'escape' instead of 'escapeChar' for the SLD to validate correctly. In these cases, we recommend downloading the SLD and replacing instances of 'escapeChar' with 'escape' to ensure compatibility with those systems.
+
 ## Additional information
 
 [For more information about data styling and visualisation, take a look at our GeoDataViz toolkit](https://github.com/OrdnanceSurvey/GeoDataViz-Toolkit)
