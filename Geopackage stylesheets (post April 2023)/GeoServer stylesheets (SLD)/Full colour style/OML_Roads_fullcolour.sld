@@ -79,7 +79,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
       <Rule>
           <Name>Shared Use Carriageway Case</Name>
           <ogc:Filter>
-            <And>
+            <ogc:And>
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>feature_code</ogc:PropertyName>
                 <ogc:Literal>15790</ogc:Literal>
@@ -88,7 +88,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
                 <ogc:PropertyName>draw_level</ogc:PropertyName>
                 <ogc:Literal>0</ogc:Literal>
               </ogc:PropertyIsEqualTo>
-            </And>
+            </ogc:And>
           </ogc:Filter>
           <MinScaleDenominator>1000</MinScaleDenominator>
           <MaxScaleDenominator>15000</MaxScaleDenominator>
@@ -110,7 +110,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           <Rule>
             <Name>Local Road Case</Name>
             <ogc:Filter>
-              <And>
+              <ogc:And>
                 <ogc:PropertyIsEqualTo>
                   <ogc:PropertyName>feature_code</ogc:PropertyName>
                   <ogc:Literal>15760</ogc:Literal>
@@ -119,7 +119,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
                   <ogc:PropertyName>draw_level</ogc:PropertyName>
                   <ogc:Literal>0</ogc:Literal>
                 </ogc:PropertyIsEqualTo>
-              </And>
+              </ogc:And>
             </ogc:Filter>
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>15000</MaxScaleDenominator>
@@ -141,7 +141,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
       <Rule>
           <Name>Local Access Road Case</Name>
           <ogc:Filter>
-            <And>
+            <ogc:And>
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>feature_code</ogc:PropertyName>
                 <ogc:Literal>15761</ogc:Literal>
@@ -150,7 +150,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
                 <ogc:PropertyName>draw_level</ogc:PropertyName>
                 <ogc:Literal>0</ogc:Literal>
               </ogc:PropertyIsEqualTo>
-            </And>
+            </ogc:And>
           </ogc:Filter>
           <MinScaleDenominator>1000</MinScaleDenominator>
           <MaxScaleDenominator>15000</MaxScaleDenominator>
@@ -2200,7 +2200,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
         <Rule>
             <Name>Shared Use Carriageway Case</Name>
             <ogc:Filter>
-              <And>
+              <ogc:And>
                 <ogc:PropertyIsEqualTo>
                   <ogc:PropertyName>feature_code</ogc:PropertyName>
                   <ogc:Literal>15790</ogc:Literal>
@@ -2209,7 +2209,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
                   <ogc:PropertyName>draw_level</ogc:PropertyName>
                   <ogc:Literal>1</ogc:Literal>
                 </ogc:PropertyIsEqualTo>
-              </And>
+              </ogc:And>
             </ogc:Filter>
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>15000</MaxScaleDenominator>
@@ -2230,7 +2230,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <Rule>
               <Name>Local Road Case</Name>
               <ogc:Filter>
-                <And>
+                <ogc:And>
                   <ogc:PropertyIsEqualTo>
                     <ogc:PropertyName>feature_code</ogc:PropertyName>
                     <ogc:Literal>15760</ogc:Literal>
@@ -2239,7 +2239,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
                     <ogc:PropertyName>draw_level</ogc:PropertyName>
                     <ogc:Literal>1</ogc:Literal>
                   </ogc:PropertyIsEqualTo>
-                </And>
+                </ogc:And>
               </ogc:Filter>
               <MinScaleDenominator>1000</MinScaleDenominator>
               <MaxScaleDenominator>15000</MaxScaleDenominator>
@@ -2260,7 +2260,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
         <Rule>
             <Name>Local Access Road Case</Name>
             <ogc:Filter>
-              <And>
+              <ogc:And>
                 <ogc:PropertyIsEqualTo>
                   <ogc:PropertyName>feature_code</ogc:PropertyName>
                   <ogc:Literal>15761</ogc:Literal>
@@ -2269,7 +2269,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
                   <ogc:PropertyName>draw_level</ogc:PropertyName>
                   <ogc:Literal>1</ogc:Literal>
                 </ogc:PropertyIsEqualTo>
-              </And>
+              </ogc:And>
             </ogc:Filter>
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>15000</MaxScaleDenominator>
@@ -4319,7 +4319,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
         <Rule>
             <Name>Shared Use Carriageway Case</Name>
             <ogc:Filter>
-              <And>
+              <ogc:And>
                 <ogc:PropertyIsEqualTo>
                   <ogc:PropertyName>feature_code</ogc:PropertyName>
                   <ogc:Literal>15790</ogc:Literal>
@@ -4328,7 +4328,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
                   <ogc:PropertyName>draw_level</ogc:PropertyName>
                   <ogc:Literal>2</ogc:Literal>
                 </ogc:PropertyIsEqualTo>
-              </And>
+              </ogc:And>
             </ogc:Filter>
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>15000</MaxScaleDenominator>
@@ -4349,7 +4349,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <Rule>
               <Name>Local Road Case</Name>
               <ogc:Filter>
-                <And>
+                <ogc:And>
                   <ogc:PropertyIsEqualTo>
                     <ogc:PropertyName>feature_code</ogc:PropertyName>
                     <ogc:Literal>15760</ogc:Literal>
@@ -4358,7 +4358,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
                     <ogc:PropertyName>draw_level</ogc:PropertyName>
                     <ogc:Literal>2</ogc:Literal>
                   </ogc:PropertyIsEqualTo>
-                </And>
+                </ogc:And>
               </ogc:Filter>
               <MinScaleDenominator>1000</MinScaleDenominator>
               <MaxScaleDenominator>15000</MaxScaleDenominator>
@@ -4379,7 +4379,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
         <Rule>
             <Name>Local Access Road Case</Name>
             <ogc:Filter>
-              <And>
+              <ogc:And>
                 <ogc:PropertyIsEqualTo>
                   <ogc:PropertyName>feature_code</ogc:PropertyName>
                   <ogc:Literal>15761</ogc:Literal>
@@ -4388,7 +4388,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
                   <ogc:PropertyName>draw_level</ogc:PropertyName>
                   <ogc:Literal>2</ogc:Literal>
                 </ogc:PropertyIsEqualTo>
-              </And>
+              </ogc:And>
             </ogc:Filter>
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>15000</MaxScaleDenominator>
